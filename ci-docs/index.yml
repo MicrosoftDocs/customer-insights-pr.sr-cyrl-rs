@@ -1,0 +1,108 @@
+### YamlMime:Landing
+metadata:
+  title: Чвориште помоћи за Dynamics 365 Customer Insights
+  author: m-hartmann
+  description: Пронађите релевантне чланке да бисте започели са садржајем помоћи.
+  ms.author: mhart
+  ms.date: 10/29/2020
+  ms.service: customer-insights
+  ms.topic: landing-page
+  ms.openlocfilehash: f175ea858213022afc87fce77213893c7d050d30
+  ms.sourcegitcommit: cf9b78559ca189d4c2086a66c879098d56c0377a
+  ms.translationtype: HT
+  ms.contentlocale: sr-Cyrl-RS
+  ms.lasthandoff: 11/03/2020
+  ms.locfileid: "4406886"
+title: Документација за Dynamics 365 Customer Insights
+summary: Пронађите корисне ресурсе да бисте започели и научили о функцијама и могућностима услуге Customer Insights.
+landingContent:
+- title: Упознајте Customer Insights
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Преглед услуге Customer Insights
+      url: overview.md
+    - text: Планови издавања
+      url: https://docs.microsoft.com/dynamics365-release-plan/2020wave2/customer-data-platform/dynamics365-customer-insights/planned-features
+    - text: Приступ окружењу
+      url: https://home.ci.ai.dynamics.com/
+- title: Започните са увидима о корисницима
+  linkLists:
+  - linkListType: get-started
+    links:
+    - text: Уписивање за пробну верзију
+      url: https://dynamics.microsoft.com/en-us/get-started/?appname=customerinsights
+    - text: Шта је ново
+      url: audience-insights/whats-new-audience-insights.md
+    - text: Документација о увидима о корисницима
+      url: audience-insights/index.yml
+- title: Ступите у контакт
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Придружите се Dynamics 365 заједници
+      url: https://go.microsoft.com/fwlink/?linkid=2073991
+    - text: Делите идеје
+      url: https://go.microsoft.com/fwlink/?linkid=2074172
+    - text: Пријавите проблем
+      url: https://go.microsoft.com/fwlink/?linkid=2079641
+- title: Упутства за увиде о корисницима
+  linkLists:
+  - linkListType: tutorial
+    links:
+    - text: Направите ново окружење
+      url: audience-insights/home.md
+    - text: Креирајте уједначени профил клијента
+      url: https://docs.microsoft.com/learn/modules/unified-customer-profile/
+    - text: Рад са апликацијом
+      url: https://docs.microsoft.com/learn/modules/working-with-customer-insights/
+- title: Извоз података увида о корисницима
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Подешавање одредишта извоза
+      url: audience-insights/export-destinations.md
+    - text: Картице клијената у Dynamics 365 апликацијама
+      url: audience-insights/customer-card-add-in.md
+    - text: Power BI конектор
+      url: audience-insights/export-power-bi.md
+- title: Администрирање увида о корисницима
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Конфигурисање система
+      url: audience-insights/system.md
+    - text: Дефинисање дозвола корисника
+      url: audience-insights/permissions.md
+    - text: Управљање са више окружења
+      url: audience-insights/manage-environments.md
+- title: Основни подаци о ангажовањима (верзија за преглед)
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Преглед могућности
+      url: engagement-insights/overview.md
+    - text: Одредбе и концепти
+      url: engagement-insights/glossary.md
+    - text: Први кораци
+      url: engagement-insights/get-started.md
+- title: Извештаји за увиди у ангажовање (верзија за преглед)
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Прикажи извештаје
+      url: engagement-insights/view-reports.md
+    - text: Креирање прилагођених извештаја
+      url: engagement-insights/custom-reports.md
+    - text: Погледајте извештај о обједињеним профилима
+      url: engagement-insights/profile-reports.md
+- title: Догађаји за увиде у ангажовање (верзија за преглед)
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Направите истанчане догађаје
+      url: engagement-insights/refined-events.md
+    - text: Извоз догађаја
+      url: engagement-insights/export-events.md
+    - text: Избришите и извезите личне податке
+      url: engagement-insights/delete-export-personal-data.md
