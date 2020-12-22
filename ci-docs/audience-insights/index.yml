@@ -1,0 +1,79 @@
+### YamlMime:Landing
+title: Могућност увида о корисницима у услузи Dynamics 365 Customer Insights
+summary: Узмите, обједините и организујте податке о клијентима из више извора. Креирајте и управљајте профилима клијената и сегментацијом у реалном времену. Интегришите податке о клијентима са другим системима да бисте постали још делотворнији.
+metadata:
+  title: Документација о увидима о корисницима
+  description: Чвориште помоћи са кључним везама за увиде о корисницима.
+  ms.service: customer-insights
+  ms.subservice: audience-insights
+  ms.topic: landing-page
+  author: m-hartmann
+  ms.author: mhart
+  ms.date: 10/16/2020
+  ms.openlocfilehash: 9dcbbecf793cca2ef1d79d6fad7f3b420f5a8806
+  ms.sourcegitcommit: cf9b78559ca189d4c2086a66c879098d56c0377a
+  ms.translationtype: HT
+  ms.contentlocale: sr-Cyrl-RS
+  ms.lasthandoff: 11/03/2020
+  ms.locfileid: "4406869"
+landingContent:
+- title: О увидима о корисницима
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Преглед производа
+      url: overview.md
+    - text: Нове и ажуриране функције
+      url: whats-new-audience-insights.md
+    - text: Локација заједнице
+      url: https://go.microsoft.com/fwlink/?linkid=2073991
+- title: Унос из извора података
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Додавање извора података
+      url: data-sources.md
+    - text: Постепено освежавање
+      url: incremental-refresh-data-sources.md
+    - text: Објашњење ентитета
+      url: entities.md
+- title: Уједначавање података
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Мапирај
+      url: map-entities.md
+    - text: Подударање
+      url: match-entities.md
+    - text: Обједини
+      url: merge-entities.md
+- title: Прецизирање профила клијената
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Конфигурисање односа
+      url: relationships.md
+    - text: Листање активности за клијента
+      url: activities.md
+    - text: Модели учења „Донесите своју машину“
+      url: custom-models.md
+- title: Извоз података клијента
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Подешавање одредишта извоза
+      url: export-destinations.md
+    - text: Картице клијената у Dynamics 365 апликацијама
+      url: customer-card-add-in.md
+    - text: Power BI конектор
+      url: export-power-bi.md
+- title: Администрација апликације
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Конфигурисање система
+      url: system.md
+    - text: Дефинисање дозвола корисника
+      url: permissions.md
+    - text: Управљање са више окружења
+      url: manage-environments.md
