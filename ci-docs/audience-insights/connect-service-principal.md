@@ -1,20 +1,20 @@
 ---
 title: Повежите се са Azure Data Lake Storage Gen2 налог помоћу принципала услуге
-description: користите принципал Azure услуге за увиде у кориснике да бисте се повезали са сопственим језером података када га приложите увидима у кориснике.
-ms.date: 11/24/2020
+description: Користите принципал Azure услуге за увиде у кориснике да бисте се повезали са сопственим језером података када га приложите увидима у кориснике.
+ms.date: 02/10/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
-ms.topic: conceptual
+ms.topic: how-to
 author: adkuppa
 ms.author: adkuppa
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: c2fae278d34fa02b9168ac70dfa8dd351653245e
-ms.sourcegitcommit: 6a6df62fa12dcb9bd5f5a39cc3ee0e2b3988184b
+ms.openlocfilehash: eebbac1370a847869d98beaf70db49b809d762e7
+ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
 ms.translationtype: HT
 ms.contentlocale: sr-Cyrl-RS
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "4644106"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5267740"
 ---
 # <a name="connect-to-an-azure-data-lake-storage-gen2-account-with-an-azure-service-principal-for-audience-insights"></a>Повежите се са Azure Data Lake Storage Gen2 налогом помоћу принципала Azure услуге за увиде у циљну групу
 
@@ -22,7 +22,9 @@ ms.locfileid: "4644106"
 
 Принципал услуге можете користити за сигурно [додавање или уређивање Common Data Model фасцикле као извора података](connect-common-data-model.md) или [креирајте ново или ажурирајте постојеће окружење](manage-environments.md#create-an-environment-in-an-existing-organization).
 
-Потребне су вам администраторске дозволе за Azure претплату да бисте креирали принципал услуге.
+> [!IMPORTANT]
+> - Azure Data Lake Gen2 налог за складиштење који намерава да користи принципала услуге мора да има [омогућену функцију хијерархијског простора имена (HNS)](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-namespace).
+> - Потребне су вам администраторске дозволе за Azure претплату да бисте креирали принципал услуге.
 
 ## <a name="create-azure-service-principal-for-audience-insights"></a>Направите принципал Azure услуге за увиде у кориснике
 
@@ -83,7 +85,7 @@ ms.locfileid: "4644106"
 
 Следите кораке у наставку да бисте пружили потребне информације о одабраном приступу.
 
-### <a name="resounce-based-storage-account-connection"></a>Повезивање налога за складиштење заснованог на ресурсима
+### <a name="resource-based-storage-account-connection"></a>Повезивање налога за складиштење засновано на ресурсима
 
 1. Идите на [Azure портал за администрацију](https://portal.azure.com), пријавите се на своју претплату и отворите налог за складиштење.
 
@@ -108,7 +110,8 @@ ms.locfileid: "4644106"
 1. Прегледајте **Претплата**,**Група ресурса** и **Име** налога за складиштење како бисте били сигурни да сте изабрали праве вредности у увидима о корисницима.
 
 1. У увиду о корисницима одаберите вредности или одговарајућа поља приликом прилагања налога за складиштење.
-
-   :::image type="content" source="media/ADLS-SP-SubscriptionConnection.png" alt-text="Унесите информације о ID-у ресурса налога за складиштење.":::
    
 1. Наставите са преосталим корацима у увидима о корисницима да бисте приложили налог за складиштење.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

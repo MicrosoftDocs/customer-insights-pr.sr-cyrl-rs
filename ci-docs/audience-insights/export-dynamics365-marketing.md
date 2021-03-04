@@ -1,20 +1,20 @@
 ---
 title: Извезите Customer Insights податке у Dynamics 365 Marketing
 description: Сазнајте како да конфигуришете везу са услугом Dynamics 365 Marketing.
-ms.date: 08/21/2020
+ms.date: 02/01/2021
 ms.reviewer: philk
 ms.service: customer-insights
 ms.subservice: audience-insights
-ms.topic: conceptual
+ms.topic: how-to
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: 163387779b64bd78ef08e2d96a5f1c9615062f28
-ms.sourcegitcommit: 6a6df62fa12dcb9bd5f5a39cc3ee0e2b3988184b
+ms.openlocfilehash: a06920b8ff25d7102ccd14ae68cf42fe91fa1ee6
+ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
 ms.translationtype: HT
 ms.contentlocale: sr-Cyrl-RS
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "4643791"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5269072"
 ---
 # <a name="connector-for-dynamics-365-marketing-preview"></a>Конектор за Dynamics 365 Marketing (преглед)
 
@@ -24,7 +24,10 @@ ms.locfileid: "4643791"
 
 ## <a name="prerequisite"></a>Предуслов
 
-Записи контаката [из Dynamics 365 Marketing унети помоћу услуге Common Data Service](connect-power-query.md).
+- Записи контаката морају бити присутни у услузи Dynamics 365 Marketing да бисте могли да извезете сегмент из услуге Customer Insights у Marketing. Прочитајте више о томе како се уносе контакти у [Dynamics 365 Marketing помоћу услуге Common Data Services](connect-power-query.md).
+
+  > [!NOTE]
+  > Извоз сегмената из увида о корисницима у Marketing неће креирати нове записе контаката у инстанцама услуге Marketing. Евиденција контаката из услуге Marketing мора се унети у увид о корисницима и користити као извор података. Такође их треба укључити у јединствени ентитет клијента да би се ID-ови клијената мапирали у ID-ове контаката да би сегменти могли да се извезу.
 
 ## <a name="configure-the-connector-for-marketing"></a>Конфигуришите конектор за Marketing
 
@@ -49,3 +52,6 @@ ms.locfileid: "4643791"
 ## <a name="export-the-data"></a>Извоз података
 
 Можете да [извезете податке на захтев](export-destinations.md). Извоз ће се такође покренути са сваким [планираним освежавањем](system.md#schedule-tab).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

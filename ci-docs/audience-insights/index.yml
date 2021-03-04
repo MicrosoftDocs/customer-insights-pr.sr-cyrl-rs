@@ -6,16 +6,16 @@ metadata:
   description: Чвориште помоћи са кључним везама за увиде о корисницима.
   ms.service: customer-insights
   ms.subservice: audience-insights
-  ms.topic: landing-page
+  ms.topic: hub-page
   author: m-hartmann
   ms.author: mhart
   ms.date: 10/16/2020
-  ms.openlocfilehash: 9dcbbecf793cca2ef1d79d6fad7f3b420f5a8806
-  ms.sourcegitcommit: cf9b78559ca189d4c2086a66c879098d56c0377a
+  ms.openlocfilehash: ba5229067c7c338b4f8d0503aaf80f25b6c4002c
+  ms.sourcegitcommit: a8f7d5d0008b2d7d0ff0daeb746126abfc82c253
   ms.translationtype: HT
   ms.contentlocale: sr-Cyrl-RS
-  ms.lasthandoff: 11/03/2020
-  ms.locfileid: "4406869"
+  ms.lasthandoff: 12/17/2020
+  ms.locfileid: "4745739"
 landingContent:
 - title: О увидима о корисницима
   linkLists:
@@ -27,36 +27,36 @@ landingContent:
       url: whats-new-audience-insights.md
     - text: Локација заједнице
       url: https://go.microsoft.com/fwlink/?linkid=2073991
-- title: Унос из извора података
-  linkLists:
-  - linkListType: how-to-guide
-    links:
-    - text: Додавање извора података
-      url: data-sources.md
-    - text: Постепено освежавање
-      url: incremental-refresh-data-sources.md
-    - text: Објашњење ентитета
-      url: entities.md
 - title: Уједначавање података
   linkLists:
   - linkListType: how-to-guide
     links:
-    - text: Мапирај
-      url: map-entities.md
-    - text: Подударање
-      url: match-entities.md
-    - text: Обједини
-      url: merge-entities.md
-- title: Прецизирање профила клијената
+    - text: Преглед извора података
+      url: data-sources.md
+    - text: Преглед уједначавања
+      url: data-unification.md
+    - text: Објашњење ентитета
+      url: entities.md
+- title: Обогаћивање и прецизирање података
   linkLists:
   - linkListType: how-to-guide
     links:
+    - text: Обогаћивање профила клијената
+      url: enrichment-hub.md
     - text: Конфигурисање односа
       url: relationships.md
     - text: Листање активности за клијента
       url: activities.md
-    - text: Модели учења „Донесите своју машину“
-      url: custom-models.md
+- title: Остварите увиде
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Креирање сегмената
+      url: segments.md
+    - text: Креирање мера
+      url: measures.md
+    - text: Комплетирање података предвиђањима
+      url: predictions.md
 - title: Извоз података клијента
   linkLists:
   - linkListType: how-to-guide

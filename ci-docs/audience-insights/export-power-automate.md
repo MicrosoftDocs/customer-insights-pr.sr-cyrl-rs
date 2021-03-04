@@ -1,20 +1,20 @@
 ---
 title: Power Automate конектор | Microsoft Docs
 description: Креирајте токове у услузи Microsoft Power Automate из услуге Dynamics 365 Customer Insights.
-ms.date: 08/03/2020
+ms.date: 01/20/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
-ms.topic: conceptual
+ms.topic: how-to
 author: m-hartmann
 ms.author: mhart
 ms.reviewer: philk
 manager: shellyha
-ms.openlocfilehash: ffe92414365b0b777691a4a2d585100e4fbea591
-ms.sourcegitcommit: cf9b78559ca189d4c2086a66c879098d56c0377a
+ms.openlocfilehash: fb1df4e9ab1f78300b8ec1f8dfdfbfbac0e71447
+ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
 ms.translationtype: HT
 ms.contentlocale: sr-Cyrl-RS
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "4406833"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5268842"
 ---
 # <a name="power-automate-connector-preview"></a>Power Automate конектор (преглед)
 
@@ -22,7 +22,7 @@ ms.locfileid: "4406833"
 
 ## <a name="power-automate-triggers"></a>Power Automate окидачи
 
-Можете користити разне окидаче који вам омогућавају да креирате токове за аутоматизацију задатака који се понављају, попут обавештења или напреднијих радњи. 
+Користите окидаче да креирате токове у облаку и аутоматизујете понављајуће задатке, као што су обавештења или напредније радње. 
 
 - Покрените када не успе освежавање извора података. 
 - Покрените када успе освежавање извора података.
@@ -36,14 +36,20 @@ ms.locfileid: "4406833"
 ## <a name="power-automate-actions"></a>Power Automate радње
 Power Automate конектор пружа друге радње осим доступних окидача. За више информација погледајте [Dynamics 365 Customer Insights Connector](https://docs.microsoft.com/connectors/customerinsights/).
 
-## <a name="create-a-power-automate-flow-in-audience-insights"></a>Креирајте Power Automate ток у увидима о корисницима
+## <a name="create-a-power-automate-flow"></a>Креирање Power Automate тока
 
-1. У увидима о корисницима идите на **Администратор** > **Систем**.
+1. У увидима о корисницима идите на **Администратор** > **Одредишта за извоз**.
 
-1. На страници **Систем** изаберите картицу **Статус**.
+1. На плочици **Power Automate** изаберите **Подеси**.
 
-1. У одељку **Извори података** изаберите **Токови** и изаберите **Креирање тока** из падајуће листе.
-   > [!div class="mx-imgBorder"]
-   > ![Power Automate конектор који приказује радњу „Креирај ток“](media/power-automate-connector-create-flow.png "Power Automate конектор који приказује радњу „Креирај ток“")
+1. Отвара се Customer Insights конектор (преглед) у услузи Power Automate. **Пријавите се** у Power Automate.
 
-1. У услузи Power Automate, изаберите један од доступних окидача да бисте креирали жељени ток. Ако креирате први ток, прво ћете морати да потврдите идентитет помоћу Power Automate конектора.
+1. Изаберите један од доступних окидача и додајте још корака свом новом току. За више информација погледајте [Креирање тока у облаку у услузи Power Automate](https://docs.microsoft.com/power-automate/get-started-logic-flow).
+
+Примери коришћења токова: 
+- Пошаљите поруку на Microsoft Teams канал ако освежавање извора података не успе. 
+- Пошаљите е-поруку власницима података када се пређе праг на сегменту.
+
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

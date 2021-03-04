@@ -9,14 +9,14 @@ ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: 9032d99357db86e66588eda544211a5f8eb2f23b
-ms.sourcegitcommit: 6a6df62fa12dcb9bd5f5a39cc3ee0e2b3988184b
+ms.openlocfilehash: 63caa2ebdd7d637d14ac9c9cc7972095803aee2f
+ms.sourcegitcommit: 0260ed244b97c2fd0be5e9a084c4c489358e8d4f
 ms.translationtype: HT
 ms.contentlocale: sr-Cyrl-RS
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "4643881"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "5477151"
 ---
-# <a name="export-destinations-preview"></a>Одредишта за извоз (преглед)
+# <a name="export-destinations-preview-overview"></a>Преглед одредишта за извоз (преглед)
 
 Страница **Одредишта за извоз** приказује све локације на које сте поставили извоз података. Такође можете додати нова одредишта за извоз. Поред тога, приказује извоз тренутно доступних опција. Преузмите брзи преглед, опис и сазнајте шта можете урадити са сваком опцијом проширивости. Извезите обједињене профиле, мере и сегменте у подржане апликације релевантне за ваше пословање.
 
@@ -27,10 +27,13 @@ ms.locfileid: "4643881"
 - [Power Automate конектор](export-power-automate.md)
 - [Power Apps конектор](export-power-apps.md)
 - [Power BI конектор](export-power-bi.md)
+- [Autopilot](export-autopilot.md)
 - [DotDigital](export-dotdigital.md)
 - [Dynamics 365 Sales](export-dynamics365-sales.md)
 - [Dynamics 365 Marketing](export-dynamics365-marketing.md)
 - [Azure складиште блоб објекта](export-azure-blob-storage.md)
+- [Azure Data Lake Storage Gen2](export-azure-data-lake-storage-gen2.md)
+- [SendGrid](export-sendgrid.md)
 - [LiveRamp&reg; конектор](export-liveramp.md)
 - [Робот за Microsoft Teams](export-teams-bot.md)
 - [Mailchimp](export-mailchimp.md)
@@ -95,3 +98,6 @@ ms.locfileid: "4643881"
 2. Изаберите **Уклони** из падајућег менија.
 
 3. Потврдите уклањање одабиром **Уклони** на екрану за потврду.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -5,16 +5,16 @@ ms.date: 04/21/2020
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
-ms.topic: conceptual
+ms.topic: how-to
 author: stefanie-msft
 ms.author: sthe
 manager: shellyha
-ms.openlocfilehash: 45ea23fbefe5f1d44c3961183b76d2cc5c45355e
-ms.sourcegitcommit: cf9b78559ca189d4c2086a66c879098d56c0377a
+ms.openlocfilehash: 03299610fd41a7e142e3c9723fad56ce7f90e083
+ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
 ms.translationtype: HT
 ms.contentlocale: sr-Cyrl-RS
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "4406866"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5267970"
 ---
 # <a name="teams-bot-for-dynamics-365-customer-insights-preview"></a>Teams робот за Dynamics 365 Customer Insights (верзија за преглед)
 
@@ -35,7 +35,7 @@ ms.locfileid: "4406866"
 ## <a name="configure-the-bot"></a>Конфигурисање робота
 
 1. У увидима о корисницима идите на **Администратор** > **Одредишта за извоз**.
-1. На плочици Microsoft Teams изаберите **Поставити**.
+1. На плочици Microsoft Teams изаберите **Подеси**.
 1. Преусмерени сте на област **Апликације** у услузи Teams. Такође можете отворити Teams и изабрати **Апликације** у доњем левом углу или га директно [преузети са локације AppSource](https://go.microsoft.com/fwlink/?linkid=2124104).
 1. Потражите **Customer Insights** и изаберите апликацију.
 1. Изаберите **Додај**.
@@ -52,3 +52,6 @@ ms.locfileid: "4406866"
 - Ако ваша организација одржава више Customer Insights окружења у истој организацији, можете да унесете **switchinstance** да бисте изабрали са којим окружењем желите да повежете робота.
 
 - Унесите **помоћ** да бисте видели листу доступних команди за робота.  
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

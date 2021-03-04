@@ -5,16 +5,16 @@ ms.date: 09/29/2020
 ms.reviewer: adkuppa
 ms.service: customer-insights
 ms.subservice: audience-insights
-ms.topic: conceptual
+ms.topic: how-to
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: 8a170cc5b64b4b383501021232c83948e838a0e2
-ms.sourcegitcommit: cf9b78559ca189d4c2086a66c879098d56c0377a
+ms.openlocfilehash: d51a7efa5fd9f7336d1662500eb804a674738493
+ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
 ms.translationtype: HT
 ms.contentlocale: sr-Cyrl-RS
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "4406857"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5267791"
 ---
 # <a name="connect-to-a-power-query-data-source"></a>Повезивање са Power Query извором података
 
@@ -28,7 +28,10 @@ Power Query нуди широк скуп конектора за унос под
 
 1. Одаберите метод **Увоза података** и изаберите **Следеће**.
 
-1. Наведите **Назив** за извор података, па изаберите **Следеће** како бисте креирали извор података.
+1. Наведите **Назив** за извор података, па изаберите **Следеће** како бисте креирали извор података. Смернице за називе: 
+   - Започните словом.
+   - Користите само слова и бројеве. Посебни знакови и размаци нису дозвољени.
+   - Користите између 3 и 64 знака.
 
 1. Одаберите један од [доступних конектора](#available-power-query-data-sources). За овај пример бирамо **Текст/CSV** конектор.
 
@@ -77,3 +80,6 @@ Power Query нуди широк скуп конектора за унос под
 3. Примените промене и трансформације у дијалогу **Power Query – уређивање упита** као што је описано у одељку [Креирање новог извора података](#create-a-new-data-source).
 
 4. Како бисте сачували измене, изаберите **Сачувај** у решењу Power Query након што довршите уређивања.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

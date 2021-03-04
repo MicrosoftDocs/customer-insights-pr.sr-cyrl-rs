@@ -4,17 +4,17 @@ description: Увоз података из Common Data Service управљан
 ms.date: 09/29/2020
 ms.service: customer-insights
 ms.subservice: audience-insights
-ms.topic: conceptual
+ms.topic: how-to
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
 ms.reviewer: adkuppa
-ms.openlocfilehash: 029857e2bbb5f6357a5c01138ceaad78887b7518
-ms.sourcegitcommit: 6a6df62fa12dcb9bd5f5a39cc3ee0e2b3988184b
+ms.openlocfilehash: 18b6cd3fdaf5b738877a73b520b91dbc6ded40de
+ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
 ms.translationtype: HT
 ms.contentlocale: sr-Cyrl-RS
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "4643416"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5267832"
 ---
 # <a name="connect-to-data-in-a-common-data-service-managed-data-lake"></a>Повежите се са подацима у Common Data Service управљаном језеру података
 
@@ -34,7 +34,10 @@ ms.locfileid: "4643416"
 
 3. Изаберите **Повезивање са услугом Common Data Service** и изаберите **Следеће**.
 
-4. Унесите **Назив** извора података и изаберите **Следеће**.
+4. Унесите **Назив** извора података и изаберите **Следеће**. Смернице за називе: 
+   - Започните словом.
+   - Користите само слова и бројеве. Посебни знакови и размаци нису дозвољени.
+   - Користите између 3 и 64 знака.
 
 5. Наведите **Адресу сервера** за вашу Common Data Service организацију и изаберите **Пријавите се**.
 
@@ -65,3 +68,6 @@ ms.locfileid: "4643416"
 3. Изаберите опцију **Уреди** са листе.
 
 4. Изаберите додатне ентитете с доступне листе ентитета и изаберите **Сачувај**.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

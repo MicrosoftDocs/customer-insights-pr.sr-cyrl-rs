@@ -5,16 +5,16 @@ ms.date: 06/05/2020
 ms.reviewer: philk
 ms.service: customer-insights
 ms.subservice: audience-insights
-ms.topic: conceptual
+ms.topic: how-to
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: 8260e3b5e529f3d54678d9d6e11aebb2795e27fd
-ms.sourcegitcommit: 6a6df62fa12dcb9bd5f5a39cc3ee0e2b3988184b
+ms.openlocfilehash: c839f9dc7e403412c0e3d936392d45a43bc63545
+ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
 ms.translationtype: HT
 ms.contentlocale: sr-Cyrl-RS
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "4643701"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5269992"
 ---
 # <a name="connector-for-facebook-ads-manager-preview"></a>Конектор за Facebook менаџер огласа (верзија за преглед)
 
@@ -62,7 +62,16 @@ ms.locfileid: "4643701"
 
 Можете да [извезете податке на захтев](export-destinations.md). Извоз ће се такође покренути са сваким [планираним освежавањем](system.md#schedule-tab).
 
+## <a name="known-limitations"></a>Позната ограничења
+
+- До 10 милиона профила купаца по извозу у менаџеру Facebook огласа 
+- Извоз у менаџер Facebook огласа је ограничен на сегменте
+- Извоз сегмената са укупно 10 милиона профила може трајати до 90 минута док се не заврши
+
 ## <a name="data-privacy-and-compliance"></a>Приватност података и усаглашеност
 
 Када омогућите да Dynamics 365 Customer Insights преноси податке у менаџер Facebook огласа, дозвољавате пренос података изван границе усклађености за Dynamics 365 Customer Insights, укључујући потенцијално осетљиве податке као што су лични подаци. Microsoft ће преносити такве податке по вашем упутству, али ви сте одговорни за то да Facebook огласи испуњавају све обавезе приватности или безбедности које имате. За више информација погледајте [Изјаву о приватности компаније Microsoft](https://go.microsoft.com/fwlink/?linkid=396732).
 Dynamics 365 Customer Insights администратор може у сваком тренутку да уклони одредиште за извоз како бисте престали са коришћењем ове функционалности.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

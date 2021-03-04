@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: 295c372bb452e7c40aa950506dc494d4a2de1108
-ms.sourcegitcommit: cf9b78559ca189d4c2086a66c879098d56c0377a
+ms.openlocfilehash: 292da986faa7f62d8aa73ed7214075612178e2e1
+ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
 ms.translationtype: HT
 ms.contentlocale: sr-Cyrl-RS
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "4406879"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5269899"
 ---
 # <a name="relationships-between-entities"></a>Релације између ентитета
 
@@ -28,8 +28,8 @@ ms.locfileid: "4406879"
 > ![Креирање релације](media/relationships-entities-merge.png "Креирање релације")
 
 - **Релација *CustomerToContact*** је креирана између ентитета Клијент и контактног ентитета. Ентитет Клијент добија кључно поље **Contact_contactId** да ступи у релацију са пољем кључа ентитета Контакт **contactId**.
-- **Релација _CustomerToContact_** је креирана између ентитета Клијент и ентитета Пословни контакт. Ентитет Клијент добија поље кључа **Account_accountId** да ступи у релацију са пољем кључа ентитета Пословни контакт **accountId**.
-- **Релација _CustomerToWebAccount_** је креирана између ентитета Клијент и ентитета WebAccount. Ентитет Клијент добија поље кључа **WebAccount_webaccountId** да ступи у релацију са пољем кључа ентитета WebAccount **webaccountId**.
+- **Релација *CustomerToContact*** је креирана између ентитета Клијент и ентитета Пословни контакт. Ентитет Клијент добија поље кључа **Account_accountId** да ступи у релацију са пољем кључа ентитета Пословни контакт **accountId**.
+- **Релација *CustomerToWebAccount*** је креирана између ентитета Клијент и ентитета WebAccount. Ентитет Клијент добија поље кључа **WebAccount_webaccountId** да ступи у релацију са пољем кључа ентитета WebAccount **webaccountId**.
 
 ## <a name="create-a-relationship"></a>Креирање односа
 
@@ -69,3 +69,6 @@ ms.locfileid: "4406879"
 ## <a name="next-step"></a>Следећи корак
 
 Системске и прилагођене релације се користе за креирање сегмената на основу више извора података који се више не бирају. За више информација, погледајте чланак [Сегменти](segments.md).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

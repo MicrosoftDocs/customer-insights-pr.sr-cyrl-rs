@@ -5,16 +5,16 @@ ms.date: 09/21/2020
 ms.reviewer: sthe
 ms.service: customer-insights
 ms.subservice: audience-insights
-ms.topic: conceptual
+ms.topic: how-to
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: d497ca779a337c512a7254524f597cff226bcb45
-ms.sourcegitcommit: cf9b78559ca189d4c2086a66c879098d56c0377a
+ms.openlocfilehash: 0607a4644ac7d7beb19e4faecf012efcd197d48c
+ms.sourcegitcommit: 0260ed244b97c2fd0be5e9a084c4c489358e8d4f
 ms.translationtype: HT
 ms.contentlocale: sr-Cyrl-RS
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "4406838"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "5477106"
 ---
 # <a name="connector-for-power-bi-preview"></a>Конектор за Power BI (преглед)
 
@@ -31,7 +31,7 @@ ms.locfileid: "4406838"
 
 1. Изаберите **Прикажи још** и потражите **Dynamics 365 Customer Insights**
 
-1. Изаберите резултат и изаберите **Повежи се**.
+1. Изаберите **Повежи се**.
 
 1. **Пријавите се** са истим организационим налогом који користите за Customer Insights и изаберите **Повежи се**.
    > [!NOTE]
@@ -52,3 +52,22 @@ Customer Insights конектор за Power BI је дизајниран да 
 ### <a name="work-with-a-subset-of-data"></a>Рад са подскупом података
 
 Размислите о раду са подскупом података. На пример, можете да креирате[ сегменте](segments.md) уместо да извезе све евиденције клијената у Power BI.
+
+## <a name="troubleshooting"></a>Решавање проблема
+
+### <a name="customer-insights-environment-doesnt-show-in-power-bi"></a>Customer Insights окружење се не приказује у услузи Power BI
+
+Окружења која имају више од једне [релације](relationships.md) дефинисане између два идентична ентитета у увидима о корисницима неће бити доступна у Power BI конектору.
+
+Можете идентификовати и уклонити дупликате релација.
+
+1. У увидима о корисницима, идите на **Подаци** > **Релације** на окружење које вам недостаје у услузи Power BI.
+2. Идентификујте дупликате релација:
+   - Проверите да ли постоји више релација дефинисаних између иста два ентитета.
+   - Проверите да ли постоји релација креирана између два ентитета која су оба укључена у процес обједињавања. Дефинисана је имплицитна релација између свих ентитета укључених у процес уједињења.
+3. Уклоните све препознате дупликате релација.
+
+Када уклоните дупликате релација, покушајте да поново конфигуришете Power BI конектор. Окружење би требало да буде доступно већ сада.
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]
+

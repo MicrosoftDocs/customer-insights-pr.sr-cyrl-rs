@@ -4,16 +4,16 @@ description: Радите са прилагођеним моделима из Az
 ms.date: 11/19/2020
 ms.reviewer: zacook
 ms.service: dynamics-365-ai
-ms.topic: article
+ms.topic: tutorial
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: ef248086b30b870359970529a7bfb37792be62d5
-ms.sourcegitcommit: a9b2cf598f256d07a48bba8617347ee90024a1dd
+ms.openlocfilehash: 34489faaecc5da1ce3dd68d799b3e0e0d9672ab7
+ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
 ms.translationtype: HT
 ms.contentlocale: sr-Cyrl-RS
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "4668921"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5267252"
 ---
 # <a name="custom-machine-learning-models"></a>Прилагођени модели машинског учења
 
@@ -46,15 +46,15 @@ ms.locfileid: "4668921"
 
 1. Изаберите Machine Learning Studio (класична) веб-услугу или канал Azure машинског учења у падајућем менију **Веб-услуга која садржи ваш модел**. Затим изаберите **Следеће**.
    - Сазнајте више о [објављивању веб-услуге у Machine Learning Studio (класичном)](https://docs.microsoft.com/azure/machine-learning/studio/deploy-a-machine-learning-web-service#deploy-it-as-a-new-web-service)
-   - Сазнајте више о [објављивању канала у Azure машинском учењу помоћу дизајнера](https://docs.microsoft.com/azure/machine-learning/concept-ml-pipelines#building-pipelines-with-the-designer) или [ SDK-а](https://docs.microsoft.com/azure/machine-learning/concept-ml-pipelines#building-pipelines-with-the-python-sdk). 
-     > [!NOTE]
-     > Ваш канал мора бити објављен под [крајњом тачком канала](https://docs.microsoft.com/azure/machine-learning/how-to-run-batch-predictions-designer#submit-a-pipeline-run).
+   - Сазнајте више о [објављивању канала у Azure машинском учењу помоћу дизајнера](https://docs.microsoft.com/azure/machine-learning/concept-ml-pipelines#building-pipelines-with-the-designer) или [ SDK-а](https://docs.microsoft.com/azure/machine-learning/concept-ml-pipelines#building-pipelines-with-the-python-sdk). Ваш канал мора бити објављен под [крајњом тачком канала](https://docs.microsoft.com/azure/machine-learning/how-to-run-batch-predictions-designer#submit-a-pipeline-run).
 
 1. За сваки **Унос веб-услуге**, изаберите одговарајући **Ентитет** из увида о корисницима и изаберите **Даље**.
+   > [!NOTE]
+   > Ток посла прилагођеног модела примењиваће хеуристику за мапирање поља за унос веб-услуга у атрибуте ентитета на основу имена и типа података поља. Видећете грешку ако поље веб-услуге не може да се преслика на ентитет.
 
    > [!div class="mx-imgBorder"]
    > ![Конфигурисање тока посла](media/intelligence-screen2-updated.png "Конфигурисање тока посла")
-
+   
 1. У кораку **Излазни параметри модела** поставите следећа својства:
    - Machine Learning Studio (класични)
       1. Унесите излаз **Назив ентитета** у који желите да се преносе излазни резултати веб-услуга.
@@ -112,3 +112,6 @@ ms.locfileid: "4668921"
 1. Изаберите **Избриши** и потврдите брисање.
 
 Ваш ток посла ће бити избрисан. [Ентитет](entities.md) који је креиран када сте креирали ток посла опстаје и може се прегледати са странице **Ентитети**.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

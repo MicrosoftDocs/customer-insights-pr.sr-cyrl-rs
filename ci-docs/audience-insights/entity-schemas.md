@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: 2cf01029ef6b64fe566022d09ce65bca3603189c
-ms.sourcegitcommit: 6a6df62fa12dcb9bd5f5a39cc3ee0e2b3988184b
+ms.openlocfilehash: 9e7a6e944d37d25f4c25846644278b39b3ddd08e
+ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
 ms.translationtype: HT
 ms.contentlocale: sr-Cyrl-RS
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "4643926"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5269302"
 ---
 # <a name="entity-schemas-in-common-data-model"></a>Шеме ентитета у платформи Common Data Model
 
@@ -45,3 +45,6 @@ ms.locfileid: "4643926"
 Можете прегледати ентитете у [Навигатору Common Data Model ентитета](https://microsoft.github.io/CDM/). Изаберите дугме **Учитај са GitHub-а!** и идите до **foundationCommon** > **crmCommon** > **решења** > **customerInsights**, где ћете наћи листу Customer Insights ентитета и њихове дефиниције.
 > [!div class="mx-imgBorder"]
 > ![Навигатор CDM ентитета који приказује ентитет CustomerActivity](media/CDM-entity-navigator.png "Навигатор CDM ентитета који приказује ентитет CustomerActivity")
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

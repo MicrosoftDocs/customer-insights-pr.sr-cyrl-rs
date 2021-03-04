@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: 5a03e916676800afdd8692da865a1060952d5c4f
-ms.sourcegitcommit: b50c754481d0af6d0cf4b550775d7b31d95846ef
+ms.openlocfilehash: 966db1a22e7dece1bcd89733880bce059151157f
+ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
 ms.translationtype: HT
 ms.contentlocale: sr-Cyrl-RS
-ms.lasthandoff: 12/06/2020
-ms.locfileid: "4689148"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5267542"
 ---
 # <a name="work-with-customer-insights-apis"></a>Радите са Customer Insights API-јем
 
@@ -140,3 +140,6 @@ HTTP одговор ће се ускоро појавити испод.
 
 1. Одговор ће вероватно бити типа `object` јер метод може да врати више типова (на пример, `IList<InstanceInfo>` и `ApiErrorResult`). Да бисте проверили тип повратка, можете експлицитно конвертовати објекте у типове одговора наведене на [страници са детаљима API-ја](https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights) за ту операцију.    
    Ако су потребне додатне информације о захтеву, користите **http методе порука** за приступ необрађеном објекту одговора.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

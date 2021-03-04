@@ -1,20 +1,20 @@
 ---
 title: Извезите Customer Insights податке у Dynamics 365 Sales
 description: Сазнајте како да конфигуришете везу са услугом Dynamics 365 Sales.
-ms.date: 08/21/2020
+ms.date: 02/01/2021
 ms.reviewer: philk
 ms.service: customer-insights
 ms.subservice: audience-insights
-ms.topic: conceptual
+ms.topic: how-to
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: af0824e69dfdf620a0ac756e32a9bd3dd85e5151
-ms.sourcegitcommit: 6a6df62fa12dcb9bd5f5a39cc3ee0e2b3988184b
+ms.openlocfilehash: 0013c4e6a96401d6cdbea55ed38f85f5e10dcc56
+ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
 ms.translationtype: HT
 ms.contentlocale: sr-Cyrl-RS
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "4643836"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5269026"
 ---
 # <a name="connector-for-dynamics-365-sales-preview"></a>Конектор за Dynamics 365 Sales (преглед)
 
@@ -24,7 +24,10 @@ ms.locfileid: "4643836"
 
 ## <a name="prerequisite"></a>Предуслов
 
-Записи контаката [из Dynamics 365 Sales унетих помоћу услуге Common Data Service](connect-power-query.md).
+1. Записи контаката морају бити присутни у услузи Dynamics 365 Sales да бисте могли да извезете сегмент из услуге Customer Insights у Sales. Прочитајте више о томе како се уносе контакти у [Dynamics 365 Sales помоћу услуге Common Data Services](connect-power-query.md).
+
+   > [!NOTE]
+   > Извоз сегмената из увида о корисницима у Sales неће креирати нове записе контаката у инстанцама услуге Sales. Евиденција контаката из услуге Sales мора се унети у увид о корисницима и користити као извор података. Такође их треба укључити у јединствени ентитет клијента да би се ID-ови клијената мапирали у ID-ове контаката да би сегменти могли да се извезу.
 
 ## <a name="configure-the-connector-for-sales"></a>Конфигуришите конектор за Sales
 
@@ -49,3 +52,6 @@ ms.locfileid: "4643836"
 ## <a name="export-the-data"></a>Извоз података
 
 Можете да [извезете податке на захтев](export-destinations.md). Извоз ће се такође покренути са сваким [планираним освежавањем](system.md#schedule-tab).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]
