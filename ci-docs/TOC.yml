@@ -14,10 +14,10 @@
       href: 'https://dynamics.microsoft.com/get-started/?appname=customerinsights'
     - name: Нове и ажуриране функције
       href: audience-insights/whats-new-audience-insights.md
-    - name: Први кораци
+    - name: Направите ново окружење
+      href: audience-insights/home.md
+    - name: Упознавање модула
       items:
-        - name: Направите ново окружење
-          href: audience-insights/home.md
         - name: Унесите податке
           href: 'https://docs.microsoft.com/learn/modules/ingest-data-customer-insights/'
         - name: Креирајте уједначени профил клијента
@@ -44,7 +44,7 @@
           href: audience-insights/entities.md
     - name: Уједначавање података
       items:
-        - name: Преглед уједначавања
+        - name: Преглед уједначавања података
           href: audience-insights/data-unification.md
         - name: Ентитети и атрибути мапе
           href: audience-insights/map-entities.md
@@ -80,6 +80,8 @@
           href: audience-insights/segments.md
         - name: Добијте увид у сегменте
           href: audience-insights/segment-insights.md
+        - name: Погледајте предложене сегменте
+          href: audience-insights/suggested-segments.md
         - name: Пронађи сличне клијенте
           href: audience-insights/find-similar-customer-segments.md
         - name: Дефинисање мера и KPI-ова
@@ -96,6 +98,12 @@
           href: audience-insights/predict-transactional-churn.md
         - name: Пример водича за предвиђање губитка трансакција
           href: audience-insights/sample-guide-predict-transactional-churn.md
+        - name: Предвидите трајну вредност клијента (CLV)
+          href: audience-insights/predict-customer-lifetime-value.md
+        - name: Предвидите препоруке за производе
+          href: audience-insights/predict-product-recommendation.md
+        - name: Пример водича за предвиђање препорука производа
+          href: audience-insights/sample-guide-predict-product-recommendation.md
         - name: Примена прилагођених модела машинског учења
           href: audience-insights/custom-models.md
         - name: Експерименти са Azure машинским учењем
@@ -104,10 +112,14 @@
           href: audience-insights/machine-learning-studio-experiments.md
     - name: Опције извоза
       items:
-        - name: Откривање одредишта за извоз
+        - name: Преглед одредишта за извоз
           href: audience-insights/export-destinations.md
+        - name: Autopilot
+          href: audience-insights/export-autopilot.md
         - name: Azure Blob Storage
           href: audience-insights/export-azure-blob-storage.md
+        - name: Azure Data Lake Storage Gen2
+          href: audience-insights/export-azure-data-lake-storage-gen2.md
         - name: DotDigital
           href: audience-insights/export-dotdigital.md
         - name: Dynamics 365 Customer Service (програмски додатак)
@@ -136,6 +148,8 @@
           href: audience-insights/export-power-apps.md
         - name: Power Automate
           href: audience-insights/export-power-automate.md
+        - name: SendGrid
+          href: audience-insights/export-sendgrid.md
         - name: SFTP
           href: audience-insights/export-sftp.md
     - name: Администрација
@@ -152,6 +166,8 @@
           href: audience-insights/supported-languages.md
     - name: Проширивост
       items:
+        - name: Интегришите веб-податке из увида у ангажовање
+          href: audience-insights/integrate-engagement-insights.md
         - name: Преглед шема ентитета на платформи Common Data Model
           href: audience-insights/entity-schemas.md
         - name: Рад са API-јима
@@ -170,10 +186,6 @@
       href: engagement-insights/overview.md
     - name: Бесплатна пробна верзија
       href: 'https://pi.dynamics.com/'
-    - name: Брзи почетак
-      items:
-        - name: Брзи почетак за јавни преглед
-          href: engagement-insights/quickstart.md
     - name: Први кораци
       items:
         - name: Први кораци
@@ -223,4 +235,4 @@
     - name: Ограничења услуге
       href: engagement-insights/quotas.md
 - name: Обратите се подршци
-  href: 'https://go.microsoft.com/fwlink/?linkid=2145734'
+  href: 'https://admin.powerplatform.microsoft.com/support'

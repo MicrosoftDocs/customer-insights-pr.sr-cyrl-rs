@@ -1,51 +1,57 @@
 ---
 title: Извезите Customer Insights податке у Dynamics 365 Sales
 description: Сазнајте како да конфигуришете везу са услугом Dynamics 365 Sales.
-ms.date: 08/21/2020
+ms.date: 02/01/2021
 ms.reviewer: philk
 ms.service: customer-insights
 ms.subservice: audience-insights
-ms.topic: conceptual
+ms.topic: how-to
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: af0824e69dfdf620a0ac756e32a9bd3dd85e5151
-ms.sourcegitcommit: 6a6df62fa12dcb9bd5f5a39cc3ee0e2b3988184b
+ms.openlocfilehash: 0013c4e6a96401d6cdbea55ed38f85f5e10dcc56
+ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
 ms.translationtype: HT
 ms.contentlocale: sr-Cyrl-RS
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "4643836"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5269026"
 ---
-# <a name="connector-for-dynamics-365-sales-preview"></a><span data-ttu-id="887d9-103">Конектор за Dynamics 365 Sales (преглед)</span><span class="sxs-lookup"><span data-stu-id="887d9-103">Connector for Dynamics 365 Sales (preview)</span></span>
+# <a name="connector-for-dynamics-365-sales-preview"></a><span data-ttu-id="65fb5-103">Конектор за Dynamics 365 Sales (преглед)</span><span class="sxs-lookup"><span data-stu-id="65fb5-103">Connector for Dynamics 365 Sales (preview)</span></span>
 
 [!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
 
-<span data-ttu-id="887d9-104">Користите податке о клијентима да бисте креирали маркетиншке спискове, пратили токове посла и слали промоције са услугом Dynamics 365 Sales.</span><span class="sxs-lookup"><span data-stu-id="887d9-104">Use your customer data to create marketing lists, follow up workflows, and send out promotions with Dynamics 365 Sales.</span></span>
+<span data-ttu-id="65fb5-104">Користите податке о клијентима да бисте креирали маркетиншке спискове, пратили токове посла и слали промоције са услугом Dynamics 365 Sales.</span><span class="sxs-lookup"><span data-stu-id="65fb5-104">Use your customer data to create marketing lists, follow up workflows, and send out promotions with Dynamics 365 Sales.</span></span>
 
-## <a name="prerequisite"></a><span data-ttu-id="887d9-105">Предуслов</span><span class="sxs-lookup"><span data-stu-id="887d9-105">Prerequisite</span></span>
+## <a name="prerequisite"></a><span data-ttu-id="65fb5-105">Предуслов</span><span class="sxs-lookup"><span data-stu-id="65fb5-105">Prerequisite</span></span>
 
-<span data-ttu-id="887d9-106">Записи контаката [из Dynamics 365 Sales унетих помоћу услуге Common Data Service](connect-power-query.md).</span><span class="sxs-lookup"><span data-stu-id="887d9-106">Contact records [from Dynamics 365 Sales ingested using Common Data Service](connect-power-query.md).</span></span>
+1. <span data-ttu-id="65fb5-106">Записи контаката морају бити присутни у услузи Dynamics 365 Sales да бисте могли да извезете сегмент из услуге Customer Insights у Sales.</span><span class="sxs-lookup"><span data-stu-id="65fb5-106">Contact records must be present in Dynamics 365 Sales before you can export a segment from Customer Insights to Sales.</span></span> <span data-ttu-id="65fb5-107">Прочитајте више о томе како се уносе контакти у [Dynamics 365 Sales помоћу услуге Common Data Services](connect-power-query.md).</span><span class="sxs-lookup"><span data-stu-id="65fb5-107">Read more on how to ingest contacts in [Dynamics 365 Sales using Common Data Services](connect-power-query.md).</span></span>
 
-## <a name="configure-the-connector-for-sales"></a><span data-ttu-id="887d9-107">Конфигуришите конектор за Sales</span><span class="sxs-lookup"><span data-stu-id="887d9-107">Configure the connector for Sales</span></span>
+   > [!NOTE]
+   > <span data-ttu-id="65fb5-108">Извоз сегмената из увида о корисницима у Sales неће креирати нове записе контаката у инстанцама услуге Sales.</span><span class="sxs-lookup"><span data-stu-id="65fb5-108">Exporting segments from audience insights to Sales will not create new contact records in the Sales instances.</span></span> <span data-ttu-id="65fb5-109">Евиденција контаката из услуге Sales мора се унети у увид о корисницима и користити као извор података.</span><span class="sxs-lookup"><span data-stu-id="65fb5-109">The contact records from Sales must be ingested in audience insights and used as a data source.</span></span> <span data-ttu-id="65fb5-110">Такође их треба укључити у јединствени ентитет клијента да би се ID-ови клијената мапирали у ID-ове контаката да би сегменти могли да се извезу.</span><span class="sxs-lookup"><span data-stu-id="65fb5-110">They also need to be included in the unified Customer entity to map customer IDs to contact IDs before segments can be exported.</span></span>
 
-1. <span data-ttu-id="887d9-108">У увидима о корисницима идите на **Администратор** > **Одредишта за извоз**.</span><span class="sxs-lookup"><span data-stu-id="887d9-108">In audience insights, go to **Admin** > **Export destinations**.</span></span>
+## <a name="configure-the-connector-for-sales"></a><span data-ttu-id="65fb5-111">Конфигуришите конектор за Sales</span><span class="sxs-lookup"><span data-stu-id="65fb5-111">Configure the connector for Sales</span></span>
 
-1. <span data-ttu-id="887d9-109">У одељку **Dynamics 365 Sales** изаберите **Подеси**.</span><span class="sxs-lookup"><span data-stu-id="887d9-109">Under **Dynamics 365 Sales**, select **Set up**.</span></span>
+1. <span data-ttu-id="65fb5-112">У увидима о корисницима идите на **Администратор** > **Одредишта за извоз**.</span><span class="sxs-lookup"><span data-stu-id="65fb5-112">In audience insights, go to **Admin** > **Export destinations**.</span></span>
 
-1. <span data-ttu-id="887d9-110">Дајте одредишту за извоз препознатљиво име у пољу **Име за приказ**.</span><span class="sxs-lookup"><span data-stu-id="887d9-110">Give your export destination a recognizable name in the **Display name** field.</span></span>
+1. <span data-ttu-id="65fb5-113">У одељку **Dynamics 365 Sales** изаберите **Подеси**.</span><span class="sxs-lookup"><span data-stu-id="65fb5-113">Under **Dynamics 365 Sales**, select **Set up**.</span></span>
 
-1. <span data-ttu-id="887d9-111">Унесите URL организације за Sales у поље **Адреса сервера**.</span><span class="sxs-lookup"><span data-stu-id="887d9-111">Enter your organization's Sales URL in the **Server address** field.</span></span>
+1. <span data-ttu-id="65fb5-114">Дајте одредишту за извоз препознатљиво име у пољу **Име за приказ**.</span><span class="sxs-lookup"><span data-stu-id="65fb5-114">Give your export destination a recognizable name in the **Display name** field.</span></span>
 
-1. <span data-ttu-id="887d9-112">У одељку **Администраторски налог на серверу**, изаберите **Пријавите се** и изаберите Dynamics 365 Sales налог.</span><span class="sxs-lookup"><span data-stu-id="887d9-112">In the **Server admin account** section, select **Sign in** and choose a Dynamics 365 Sales account.</span></span>
+1. <span data-ttu-id="65fb5-115">Унесите URL организације за Sales у поље **Адреса сервера**.</span><span class="sxs-lookup"><span data-stu-id="65fb5-115">Enter your organization's Sales URL in the **Server address** field.</span></span>
 
-1. <span data-ttu-id="887d9-113">Мапирајте поље корисничког ID-а са Dynamics 365 ID-ом контакта.</span><span class="sxs-lookup"><span data-stu-id="887d9-113">Map a customer ID field to the Dynamics 365 Contact ID.</span></span>
+1. <span data-ttu-id="65fb5-116">У одељку **Администраторски налог на серверу**, изаберите **Пријавите се** и изаберите Dynamics 365 Sales налог.</span><span class="sxs-lookup"><span data-stu-id="65fb5-116">In the **Server admin account** section, select **Sign in** and choose a Dynamics 365 Sales account.</span></span>
 
-1. <span data-ttu-id="887d9-114">Изаберите **Следеће**.</span><span class="sxs-lookup"><span data-stu-id="887d9-114">Select **Next**.</span></span>
+1. <span data-ttu-id="65fb5-117">Мапирајте поље корисничког ID-а са Dynamics 365 ID-ом контакта.</span><span class="sxs-lookup"><span data-stu-id="65fb5-117">Map a customer ID field to the Dynamics 365 Contact ID.</span></span>
 
-1. <span data-ttu-id="887d9-115">Изаберите један или више сегмената.</span><span class="sxs-lookup"><span data-stu-id="887d9-115">Choose one or more segments.</span></span>
+1. <span data-ttu-id="65fb5-118">Изаберите **Следеће**.</span><span class="sxs-lookup"><span data-stu-id="65fb5-118">Select **Next**.</span></span>
 
-1. <span data-ttu-id="887d9-116">Изаберите ставку **Сачувај**.</span><span class="sxs-lookup"><span data-stu-id="887d9-116">Select **Save**.</span></span>
+1. <span data-ttu-id="65fb5-119">Изаберите један или више сегмената.</span><span class="sxs-lookup"><span data-stu-id="65fb5-119">Choose one or more segments.</span></span>
 
-## <a name="export-the-data"></a><span data-ttu-id="887d9-117">Извоз података</span><span class="sxs-lookup"><span data-stu-id="887d9-117">Export the data</span></span>
+1. <span data-ttu-id="65fb5-120">Изаберите ставку **Сачувај**.</span><span class="sxs-lookup"><span data-stu-id="65fb5-120">Select **Save**.</span></span>
 
-<span data-ttu-id="887d9-118">Можете да [извезете податке на захтев](export-destinations.md).</span><span class="sxs-lookup"><span data-stu-id="887d9-118">You can [export data on demand](export-destinations.md).</span></span> <span data-ttu-id="887d9-119">Извоз ће се такође покренути са сваким [планираним освежавањем](system.md#schedule-tab).</span><span class="sxs-lookup"><span data-stu-id="887d9-119">The export will also run with every [scheduled refresh](system.md#schedule-tab).</span></span>
+## <a name="export-the-data"></a><span data-ttu-id="65fb5-121">Извоз података</span><span class="sxs-lookup"><span data-stu-id="65fb5-121">Export the data</span></span>
+
+<span data-ttu-id="65fb5-122">Можете да [извезете податке на захтев](export-destinations.md).</span><span class="sxs-lookup"><span data-stu-id="65fb5-122">You can [export data on demand](export-destinations.md).</span></span> <span data-ttu-id="65fb5-123">Извоз ће се такође покренути са сваким [планираним освежавањем](system.md#schedule-tab).</span><span class="sxs-lookup"><span data-stu-id="65fb5-123">The export will also run with every [scheduled refresh](system.md#schedule-tab).</span></span>
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]
