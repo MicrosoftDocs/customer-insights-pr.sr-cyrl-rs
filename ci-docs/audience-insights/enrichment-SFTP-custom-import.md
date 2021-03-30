@@ -2,55 +2,55 @@
 title: Обогаћивање уз SFTP прилагођени увоз
 description: Опште информације о обогаћивању SFTP прилагођеног увоза.
 ms.date: 11/18/2020
-ms.reviewer: kishorem
+ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
-author: jdahl
-ms.author: mhart
+author: jodahlMSFT
+ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: f25dcc08d96d36507e47af0d7b184003ae095819
-ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
+ms.openlocfilehash: d9e095ef793cbd25415864f76a541dce68fafe47
+ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
 ms.translationtype: HT
 ms.contentlocale: sr-Cyrl-RS
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5269624"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "5595873"
 ---
-# <a name="enrich-customer-profiles-with-custom-data-preview"></a><span data-ttu-id="5c5dc-103">Обогатите профиле клијената уз прилагођене податке (верзија за преглед)</span><span class="sxs-lookup"><span data-stu-id="5c5dc-103">Enrich customer profiles with custom data (preview)</span></span>
+# <a name="enrich-customer-profiles-with-custom-data-preview"></a><span data-ttu-id="0b30f-103">Обогатите профиле клијената уз прилагођене податке (верзија за преглед)</span><span class="sxs-lookup"><span data-stu-id="0b30f-103">Enrich customer profiles with custom data (preview)</span></span>
 
-<span data-ttu-id="5c5dc-104">Secure File Transfer Protocol (SFTP) прилагођени увоз вам омогућава да увезете податке који не морају да пролазе кроз процес обједињавања података.</span><span class="sxs-lookup"><span data-stu-id="5c5dc-104">Secure File Transfer Protocol(SFTP) custom import enables you to import data that doesn't have to go through the process of data unification.</span></span> <span data-ttu-id="5c5dc-105">То је флексибилан, сигуран и лак начин уноса података.</span><span class="sxs-lookup"><span data-stu-id="5c5dc-105">It's a flexible, secure, and easy way to bring in your data.</span></span> <span data-ttu-id="5c5dc-106">SFTP прилагођени увоз се може користити у комбинацији са [SFTP извозом](export-sftp.md) који вам омогућава извоз података о профилу клијената потребних за обогаћивање.</span><span class="sxs-lookup"><span data-stu-id="5c5dc-106">SFTP custom import can be used in combination with [SFTP export](export-sftp.md) that lets you export the customer profile data that is needed for enrichment.</span></span> <span data-ttu-id="5c5dc-107">Подаци се затим могу обрадити, обогатити и SFTP прилагођени увоз може се користити за враћање обогаћених података у могућност увида о корисницима услуге Dynamics 365 Customer Insights.</span><span class="sxs-lookup"><span data-stu-id="5c5dc-107">The data can then be processed, enriched, and SFTP custom import can be used to bring the enriched data back to the audience insights capability of Dynamics 365 Customer Insights.</span></span>
+<span data-ttu-id="0b30f-104">Secure File Transfer Protocol (SFTP) прилагођени увоз вам омогућава да увезете податке који не морају да пролазе кроз процес обједињавања података.</span><span class="sxs-lookup"><span data-stu-id="0b30f-104">Secure File Transfer Protocol(SFTP) custom import enables you to import data that doesn't have to go through the process of data unification.</span></span> <span data-ttu-id="0b30f-105">То је флексибилан, сигуран и лак начин уноса података.</span><span class="sxs-lookup"><span data-stu-id="0b30f-105">It's a flexible, secure, and easy way to bring in your data.</span></span> <span data-ttu-id="0b30f-106">SFTP прилагођени увоз се може користити у комбинацији са [SFTP извозом](export-sftp.md) који вам омогућава извоз података о профилу клијената потребних за обогаћивање.</span><span class="sxs-lookup"><span data-stu-id="0b30f-106">SFTP custom import can be used in combination with [SFTP export](export-sftp.md) that lets you export the customer profile data that is needed for enrichment.</span></span> <span data-ttu-id="0b30f-107">Подаци се затим могу обрадити, обогатити и SFTP прилагођени увоз може се користити за враћање обогаћених података у могућност увида о корисницима услуге Dynamics 365 Customer Insights.</span><span class="sxs-lookup"><span data-stu-id="0b30f-107">The data can then be processed, enriched, and SFTP custom import can be used to bring the enriched data back to the audience insights capability of Dynamics 365 Customer Insights.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="5c5dc-108">Предуслови</span><span class="sxs-lookup"><span data-stu-id="5c5dc-108">Prerequisites</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="0b30f-108">Предуслови</span><span class="sxs-lookup"><span data-stu-id="0b30f-108">Prerequisites</span></span>
 
-<span data-ttu-id="5c5dc-109">Да бисте конфигурисали SFTP прилагођени увоз, морају бити испуњени следећи предуслови:</span><span class="sxs-lookup"><span data-stu-id="5c5dc-109">To configure SFTP custom import, the following prerequisites must be met:</span></span>
+<span data-ttu-id="0b30f-109">Да бисте конфигурисали SFTP прилагођени увоз, морају бити испуњени следећи предуслови:</span><span class="sxs-lookup"><span data-stu-id="0b30f-109">To configure SFTP custom import, the following prerequisites must be met:</span></span>
 
-- <span data-ttu-id="5c5dc-110">Имате корисничке акредитиве (корисничко име и лозинку) за SFTP локацију одакле ће се подаци увозити.</span><span class="sxs-lookup"><span data-stu-id="5c5dc-110">You have user credentials (user name and password) for the SFTP location where the data that is going to be imported from.</span></span>
-- <span data-ttu-id="5c5dc-111">Имате URL и број порта (обично 22) за STFP хост.</span><span class="sxs-lookup"><span data-stu-id="5c5dc-111">You have the URL and port number (usually 22) for the STFP host.</span></span>
-- <span data-ttu-id="5c5dc-112">Имате име датотеке и локацију датотеке коју треба увести на SFTP хост.</span><span class="sxs-lookup"><span data-stu-id="5c5dc-112">You have the filename and location of the file to be imported on the SFTP host.</span></span>
-- <span data-ttu-id="5c5dc-113">Постоји *model.json* датотека која наводи шему за податке који се увозе.</span><span class="sxs-lookup"><span data-stu-id="5c5dc-113">There's a *model.json* file that specifies the schema for the data that are to be imported.</span></span> <span data-ttu-id="5c5dc-114">Ова датотека мора бити у истом директоријуму као и датотека коју треба увести.</span><span class="sxs-lookup"><span data-stu-id="5c5dc-114">This file must be in the same directory as the file to import.</span></span>
-- <span data-ttu-id="5c5dc-115">Имате [администраторску](permissions.md#administrator) дозволу.</span><span class="sxs-lookup"><span data-stu-id="5c5dc-115">You have [Administrator](permissions.md#administrator) permission.</span></span>
+- <span data-ttu-id="0b30f-110">Имате корисничке акредитиве (корисничко име и лозинку) за SFTP локацију одакле ће се подаци увозити.</span><span class="sxs-lookup"><span data-stu-id="0b30f-110">You have user credentials (user name and password) for the SFTP location where the data that is going to be imported from.</span></span>
+- <span data-ttu-id="0b30f-111">Имате URL и број порта (обично 22) за STFP хост.</span><span class="sxs-lookup"><span data-stu-id="0b30f-111">You have the URL and port number (usually 22) for the STFP host.</span></span>
+- <span data-ttu-id="0b30f-112">Имате име датотеке и локацију датотеке коју треба увести на SFTP хост.</span><span class="sxs-lookup"><span data-stu-id="0b30f-112">You have the filename and location of the file to be imported on the SFTP host.</span></span>
+- <span data-ttu-id="0b30f-113">Постоји *model.json* датотека која наводи шему за податке који се увозе.</span><span class="sxs-lookup"><span data-stu-id="0b30f-113">There's a *model.json* file that specifies the schema for the data that are to be imported.</span></span> <span data-ttu-id="0b30f-114">Ова датотека мора бити у истом директоријуму као и датотека коју треба увести.</span><span class="sxs-lookup"><span data-stu-id="0b30f-114">This file must be in the same directory as the file to import.</span></span>
+- <span data-ttu-id="0b30f-115">Имате [администраторску](permissions.md#administrator) дозволу.</span><span class="sxs-lookup"><span data-stu-id="0b30f-115">You have [Administrator](permissions.md#administrator) permission.</span></span>
 
-## <a name="configuration"></a><span data-ttu-id="5c5dc-116">Конфигурисање</span><span class="sxs-lookup"><span data-stu-id="5c5dc-116">Configuration</span></span>
+## <a name="configuration"></a><span data-ttu-id="0b30f-116">Конфигурисање</span><span class="sxs-lookup"><span data-stu-id="0b30f-116">Configuration</span></span>
 
-1. <span data-ttu-id="5c5dc-117">Идите до картице **Подаци** > **Обогаћивање** и изаберите картицу **Откриј**.</span><span class="sxs-lookup"><span data-stu-id="5c5dc-117">Go to **Data** > **Enrichment** and select the **Discover** tab.</span></span>
+1. <span data-ttu-id="0b30f-117">Идите до картице **Подаци** > **Обогаћивање** и изаберите картицу **Откриј**.</span><span class="sxs-lookup"><span data-stu-id="0b30f-117">Go to **Data** > **Enrichment** and select the **Discover** tab.</span></span>
 
-1. <span data-ttu-id="5c5dc-118">На **плочици SFTP прилагођеног увоза**, изаберите **Обогати моје податке**.</span><span class="sxs-lookup"><span data-stu-id="5c5dc-118">On the **SFTP custom import tile**, select **Enrich my data**.</span></span>
-
-   > [!div class="mx-imgBorder"]
-   > <span data-ttu-id="5c5dc-119">![Плочица SFTP прилагођеног увоза](media/SFTP_Custom_Import_tile.png "Плочица SFTP прилагођеног увоза")</span><span class="sxs-lookup"><span data-stu-id="5c5dc-119">![SFTP Custom Import tile](media/SFTP_Custom_Import_tile.png "SFTP Custom Import tile")</span></span>
-
-1. <span data-ttu-id="5c5dc-120">Изаберите **Започните** и наведите акредитиве и адресу за SFTP сервер.</span><span class="sxs-lookup"><span data-stu-id="5c5dc-120">Select **Get started** and provide the credentials and the address for the SFTP server.</span></span> <span data-ttu-id="5c5dc-121">На пример, sftp://mysftpserver.com:22.</span><span class="sxs-lookup"><span data-stu-id="5c5dc-121">For example, sftp://mysftpserver.com:22.</span></span>
-
-1. <span data-ttu-id="5c5dc-122">Унесите име датотеке која садржи податке и путању до датотеке на SFTP серверу ако није у основној фасцикли.</span><span class="sxs-lookup"><span data-stu-id="5c5dc-122">Enter the name of the file that contains the data and path to the file on the SFTP server if it's not in the root folder.</span></span>
-
-1. <span data-ttu-id="5c5dc-123">Потврдите све уносе избором опције **Повежите се са прилагођеним увозом**.</span><span class="sxs-lookup"><span data-stu-id="5c5dc-123">Confirm all inputs by selecting **Connect to Custom Import**.</span></span>
+1. <span data-ttu-id="0b30f-118">На **плочици SFTP прилагођеног увоза**, изаберите **Обогати моје податке**.</span><span class="sxs-lookup"><span data-stu-id="0b30f-118">On the **SFTP custom import tile**, select **Enrich my data**.</span></span>
 
    > [!div class="mx-imgBorder"]
-   > <span data-ttu-id="5c5dc-124">![Потпалета конфигурације SFTP прилагођеног увоза](media/SFTP_Custom_Import_Configuration_flyout.png "Потпалета конфигурације SFTP прилагођеног увоза")</span><span class="sxs-lookup"><span data-stu-id="5c5dc-124">![SFTP Custom Import Configuration flyout](media/SFTP_Custom_Import_Configuration_flyout.png "SFTP Custom Import Configuration flyout")</span></span>
+   > <span data-ttu-id="0b30f-119">![Плочица SFTP прилагођеног увоза](media/SFTP_Custom_Import_tile.png "Плочица SFTP прилагођеног увоза")</span><span class="sxs-lookup"><span data-stu-id="0b30f-119">![SFTP Custom Import tile](media/SFTP_Custom_Import_tile.png "SFTP Custom Import tile")</span></span>
 
-## <a name="defining-field-mappings"></a><span data-ttu-id="5c5dc-125">Дефинисање мапирања поља</span><span class="sxs-lookup"><span data-stu-id="5c5dc-125">Defining field mappings</span></span> 
+1. <span data-ttu-id="0b30f-120">Изаберите **Започните** и наведите акредитиве и адресу за SFTP сервер.</span><span class="sxs-lookup"><span data-stu-id="0b30f-120">Select **Get started** and provide the credentials and the address for the SFTP server.</span></span> <span data-ttu-id="0b30f-121">На пример, sftp://mysftpserver.com:22.</span><span class="sxs-lookup"><span data-stu-id="0b30f-121">For example, sftp://mysftpserver.com:22.</span></span>
 
-<span data-ttu-id="5c5dc-126">Директоријум који садржи датотеку за увоз на SFTP сервер такође мора садржати *model.json* датотеку.</span><span class="sxs-lookup"><span data-stu-id="5c5dc-126">The directory that contains the file to be imported on the SFTP server must also contain a *model.json* file.</span></span> <span data-ttu-id="5c5dc-127">Ова датотека дефинише шему која ће се користити за увоз података.</span><span class="sxs-lookup"><span data-stu-id="5c5dc-127">This file defines the schema to use for importing the data.</span></span> <span data-ttu-id="5c5dc-128">Шема мора да користи [Common Data Model](https://docs.microsoft.com/common-data-model/) за одређивање мапирања поља.</span><span class="sxs-lookup"><span data-stu-id="5c5dc-128">The schema has to use [the Common Data Model](https://docs.microsoft.com/common-data-model/) to specify the field mapping.</span></span> <span data-ttu-id="5c5dc-129">Једноставан пример датотеке model.json изгледа овако:</span><span class="sxs-lookup"><span data-stu-id="5c5dc-129">A simple example of a model.json file looks like this:</span></span>
+1. <span data-ttu-id="0b30f-122">Унесите име датотеке која садржи податке и путању до датотеке на SFTP серверу ако није у основној фасцикли.</span><span class="sxs-lookup"><span data-stu-id="0b30f-122">Enter the name of the file that contains the data and path to the file on the SFTP server if it's not in the root folder.</span></span>
+
+1. <span data-ttu-id="0b30f-123">Потврдите све уносе избором опције **Повежите се са прилагођеним увозом**.</span><span class="sxs-lookup"><span data-stu-id="0b30f-123">Confirm all inputs by selecting **Connect to Custom Import**.</span></span>
+
+   > [!div class="mx-imgBorder"]
+   > <span data-ttu-id="0b30f-124">![Потпалета конфигурације SFTP прилагођеног увоза](media/SFTP_Custom_Import_Configuration_flyout.png "Потпалета конфигурације SFTP прилагођеног увоза")</span><span class="sxs-lookup"><span data-stu-id="0b30f-124">![SFTP Custom Import Configuration flyout](media/SFTP_Custom_Import_Configuration_flyout.png "SFTP Custom Import Configuration flyout")</span></span>
+
+## <a name="defining-field-mappings"></a><span data-ttu-id="0b30f-125">Дефинисање мапирања поља</span><span class="sxs-lookup"><span data-stu-id="0b30f-125">Defining field mappings</span></span> 
+
+<span data-ttu-id="0b30f-126">Директоријум који садржи датотеку за увоз на SFTP сервер такође мора садржати *model.json* датотеку.</span><span class="sxs-lookup"><span data-stu-id="0b30f-126">The directory that contains the file to be imported on the SFTP server must also contain a *model.json* file.</span></span> <span data-ttu-id="0b30f-127">Ова датотека дефинише шему која ће се користити за увоз података.</span><span class="sxs-lookup"><span data-stu-id="0b30f-127">This file defines the schema to use for importing the data.</span></span> <span data-ttu-id="0b30f-128">Шема мора да користи [Common Data Model](/common-data-model/) за одређивање мапирања поља.</span><span class="sxs-lookup"><span data-stu-id="0b30f-128">The schema has to use [the Common Data Model](/common-data-model/) to specify the field mapping.</span></span> <span data-ttu-id="0b30f-129">Једноставан пример датотеке model.json изгледа овако:</span><span class="sxs-lookup"><span data-stu-id="0b30f-129">A simple example of a model.json file looks like this:</span></span>
 
 ```
 {
@@ -94,17 +94,17 @@ ms.locfileid: "5269624"
 }
 ```
 
-## <a name="enrichment-results"></a><span data-ttu-id="5c5dc-130">Резултати обогаћивања</span><span class="sxs-lookup"><span data-stu-id="5c5dc-130">Enrichment results</span></span>
+## <a name="enrichment-results"></a><span data-ttu-id="0b30f-130">Резултати обогаћивања</span><span class="sxs-lookup"><span data-stu-id="0b30f-130">Enrichment results</span></span>
 
-<span data-ttu-id="5c5dc-131">Да бисте започели процес обогаћивања, изаберите **Покрени** са командне траке.</span><span class="sxs-lookup"><span data-stu-id="5c5dc-131">To start the enrichment process, select **Run** from the command bar.</span></span> <span data-ttu-id="5c5dc-132">Такође можете пустити да систем аутоматски покреће обогаћивање као део [планираног освежавања](system.md#schedule-tab).</span><span class="sxs-lookup"><span data-stu-id="5c5dc-132">You can also let the system run the enrichment automatically as part of a [scheduled refresh](system.md#schedule-tab).</span></span> <span data-ttu-id="5c5dc-133">Време обраде зависиће од величине података који се увозе и везе са SFTP сервером.</span><span class="sxs-lookup"><span data-stu-id="5c5dc-133">The processing time will depend on the size of the data to be imported and the connection to the SFTP server.</span></span>
+<span data-ttu-id="0b30f-131">Да бисте започели процес обогаћивања, изаберите **Покрени** са командне траке.</span><span class="sxs-lookup"><span data-stu-id="0b30f-131">To start the enrichment process, select **Run** from the command bar.</span></span> <span data-ttu-id="0b30f-132">Такође можете пустити да систем аутоматски покреће обогаћивање као део [планираног освежавања](system.md#schedule-tab).</span><span class="sxs-lookup"><span data-stu-id="0b30f-132">You can also let the system run the enrichment automatically as part of a [scheduled refresh](system.md#schedule-tab).</span></span> <span data-ttu-id="0b30f-133">Време обраде зависиће од величине података који се увозе и везе са SFTP сервером.</span><span class="sxs-lookup"><span data-stu-id="0b30f-133">The processing time will depend on the size of the data to be imported and the connection to the SFTP server.</span></span>
 
-<span data-ttu-id="5c5dc-134">По завршетку процеса обогаћивања, можете прегледати своје новоувезене прилагођене податке обогаћивања под **Моја обогаћења**.</span><span class="sxs-lookup"><span data-stu-id="5c5dc-134">After the enrichment process completes, you can review your newly imported custom enrichment data under **My enrichments**.</span></span> <span data-ttu-id="5c5dc-135">Осим тога, пронаћи ћете време последњег ажурирања и број обогаћених профила.</span><span class="sxs-lookup"><span data-stu-id="5c5dc-135">Additionally, you'll find the time of the last update and the number of enriched profiles.</span></span>
+<span data-ttu-id="0b30f-134">По завршетку процеса обогаћивања, можете прегледати своје новоувезене прилагођене податке обогаћивања под **Моја обогаћења**.</span><span class="sxs-lookup"><span data-stu-id="0b30f-134">After the enrichment process completes, you can review your newly imported custom enrichment data under **My enrichments**.</span></span> <span data-ttu-id="0b30f-135">Осим тога, пронаћи ћете време последњег ажурирања и број обогаћених профила.</span><span class="sxs-lookup"><span data-stu-id="0b30f-135">Additionally, you'll find the time of the last update and the number of enriched profiles.</span></span>
 
-<span data-ttu-id="5c5dc-136">Детаљном приказу сваког обогаћеног профила можете приступити ако изаберете **Прикажи обогаћене податке**.</span><span class="sxs-lookup"><span data-stu-id="5c5dc-136">You can access a detailed view of each enriched profile by selecting **View enriched data**.</span></span>
+<span data-ttu-id="0b30f-136">Детаљном приказу сваког обогаћеног профила можете приступити ако изаберете **Прикажи обогаћене податке**.</span><span class="sxs-lookup"><span data-stu-id="0b30f-136">You can access a detailed view of each enriched profile by selecting **View enriched data**.</span></span>
 
-## <a name="next-steps"></a><span data-ttu-id="5c5dc-137">Следећи кораци</span><span class="sxs-lookup"><span data-stu-id="5c5dc-137">Next steps</span></span>
+## <a name="next-steps"></a><span data-ttu-id="0b30f-137">Следећи кораци</span><span class="sxs-lookup"><span data-stu-id="0b30f-137">Next steps</span></span>
 
-<span data-ttu-id="5c5dc-138">Надоградите на обогаћеним подацима о клијентима.</span><span class="sxs-lookup"><span data-stu-id="5c5dc-138">Build on top of your enriched customer data.</span></span> <span data-ttu-id="5c5dc-139">Креирајте [сегменте](segments.md), [мере](measures.md) и [извезите податке](export-destinations.md) да бисте клијентима пружили персонализована искуства.</span><span class="sxs-lookup"><span data-stu-id="5c5dc-139">Create [segments](segments.md), [measures](measures.md), and [export the data](export-destinations.md) to deliver personalized experiences to your customers.</span></span>
+<span data-ttu-id="0b30f-138">Надоградите на обогаћеним подацима о клијентима.</span><span class="sxs-lookup"><span data-stu-id="0b30f-138">Build on top of your enriched customer data.</span></span> <span data-ttu-id="0b30f-139">Креирајте [сегменте](segments.md), [мере](measures.md) и [извезите податке](export-destinations.md) да бисте клијентима пружили персонализована искуства.</span><span class="sxs-lookup"><span data-stu-id="0b30f-139">Create [segments](segments.md), [measures](measures.md), and [export the data](export-destinations.md) to deliver personalized experiences to your customers.</span></span>
 
 
 
