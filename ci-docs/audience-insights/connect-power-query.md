@@ -2,23 +2,23 @@
 title: Унос података путем Power Query конектора
 description: Конектори за изворе података засноване на решењу Power Query.
 ms.date: 09/29/2020
-ms.reviewer: adkuppa
+ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
-author: m-hartmann
-ms.author: mhart
+author: adkuppa
+ms.author: adkuppa
 manager: shellyha
-ms.openlocfilehash: d51a7efa5fd9f7336d1662500eb804a674738493
-ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
+ms.openlocfilehash: b9a1b30e37c3792aa7bdfcfc177da9e8a32c324d
+ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
 ms.translationtype: HT
 ms.contentlocale: sr-Cyrl-RS
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5267791"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "5596931"
 ---
 # <a name="connect-to-a-power-query-data-source"></a>Повезивање са Power Query извором података
 
-Power Query нуди широк скуп конектора за унос података. Већину ових конектора подржава Dynamics 365 Customer Insights. Додавање извора података на основу Power Query конектора углавном следи кораке наведене у следећем одељку. Међутим, у зависности од конектора који користите, потребне су различите информације. За више информација погледајте документацију о појединачним конекторима у [референци Power Query конектора](https://docs.microsoft.com/power-query/connectors/).
+Power Query нуди широк скуп конектора за унос података. Већину ових конектора подржава Dynamics 365 Customer Insights. Додавање извора података на основу Power Query конектора углавном следи кораке наведене у следећем одељку. Међутим, у зависности од конектора који користите, потребне су различите информације. За више информација погледајте документацију о појединачним конекторима у [референци Power Query конектора](/power-query/connectors/).
 
 ## <a name="create-a-new-data-source"></a>Креирање новог извора података
 
@@ -44,7 +44,7 @@ Power Query нуди широк скуп конектора за унос под
    > [!div class="mx-imgBorder"]
    > ![Дијалог за уређивање упита](media/data-manager-configure-edit-queries.png "Дијалог за уређивање упита")
 
-1. Такође можете да трансформишете своје податке. Изаберите ентитет за уређивање или трансформисање. Користите опције у Power Query прозору како бисте применили трансформације. Свака трансформација се наводи у оквиру **Примењених корака**. Power Query пружа бројне унапред направљене могућности трансформације. За више информација, погледајте [Power Query трансформације](https://docs.microsoft.com/power-query/power-query-what-is-power-query#transformations).
+1. Такође можете да трансформишете своје податке. Изаберите ентитет за уређивање или трансформисање. Користите опције у Power Query прозору како бисте применили трансформације. Свака трансформација се наводи у оквиру **Примењених корака**. Power Query пружа бројне унапред направљене могућности трансформације. За више информација, погледајте [Power Query трансформације](/power-query/power-query-what-is-power-query#transformations).
 
 1. Можете додати додатне ентитете у извор података ако изаберете **Преузми податке** у дијалогу **Уређивање упита**.
 
@@ -59,7 +59,7 @@ Power Query нуди широк скуп конектора за унос под
 
 ## <a name="available-power-query-data-sources"></a>Доступни Power Query извори података
 
-Погледајте [референцу Power Query конектора](https://docs.microsoft.com/power-query/connectors/) за ажурирану листу конектора које можете изабрати за увоз података у Customer Insights. 
+Погледајте [референцу Power Query конектора](/power-query/connectors/) за ажурирану листу конектора које можете изабрати за увоз података у Customer Insights. 
 
 Конектори са знаком потврде у колони **Customer Insights (токови података)** су доступни за креирање нових извора података заснованих на решењу Power Query. Прегледајте документацију одређеног конектора да бисте сазнали више о његовим предусловима, ограничењима и осталим детаљима.
 

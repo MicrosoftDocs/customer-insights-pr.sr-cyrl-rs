@@ -1,19 +1,20 @@
 ---
 title: Прилагођени модели машинског учења | Microsoft Docs
 description: Радите са прилагођеним моделима из Azure машинског учења у услузи Dynamics 365 Customer Insights.
-ms.date: 11/19/2020
-ms.reviewer: zacook
-ms.service: dynamics-365-ai
+ms.date: 03/22/2021
+ms.reviewer: mhart
+ms.service: customer-insights
+ms.subservice: audience-insights
 ms.topic: tutorial
-author: m-hartmann
-ms.author: mhart
+author: zacookmsft
+ms.author: zacook
 manager: shellyha
-ms.openlocfilehash: 34489faaecc5da1ce3dd68d799b3e0e0d9672ab7
-ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
+ms.openlocfilehash: 87fb517e9f0b380f9721f77470dceb3bcb7e5616
+ms.sourcegitcommit: 55c00ea61c78db7b3b54894c01afb3246dff31c8
 ms.translationtype: HT
 ms.contentlocale: sr-Cyrl-RS
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5267252"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "5700686"
 ---
 # <a name="custom-machine-learning-models"></a>Прилагођени модели машинског учења
 
@@ -21,13 +22,18 @@ ms.locfileid: "5267252"
 
 ## <a name="responsible-ai"></a>Одговорни AI
 
-Предвиђања нуде могућности за стварање бољег корисничког искуства, побољшање пословних прилика и токова прихода. Препоручујемо вам да уравнотежите вредност предвиђања са утицајем који има и одступањима која се могу увести на етичан начин. Сазнајте више о томе како Microsoft [примењује одговоран AI](https://www.microsoft.com/ai/responsible-ai?activetab=pivot1%3aprimaryr6). Такође можете сазнати о [техникама и процесима за одговорно машинско учење](https://docs.microsoft.com/azure/machine-learning/concept-responsible-ml) специфичним за Azure машинско учење.
+Предвиђања нуде могућности за стварање бољег корисничког искуства, побољшање пословних прилика и токова прихода. Препоручујемо вам да уравнотежите вредност предвиђања са утицајем који има и одступањима која се могу увести на етичан начин. Сазнајте више о томе како Microsoft [примењује одговоран AI](https://www.microsoft.com/ai/responsible-ai?activetab=pivot1%3aprimaryr6). Такође можете сазнати о [техникама и процесима за одговорно машинско учење](/azure/machine-learning/concept-responsible-ml) специфичним за Azure машинско учење.
 
 ## <a name="prerequisites"></a>Предуслови
 
-- Тренутно ова функција подржава веб-услуге објављене путем [Machine Learning Studio (класичног)](https://studio.azureml.net) и [групних канала Azure машинског учења](https://docs.microsoft.com/azure/machine-learning/concept-ml-pipelines).
+- Тренутно ова функција подржава веб-услуге објављене путем [Machine Learning Studio (класичног)](https://studio.azureml.net) и [групних канала Azure машинског учења](/azure/machine-learning/concept-ml-pipelines).
 
-- Да бисте користили ову функцију, потребан вам је Azure Data Lake Gen2 налог за складиштење повезан са Azure Studio инстанцом. За више информација погледајте [Направите Azure Data Lake Storage Gen2 налог за складиштење података](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-quickstart-create-account)
+- Да бисте користили ову функцију, потребан вам је Azure Data Lake Gen2 налог за складиштење повезан са Azure Studio инстанцом. За више информација, погледајте чланак [Креирање Azure Data Lake Storage Gen2 налога за складиштење](/azure/storage/blobs/data-lake-storage-quickstart-create-account).
+
+- За Azure радне просторе за машинско учење са каналима, требају вам администраторске дозволе власника или корисника да бисте приступили Azure радном простору за машинско учење.
+
+   > [!NOTE]
+   > Подаци се преносе између Customer Insights инстанци и изабраних Azure веб-услуга или канала у току посла. Када преносите податке у Azure услугу, уверите се да је услуга конфигурисана да обрађује податке на начин неопходан за поштовање свих законских или регулаторних захтева за те податке за вашу организацију, као и на локацији која је за то неопходна.
 
 ## <a name="add-a-new-workflow"></a>Додавање новог тока посла
 
@@ -45,8 +51,8 @@ ms.locfileid: "5267252"
 1. Изаберите **Радне просторе** повезане са вашом веб-услугом. Наведена су два одељка, један за Azure машинско учење в1 (Machine Learning Studio (класични)) и Azure машинско учење в2 (Azure машинско учење). Ако нисте сигурни који је радни простор прави за вашу Machine Learning Studio (класичан) веб-услугу, изаберите **Било који**.
 
 1. Изаберите Machine Learning Studio (класична) веб-услугу или канал Azure машинског учења у падајућем менију **Веб-услуга која садржи ваш модел**. Затим изаберите **Следеће**.
-   - Сазнајте више о [објављивању веб-услуге у Machine Learning Studio (класичном)](https://docs.microsoft.com/azure/machine-learning/studio/deploy-a-machine-learning-web-service#deploy-it-as-a-new-web-service)
-   - Сазнајте више о [објављивању канала у Azure машинском учењу помоћу дизајнера](https://docs.microsoft.com/azure/machine-learning/concept-ml-pipelines#building-pipelines-with-the-designer) или [ SDK-а](https://docs.microsoft.com/azure/machine-learning/concept-ml-pipelines#building-pipelines-with-the-python-sdk). Ваш канал мора бити објављен под [крајњом тачком канала](https://docs.microsoft.com/azure/machine-learning/how-to-run-batch-predictions-designer#submit-a-pipeline-run).
+   - Сазнајте више о [објављивању веб-услуге у Machine Learning Studio (класичном)](/azure/machine-learning/studio/deploy-a-machine-learning-web-service#deploy-it-as-a-new-web-service)
+   - Сазнајте више о [објављивању канала у Azure машинском учењу помоћу дизајнера](/azure/machine-learning/concept-ml-pipelines#building-pipelines-with-the-designer) или [ SDK-а](/azure/machine-learning/concept-ml-pipelines#building-pipelines-with-the-python-sdk). Ваш канал мора бити објављен под [крајњом тачком канала](/azure/machine-learning/how-to-run-batch-predictions-designer#submit-a-pipeline-run).
 
 1. За сваки **Унос веб-услуге**, изаберите одговарајући **Ентитет** из увида о корисницима и изаберите **Даље**.
    > [!NOTE]
@@ -54,7 +60,7 @@ ms.locfileid: "5267252"
 
    > [!div class="mx-imgBorder"]
    > ![Конфигурисање тока посла](media/intelligence-screen2-updated.png "Конфигурисање тока посла")
-   
+
 1. У кораку **Излазни параметри модела** поставите следећа својства:
    - Machine Learning Studio (класични)
       1. Унесите излаз **Назив ентитета** у који желите да се преносе излазни резултати веб-услуга.
@@ -62,12 +68,12 @@ ms.locfileid: "5267252"
       1. Унесите излаз **Назив ентитета** у који желите да се преносе излазни резултати канала.
       1. Изаберите **Назив излазног параметра складишта података** за групни канал из падајућег менија.
       1. Изаберите **Назив излазног параметра путање** за групни канал из падајућег менија.
-      
+
       > [!div class="mx-imgBorder"]
       > ![Окно излазних параметара модела](media/intelligence-screen3-outputparameters.png "Окно излазних параметара модела")
 
 1. Изаберите одговарајући атрибут из падајуће листе **ID клијента у резултатима** која идентификује клијенте и изаберите **Сачувај**.
-   
+
    > [!div class="mx-imgBorder"]
    > ![Повежите резултате са окном података клијената](media/intelligence-screen4-relatetocustomer.png "Повежите резултате са окном података клијената")
 
@@ -95,7 +101,7 @@ ms.locfileid: "5267252"
       1. Изаберите **Назив излазног параметра путање** за пробни канал.
 
 1. Изаберите одговарајући атрибут из падајуће листе **ID клијента у резултатима** која идентификује клијенте и изаберите **Сачувај**.
-   Морате да одаберете атрибут из излаза закључка са вредностима сличним колони са ID-ом клијента ентитета клијента. Ако немате такву колону скупу података, одаберите атрибут који јединствено идентификује ред.
+   Одаберите атрибут из излаза закључка са вредностима сличним колони са ID-ом клијента ентитета клијента. Ако немате такву колону скупу података, одаберите атрибут који јединствено идентификује ред.
 
 ## <a name="run-a-workflow"></a>Покрени ток посла
 
@@ -113,5 +119,28 @@ ms.locfileid: "5267252"
 
 Ваш ток посла ће бити избрисан. [Ентитет](entities.md) који је креиран када сте креирали ток посла опстаје и може се прегледати са странице **Ентитети**.
 
+## <a name="results"></a>Резултати
+
+Резултати из тока посла се чувају у ентитету конфигурисаном током фазе излазних параметара модела. Овим подацима можете приступити са [странице ентитета](entities.md) или помоћу [API приступа](apis.md).
+
+### <a name="api-access"></a>API приступ
+
+Да би одређени OData упит добио податке из ентитета прилагођеног модела, користите следећи формат:
+
+`https://api.ci.ai.dynamics.com/v1/instances/<your instance id>/data/<custom model output entity name>%3Ffilter%3DCustomerId%20eq%20'<guid value>'`
+
+1. Замените `<your instance id>` са ID-ом вашег Customer Insights окружења, који ћете пронаћи у адресној траци свог прегледача када приступите услузи Customer Insights.
+
+1. Замените `<custom model output entity>` називом ентитета које сте навели током корака параметара излазних параметара модела прилагођене конфигурације модела.
+
+1. Замените `<guid value>` ID-ом клијента чијем запису желите да приступите. Тај ID обично можете пронаћи на [страница профила клијента](customer-profiles.md) у пољу CustomerID.
+
+## <a name="frequently-asked-questions"></a>Најчешћа питања
+
+- Зашто не могу да видим свој канал приликом подешавања тока посла прилагођеног модела?    
+  Овај проблем је често узрокован проблемом конфигурације у каналу. Уверите се да је [улазни параметар конфигурисан](azure-machine-learning-experiments.md#dataset-configuration) и да су [излазни параметри складишта података и путање](azure-machine-learning-experiments.md#import-pipeline-data-into-customer-insights) такође конфигурисани.
+
+- Шта значи грешка „Не могу да сачувам ток посла обавештавања“?    
+  Корисници обично виде ову поруку о грешци ако у радном простору немају администраторске привилегије приступа за власника или корисника. Кориснику је потребан виши ниво дозвола да омогући услузи Customer Insights да обради ток посла као услугу, уместо да користи корисничке акредитиве за наредна покретања тока посла.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

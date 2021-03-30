@@ -1,39 +1,39 @@
 ---
 title: Подржани језици за увид о корисницима
 description: Разумевање и конфигурисање језичке подршке.
-ms.date: 04/27/2020
+ms.date: 02/26/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
-author: m-hartmann
-ms.author: mhart
-ms.reviewer: philk
+author: pkieffer
+ms.author: philk
+ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 84c4011e61058729a0ed0b7123df8a9227b0f083
-ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
+ms.openlocfilehash: cbf37b55ea6c54d912200a1f7167126925b35443
+ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
 ms.translationtype: HT
 ms.contentlocale: sr-Cyrl-RS
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5268198"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "5595490"
 ---
 # <a name="supported-languages-for-audience-insights-capability"></a>Подржани језици за могућност увида о корисницима
 
-Dynamics 365 Customer Insights могућност увида о корисницима подржава неколико језика. У овој теми се наводе доступни језици и пружа подршка за промену између њих, као и преглед садржаја који је преведен.
+Услуга Увиди о корисницима за Dynamics 365 Customer Insights је преведена на многе језике. Следећа листа садржи доступне језике и информације о томе шта је преведено. Такође можете сазнати више о томе како да промените језичка подешавања. 
 
 ## <a name="languages"></a>Језици
 
 | Име језика (енглески)|  Име језика (матерњи језик) |
 | ------------- | ------------- |
 | баскијски | euskara |
-| бугарски | Български |
+| бугарски | български |
 | каталонски | català |
 | кинески (поједностављени) | 中文(简体) |
-| кинески (традиционални) | 中文(繁體) |
+| традиционални кинески | 中文(繁體) |
 | хрватски | hrvatski |
-| чешки | Čeština |
+| чешки | čeština |
 | дански | dansk |
 | холандски | Nederlands |
-| енглески | енглески |
+| енглески | English |
 | естонски | eesti |
 | фински | suomi |
 | француски | français |
@@ -42,20 +42,20 @@ Dynamics 365 Customer Insights могућност увида о корисниц
 | грчки | Ελληνικά |
 | хинди | हिंदी |
 | мађарски | magyar |
-| индонежански | Bahasa Indonesia |
+| индонежански | Indonesia |
 | италијански | italiano |
 | јапански | 日本語 |
-| казашки | Қазақ |
+| казашки | қазақ тілі |
 | корејски | 한국어 |
 | летонски | latviešu |
 | литвански | lietuvių |
-| малајски | Bahasa Melayu |
-| норвешки (Bokmål) | norsk (bokmål) |
-| пољски | Polski |
+| малајски | Melayu |
+| норвешки (букмол) | norsk bokmål |
+| пољски | polski |
 | португалски (Бразил) | português |
 | португалски (Португалија) | português |
 | румунски | română |
-| руски | Русский |
+| руски | русский |
 | српски (ћирилица) | српски |
 | српски (латиница) | srpski |
 | словачки | slovenčina |
