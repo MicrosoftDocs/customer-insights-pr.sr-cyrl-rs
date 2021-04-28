@@ -65,7 +65,7 @@
         - name: Обогаћивање профила клијената
           href: audience-insights/enrichment-hub.md
         - name: Афинитети према бренду и интересовањима
-          href: audience-insights/enrichment-microsoft-graph.md
+          href: audience-insights/enrichment-microsoft.md
         - name: Обогатите уз HERE Technologies
           href: audience-insights/enrichment-here.md
         - name: Обогаћивање уз Leadspace
@@ -104,6 +104,8 @@
           href: audience-insights/predict-product-recommendation.md
         - name: Пример водича за предвиђање препорука производа
           href: audience-insights/sample-guide-predict-product-recommendation.md
+        - name: Креирање сегмената заснованих на предвиђањима
+          href: audience-insights/prediction-based-segment.md
         - name: Примена прилагођених модела машинског учења
           href: audience-insights/custom-models.md
         - name: Експерименти са Azure машинским учењем
@@ -112,58 +114,72 @@
           href: audience-insights/machine-learning-studio-experiments.md
     - name: Опције извоза
       items:
-        - name: Преглед одредишта за извоз
-          href: audience-insights/export-destinations.md
-        - name: AdRoll
-          href: audience-insights/export-adroll.md
-        - name: Adobe Campaign Standard
-          href: audience-insights/export-adobe-campaign-standard.md
-        - name: Adobe платформа искуства
-          href: audience-insights/export-adobe-experience-platform.md
-        - name: Autopilot
-          href: audience-insights/export-autopilot.md
-        - name: Azure Blob Storage
-          href: audience-insights/export-azure-blob-storage.md
-        - name: Azure Data Lake Storage Gen2
-          href: audience-insights/export-azure-data-lake-storage-gen2.md
-        - name: DotDigital
-          href: audience-insights/export-dotdigital.md
-        - name: Dynamics 365 Customer Service (програмски додатак)
-          href: audience-insights/customer-card-add-in.md
-        - name: Dynamics 365 Marketing
-          href: audience-insights/export-dynamics365-marketing.md
-        - name: Dynamics 365 Sales
-          href: audience-insights/export-dynamics365-sales.md
-        - name: Dynamics 365 чвориште продаје (програмски додатак)
-          href: audience-insights/customer-card-add-in.md
-        - name: Facebook менаџер огласа
-          href: audience-insights/export-facebook.md
-        - name: Google огласи
-          href: audience-insights/export-google-ads.md
-        - name: LiveRamp
-          href: audience-insights/export-liveramp.md
-        - name: Mailchimp
-          href: audience-insights/export-mailchimp.md
-        - name: Microsoft Teams (робот)
-          href: audience-insights/export-teams-bot.md
-        - name: Marketo
-          href: audience-insights/export-marketo.md
-        - name: Power BI
-          href: audience-insights/export-power-bi.md
-        - name: Power Apps
-          href: audience-insights/export-power-apps.md
-        - name: Power Automate
-          href: audience-insights/export-power-automate.md
-        - name: SendGrid
-          href: audience-insights/export-sendgrid.md
-        - name: SFTP
-          href: audience-insights/export-sftp.md
+        - name: Извоз
+          items:
+            - name: Преглед извоза (верзија за преглед)
+              href: audience-insights/export-destinations.md
+            - name: AdRoll
+              href: audience-insights/export-adroll.md
+            - name: Autopilot
+              href: audience-insights/export-autopilot.md
+            - name: Azure Blob Storage
+              href: audience-insights/export-azure-blob-storage.md
+            - name: Azure Data Lake Storage Gen2
+              href: audience-insights/export-azure-data-lake-storage-gen2.md
+            - name: Adobe Campaign Standard
+              href: audience-insights/export-adobe-campaign-standard.md
+            - name: Adobe платформа искуства
+              href: audience-insights/export-adobe-experience-platform.md
+            - name: Campaign Monitor
+              href: audience-insights/export-campaign-monitor.md
+            - name: Constant Contact
+              href: audience-insights/export-constant-contact.md
+            - name: DotDigital
+              href: audience-insights/export-dotdigital.md
+            - name: Dynamics 365 Marketing
+              href: audience-insights/export-dynamics365-marketing.md
+            - name: Dynamics 365 Sales
+              href: audience-insights/export-dynamics365-sales.md
+            - name: Facebook менаџер огласа
+              href: audience-insights/export-facebook.md
+            - name: Google огласи
+              href: audience-insights/export-google-ads.md
+            - name: LiveRamp
+              href: audience-insights/export-liveramp.md
+            - name: Mailchimp
+              href: audience-insights/export-mailchimp.md
+            - name: Marketo
+              href: audience-insights/export-marketo.md
+            - name: RollWorks
+              href: audience-insights/export-rollworks.md
+            - name: SendGrid
+              href: audience-insights/export-sendgrid.md
+            - name: Snapchat
+              href: audience-insights/export-snapchat.md
+            - name: SFTP
+              href: audience-insights/export-sftp.md
+        - name: Друге употребе
+          items:
+            - name: Dynamics 365 Customer Service (програмски додатак)
+              href: audience-insights/customer-card-add-in.md
+            - name: Dynamics 365 чвориште продаје (програмски додатак)
+              href: audience-insights/customer-card-add-in.md
+            - name: Microsoft Teams (робот)
+              href: audience-insights/export-teams-bot.md
+            - name: Power Apps
+              href: audience-insights/export-power-apps.md
+            - name: Power Automate
+              href: audience-insights/export-power-automate.md
+            - name: Power BI
+              href: audience-insights/export-power-bi.md
     - name: Администрација
       items:
         - name: Подешавање конфигурације система
           href: audience-insights/system.md
         - name: Додела дозвола корисника
           href: audience-insights/permissions.md
+        - name: Преглед веза (верзија за преглед)
+          href: audience-insights/connections.md
         - name: Управљање са више окружења
           href: audience-insights/manage-environments.md
         - name: Повежите се са ADLS налогом за складиштење помоћу принципала услуге
@@ -216,7 +232,11 @@
           href: engagement-insights/custom-reports.md
         - name: Направите извештаје о обједињеном профилу
           href: engagement-insights/profile-reports.md
-    - name: Ресурси за пројектанте
+    - name: Аналитика пута
+      items:
+        - name: Креирање извештаја о току продаје и управљање њима
+          href: engagement-insights/funnel-reports.md
+    - name: Развојни ресурси
       items:
         - name: Преглед ресурса за програмере
           href: engagement-insights/developer-resources.md
