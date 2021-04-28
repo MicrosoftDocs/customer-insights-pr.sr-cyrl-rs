@@ -9,12 +9,12 @@ author: adkuppa
 ms.author: adkuppa
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 737c593353878a5e322488d00de5dc5db5befda9
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: 4ad06a0baf57e612fc0e0214dfd23d28e7d2b6be
+ms.sourcegitcommit: aaa275c60c0c77c88196277b266a91d653f8f759
 ms.translationtype: HT
 ms.contentlocale: sr-Cyrl-RS
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5597851"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "5896529"
 ---
 # <a name="merge-entities"></a>Обједињавање ентитета
 
@@ -83,7 +83,7 @@ ms.locfileid: "5597851"
 
 ## <a name="next-step"></a>Следећи корак
 
-Конфигуришите [активности](activities.md), [обогаћивање](enrichment-microsoft-graph.md) или [релације](relationships.md) да бисте остварили бољи увид у клијенте.
+Конфигуришите [активности](activities.md), [обогаћивање](enrichment-hub.md) или [релације](relationships.md) да бисте остварили бољи увид у клијенте.
 
 Ако сте већ конфигурисали активности, обогаћивање или релације или ако сте дефинисали сегменте, они ће се аутоматски обрадити како би се користили најновији подаци о клијентима.
 

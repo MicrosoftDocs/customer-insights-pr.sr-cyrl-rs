@@ -1,7 +1,7 @@
 ---
 title: Користите изворе података ради уноса података
 description: Научите како да увезете податке из различитих извора.
-ms.date: 11/03/2020
+ms.date: 04/12/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
@@ -9,12 +9,12 @@ author: adkuppa
 ms.author: adkuppa
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 780dc61a82d6ed9856a37dc8f164fa946d982bbe
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: 0fc13d3ac0a5176637b6fe481dabe0b2aec11649
+ms.sourcegitcommit: d89b19b2a3497722b78362aeee688ae7e94915d9
 ms.translationtype: HT
 ms.contentlocale: sr-Cyrl-RS
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5595965"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5887912"
 ---
 # <a name="data-sources-overview"></a>Преглед извора података
 
@@ -32,8 +32,15 @@ ms.locfileid: "5595965"
 - [Из Common Data Model фасцикле](connect-common-data-model.md)
 - [Из вашег сопственог Common Data Service језера](connect-common-data-service-lake.md)
 
-> [!NOTE]
-> Још не можете да додате податке из локалних извора података.
+## <a name="add-data-from-on-premises-data-sources"></a>Додавање података из локалних извора података
+
+Уношење података из локалних извора података у услугу Увиди у кориснике је подржано на основу Power Platform токова података. Токови података се могу омогућити у услузи Customer Insights [навођењем URL адресе Microsoft Dataverse окружења](manage-environments.md#create-an-environment-in-an-existing-organization) приликом подешавања окружења.
+
+Извори података који се креирају након повезивања Dataverse окружења са услугом Customer Insights ће подразумевано користити [Power Platform токове података](/power-query/dataflows/overview-dataflows-across-power-platform-dynamics-365). Токови података подржавају локалну повезаност помоћу мрежних пролаза за податке. Уклоните и поново креирајте изворе података који су постојали пре него што је Dataverse окружење било повезано за употребу локалних мрежних пролаза за податке.
+
+Мрежни пролази за податке из постојећег Power BI или Power Apps окружења ће бити видљиви и можете поново да их користите у услузи Customer Insights. Страница са изворима података приказује везе ка Power Platform окружењу у којем можете да прегледате и конфигуришете локалне мрежне пролазе за податке.
+
+:::image type="content" source="media/data-sources-onpremises-gateways.png" alt-text="Снимак екрана странице са изворима података која приказује везе које воде до Power Platform окружења.":::
 
 ## <a name="review-ingested-data"></a>Преглед унетих података
 
@@ -65,7 +72,7 @@ ms.locfileid: "5595965"
 
 2. Изаберите вертикалну елипсу поред извора података који желите да освежите и изаберите **Освежи** са падајуће листе.
 
-3. Извор података је сада активиран за ручно освежавање. Освежавањем извора података ажурираће се обе шеме ентитета као и подаци за све ентитете наведене у извору података.
+3. Извор података је сада активиран за ручно освежавање. Освежавањем извора података ажурираће се и шема ентитета и подаци за све ентитете наведене у извору података.
 
 4. Изаберите **Престаните са освежавањем** ако желите да откажете постојеће освежавање и извор података ће се вратити на свој последњи статус освежавања.
 

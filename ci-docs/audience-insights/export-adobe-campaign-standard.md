@@ -1,7 +1,7 @@
 ---
 title: Извезите Customer Insights податке у Adobe Campaign Standard
 description: Сазнајте како се користе сегменти увида у кориснике у услузи Adobe Campaign Standard.
-ms.date: 02/26/2021
+ms.date: 03/29/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: stefanie-msft
 ms.author: antando
 manager: shellyha
-ms.openlocfilehash: a5d0154c3d7c473dcba03fac0847bafcf97de2f2
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: b6c010d84119c2fa8b3ef99017c65f9939bf28c4
+ms.sourcegitcommit: 1b671c6100991fea1cace04b5d4fcedcd88aa94f
 ms.translationtype: HT
 ms.contentlocale: sr-Cyrl-RS
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5596333"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5760299"
 ---
 # <a name="use-customer-insights-segments-in-adobe-campaign-standard-preview"></a>Коришћење Customer Insights сегмената у услузи Adobe Campaign Standard (верзија за преглед)
 
@@ -48,15 +48,21 @@ ms.locfileid: "5596333"
 
 ## <a name="export-your-target-audience"></a>Извезите своју циљну групу
 
+### <a name="configure-a-connection"></a>Конфигурисање везе
+
 Када је идентификована циљна група, можемо да конфигуришемо извоз из увида о корисницима на налог Azure складишта блоб објекта.
 
-1. У увидима о корисницима идите на **Администратор** > **Одредишта за извоз**.
+1. У увидима у циљне групе, идите на **Администратор** > **Везе**.
 
-1. На плочици **Adobe Campaign** изаберите **Подеси**.
+1. Изаберите **Додај везу** и бирајте **Adobe Campaign** да бисте конфигурисали везу или изаберите **Подешавање** на плочици **Adobe Campaign**
 
    :::image type="content" source="media/adobe-campaign-standard-tile.png" alt-text="Плочица за конфигурацију за Adobe Campaign Standard.":::
 
-1. Наведите **име за приказ** за ово ново одредиште за извоз, а затим унесите **Назив налога**, **Кључ налога** и **Контејнер** налога Azure складишта блоб објекта у који желите да извезете сегмент.  
+1. Дајте вези препознатљиво име у пољу **Име за приказ**. Име за приказ и врста везе описују ову везу. Препоручујемо да одаберете назив који објашњава сврху и циљ везе.
+
+1. Одаберите ко може да користи ову везу. Ако ништа не предузмете, подразумевани ће бити Администратори. За више информација погледајте [Дозволе потребне за конфигурисање извоза](export-destinations.md#set-up-a-new-export).
+
+1. Унесите **Назив налога**, **Кључ налога** и **Контејнер** за ваш налог за Azure складиште блоб објекта у који желите да извезете сегмент.  
       
    :::image type="content" source="media/azure-blob-configuration.png" alt-text="Снимак екрана конфигурације налога складишта. "::: 
 
@@ -64,7 +70,17 @@ ms.locfileid: "5596333"
 
    - Да бисте сазнали како да креирате контејнер, погледајте чланак [Креирање контејнера](/azure/storage/blobs/storage-quickstart-blobs-portal#create-a-container).
 
-1. Изаберите **Следеће**.
+1. Изаберите **Сачувај** да бисте креирали везу.
+
+### <a name="configure-an-export"></a>Конфигурисање извоза
+
+Овај извоз можете да конфигуришете ако имате приступ вези ове врсте. За више информација погледајте [Дозволе потребне за конфигурисање извоза](export-destinations.md#set-up-a-new-export).
+
+1. Идите на **Подаци** > **Извози**.
+
+1. Да бисте креирали нови извоз, изаберите **Додај извоз**.
+
+1. У пољу **Веза за извоз**, одаберите везу из одељка Adobe Campaign. Ако не видите назив овог одељка, не постоје вам доступне везе овог типа.
 
 1. Одаберите сегмент које желите да извезете. У овом примеру, то је **ChurnProneCustomers**.
 
@@ -83,11 +99,9 @@ ms.locfileid: "5596333"
 
 1. Изаберите ставку **Сачувај**.
 
-Када сачувате одредиште за извоз, пронаћи ћете га на листи **Администратор** > **Извози** > **Моја одредишта за извоз**.
+Када сачувате одредиште за извоз, пронаћи ћете га у дијалогу **Подаци** > **Извози**.
 
-:::image type="content" source="media/export-destination-adobe-campaign-standard.png" alt-text="Снимак екрана са истакнутом листом извоза и узорком сегмента.":::
-
-Сада можете да [извозите сегмент на захтев](export-destinations.md#export-data-on-demand). Извоз ће се такође покренути са сваким [планираним освежавањем](system.md).
+Сада можете да [извозите сегмент на захтев](export-destinations.md#run-exports-on-demand). Извоз ће се такође покренути са сваким [планираним освежавањем](system.md).
 
 > [!NOTE]
 > Уверите се да је број записа у извезеном сегменту унутар дозвољеног ограничења ваше Adobe Campaign Standard лиценце.

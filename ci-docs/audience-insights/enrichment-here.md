@@ -1,7 +1,7 @@
 ---
 title: Обогаћивање помоћу обогаћивања треће стране HERE Technologies
 description: Опште информације о HERE Technologies обогаћивању треће стране.
-ms.date: 12/10/2020
+ms.date: 04/09/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: how-to
 author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: 8e8d6bfea4e0df54682501f60759c24c893444af
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: 5d1f037377010153045c9255d2d01f98ebf1fdfd
+ms.sourcegitcommit: aaa275c60c0c77c88196277b266a91d653f8f759
 ms.translationtype: HT
 ms.contentlocale: sr-Cyrl-RS
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5597759"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "5896069"
 ---
 # <a name="enrichment-of-customer-profiles-with-here-technologies-preview"></a>Обогаћивање профила клијената уз HERE Technologies (верзија за преглед)
 
@@ -26,35 +26,54 @@ ms.locfileid: "5597759"
 
 - Морате имати активну претплату за HERE Technologies. Да бисте добили претплату, можете [да се региструјете овде](https://developer.here.com/sign-up?utm_medium=referral&utm_source=Microsoft-Dynamics-CI&create=Freemium-Basic) или [контактирајте HERE Technologies](https://developer.here.com/help?utm_medium=referral&utm_source=Microsoft-Dynamics-CI#how-can-we-help-you) директно. [Сазнајте више о HERE Technologies обогаћивању локације.](https://developer.here.com/location-enrichment?cid=Dev-MicrosoftDynamics-DB-0-Dev-&utm_source=MicrosoftDynamics&utm_medium=referral&utm_campaign=Online_Dev_ReferralMicrosoft)
 
-- Имате HERE Technologies API кључ.
+- Доступна је HERE [веза](connections.md) *или* имате дозволе [администратора](permissions.md#administrator) и HERE Technologies API кључ.
 
-- Имате [администраторске](permissions.md#administrator) дозволе.
+## <a name="configure-the-enrichment"></a>Конфигурисање обогаћивања
 
-## <a name="configuration"></a>Конфигурисање
+1. Идите на **Подаци** > **Обогаћивање**. 
 
-1. Идите на **Подаци** > **Обогаћивање**.
-
-1. На HERE Technologies плочици изаберите **Обогати моје податке**.
+1. Изаберите **Обогати моје податке** на плочици HERE Technologies и изаберите **Започни**.
 
    > [!div class="mx-imgBorder"]
    > ![HERE Technologies плочица](media/HERE-tile.png "HERE Technologies плочица")
 
-1. Унесите активан **HERE Technologies API кључ**. Прегледајте и дајте свој пристанак за **Приватност података и усаглашеност** тако што ћете изабрати поље за потврду **Слажем се**. 
+1. Изаберите [везу](connections.md) из падајуће листе. Ако веза није доступна, обратите се администратору. Ако сте администратор, везу можете да направите избором **Додај везу**. Одаберите **HERE Technologies** из падајућег менија. 
 
-1. Потврдите оба улаза избором опције **Повежите се на HERE**.
+1. Изаберите **Повежите се са HERE Technologies** да потврдите избор.
 
-1.  Изаберите **Додај податке**, па одаберите **Скуп података о клијентима** који желите да обогатите подацима о локацији компаније HERE Technologies. Можете изабрати ентитет **Клијент** да бисте обогатили све ваше профиле клијената или изаберите ентитет сегмента да бисте обогатили само профиле клијената садржане у том сегменту.
+1.  Изаберите **Следеће** и одаберите **Скуп података клијента** који желите да обогатите са подацима о локацији компаније HERE Technologies. Можете изабрати ентитет **Клијент** да бисте обогатили све ваше профиле клијената или изаберите ентитет сегмента да бисте обогатили само профиле клијената садржане у том сегменту.
 
     :::image type="content" source="media/enrichment-HERE-configuration-customer-data-set.png" alt-text="Снимак екрана приликом одабира скупа података о клијентима.":::
 
-1. Одаберите да ли желите да мапирате поља са примарном и/или секундарном адресом. Можете да наведете мапирање поља за обе адресе (на пример, кућну и пословну адресу) и засебно обогатити профиле за обе адресе. Изаберите **Следеће**.
+1. Одаберите да ли желите да мапирате поља са примарном и/или секундарном адресом. Можете одредити мапирање поља за обе адресе и обогатити профиле за обе адресе засебно. На пример, ако постоје кућна и пословна адреса. Изаберите **Следеће**.
 
 1. Дефинишите која поља из ваших обједињених профила треба користити за подударање података о локацији од компаније HERE Technologies. Поља **Улица 1** и **Поштански број** су обавезна за одабрану примарну и/или секундарну адресу. За већу прецизност подударања може се додати више поља.
 
    > [!div class="mx-imgBorder"]
    > ![Страница за конфигурацију HERE Technologies обогаћивања](media/enrichment-HERE-configuration.png "Страница за конфигурацију HERE Technologies обогаћивања")
 
-1. Изаберите **Примени** да довршите мапирање поља.
+1. Изаберите **Следеће** да бисте довршили мапирање поља.
+
+1. Наведите назив обогаћивања. 
+
+1. Изаберите **Сачувај обогаћивање** након прегледа ваших избора.
+
+## <a name="configure-the-connection-for-here-technologies"></a>Конфигуришите везу за HERE Technologies 
+
+Морате бити администратор да бисте конфигурисали везе. Изаберите **Додај везу** приликом конфигурисања обогаћивања *или* идите на **Администратор** > **Везе** и изаберите **Подешавање** на плочици HERE Technologies.
+
+1. Унесите назив везе у поље **Име за приказ**.
+
+1. Наведите важећи HERE Technologies API кључ.
+
+1. Прегледајте и дајте свој пристанак за **Приватност података и усаглашеност** тако што ћете изабрати поље за потврду **Слажем се**
+
+1. Изаберите **Верификуј** да бисте проверили ваљаност конфигурације.
+
+1. По завршетку верификације, изаберите **Сачувај**.
+
+> [!div class="mx-imgBorder"]
+   > ![Страница за конфигурацију везе за HERE Technologies](media/enrichment-HERE-connection.png "Страница за конфигурацију везе за HERE Technologies")
 
 ## <a name="enrichment-results"></a>Резултати обогаћивања
 
