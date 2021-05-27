@@ -6,26 +6,26 @@ ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
-author: phkieffer
+author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: b94a8e8b6bb867ca04a64007d592b22fbd700618
-ms.sourcegitcommit: 1b671c6100991fea1cace04b5d4fcedcd88aa94f
+ms.openlocfilehash: 35848998e738c7ecc1642f2b75912ff78d85f79e
+ms.sourcegitcommit: e8e03309ba2515374a70c132d0758f3e1e1851d0
 ms.translationtype: HT
 ms.contentlocale: sr-Cyrl-RS
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5759896"
+ms.lasthandoff: 05/04/2021
+ms.locfileid: "5976173"
 ---
 # <a name="export-segment-lists-to-mailchimp-preview"></a>Извоз листи сегмената у Mailchimp (верзија за преглед)
 
-Извезите сегменте обједињених профила клијената у Mailchimp да бисте креирали билтене и кампање е-поште.
+Извезите сегменте обједињених корисничких профила у Mailchimp да бисте креирали билтене и кампање е-поште.
 
 ## <a name="prerequisites-for-connection"></a>Предуслови за везу
 
 -   Имате [Mailchimp налог](https://mailchimp.com/) и одговарајуће акредитиве администратора.
 -   Постоји постојећа публика у Mailchimp-у и одговарајући ID-ови. За више информација погледајте [Mailchimp корисници](https://mailchimp.com/help/create-audience/).
 -   Имате [конфигурисане сегменте](segments.md)
--   Обједињени профили клијената у извезеним сегментима садрже поље које представља адресу е-поште.
+-   Обједињени кориснички профили у извезеним сегментима садрже поље које представља адресу е-поште.
 
 ## <a name="known-limitations"></a>Позната ограничења
 
@@ -66,7 +66,7 @@ ms.locfileid: "5759896"
 
 1. Унесите **[ID циљне групе за Mailchimp](https://mailchimp.com/help/find-audience-id/)**
 
-3. У одељку **Подударање података**, у пољу **Адреса е-поште** изаберите поље у обједињеном профилу клијента које представља е-адресу клијента. 
+3. У одељку **Подударање података**, у пољу **Адреса е-поште** изаберите поље у обједињеном корисничком профилу које представља е-адресу клијента. 
 
 1. Опционално, можете да извезете **Име** и **Презиме** да бисте креирали персонализованије е-поруке. Изаберите **Додај атрибут** за мапирање ових поља.
 

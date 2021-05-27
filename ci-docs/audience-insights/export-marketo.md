@@ -6,26 +6,26 @@ ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
-author: phkieffer
+author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 01290d5fae7af1737b73373d75e334ae1ed67d37
-ms.sourcegitcommit: 1b671c6100991fea1cace04b5d4fcedcd88aa94f
+ms.openlocfilehash: b5a644e286bd44d4ebf7d1837255326c005b48d6
+ms.sourcegitcommit: 74cd4fa9cbb784d9dff174c0eec7b4dcb408d66b
 ms.translationtype: HT
 ms.contentlocale: sr-Cyrl-RS
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5759839"
+ms.lasthandoff: 05/18/2021
+ms.locfileid: "6059334"
 ---
 # <a name="export-segments-to-marketo-preview"></a>Извоз сегмената у Marketo (верзија за преглед)
 
-Извезите сегменте обједињених профила клијената да бисте генерисали кампање, обезбедили маркетинг е-поштом и користили одређене групе клијената са услугом Marketo.
+Извезите сегменте обједињених корисничких профила да бисте генерисали кампање, обезбедили маркетинг е-поштом и користили одређене групе клијената са услугом Marketo.
 
 ## <a name="prerequisites-for-connection"></a>Предуслови за везу
 
 -   Имате [Marketo налог](https://login.marketo.com/) и одговарајуће акредитиве администратора.
 -   Постоје постојеће листе у услузи Marketo и одговарајући ID-ови. За више информација погледајте [Marketo листе](https://docs.marketo.com/display/public/DOCS/Understanding+Static+Lists).
 -   Имате [конфигурисане сегменте](segments.md).
--   Обједињени профили клијената у извезеним сегментима садрже поље које представља адресу е-поште.
+-   Обједињени кориснички профили у извезеним сегментима садрже поље које представља адресу е-поште.
 
 ## <a name="known-limitations"></a>Позната ограничења
 
@@ -44,7 +44,7 @@ ms.locfileid: "5759839"
 
 1. Одаберите ко може да користи ову везу. Ако ништа не предузмете, подразумевани ће бити Администратори. За више информација, погледајте [Дозволите сарадницима да користе везу за извоз](connections.md#allow-contributors-to-use-a-connection-for-exports).
 
-1. Унесите **[ID Marketo клијента, тајну клијента и име хоста REST крајње тачке](https://developers.marketo.com/rest-api/authentication/)**.
+1. Унесите **[ID Marketo клијента, тајну клијента и име хоста REST крајње тачке](https://developers.marketo.com/rest-api/authentication/)**. Име хоста REST крајње тачке је само име хоста, без `https://`. Пример: `xyz-abc-123.mktorest.com`. 
 
 1. Изаберите **Слажем се** да бисте потврдили **Приватност података и усклађеност** и изаберите **Повежи се** ради успостављања везе са услугом Marketo.
 
@@ -62,9 +62,9 @@ ms.locfileid: "5759839"
 
 1. У пољу **Веза за извоз**, одаберите везу из одељка Marketo. Ако не видите назив овог одељка, не постоје вам доступне везе овог типа.
 
-1. Унесите **[ID Marketo листе](https://docs.marketo.com/display/public/DOCS/Understanding+Static+Lists)** 
+1. Унесите **[ID Marketo листе](https://docs.marketo.com/display/public/DOCS/Understanding+Static+Lists)**. ID листе је чисто нумеричка вредност. На пример, ако је ваш ID Marketo листе ST12345A7, уклоните знак пре и после бројева и унесите `12345`. 
 
-1. У одељку **Подударање података**, у пољу **Адреса е-поште** изаберите поље у обједињеном профилу клијента које представља е-адресу клијента. 
+1. У одељку **Подударање података**, у пољу **Адреса е-поште** изаберите поље у обједињеном корисничком профилу које представља е-адресу клијента. 
 
 1. По жељи можете да извезете **Име**, **Презиме**, **Град**, **Држава** и **Земља/регион** да бисте креирали персонализованије е-поруке. Изаберите **Додај атрибут** за мапирање ових поља.
 
@@ -74,7 +74,7 @@ ms.locfileid: "5759839"
 
 Чување извоза не покреће извоз одмах.
 
-Извоз се покреће са сваким [заказаним освежавањем](system.md#schedule-tab). Такође можете да [извезете податке на захтев](export-destinations.md#run-exports-on-demand). У Marketo-у сада можете пронаћи сегменте у одељку [Marketo листе](ttps://docs.marketo.com/display/public/DOCS/Understanding+Static+Lists).
+Извоз се покреће са сваким [заказаним освежавањем](system.md#schedule-tab). Такође можете да [извезете податке на захтев](export-destinations.md#run-exports-on-demand). У Marketo-у сада можете пронаћи сегменте у одељку [Marketo листе](https://docs.marketo.com/display/public/DOCS/Understanding+Static+Lists).
 
 
 ## <a name="data-privacy-and-compliance"></a>Приватност података и усаглашеност

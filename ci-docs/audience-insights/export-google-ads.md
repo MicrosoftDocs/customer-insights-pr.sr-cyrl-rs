@@ -5,20 +5,20 @@ ms.date: 03/03/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
-author: phkieffer
+author: pkieffer
 ms.author: philk
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: f4c094e486577d00d8c0c64e8527829820b335f6
-ms.sourcegitcommit: 1b671c6100991fea1cace04b5d4fcedcd88aa94f
+ms.openlocfilehash: 73f3257a3ae6e8423f45410546535df5e3b400ce
+ms.sourcegitcommit: e8e03309ba2515374a70c132d0758f3e1e1851d0
 ms.translationtype: HT
 ms.contentlocale: sr-Cyrl-RS
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5759711"
+ms.lasthandoff: 05/04/2021
+ms.locfileid: "5976336"
 ---
 # <a name="export-segments-to-google-ads-preview"></a>Извоз сегмената у Google Ads (верзија за преглед)
 
-Извезите сегменте обједињених профила клијената у листу корисника Google огласа и користите их за оглашавање у Google претрази, на Gmail-у, YouTube-у и Google мрежи мултимедијалног оглашавања. 
+Извезите сегменте обједињених корисничких профила у листу корисника Google огласа и користите их за оглашавање у Google претрази, на Gmail-у, YouTube-у и Google мрежи мултимедијалног оглашавања. 
 
 ## <a name="prerequisites-for-connection"></a>Предуслови за везу
 
@@ -29,7 +29,7 @@ ms.locfileid: "5759711"
 
 -   Постоји постојећа публика у Google огласима и одговарајући ID-ови. За више информација погледајте [Корисници Google огласа](https://support.google.com/google-ads/answer/7558048?hl=en#:~:text=Audience%20lists%20is%20a%20section,Display%20Network%20through%20remarketing%20campaigns.).
 -   Имате [конфигурисане сегменте](segments.md)
--   Обједињени профили клијената у извезеним сегментима садрже поља која представљају адресу е-поште, име и презиме
+-   Обједињени кориснички профили у извезеним сегментима садрже поља која представљају адресу е-поште, име и презиме
 
 ## <a name="known-limitations"></a>Позната ограничења
 
@@ -72,7 +72,7 @@ ms.locfileid: "5759711"
 
 1. Унесите **[ID корисника за Google огласе](https://support.google.com/google-ads/answer/7558048?hl=en#:~:text=Audience%20lists%20is%20a%20section,Display%20Network%20through%20remarketing%20campaigns.)** и изаберите **Повежите се** да бисте започели повезивање са Google огласима.
 
-1. У одељку **Подударање података**, у пољу **Адреса е-поште** изаберите поље у обједињеном профилу клијента које представља е-адресу клијента. Поновите исте кораке за поља **Име** и **Презиме**.
+1. У одељку **Подударање података**, у пољу **Адреса е-поште** изаберите поље у обједињеном корисничком профилу које представља е-адресу клијента. Поновите исте кораке за поља **Име** и **Презиме**.
 
 1. Изаберите сегменте које желите да извезете. У Google огласима можете укупно извести до 1 милион корисничких профила.
 

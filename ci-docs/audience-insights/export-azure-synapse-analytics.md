@@ -1,0 +1,92 @@
+---
+title: Извоз Customer Insights података у услугу Azure Synapse Analytics
+description: Сазнајте како да конфигуришете везу са услугом Azure Synapse Analytics.
+ms.date: 04/12/2021
+ms.reviewer: mhart
+ms.service: customer-insights
+ms.subservice: audience-insights
+ms.topic: how-to
+author: stefanie-msft
+ms.author: sthe
+manager: shellyha
+ms.openlocfilehash: 822082d661863e737ea3d3a749a6c878db766967
+ms.sourcegitcommit: e8e03309ba2515374a70c132d0758f3e1e1851d0
+ms.translationtype: HT
+ms.contentlocale: sr-Cyrl-RS
+ms.lasthandoff: 05/04/2021
+ms.locfileid: "5977395"
+---
+# <a name="export-data-to-azure-synapse-analytics-preview"></a>Извоз података у услугу Azure Synapse Analytics (преглед)
+
+Azure Synapse је аналитичка услуга која убрзава време за увид у складишта података и системе великих података. Можете да унесете и користите Customer Insights податке у услузи [Azure Synapse](/azure/synapse-analytics/overview-what-is).
+
+## <a name="prerequisites"></a>Предуслови
+
+Следећи предуслови морају бити испуњени за конфигурисање везе из услуге Customer Insights у услугу Azure Synapse.
+
+> [!NOTE]
+> Обавезно подесите све **доделе улога** као што је описано.  
+
+## <a name="prerequisites-in-customer-insights"></a>Предуслови у услузи Customer Insights
+
+* Имате улогу **администратора** у увидима у циљну групу. Сазнајте више о [постављању корисничких дозвола у увидима у циљну групу](permissions.md#assign-roles-and-permissions)
+
+У услузи Azure: 
+
+- Активна претплата на услугу Azure.
+
+- Ако користите нови Azure Data Lake Storage Gen2 налог, *принципалу услуге за увиде у циљну групу* су потребне дозволе **сарадника за податке складишта блоб објекта**. Сазнајте више о [повезивању са Azure Data Lake Storage Gen2 налогом са Azure принципалом услуге за увиде у циљну групу](connect-service-principal.md). Data Lake Storage Gen2 **мора да има** омогућен [хијерархијски простор имена](/azure/storage/blobs/data-lake-storage-namespace).
+
+- У групи ресурса у којој се налази Azure Synapse радни простор, *принципалу услуге* и *кориснику за увиде у циљну групу* треба доделити барем дозволе **читаоца**. За више информација, погледајте [Додељивање Azure улога помоћу Azure портала](/azure/role-based-access-control/role-assignments-portal).
+
+- *Кориснику* су потребне дозволе **сарадника за податке складишта блоб објекта** на Azure Data Lake Storage Gen2 налогу на којем се подаци налазе и повезани су са Azure Synapse радним простором. Сазнајте више о [коришћењу Azure портала за додељивање Azure улоге за приступ блоб објекту и подацима у реду](/azure/storage/common/storage-auth-aad-rbac-portal) и [дозволама сарадника за податке складишта блоб објекта](/azure/role-based-access-control/built-in-roles#storage-blob-data-contributor).
+
+- *[Управљаном идентитету Azure Synapse радног простора](/azure/synapse-analytics/security/synapse-workspace-managed-identity)* су потребне дозволе **сарадника за податке складишта блоб објекта** на Azure Data Lake Storage Gen2 налогу на којем се подаци налазе и повезани су са Azure Synapse радним простором. Сазнајте више о [коришћењу Azure портала за додељивање Azure улоге за приступ блоб објекту и подацима у реду](/azure/storage/common/storage-auth-aad-rbac-portal) и [дозволама сарадника за податке складишта блоб објекта](/azure/role-based-access-control/built-in-roles#storage-blob-data-contributor).
+
+- У Azure Synapse радном простору, *принципалу услуге за увиде у циљну групу* је потребна додељена улога **Synapse администратора**. За више информација, погледајте [Како се поставља контрола приступа за ваш Synapse радни простор](/azure/synapse-analytics/security/how-to-set-up-access-control).
+
+## <a name="set-up-the-connection-and-export-to-azure-synapse"></a>Подесите везу и извоз у Azure Synapse
+
+### <a name="configure-a-connection"></a>Конфигурисање везе
+
+1. Идите на **Администратор** > **Везе**.
+
+1. Изаберите **Додај везу** и бирајте **Azure Synapse Analytics** или изаберите **Подешавање** на плочици **Azure Synapse Analytics** да бисте конфигурисали везу.
+
+1. Дајте вези препознатљиво име у пољу Име за приказ. Име за приказ и врста везе описују ову везу. Препоручујемо да одаберете назив који објашњава сврху и циљ везе.
+
+1. Одаберите ко може да користи ову везу. Ако ништа не предузмете, подразумевани ће бити Администратори. За више информација, погледајте [Дозволите сарадницима да користе везу за извоз](connections.md#allow-contributors-to-use-a-connection-for-exports).
+
+1. Изаберите или потражите претплату у којој желите да користите Customer Insights податке. Чим изаберете претплату, можете и да изаберете **Радни простор**, **Налог складишта** и **Контејнер**.
+
+1. Изаберите **Сачувај** да бисте сачували везу.
+
+### <a name="configure-an-export"></a>Конфигурисање извоза
+
+Овај извоз можете да конфигуришете ако имате приступ вези ове врсте. За више информација, погледајте [дозволе потребне за конфигурисање извоза](export-destinations.md#set-up-a-new-export).
+
+1. Идите на **Подаци** > **Извози**.
+
+1. Да бисте креирали нови извоз, изаберите **Додај извоз**.
+
+1. У пољу **Веза за извоз** одаберите везу из одељка **Azure Synapse Analytics**. Ако не видите назив овог одељка, не постоје [везе](connections.md) овог типа које су вам доступне.
+
+1. Обезбедите препознатљиво **Име за приказ** за ваш извоз и **Назив базе података**.
+
+1. Изаберите које ентитете желите да извезете у услугу Azure Synapse Analytics.
+
+1. Изаберите ставку **Сачувај**.
+
+Чување извоза не покреће извоз одмах.
+
+Извоз се покреће са сваким [заказаним освежавањем](system.md#schedule-tab). Такође можете да [извезете податке на захтев](export-destinations.md#run-exports-on-demand).
+
+### <a name="update-an-export"></a>Ажурирање извоза
+
+1. Идите на **Подаци** > **Извози**.
+
+1. Изаберите **Уреди** на извозу који желите да промените.
+
+   - **Додајте** или **уклоните** ентитете из избора. Ако се ентитети уклоне из избора, неће се избрисати из Synapse Analytics базе података. Међутим, будућа освежавања података неће ажурирати уклоњене ентитете у тој бази података.
+
+   - **Промена назива базе података** креира нову Synapse Analytics базу података. База података са именом које је претходно било конфигурисано неће добијати ажурирања у будућим освежавањима.

@@ -1,5 +1,5 @@
 ---
-title: Обогатите обједињене профиле клијената
+title: Обогатите обједињене корисничке профиле
 description: Користите могућности за обогаћивање података о клијентима.
 ms.date: 04/09/2021
 ms.reviewer: mhart
@@ -9,14 +9,14 @@ ms.topic: conceptual
 author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: 10c338b89a6f9971912d05986c105cba1221b01b
-ms.sourcegitcommit: aaa275c60c0c77c88196277b266a91d653f8f759
+ms.openlocfilehash: c8e4a7247ccf575a62440038180010916b09d51b
+ms.sourcegitcommit: f9e2fa3f11ecf11a5d9cccc376fdeb1ecea54880
 ms.translationtype: HT
 ms.contentlocale: sr-Cyrl-RS
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "5896023"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "5954505"
 ---
-# <a name="enrichment-for-customer-profiles-preview"></a>Обогаћивање за профиле корисника (преглед)
+# <a name="enrichment-for-customer-profiles-preview"></a>Обогаћивање за корисничке профиле (преглед)
 
 Користите податке из извора као што су Microsoft и други партнери да бисте обогатили податке о клијентима.
 
@@ -29,6 +29,7 @@ ms.locfileid: "5896023"
 
 - [Брендове](enrichment-microsoft.md) обезбеђује Microsoft
 - [Интересовања](enrichment-microsoft.md) обезбеђује Microsoft
+- [Побољшане адресе](enrichment-enhanced-addresses.md) обезбеђује Microsoft
 - [Подаци о компанији](enrichment-leadspace.md) које пружа Leadspace
 - [Демографски подаци](enrichment-experian.md) које пружа Experian
 - [Податке о локацији](enrichment-here.md) пружа HERE Technologies
@@ -44,9 +45,9 @@ ms.locfileid: "5896023"
 
 :::image type="content" source="media/enrichment-hub-options-run.png" alt-text="Опције за управљање обогаћивањима на листи обогаћивања":::
 
-- **Прикажите** детаље обогаћивања са бројем обогаћених профила клијената.
+- **Прикажите** детаље обогаћивања са бројем обогаћених корисничких профила.
 - **Уређујте** конфигурацију обогаћивања.
-- **Покрените** обогаћивање ради ажурирања профила клијената најновијим подацима.
+- **Покрените** обогаћивање ради ажурирања корисничких профила најновијим подацима.
 - **Деактивирајте** постојеће обогаћивање како би се зауставили аутоматско освежавање са сваким заказаним освежавањем. Подаци из последњег успешног освежавања и даље ће бити доступни. **Активирајте** неактивно обогаћивање да бисте поново покренули аутоматско освежавање са сваким заказаним освежавањем.
 - **Избришите** обогаћивање.
 
