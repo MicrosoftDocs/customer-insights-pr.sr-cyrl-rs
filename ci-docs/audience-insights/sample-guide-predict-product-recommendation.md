@@ -9,199 +9,199 @@ ms.topic: tutorial
 author: diegogranados117
 ms.author: digranad
 manager: shellyha
-ms.openlocfilehash: b136084316da5ae17a8428236381f69e5c21f9ea
-ms.sourcegitcommit: 7b6189e47ed1f87e7ce35d40e4cf7a6730f31ef2
+ms.openlocfilehash: a85ee598ec747d0594755314e83a127ce0f2af95
+ms.sourcegitcommit: 0b754d194d765afef70d1008db7b347dd1f0ee40
 ms.translationtype: HT
 ms.contentlocale: sr-Cyrl-RS
-ms.lasthandoff: 06/01/2021
-ms.locfileid: "6129917"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "6306184"
 ---
-# <a name="product-recommendation-prediction-preview-sample-guide"></a><span data-ttu-id="f32a4-103">Пример водича за предвиђање препорука производа (преглед)</span><span class="sxs-lookup"><span data-stu-id="f32a4-103">Product recommendation prediction (preview) sample guide</span></span>
+# <a name="product-recommendation-prediction-preview-sample-guide"></a><span data-ttu-id="02e69-103">Пример водича за предвиђање препорука производа (преглед)</span><span class="sxs-lookup"><span data-stu-id="02e69-103">Product recommendation prediction (preview) sample guide</span></span>
 
-<span data-ttu-id="f32a4-104">Објаснићемо вам комплетан пример предвиђања препоруке производа помоћу примера података наведених у наставку.</span><span class="sxs-lookup"><span data-stu-id="f32a4-104">We'll walk you through an end to end example of product recommendation prediction using the sample data provided below.</span></span>
+<span data-ttu-id="02e69-104">Објаснићемо вам комплетан пример предвиђања препоруке производа помоћу примера података наведених у наставку.</span><span class="sxs-lookup"><span data-stu-id="02e69-104">We'll walk you through an end to end example of product recommendation prediction using the sample data provided below.</span></span>
 
-## <a name="scenario"></a><span data-ttu-id="f32a4-105">Сценарио</span><span class="sxs-lookup"><span data-stu-id="f32a4-105">Scenario</span></span>
+## <a name="scenario"></a><span data-ttu-id="02e69-105">Сценарио</span><span class="sxs-lookup"><span data-stu-id="02e69-105">Scenario</span></span>
 
-<span data-ttu-id="f32a4-106">Contoso је компанија која производи висококвалитетну кафу и апарате за кафу, које продају преко веб-локације Contoso Coffee.</span><span class="sxs-lookup"><span data-stu-id="f32a4-106">Contoso is a company that produces high-quality coffee and coffee machines, which they sell through their Contoso Coffee website.</span></span> <span data-ttu-id="f32a4-107">Циљ им је да разумеју које производе би требало да препоруче својим редовним клијентима.</span><span class="sxs-lookup"><span data-stu-id="f32a4-107">Their goal is to understand which products should they recommend to their recurring customers.</span></span> <span data-ttu-id="f32a4-108">Сазнање шта ће клијенти **вероватније купити** може им помоћи да уштеде маркетиншке напоре фокусирањем на одређене ставке.</span><span class="sxs-lookup"><span data-stu-id="f32a4-108">Knowing what customers are more **likely to purchase**, can help them save marketing efforts by focusing on specific items.</span></span>
+<span data-ttu-id="02e69-106">Contoso је компанија која производи висококвалитетну кафу и апарате за кафу, које продају преко веб-локације Contoso Coffee.</span><span class="sxs-lookup"><span data-stu-id="02e69-106">Contoso is a company that produces high-quality coffee and coffee machines, which they sell through their Contoso Coffee website.</span></span> <span data-ttu-id="02e69-107">Циљ им је да разумеју које производе би требало да препоруче својим редовним клијентима.</span><span class="sxs-lookup"><span data-stu-id="02e69-107">Their goal is to understand which products should they recommend to their recurring customers.</span></span> <span data-ttu-id="02e69-108">Сазнање шта ће клијенти **вероватније купити** може им помоћи да уштеде маркетиншке напоре фокусирањем на одређене ставке.</span><span class="sxs-lookup"><span data-stu-id="02e69-108">Knowing what customers are more **likely to purchase**, can help them save marketing efforts by focusing on specific items.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="f32a4-109">Предуслови</span><span class="sxs-lookup"><span data-stu-id="f32a4-109">Prerequisites</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="02e69-109">Предуслови</span><span class="sxs-lookup"><span data-stu-id="02e69-109">Prerequisites</span></span>
 
-- <span data-ttu-id="f32a4-110">Барем [дозволе сарадника](permissions.md) у услузи Customer Insights.</span><span class="sxs-lookup"><span data-stu-id="f32a4-110">At least [Contributor permissions](permissions.md) in Customer Insights.</span></span>
-- <span data-ttu-id="f32a4-111">Препоручујемо да примените следеће кораке [у новом окружењу](manage-environments.md).</span><span class="sxs-lookup"><span data-stu-id="f32a4-111">We recommend that you implement the following steps [in a new environment](manage-environments.md).</span></span>
+- <span data-ttu-id="02e69-110">Барем [дозволе сарадника](permissions.md) у услузи Customer Insights.</span><span class="sxs-lookup"><span data-stu-id="02e69-110">At least [Contributor permissions](permissions.md) in Customer Insights.</span></span>
+- <span data-ttu-id="02e69-111">Препоручујемо да примените следеће кораке [у новом окружењу](manage-environments.md).</span><span class="sxs-lookup"><span data-stu-id="02e69-111">We recommend that you implement the following steps [in a new environment](manage-environments.md).</span></span>
 
-## <a name="task-1---ingest-data"></a><span data-ttu-id="f32a4-112">1. задатак – Унос података</span><span class="sxs-lookup"><span data-stu-id="f32a4-112">Task 1 - Ingest data</span></span>
+## <a name="task-1---ingest-data"></a><span data-ttu-id="02e69-112">1. задатак – Унос података</span><span class="sxs-lookup"><span data-stu-id="02e69-112">Task 1 - Ingest data</span></span>
 
-<span data-ttu-id="f32a4-113">Прегледајте чланке [о уносу података](data-sources.md) и [увозу извора података помоћу Power Query конектора](connect-power-query.md) конкретно.</span><span class="sxs-lookup"><span data-stu-id="f32a4-113">Review the articles [about data ingestion](data-sources.md) and [importing data sources using Power Query connectors](connect-power-query.md) specifically.</span></span> <span data-ttu-id="f32a4-114">Следеће информације претпостављају да сте се упознали са уношењем података уопште.</span><span class="sxs-lookup"><span data-stu-id="f32a4-114">The following information assumes you familiarized with ingesting data in general.</span></span>
+<span data-ttu-id="02e69-113">Прегледајте чланке [о уносу података](data-sources.md) и [увозу извора података помоћу Power Query конектора](connect-power-query.md) конкретно.</span><span class="sxs-lookup"><span data-stu-id="02e69-113">Review the articles [about data ingestion](data-sources.md) and [importing data sources using Power Query connectors](connect-power-query.md) specifically.</span></span> <span data-ttu-id="02e69-114">Следеће информације претпостављају да сте се упознали са уношењем података уопште.</span><span class="sxs-lookup"><span data-stu-id="02e69-114">The following information assumes you familiarized with ingesting data in general.</span></span>
 
-### <a name="ingest-customer-data-from-ecommerce-platform"></a><span data-ttu-id="f32a4-115">Унесите податке о клијентима са платформе eCommerce</span><span class="sxs-lookup"><span data-stu-id="f32a4-115">Ingest customer data from eCommerce platform</span></span>
+### <a name="ingest-customer-data-from-ecommerce-platform"></a><span data-ttu-id="02e69-115">Унесите податке о клијентима са платформе eCommerce</span><span class="sxs-lookup"><span data-stu-id="02e69-115">Ingest customer data from eCommerce platform</span></span>
 
-1. <span data-ttu-id="f32a4-116">Направите извор података под називом **eCommerce**, изаберите опцију увоза, па изаберите конектор **Text/CSV**.</span><span class="sxs-lookup"><span data-stu-id="f32a4-116">Create a data source named **eCommerce**, choose the import option, and select the **Text/CSV** connector.</span></span>
+1. <span data-ttu-id="02e69-116">Направите извор података под називом **eCommerce**, изаберите опцију увоза, па изаберите конектор **Text/CSV**.</span><span class="sxs-lookup"><span data-stu-id="02e69-116">Create a data source named **eCommerce**, choose the import option, and select the **Text/CSV** connector.</span></span>
 
-1. <span data-ttu-id="f32a4-117">Унесите URL адресу за eCommerce контакте https://aka.ms/ciadclasscontacts.</span><span class="sxs-lookup"><span data-stu-id="f32a4-117">Enter the URL for eCommerce contacts https://aka.ms/ciadclasscontacts.</span></span>
+1. <span data-ttu-id="02e69-117">Унесите URL адресу за eCommerce контакте https://aka.ms/ciadclasscontacts.</span><span class="sxs-lookup"><span data-stu-id="02e69-117">Enter the URL for eCommerce contacts https://aka.ms/ciadclasscontacts.</span></span>
 
-1. <span data-ttu-id="f32a4-118">Док уређујете податке, изаберите **Трансформација**, а затим **Користи први ред као заглавља**.</span><span class="sxs-lookup"><span data-stu-id="f32a4-118">While editing the data, select **Transform** and then **Use First Row as Headers**.</span></span>
+1. <span data-ttu-id="02e69-118">Док уређујете податке, изаберите **Трансформација**, а затим **Користи први ред као заглавља**.</span><span class="sxs-lookup"><span data-stu-id="02e69-118">While editing the data, select **Transform** and then **Use First Row as Headers**.</span></span>
 
-1. <span data-ttu-id="f32a4-119">Ажурирајте тип података за доленаведене колоне:</span><span class="sxs-lookup"><span data-stu-id="f32a4-119">Update the datatype for the columns listed below:</span></span>
-   - <span data-ttu-id="f32a4-120">**Датум рођења**: Датум</span><span class="sxs-lookup"><span data-stu-id="f32a4-120">**DateOfBirth**: Date</span></span>
-   - <span data-ttu-id="f32a4-121">**Креирано**: Датум/време/зона</span><span class="sxs-lookup"><span data-stu-id="f32a4-121">**CreatedOn**: Date/Time/Zone</span></span>
+1. <span data-ttu-id="02e69-119">Ажурирајте тип података за доленаведене колоне:</span><span class="sxs-lookup"><span data-stu-id="02e69-119">Update the datatype for the columns listed below:</span></span>
+   - <span data-ttu-id="02e69-120">**Датум рођења**: Датум</span><span class="sxs-lookup"><span data-stu-id="02e69-120">**DateOfBirth**: Date</span></span>
+   - <span data-ttu-id="02e69-121">**Креирано**: Датум/време/зона</span><span class="sxs-lookup"><span data-stu-id="02e69-121">**CreatedOn**: Date/Time/Zone</span></span>
 
    :::image type="content" source="media/ecommerce-dob-date.PNG" alt-text="Трансформација датума рођења у датум.":::
 
-5. <span data-ttu-id="f32a4-123">У пољу „Име“ у десном окну преименујте извор података из **Упит** у **eCommerce контакти**</span><span class="sxs-lookup"><span data-stu-id="f32a4-123">In the 'Name' field on the right-hand pane, rename your data source from **Query** to **eCommerceContacts**</span></span>
+5. <span data-ttu-id="02e69-123">У пољу „Име“ у десном окну преименујте извор података из **Упит** у **eCommerce контакти**</span><span class="sxs-lookup"><span data-stu-id="02e69-123">In the 'Name' field on the right-hand pane, rename your data source from **Query** to **eCommerceContacts**</span></span>
 
-6. <span data-ttu-id="f32a4-124">**Сачувајте** извор података.</span><span class="sxs-lookup"><span data-stu-id="f32a4-124">**Save** the data source.</span></span>
+6. <span data-ttu-id="02e69-124">**Сачувајте** извор података.</span><span class="sxs-lookup"><span data-stu-id="02e69-124">**Save** the data source.</span></span>
 
-### <a name="ingest-online-purchase-data"></a><span data-ttu-id="f32a4-125">Унесите податке о куповини на мрежи</span><span class="sxs-lookup"><span data-stu-id="f32a4-125">Ingest online purchase data</span></span>
+### <a name="ingest-online-purchase-data"></a><span data-ttu-id="02e69-125">Унесите податке о куповини на мрежи</span><span class="sxs-lookup"><span data-stu-id="02e69-125">Ingest online purchase data</span></span>
 
-1. <span data-ttu-id="f32a4-126">Додајте још један скуп податка у исти **eCommerce** извор података.</span><span class="sxs-lookup"><span data-stu-id="f32a4-126">Add another data set to the same **eCommerce** data source.</span></span> <span data-ttu-id="f32a4-127">Поново изаберите конектор **Текст/CSV**.</span><span class="sxs-lookup"><span data-stu-id="f32a4-127">Choose the **Text/CSV** connector again.</span></span>
+1. <span data-ttu-id="02e69-126">Додајте још један скуп податка у исти **eCommerce** извор података.</span><span class="sxs-lookup"><span data-stu-id="02e69-126">Add another data set to the same **eCommerce** data source.</span></span> <span data-ttu-id="02e69-127">Поново изаберите конектор **Текст/CSV**.</span><span class="sxs-lookup"><span data-stu-id="02e69-127">Choose the **Text/CSV** connector again.</span></span>
 
-1. <span data-ttu-id="f32a4-128">Унесите URL за податке о **куповинама на мрежи** https://aka.ms/ciadclassonline.</span><span class="sxs-lookup"><span data-stu-id="f32a4-128">Enter the URL for **Online Purchases** data https://aka.ms/ciadclassonline.</span></span>
+1. <span data-ttu-id="02e69-128">Унесите URL за податке о **куповинама на мрежи** https://aka.ms/ciadclassonline.</span><span class="sxs-lookup"><span data-stu-id="02e69-128">Enter the URL for **Online Purchases** data https://aka.ms/ciadclassonline.</span></span>
 
-1. <span data-ttu-id="f32a4-129">Док уређујете податке, изаберите **Трансформација**, а затим **Користи први ред као заглавља**.</span><span class="sxs-lookup"><span data-stu-id="f32a4-129">While editing the data, select **Transform** and then **Use First Row as Headers**.</span></span>
+1. <span data-ttu-id="02e69-129">Док уређујете податке, изаберите **Трансформација**, а затим **Користи први ред као заглавља**.</span><span class="sxs-lookup"><span data-stu-id="02e69-129">While editing the data, select **Transform** and then **Use First Row as Headers**.</span></span>
 
-1. <span data-ttu-id="f32a4-130">Ажурирајте тип података за доленаведене колоне:</span><span class="sxs-lookup"><span data-stu-id="f32a4-130">Update the datatype for the columns listed below:</span></span>
-   - <span data-ttu-id="f32a4-131">**Купљено дана**: Датум/време</span><span class="sxs-lookup"><span data-stu-id="f32a4-131">**PurchasedOn**: Date/Time</span></span>
-   - <span data-ttu-id="f32a4-132">**Укупна цена**: Валута</span><span class="sxs-lookup"><span data-stu-id="f32a4-132">**TotalPrice**: Currency</span></span>
+1. <span data-ttu-id="02e69-130">Ажурирајте тип података за доленаведене колоне:</span><span class="sxs-lookup"><span data-stu-id="02e69-130">Update the datatype for the columns listed below:</span></span>
+   - <span data-ttu-id="02e69-131">**Купљено дана**: Датум/време</span><span class="sxs-lookup"><span data-stu-id="02e69-131">**PurchasedOn**: Date/Time</span></span>
+   - <span data-ttu-id="02e69-132">**Укупна цена**: Валута</span><span class="sxs-lookup"><span data-stu-id="02e69-132">**TotalPrice**: Currency</span></span>
 
-1. <span data-ttu-id="f32a4-133">У пољу **Назив** у бочном окну преименујте извор података из **Упит** у **eCommerce куповине**.</span><span class="sxs-lookup"><span data-stu-id="f32a4-133">In the **Name** field on the side pane, rename your data source from **Query** to **eCommercePurchases**.</span></span>
+1. <span data-ttu-id="02e69-133">У пољу **Назив** у бочном окну преименујте извор података из **Упит** у **eCommerce куповине**.</span><span class="sxs-lookup"><span data-stu-id="02e69-133">In the **Name** field on the side pane, rename your data source from **Query** to **eCommercePurchases**.</span></span>
 
-1. <span data-ttu-id="f32a4-134">**Сачувајте** извор података.</span><span class="sxs-lookup"><span data-stu-id="f32a4-134">**Save** the data source.</span></span>
+1. <span data-ttu-id="02e69-134">**Сачувајте** извор података.</span><span class="sxs-lookup"><span data-stu-id="02e69-134">**Save** the data source.</span></span>
 
 
-### <a name="ingest-customer-data-from-loyalty-schema"></a><span data-ttu-id="f32a4-135">Унесите податке о клијентима из шеме лојалности</span><span class="sxs-lookup"><span data-stu-id="f32a4-135">Ingest customer data from loyalty schema</span></span>
+### <a name="ingest-customer-data-from-loyalty-schema"></a><span data-ttu-id="02e69-135">Унесите податке о клијентима из шеме лојалности</span><span class="sxs-lookup"><span data-stu-id="02e69-135">Ingest customer data from loyalty schema</span></span>
 
-1. <span data-ttu-id="f32a4-136">Направите извор података под именом **Шема лојалности**, изаберите опцију увоза и изаберите **Текст/CSV** конектор.</span><span class="sxs-lookup"><span data-stu-id="f32a4-136">Create a data source named **LoyaltyScheme**, choose the import option, and select the **Text/CSV** connector.</span></span>
+1. <span data-ttu-id="02e69-136">Направите извор података под именом **Шема лојалности**, изаберите опцију увоза и изаберите **Текст/CSV** конектор.</span><span class="sxs-lookup"><span data-stu-id="02e69-136">Create a data source named **LoyaltyScheme**, choose the import option, and select the **Text/CSV** connector.</span></span>
 
-1. <span data-ttu-id="f32a4-137">Унесите URL адресу за eCommerce контакте https://aka.ms/ciadclasscustomerloyalty.</span><span class="sxs-lookup"><span data-stu-id="f32a4-137">Enter the URL for eCommerce contacts https://aka.ms/ciadclasscustomerloyalty.</span></span>
+1. <span data-ttu-id="02e69-137">Унесите URL адресу за eCommerce контакте https://aka.ms/ciadclasscustomerloyalty.</span><span class="sxs-lookup"><span data-stu-id="02e69-137">Enter the URL for eCommerce contacts https://aka.ms/ciadclasscustomerloyalty.</span></span>
 
-1. <span data-ttu-id="f32a4-138">Док уређујете податке, изаберите **Трансформација**, а затим **Користи први ред као заглавља**.</span><span class="sxs-lookup"><span data-stu-id="f32a4-138">While editing the data, select **Transform** and then **Use First Row as Headers**.</span></span>
+1. <span data-ttu-id="02e69-138">Док уређујете податке, изаберите **Трансформација**, а затим **Користи први ред као заглавља**.</span><span class="sxs-lookup"><span data-stu-id="02e69-138">While editing the data, select **Transform** and then **Use First Row as Headers**.</span></span>
 
-1. <span data-ttu-id="f32a4-139">Ажурирајте тип података за доленаведене колоне:</span><span class="sxs-lookup"><span data-stu-id="f32a4-139">Update the datatype for the columns listed below:</span></span>
-   - <span data-ttu-id="f32a4-140">**Датум рођења**: Датум</span><span class="sxs-lookup"><span data-stu-id="f32a4-140">**DateOfBirth**: Date</span></span>
-   - <span data-ttu-id="f32a4-141">**Наградни поени**: Цео број</span><span class="sxs-lookup"><span data-stu-id="f32a4-141">**RewardsPoints**: Whole Number</span></span>
-   - <span data-ttu-id="f32a4-142">**Креирано**: Датум/време</span><span class="sxs-lookup"><span data-stu-id="f32a4-142">**CreatedOn**: Date/Time</span></span>
+1. <span data-ttu-id="02e69-139">Ажурирајте тип података за доленаведене колоне:</span><span class="sxs-lookup"><span data-stu-id="02e69-139">Update the datatype for the columns listed below:</span></span>
+   - <span data-ttu-id="02e69-140">**Датум рођења**: Датум</span><span class="sxs-lookup"><span data-stu-id="02e69-140">**DateOfBirth**: Date</span></span>
+   - <span data-ttu-id="02e69-141">**Наградни поени**: Цео број</span><span class="sxs-lookup"><span data-stu-id="02e69-141">**RewardsPoints**: Whole Number</span></span>
+   - <span data-ttu-id="02e69-142">**Креирано**: Датум/време</span><span class="sxs-lookup"><span data-stu-id="02e69-142">**CreatedOn**: Date/Time</span></span>
 
-1. <span data-ttu-id="f32a4-143">У пољу **Име** у десном окну преименујте извор података из **Упит** у **Лојални клијенти**.</span><span class="sxs-lookup"><span data-stu-id="f32a4-143">In the **Name** field on the right-hand pane, rename your data source from **Query** to **loyCustomers**.</span></span>
+1. <span data-ttu-id="02e69-143">У пољу **Име** у десном окну преименујте извор података из **Упит** у **Лојални клијенти**.</span><span class="sxs-lookup"><span data-stu-id="02e69-143">In the **Name** field on the right-hand pane, rename your data source from **Query** to **loyCustomers**.</span></span>
 
-1. <span data-ttu-id="f32a4-144">**Сачувајте** извор података.</span><span class="sxs-lookup"><span data-stu-id="f32a4-144">**Save** the data source.</span></span>
+1. <span data-ttu-id="02e69-144">**Сачувајте** извор података.</span><span class="sxs-lookup"><span data-stu-id="02e69-144">**Save** the data source.</span></span>
 
-## <a name="task-2---data-unification"></a><span data-ttu-id="f32a4-145">2. задатак 2 – Обједињавање података</span><span class="sxs-lookup"><span data-stu-id="f32a4-145">Task 2 - Data unification</span></span>
+## <a name="task-2---data-unification"></a><span data-ttu-id="02e69-145">2. задатак 2 – Обједињавање података</span><span class="sxs-lookup"><span data-stu-id="02e69-145">Task 2 - Data unification</span></span>
 
-<span data-ttu-id="f32a4-146">Након уноса података, сада започињемо поступак уједначавања података како бисмо креирали јединствени профил клијента.</span><span class="sxs-lookup"><span data-stu-id="f32a4-146">After ingesting the data, we now begin the data unification process to create a unified customer profile.</span></span> <span data-ttu-id="f32a4-147">За више информација погледајте [Обједињавање података](data-unification.md).</span><span class="sxs-lookup"><span data-stu-id="f32a4-147">For more information, see [Data unification](data-unification.md).</span></span>
+<span data-ttu-id="02e69-146">Након уноса података, сада започињемо поступак уједначавања података како бисмо креирали јединствени профил клијента.</span><span class="sxs-lookup"><span data-stu-id="02e69-146">After ingesting the data, we now begin the data unification process to create a unified customer profile.</span></span> <span data-ttu-id="02e69-147">За више информација погледајте [Обједињавање података](data-unification.md).</span><span class="sxs-lookup"><span data-stu-id="02e69-147">For more information, see [Data unification](data-unification.md).</span></span>
 
-### <a name="map"></a><span data-ttu-id="f32a4-148">Мапирај</span><span class="sxs-lookup"><span data-stu-id="f32a4-148">Map</span></span>
+### <a name="map"></a><span data-ttu-id="02e69-148">Мапирај</span><span class="sxs-lookup"><span data-stu-id="02e69-148">Map</span></span>
 
-1. <span data-ttu-id="f32a4-149">Након уноса података, мапирајте контакте са платформе eCommerce и из података о лојалности у уобичајене типове података.</span><span class="sxs-lookup"><span data-stu-id="f32a4-149">After ingesting the data, map contacts from eCommerce and Loyalty data to common data types.</span></span> <span data-ttu-id="f32a4-150">Идите на **Подаци** > **Обједини** > **Мапирај**.</span><span class="sxs-lookup"><span data-stu-id="f32a4-150">Go to **Data** > **Unify** > **Map**.</span></span>
+1. <span data-ttu-id="02e69-149">Након уноса података, мапирајте контакте са платформе eCommerce и из података о лојалности у уобичајене типове података.</span><span class="sxs-lookup"><span data-stu-id="02e69-149">After ingesting the data, map contacts from eCommerce and Loyalty data to common data types.</span></span> <span data-ttu-id="02e69-150">Идите на **Подаци** > **Обједини** > **Мапирај**.</span><span class="sxs-lookup"><span data-stu-id="02e69-150">Go to **Data** > **Unify** > **Map**.</span></span>
 
-2. <span data-ttu-id="f32a4-151">Изаберите ентитете који представљају профил клијента – **eCommerce контакти** и **Лојални клијенти**.</span><span class="sxs-lookup"><span data-stu-id="f32a4-151">Select the entities that represent the customer profile – **eCommerceContacts** and **loyCustomers**.</span></span>
+2. <span data-ttu-id="02e69-151">Изаберите ентитете који представљају профил клијента – **eCommerce контакти** и **Лојални клијенти**.</span><span class="sxs-lookup"><span data-stu-id="02e69-151">Select the entities that represent the customer profile – **eCommerceContacts** and **loyCustomers**.</span></span>
 
    ![обједините изворе података о платформ ecommerce и лојалности.](media/unify-ecommerce-loyalty.png)
 
-3. <span data-ttu-id="f32a4-153">Изаберите **ID клијента** као примарни кључ за **eCommerce контакте** и **ID лојалности** као примарни кључ за **Лојалне клијенте**.</span><span class="sxs-lookup"><span data-stu-id="f32a4-153">Select **ContactId** as the primary key for **eCommerceContacts** and **LoyaltyID** as the primary key for **loyCustomers**.</span></span>
+3. <span data-ttu-id="02e69-153">Изаберите **ID клијента** као примарни кључ за **eCommerce контакте** и **ID лојалности** као примарни кључ за **Лојалне клијенте**.</span><span class="sxs-lookup"><span data-stu-id="02e69-153">Select **ContactId** as the primary key for **eCommerceContacts** and **LoyaltyID** as the primary key for **loyCustomers**.</span></span>
 
    ![Обједините ID лојалности као примарни кључ.](media/unify-loyaltyid.png)
 
-### <a name="match"></a><span data-ttu-id="f32a4-155">Подударање</span><span class="sxs-lookup"><span data-stu-id="f32a4-155">Match</span></span>
+### <a name="match"></a><span data-ttu-id="02e69-155">Подударање</span><span class="sxs-lookup"><span data-stu-id="02e69-155">Match</span></span>
 
-1. <span data-ttu-id="f32a4-156">Идите у на картицу **Подударање** и изаберите **Подеси редослед**.</span><span class="sxs-lookup"><span data-stu-id="f32a4-156">Go to the **Match** tab and select **Set Order**.</span></span>
+1. <span data-ttu-id="02e69-156">Идите у на картицу **Подударање** и изаберите **Подеси редослед**.</span><span class="sxs-lookup"><span data-stu-id="02e69-156">Go to the **Match** tab and select **Set Order**.</span></span>
 
-2. <span data-ttu-id="f32a4-157">На падајућој листи **Примарно**, одаберите **eCommerce контакти: eCommerce** као примарни извор и укључите све записе.</span><span class="sxs-lookup"><span data-stu-id="f32a4-157">In the **Primary** drop-down list, choose **eCommerceContacts : eCommerce** as the primary source and include all records.</span></span>
+2. <span data-ttu-id="02e69-157">У падајућој листи **Примарно** одаберите **eCommerceContacts : eCommerce** као примарни извор и укључите све записе.</span><span class="sxs-lookup"><span data-stu-id="02e69-157">In the **Primary** dropdown list, choose **eCommerceContacts : eCommerce** as the primary source and include all records.</span></span>
 
-3. <span data-ttu-id="f32a4-158">На падајућој листи **Ентитет 2**, одаберите **Лојални клијенти: Шема лојалности** и укључите све записе.</span><span class="sxs-lookup"><span data-stu-id="f32a4-158">In the **Entity 2** drop-down list, choose **loyCustomers : LoyaltyScheme** and include all records.</span></span>
+3. <span data-ttu-id="02e69-158">У падајућој листи **Ентитет 2** одаберите **loyCustomers : LoyaltyScheme** и укључите све записе.</span><span class="sxs-lookup"><span data-stu-id="02e69-158">In the **Entity 2** dropdown list, choose **loyCustomers : LoyaltyScheme** and include all records.</span></span>
 
    ![Обједините подударање платформе eCommerce и лојалности.](media/unify-match-order.png)
 
-4. <span data-ttu-id="f32a4-160">Изаберите **Креирај ново правило**</span><span class="sxs-lookup"><span data-stu-id="f32a4-160">Select **Create a new rule**</span></span>
+4. <span data-ttu-id="02e69-160">Изаберите **Креирај ново правило**</span><span class="sxs-lookup"><span data-stu-id="02e69-160">Select **Create a new rule**</span></span>
 
-5. <span data-ttu-id="f32a4-161">Додајте свој први услов користећи Име и презиме.</span><span class="sxs-lookup"><span data-stu-id="f32a4-161">Add your first condition using FullName.</span></span>
+5. <span data-ttu-id="02e69-161">Додајте свој први услов користећи Име и презиме.</span><span class="sxs-lookup"><span data-stu-id="02e69-161">Add your first condition using FullName.</span></span>
 
-   - <span data-ttu-id="f32a4-162">За eCommerce контакте одаберите **Име и презиме** на падајућој листи.</span><span class="sxs-lookup"><span data-stu-id="f32a4-162">For eCommerceContacts select **FullName** in the drop-down.</span></span>
-   - <span data-ttu-id="f32a4-163">За Лојалне клијенте одаберите **Име и презиме** на падајућој листи.</span><span class="sxs-lookup"><span data-stu-id="f32a4-163">For loyCustomers select **FullName** in the drop-down.</span></span>
-   - <span data-ttu-id="f32a4-164">Изаберите падајућу листу **Нормализација** и одаберите **Тип (телефон, име, адреса...)**.</span><span class="sxs-lookup"><span data-stu-id="f32a4-164">Select the **Normalize** drop down and choose **Type (Phone, Name, Address, ...)**.</span></span>
-   - <span data-ttu-id="f32a4-165">Подесите **Ниво прецизности**: **Основни** и **Вредност**: **Висока**.</span><span class="sxs-lookup"><span data-stu-id="f32a4-165">Set **Precision Level**: **Basic** and **Value**: **High**.</span></span>
+   - <span data-ttu-id="02e69-162">За eCommerceContacts изаберите **FullName** у падајућој листи.</span><span class="sxs-lookup"><span data-stu-id="02e69-162">For eCommerceContacts select **FullName** in the dropdown.</span></span>
+   - <span data-ttu-id="02e69-163">За loyCustomers изаберите **FullName** у падајућој листи.</span><span class="sxs-lookup"><span data-stu-id="02e69-163">For loyCustomers select **FullName** in the dropdown.</span></span>
+   - <span data-ttu-id="02e69-164">Изаберите падајућу листу **Нормализација** и одаберите **Тип (телефон, име, адреса...)**.</span><span class="sxs-lookup"><span data-stu-id="02e69-164">Select the **Normalize** drop down and choose **Type (Phone, Name, Address, ...)**.</span></span>
+   - <span data-ttu-id="02e69-165">Подесите **Ниво прецизности**: **Основни** и **Вредност**: **Висока**.</span><span class="sxs-lookup"><span data-stu-id="02e69-165">Set **Precision Level**: **Basic** and **Value**: **High**.</span></span>
 
-6. <span data-ttu-id="f32a4-166">Унесите назив **Име и презиме, е-пошта** за ново правило.</span><span class="sxs-lookup"><span data-stu-id="f32a4-166">Enter the name **FullName, Email** for the new rule.</span></span>
+6. <span data-ttu-id="02e69-166">Унесите назив **Име и презиме, е-пошта** за ново правило.</span><span class="sxs-lookup"><span data-stu-id="02e69-166">Enter the name **FullName, Email** for the new rule.</span></span>
 
-   - <span data-ttu-id="f32a4-167">Додајте други услов за адресу е-поште избором ставке **Додајте услов**</span><span class="sxs-lookup"><span data-stu-id="f32a4-167">Add a second condition for email address by selecting **Add Condition**</span></span>
-   - <span data-ttu-id="f32a4-168">За ентитет eCommerce контакти одаберите **Е-пошта** у падајућем менију.</span><span class="sxs-lookup"><span data-stu-id="f32a4-168">For entity eCommerceContacts, choose **EMail** in drop-down.</span></span>
-   - <span data-ttu-id="f32a4-169">За ентитет Лојални клијенти одаберите **Е-пошта** у падајућем менију.</span><span class="sxs-lookup"><span data-stu-id="f32a4-169">For entity loyCustomers, choose **EMail** in the drop-down.</span></span>
-   - <span data-ttu-id="f32a4-170">Оставите Нормализација празно.</span><span class="sxs-lookup"><span data-stu-id="f32a4-170">Leave Normalize blank.</span></span>
-   - <span data-ttu-id="f32a4-171">Подесите **Ниво прецизности**: **Основни** и **Вредност**: **Висока**.</span><span class="sxs-lookup"><span data-stu-id="f32a4-171">Set **Precision Level**: **Basic** and **Value**: **High**.</span></span>
+   - <span data-ttu-id="02e69-167">Додајте други услов за адресу е-поште избором ставке **Додајте услов**</span><span class="sxs-lookup"><span data-stu-id="02e69-167">Add a second condition for email address by selecting **Add Condition**</span></span>
+   - <span data-ttu-id="02e69-168">За ентитет еЦоммерцеЦонтацтс, одаберите **EMail** у падајућој листи.</span><span class="sxs-lookup"><span data-stu-id="02e69-168">For entity eCommerceContacts, choose **EMail** in dropdown.</span></span>
+   - <span data-ttu-id="02e69-169">За ентитет loyCustomers, одаберите **EMail** у падајућој листи.</span><span class="sxs-lookup"><span data-stu-id="02e69-169">For entity loyCustomers, choose **EMail** in the dropdown.</span></span>
+   - <span data-ttu-id="02e69-170">Оставите Нормализација празно.</span><span class="sxs-lookup"><span data-stu-id="02e69-170">Leave Normalize blank.</span></span>
+   - <span data-ttu-id="02e69-171">Подесите **Ниво прецизности**: **Основни** и **Вредност**: **Висока**.</span><span class="sxs-lookup"><span data-stu-id="02e69-171">Set **Precision Level**: **Basic** and **Value**: **High**.</span></span>
 
    ![Обједините правило подударања за име и е-пошту.](media/unify-match-rule.png)
 
-7. <span data-ttu-id="f32a4-173">Изаберите **Сачувај** и **Затвори**.</span><span class="sxs-lookup"><span data-stu-id="f32a4-173">Select **Save** and **Run**.</span></span>
+7. <span data-ttu-id="02e69-173">Изаберите **Сачувај** и **Затвори**.</span><span class="sxs-lookup"><span data-stu-id="02e69-173">Select **Save** and **Run**.</span></span>
 
-### <a name="merge"></a><span data-ttu-id="f32a4-174">Обједини</span><span class="sxs-lookup"><span data-stu-id="f32a4-174">Merge</span></span>
+### <a name="merge"></a><span data-ttu-id="02e69-174">Обједини</span><span class="sxs-lookup"><span data-stu-id="02e69-174">Merge</span></span>
 
-1. <span data-ttu-id="f32a4-175">Идите на картицу **Обједињавање**.</span><span class="sxs-lookup"><span data-stu-id="f32a4-175">Go to the **Merge** tab.</span></span>
+1. <span data-ttu-id="02e69-175">Идите на картицу **Обједињавање**.</span><span class="sxs-lookup"><span data-stu-id="02e69-175">Go to the **Merge** tab.</span></span>
 
-1. <span data-ttu-id="f32a4-176">На **ID контакта** за ентитет **Лојални клијенти** промените име за приказ у **ID контакта ЛОЈАЛНОСТ** да би се разликовало од осталих унетих ID-ова.</span><span class="sxs-lookup"><span data-stu-id="f32a4-176">On the **ContactId** for **loyCustomers** entity, change the display name to **ContactIdLOYALTY** to differentiate it from the other IDs ingested.</span></span>
+1. <span data-ttu-id="02e69-176">На **ID контакта** за ентитет **Лојални клијенти** промените име за приказ у **ID контакта ЛОЈАЛНОСТ** да би се разликовало од осталих унетих ID-ова.</span><span class="sxs-lookup"><span data-stu-id="02e69-176">On the **ContactId** for **loyCustomers** entity, change the display name to **ContactIdLOYALTY** to differentiate it from the other IDs ingested.</span></span>
 
    ![Преименујте ID контакта из ID-а лојалности.](media/unify-merge-contactid.png)
 
-1. <span data-ttu-id="f32a4-178">Изаберите **Сачувај** и **Покрени** да бисте започели поступак обједињавања.</span><span class="sxs-lookup"><span data-stu-id="f32a4-178">Select **Save** and **Run** to start the Merge Process.</span></span>
+1. <span data-ttu-id="02e69-178">Изаберите **Сачувај** и **Покрени** да бисте започели поступак обједињавања.</span><span class="sxs-lookup"><span data-stu-id="02e69-178">Select **Save** and **Run** to start the Merge Process.</span></span>
 
-## <a name="task-3---configure-product-recommendation-prediction"></a><span data-ttu-id="f32a4-179">Задатак 3 – Конфигуришите предвиђање препоруке производа</span><span class="sxs-lookup"><span data-stu-id="f32a4-179">Task 3 - Configure product recommendation prediction</span></span>
+## <a name="task-3---configure-product-recommendation-prediction"></a><span data-ttu-id="02e69-179">Задатак 3 – Конфигуришите предвиђање препоруке производа</span><span class="sxs-lookup"><span data-stu-id="02e69-179">Task 3 - Configure product recommendation prediction</span></span>
 
-<span data-ttu-id="f32a4-180">Када су обједињени профилима клијената спремни, сада можемо покренути предвиђање губитка претплата.</span><span class="sxs-lookup"><span data-stu-id="f32a4-180">With the unified customer profiles in place, we can now run the subscription churn prediction.</span></span>
+<span data-ttu-id="02e69-180">Када су обједињени профилима клијената спремни, сада можемо покренути предвиђање губитка претплата.</span><span class="sxs-lookup"><span data-stu-id="02e69-180">With the unified customer profiles in place, we can now run the subscription churn prediction.</span></span>
 
-1. <span data-ttu-id="f32a4-181">Иди на **Обавештавање** > **Предвиђање** и одаберите **Препорука производа**.</span><span class="sxs-lookup"><span data-stu-id="f32a4-181">Go to **Intelligence** > **Prediction** choose **Product recommendation**.</span></span>
+1. <span data-ttu-id="02e69-181">Иди на **Обавештавање** > **Предвиђање** и одаберите **Препорука производа**.</span><span class="sxs-lookup"><span data-stu-id="02e69-181">Go to **Intelligence** > **Prediction** choose **Product recommendation**.</span></span>
 
-1. <span data-ttu-id="f32a4-182">Изаберите **Први кораци**.</span><span class="sxs-lookup"><span data-stu-id="f32a4-182">Select **Get started**.</span></span>
+1. <span data-ttu-id="02e69-182">Изаберите **Први кораци**.</span><span class="sxs-lookup"><span data-stu-id="02e69-182">Select **Get started**.</span></span>
 
-1. <span data-ttu-id="f32a4-183">Именујте модел **Предвиђање модела препоруке OOB производа** а излазни ентитет **OOBProductRecommendationModelPrediction**.</span><span class="sxs-lookup"><span data-stu-id="f32a4-183">Name the model **OOB Product Recommendation Model Prediction** and the output entity **OOBProductRecommendationModelPrediction**.</span></span>
+1. <span data-ttu-id="02e69-183">Именујте модел **Предвиђање модела препоруке OOB производа** а излазни ентитет **OOBProductRecommendationModelPrediction**.</span><span class="sxs-lookup"><span data-stu-id="02e69-183">Name the model **OOB Product Recommendation Model Prediction** and the output entity **OOBProductRecommendationModelPrediction**.</span></span>
 
-1. <span data-ttu-id="f32a4-184">Дефинишите три услова за модел:</span><span class="sxs-lookup"><span data-stu-id="f32a4-184">Define three conditions for the model:</span></span>
+1. <span data-ttu-id="02e69-184">Дефинишите три услова за модел:</span><span class="sxs-lookup"><span data-stu-id="02e69-184">Define three conditions for the model:</span></span>
 
-   - <span data-ttu-id="f32a4-185">**Број производа**: Подесите ову вредност на **5**.</span><span class="sxs-lookup"><span data-stu-id="f32a4-185">**Number of products**: Set this value to **5**.</span></span> <span data-ttu-id="f32a4-186">Ово подешавање дефинише колико производа желите да препоручите својим клијентима.</span><span class="sxs-lookup"><span data-stu-id="f32a4-186">This setting defines how many products you want to recommend to your customers.</span></span>
+   - <span data-ttu-id="02e69-185">**Број производа**: Подесите ову вредност на **5**.</span><span class="sxs-lookup"><span data-stu-id="02e69-185">**Number of products**: Set this value to **5**.</span></span> <span data-ttu-id="02e69-186">Ово подешавање дефинише колико производа желите да препоручите својим клијентима.</span><span class="sxs-lookup"><span data-stu-id="02e69-186">This setting defines how many products you want to recommend to your customers.</span></span>
 
-   - <span data-ttu-id="f32a4-187">**Очекује се поновљена куповина**: Изаберите **Да** како бисте назначили да желите да додате производе у препоруку коју су ваши клијенти раније куповали.</span><span class="sxs-lookup"><span data-stu-id="f32a4-187">**Repeat purchases expected**: Select **Yes** to indicate that you want to include products in the recommendation that your customers have purchased before.</span></span>
+   - <span data-ttu-id="02e69-187">**Очекује се поновљена куповина**: Изаберите **Да** како бисте назначили да желите да додате производе у препоруку коју су ваши клијенти раније куповали.</span><span class="sxs-lookup"><span data-stu-id="02e69-187">**Repeat purchases expected**: Select **Yes** to indicate that you want to include products in the recommendation that your customers have purchased before.</span></span>
 
-   - <span data-ttu-id="f32a4-188">**Период за ревизију** Изаберите најмање **365 дана**.</span><span class="sxs-lookup"><span data-stu-id="f32a4-188">**Look back window:** Select at least **365 days**.</span></span> <span data-ttu-id="f32a4-189">Ово подешавање дефинише колико далеко уназад ће модел пратити активност клијента да би га користио као улаз за препоруке.</span><span class="sxs-lookup"><span data-stu-id="f32a4-189">This setting defines how far the model will look back at the customer's activity to use it as input to their recommendations.</span></span>
+   - <span data-ttu-id="02e69-188">**Период за ревизију** Изаберите најмање **365 дана**.</span><span class="sxs-lookup"><span data-stu-id="02e69-188">**Look back window:** Select at least **365 days**.</span></span> <span data-ttu-id="02e69-189">Ово подешавање дефинише колико далеко уназад ће модел пратити активност клијента да би га користио као улаз за препоруке.</span><span class="sxs-lookup"><span data-stu-id="02e69-189">This setting defines how far the model will look back at the customer's activity to use it as input to their recommendations.</span></span>
    
    :::image type="content" source="media/product-recommendation-model-preferences.png" alt-text="Жељена подешавања модела за модел препоруке производа.":::
 
-1. <span data-ttu-id="f32a4-191">Изаберите **Обавезни подаци** и изаберите **Додај податке** за историју куповина.</span><span class="sxs-lookup"><span data-stu-id="f32a4-191">Select **Required data** and select **Add data** for purchase history.</span></span>
+1. <span data-ttu-id="02e69-191">Изаберите **Обавезни подаци** и изаберите **Додај податке** за историју куповина.</span><span class="sxs-lookup"><span data-stu-id="02e69-191">Select **Required data** and select **Add data** for purchase history.</span></span>
 
-1. <span data-ttu-id="f32a4-192">Додајте ентитет **eCommerce куповине: eCommerce** и мапирајте поља из платформе eCommerce са одговарајућим пољима које тражи модел.</span><span class="sxs-lookup"><span data-stu-id="f32a4-192">Add the **eCommercePurchases : eCommerce** entity and map the fields from eCommerce to the corresponding fields required by the model.</span></span>
+1. <span data-ttu-id="02e69-192">Додајте ентитет **eCommerce куповине: eCommerce** и мапирајте поља из платформе eCommerce са одговарајућим пољима које тражи модел.</span><span class="sxs-lookup"><span data-stu-id="02e69-192">Add the **eCommercePurchases : eCommerce** entity and map the fields from eCommerce to the corresponding fields required by the model.</span></span>
 
-1. <span data-ttu-id="f32a4-193">Придружите ентите **eCommerce куповине: eCommerce** са **eCommerce контакти: eCommerce**.</span><span class="sxs-lookup"><span data-stu-id="f32a4-193">Join the **eCommercePurchases : eCommerce** entity with **eCommerceContacts : eCommerce**.</span></span>
+1. <span data-ttu-id="02e69-193">Придружите ентите **eCommerce куповине: eCommerce** са **eCommerce контакти: eCommerce**.</span><span class="sxs-lookup"><span data-stu-id="02e69-193">Join the **eCommercePurchases : eCommerce** entity with **eCommerceContacts : eCommerce**.</span></span>
 
    ![Придружите eCommerce ентитете.](media/model-purchase-join.png)
 
-1. <span data-ttu-id="f32a4-195">Изаберите **Даље** да бисте поставили распоред модела.</span><span class="sxs-lookup"><span data-stu-id="f32a4-195">Select **Next** to set the model schedule.</span></span>
+1. <span data-ttu-id="02e69-195">Изаберите **Даље** да бисте поставили распоред модела.</span><span class="sxs-lookup"><span data-stu-id="02e69-195">Select **Next** to set the model schedule.</span></span>
 
-   <span data-ttu-id="f32a4-196">Модел треба редовно да се обучава како би научио нове обрасце када дође до уноса нових података.</span><span class="sxs-lookup"><span data-stu-id="f32a4-196">The model needs to train regularly to learn new patterns when there is new data ingested.</span></span> <span data-ttu-id="f32a4-197">За овај пример изаберите **Месечно**.</span><span class="sxs-lookup"><span data-stu-id="f32a4-197">For this example, select **Monthly**.</span></span>
+   <span data-ttu-id="02e69-196">Модел треба редовно да се обучава како би научио нове обрасце када дође до уноса нових података.</span><span class="sxs-lookup"><span data-stu-id="02e69-196">The model needs to train regularly to learn new patterns when there is new data ingested.</span></span> <span data-ttu-id="02e69-197">За овај пример изаберите **Месечно**.</span><span class="sxs-lookup"><span data-stu-id="02e69-197">For this example, select **Monthly**.</span></span>
 
-1. <span data-ttu-id="f32a4-198">Након прегледа свих детаља, изаберите **Сачувај и покрени**.</span><span class="sxs-lookup"><span data-stu-id="f32a4-198">After reviewing all the details, select **Save and Run**.</span></span>
+1. <span data-ttu-id="02e69-198">Након прегледа свих детаља, изаберите **Сачувај и покрени**.</span><span class="sxs-lookup"><span data-stu-id="02e69-198">After reviewing all the details, select **Save and Run**.</span></span>
 
 
-## <a name="task-4---review-model-results-and-explanations"></a><span data-ttu-id="f32a4-199">4. задатак – Преглед резултата модела и објашњења</span><span class="sxs-lookup"><span data-stu-id="f32a4-199">Task 4 - Review model results and explanations</span></span>
+## <a name="task-4---review-model-results-and-explanations"></a><span data-ttu-id="02e69-199">4. задатак – Преглед резултата модела и објашњења</span><span class="sxs-lookup"><span data-stu-id="02e69-199">Task 4 - Review model results and explanations</span></span>
 
-<span data-ttu-id="f32a4-200">Нека модел заврши обуку и оцењивање података.</span><span class="sxs-lookup"><span data-stu-id="f32a4-200">Let the model complete the training and scoring of the data.</span></span> <span data-ttu-id="f32a4-201">Сада можете прегледати објашњења модела препорука производа.</span><span class="sxs-lookup"><span data-stu-id="f32a4-201">You can now review the product recommendation model explanations.</span></span> <span data-ttu-id="f32a4-202">За више информација погледајте [Прегледајте статус и резултате предвиђања](predict-subscription-churn.md#review-a-prediction-status-and-results).</span><span class="sxs-lookup"><span data-stu-id="f32a4-202">For more information, see [Review a prediction status and results](predict-subscription-churn.md#review-a-prediction-status-and-results).</span></span>
+<span data-ttu-id="02e69-200">Нека модел заврши обуку и оцењивање података.</span><span class="sxs-lookup"><span data-stu-id="02e69-200">Let the model complete the training and scoring of the data.</span></span> <span data-ttu-id="02e69-201">Сада можете прегледати објашњења модела препорука производа.</span><span class="sxs-lookup"><span data-stu-id="02e69-201">You can now review the product recommendation model explanations.</span></span> <span data-ttu-id="02e69-202">За више информација погледајте [Прегледајте статус и резултате предвиђања](predict-subscription-churn.md#review-a-prediction-status-and-results).</span><span class="sxs-lookup"><span data-stu-id="02e69-202">For more information, see [Review a prediction status and results](predict-subscription-churn.md#review-a-prediction-status-and-results).</span></span>
 
-## <a name="task-5---create-a-segment-of-high-purchased-products"></a><span data-ttu-id="f32a4-203">Задатак 5 – Направите сегмент производа који се често купују</span><span class="sxs-lookup"><span data-stu-id="f32a4-203">Task 5 - Create a segment of high purchased products</span></span>
+## <a name="task-5---create-a-segment-of-high-purchased-products"></a><span data-ttu-id="02e69-203">Задатак 5 – Направите сегмент производа који се често купују</span><span class="sxs-lookup"><span data-stu-id="02e69-203">Task 5 - Create a segment of high purchased products</span></span>
 
-<span data-ttu-id="f32a4-204">Покретање производног модела ствара нови ентитет који можете да видите у одељку **Подаци** > **Ентитети**.</span><span class="sxs-lookup"><span data-stu-id="f32a4-204">Running the production model creates a new entity that you can see in **Data** > **Entities**.</span></span>
+<span data-ttu-id="02e69-204">Покретање производног модела ствара нови ентитет који можете да видите у одељку **Подаци** > **Ентитети**.</span><span class="sxs-lookup"><span data-stu-id="02e69-204">Running the production model creates a new entity that you can see in **Data** > **Entities**.</span></span>
 
-<span data-ttu-id="f32a4-205">Можете да креирате нови сегмент на основу ентитета који је креирао модел.</span><span class="sxs-lookup"><span data-stu-id="f32a4-205">You can create a new segment based on the entity created by the model.</span></span>
+<span data-ttu-id="02e69-205">Можете да креирате нови сегмент на основу ентитета који је креирао модел.</span><span class="sxs-lookup"><span data-stu-id="02e69-205">You can create a new segment based on the entity created by the model.</span></span>
 
-1. <span data-ttu-id="f32a4-206">Идите на **Сегменти**.</span><span class="sxs-lookup"><span data-stu-id="f32a4-206">Go to **Segments**.</span></span> <span data-ttu-id="f32a4-207">Изаберите **Ново**, па **Направи од** > **Обавештавање**.</span><span class="sxs-lookup"><span data-stu-id="f32a4-207">Select **New** and choose **Create from** > **Intelligence**.</span></span>
+1. <span data-ttu-id="02e69-206">Идите на **Сегменти**.</span><span class="sxs-lookup"><span data-stu-id="02e69-206">Go to **Segments**.</span></span> <span data-ttu-id="02e69-207">Изаберите **Ново**, па **Направи од** > **Обавештавање**.</span><span class="sxs-lookup"><span data-stu-id="02e69-207">Select **New** and choose **Create from** > **Intelligence**.</span></span>
 
    ![Креирајте сегмент са излазом модела.](media/segment-intelligence.png)
 
-1. <span data-ttu-id="f32a4-209">Изаберите крајњу тачку **OOBProductRecommendationModelPrediction** и дефинишите сегмент:</span><span class="sxs-lookup"><span data-stu-id="f32a4-209">Select the **OOBProductRecommendationModelPrediction** endpoint and define the segment:</span></span>
+1. <span data-ttu-id="02e69-209">Изаберите крајњу тачку **OOBProductRecommendationModelPrediction** и дефинишите сегмент:</span><span class="sxs-lookup"><span data-stu-id="02e69-209">Select the **OOBProductRecommendationModelPrediction** endpoint and define the segment:</span></span>
 
-   - <span data-ttu-id="f32a4-210">Поље: ProductID</span><span class="sxs-lookup"><span data-stu-id="f32a4-210">Field: ProductID</span></span>
-   - <span data-ttu-id="f32a4-211">Оператор: Вредност</span><span class="sxs-lookup"><span data-stu-id="f32a4-211">Operator: Value</span></span>
-   - <span data-ttu-id="f32a4-212">Вредност: Изаберите прва три ID-а производа</span><span class="sxs-lookup"><span data-stu-id="f32a4-212">Value: Select the top three product IDs</span></span>
+   - <span data-ttu-id="02e69-210">Поље: ProductID</span><span class="sxs-lookup"><span data-stu-id="02e69-210">Field: ProductID</span></span>
+   - <span data-ttu-id="02e69-211">Оператор: Вредност</span><span class="sxs-lookup"><span data-stu-id="02e69-211">Operator: Value</span></span>
+   - <span data-ttu-id="02e69-212">Вредност: Изаберите прва три ID-а производа</span><span class="sxs-lookup"><span data-stu-id="02e69-212">Value: Select the top three product IDs</span></span>
 
    :::image type="content" source="media/product-recommendation-quick-segment.png" alt-text="Креирајте сегмент из резултата модела.":::
 
-<span data-ttu-id="f32a4-214">Сада имате сегмент који се динамички ажурира и који идентификује клијенте који су спремнији да купе три најбоље препоручена производа</span><span class="sxs-lookup"><span data-stu-id="f32a4-214">You now have a segment that is dynamically updated which identifies the customers who are more willing to purchase the three most recommended products</span></span> 
+<span data-ttu-id="02e69-214">Сада имате сегмент који се динамички ажурира и који идентификује клијенте који су спремнији да купе три најбоље препоручена производа</span><span class="sxs-lookup"><span data-stu-id="02e69-214">You now have a segment that is dynamically updated which identifies the customers who are more willing to purchase the three most recommended products</span></span> 
 
-<span data-ttu-id="f32a4-215">Више информација потражите у одељку [Креирање и управљање сегментима](segments.md).</span><span class="sxs-lookup"><span data-stu-id="f32a4-215">For more information, see [Create and manage segments](segments.md).</span></span>
+<span data-ttu-id="02e69-215">Више информација потражите у одељку [Креирање и управљање сегментима](segments.md).</span><span class="sxs-lookup"><span data-stu-id="02e69-215">For more information, see [Create and manage segments](segments.md).</span></span>
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
