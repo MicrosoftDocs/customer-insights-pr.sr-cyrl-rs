@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: c8e4a7247ccf575a62440038180010916b09d51b
-ms.sourcegitcommit: f9e2fa3f11ecf11a5d9cccc376fdeb1ecea54880
+ms.openlocfilehash: c35e73b366fcd5db2ba5a757295ddda6db30efa0
+ms.sourcegitcommit: d84d664e67f263bfeb741154d309088c5101b9c3
 ms.translationtype: HT
 ms.contentlocale: sr-Cyrl-RS
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "5954505"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "6305266"
 ---
 # <a name="enrichment-for-customer-profiles-preview"></a>Обогаћивање за корисничке профиле (преглед)
 
@@ -22,7 +22,8 @@ ms.locfileid: "5954505"
 
 :::image type="content" source="media/enrichment-hub-page.png" alt-text="Страница чворишта за обогаћивање":::
 
-У увидима о корисницима идите на **Подаци** > **Обогаћивање** да бисте користили опције обогаћивања.    
+У увидима о корисницима идите на **Подаци** > **Обогаћивање** да бисте користили опције обогаћивања.  
+
 Да бисте креирали или мењали обогаћивања, морате да имате дозволе сарадника или администратора. Више информација потражите у [дозволама](permissions.md).
 
 На картици **Откривање** ћете пронаћи следећа обогаћивања:
@@ -31,7 +32,7 @@ ms.locfileid: "5954505"
 - [Интересовања](enrichment-microsoft.md) обезбеђује Microsoft
 - [Побољшане адресе](enrichment-enhanced-addresses.md) обезбеђује Microsoft
 - [Подаци о компанији](enrichment-leadspace.md) које пружа Leadspace
-- [Демографски подаци](enrichment-experian.md) које пружа Experian
+- [Демографски подаци](enrichment-experian.md) које обезбеђује Experian
 - [Податке о локацији](enrichment-here.md) пружа HERE Technologies
 - [Прилагођени подаци](enrichment-SFTP-custom-import.md) помоћу протокола Secure File Transfer Protocol (SFTP)
 
@@ -39,7 +40,7 @@ ms.locfileid: "5954505"
 
 ## <a name="manage-existing-enrichments"></a>Управљање постојећим обогаћивањима
 
-Идите на **Моја обогаћивања** да видите сва конфигурисана обогаћивања. Свако обогаћивање представљено је као ред који укључује додатне информације о обогаћивању.
+Идите на картицу **Моја обогаћивања** да бисте видели сва конфигурисана обогаћивања. Свако обогаћивање представљено је као ред који укључује додатне информације о обогаћивању.
 
 Изаберите обогаћивање да бисте видели доступне опције. Такође можете одабрати три тачке (...) на ставци листе да бисте видели опције.
 

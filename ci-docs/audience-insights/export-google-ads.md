@@ -9,27 +9,26 @@ author: pkieffer
 ms.author: philk
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 73f3257a3ae6e8423f45410546535df5e3b400ce
-ms.sourcegitcommit: e8e03309ba2515374a70c132d0758f3e1e1851d0
+ms.openlocfilehash: c23c8b4e6758df08e04bf1e3ae0cba4dee06fe2b
+ms.sourcegitcommit: d84d664e67f263bfeb741154d309088c5101b9c3
 ms.translationtype: HT
 ms.contentlocale: sr-Cyrl-RS
-ms.lasthandoff: 05/04/2021
-ms.locfileid: "5976336"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "6305358"
 ---
 # <a name="export-segments-to-google-ads-preview"></a>Извоз сегмената у Google Ads (верзија за преглед)
 
-Извезите сегменте обједињених корисничких профила у листу корисника Google огласа и користите их за оглашавање у Google претрази, на Gmail-у, YouTube-у и Google мрежи мултимедијалног оглашавања. 
+Извезите сегменте обједињених профила клијената на Google Ads листу циљних група и користите их за оглашавање на Google претрази, Gmail-у, YouTube-у и Google мрежи мултимедијалног оглашавања. 
 
 ## <a name="prerequisites-for-connection"></a>Предуслови за везу
 
 -   Имате [налог Google огласа](https://ads.google.com/) и одговарајуће акредитиве администратора.
--   Ви имате [одобрени токен за Google Ads програмера](https://developers.google.com/google-ads/api/docs/first-call/dev-token) 
--   Испуњавате захтеве [политике подударања клијената](https://support.google.com/adspolicy/answer/6299717)
--   Испуњавате захтеве [величине листа за поновно оглашавање](https://support.google.com/google-ads/answer/7558048) 
-
+-   Имате [одобрени токен за Google Ads програмера](https://developers.google.com/google-ads/api/docs/first-call/dev-token). 
+-   Испуњавате захтеве [политике подударања клијената](https://support.google.com/adspolicy/answer/6299717).
+-   Испуњавате захтеве [за величине листа за поновно оглашавање](https://support.google.com/google-ads/answer/7558048).
 -   Постоји постојећа публика у Google огласима и одговарајући ID-ови. За више информација погледајте [Корисници Google огласа](https://support.google.com/google-ads/answer/7558048?hl=en#:~:text=Audience%20lists%20is%20a%20section,Display%20Network%20through%20remarketing%20campaigns.).
--   Имате [конфигурисане сегменте](segments.md)
--   Обједињени кориснички профили у извезеним сегментима садрже поља која представљају адресу е-поште, име и презиме
+-   Имате [конфигурисане сегменте](segments.md).
+-   Обједињени кориснички профили у извезеним сегментима садрже поља која представљају адресу е-поште, име и презиме.
 
 ## <a name="known-limitations"></a>Позната ограничења
 
@@ -68,17 +67,19 @@ ms.locfileid: "5976336"
 
 1. Да бисте креирали нови извоз, изаберите **Додај одредиште**.
 
-1. У пољу **Веза за извоз**, одаберите везу из одељка Google Ads. Ако не видите назив овог одељка, не постоје вам доступне везе овог типа.
+1. У пољу **Веза за извоз**, одаберите везу из одељка Google Ads. Ако не видите назив овог одељка, тада вам нису доступне везе овог типа.
 
 1. Унесите **[ID корисника за Google огласе](https://support.google.com/google-ads/answer/7558048?hl=en#:~:text=Audience%20lists%20is%20a%20section,Display%20Network%20through%20remarketing%20campaigns.)** и изаберите **Повежите се** да бисте започели повезивање са Google огласима.
 
-1. У одељку **Подударање података**, у пољу **Адреса е-поште** изаберите поље у обједињеном корисничком профилу које представља е-адресу клијента. Поновите исте кораке за поља **Име** и **Презиме**.
+1. У одељку **Подударање података**, у пољу **Адреса е-поште** изаберите поље у обједињеном корисничком профилу које представља е-адресу клијента. Поновите неке кораке за поља **Име** и **Презиме**.
 
 1. Изаберите сегменте које желите да извезете. У Google огласима можете укупно извести до 1 милион корисничких профила.
 
 Чување извоза не покреће извоз одмах.
 
-Извоз се покреће са сваким [заказаним освежавањем](system.md#schedule-tab). Такође можете да [извезете податке на захтев](export-destinations.md#run-exports-on-demand). 
+Извоз се покреће са сваким [заказаним освежавањем](system.md#schedule-tab). 
+
+Такође можете да [извезете податке на захтев](export-destinations.md#run-exports-on-demand). 
 
 ## <a name="data-privacy-and-compliance"></a>Приватност података и усаглашеност
 

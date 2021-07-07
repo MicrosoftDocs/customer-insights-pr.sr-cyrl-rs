@@ -1,5 +1,5 @@
 ---
-title: Обогаћивање помоћу обогаћивања треће стране HERE Technologies
+title: Обогаћивање путем независног обогаћивања HERE Technologies
 description: Опште информације о HERE Technologies обогаћивању треће стране.
 ms.date: 04/09/2021
 ms.reviewer: mhart
@@ -9,12 +9,12 @@ ms.topic: how-to
 author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: 5d1f037377010153045c9255d2d01f98ebf1fdfd
-ms.sourcegitcommit: aaa275c60c0c77c88196277b266a91d653f8f759
+ms.openlocfilehash: b3c1da0f541efb85b2ca9d87a2e3b97bbfb6ca7f
+ms.sourcegitcommit: d84d664e67f263bfeb741154d309088c5101b9c3
 ms.translationtype: HT
 ms.contentlocale: sr-Cyrl-RS
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "5896069"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "6305312"
 ---
 # <a name="enrichment-of-customer-profiles-with-here-technologies-preview"></a>Обогаћивање профила клијената уз HERE Technologies (верзија за преглед)
 
@@ -24,9 +24,9 @@ ms.locfileid: "5896069"
 
 Да бисте конфигурисали верзија за преглед обогаћивања, морају бити испуњени следећи предуслови:
 
-- Морате имати активну претплату за HERE Technologies. Да бисте добили претплату, можете [да се региструјете овде](https://developer.here.com/sign-up?utm_medium=referral&utm_source=Microsoft-Dynamics-CI&create=Freemium-Basic) или [контактирајте HERE Technologies](https://developer.here.com/help?utm_medium=referral&utm_source=Microsoft-Dynamics-CI#how-can-we-help-you) директно. [Сазнајте више о HERE Technologies обогаћивању локације.](https://developer.here.com/location-enrichment?cid=Dev-MicrosoftDynamics-DB-0-Dev-&utm_source=MicrosoftDynamics&utm_medium=referral&utm_campaign=Online_Dev_ReferralMicrosoft)
+- Морате имати активну претплату за HERE Technologies. Да бисте добили претплату, можете [да се региструјете овде](https://developer.here.com/sign-up?utm_medium=referral&utm_source=Microsoft-Dynamics-CI&create=Freemium-Basic) или директно [контактирајте HERE Technologies](https://developer.here.com/help?utm_medium=referral&utm_source=Microsoft-Dynamics-CI#how-can-we-help-you). [Сазнајте више о HERE Technologies обогаћивању локације.](https://developer.here.com/location-enrichment?cid=Dev-MicrosoftDynamics-DB-0-Dev-&utm_source=MicrosoftDynamics&utm_medium=referral&utm_campaign=Online_Dev_ReferralMicrosoft)
 
-- Доступна је HERE [веза](connections.md) *или* имате дозволе [администратора](permissions.md#administrator) и HERE Technologies API кључ.
+- HERE [веза](connections.md) је доступна *или* имате дозволе [администратора](permissions.md#administrator) и HERE Technologies API кључ.
 
 ## <a name="configure-the-enrichment"></a>Конфигурисање обогаћивања
 
@@ -37,7 +37,7 @@ ms.locfileid: "5896069"
    > [!div class="mx-imgBorder"]
    > ![HERE Technologies плочица](media/HERE-tile.png "HERE Technologies плочица")
 
-1. Изаберите [везу](connections.md) из падајуће листе. Ако веза није доступна, обратите се администратору. Ако сте администратор, везу можете да направите избором **Додај везу**. Одаберите **HERE Technologies** из падајућег менија. 
+1. Изаберите [везу](connections.md) са падајуће листе. Ако веза није доступна, обратите се администратору. Ако сте администратор, везу можете да направите избором **Додај везу**. Одаберите **HERE Technologies** са падајуће листе. 
 
 1. Изаберите **Повежите се са HERE Technologies** да потврдите избор.
 
@@ -66,13 +66,13 @@ ms.locfileid: "5896069"
 
 1. Наведите важећи HERE Technologies API кључ.
 
-1. Прегледајте и дајте свој пристанак за **Приватност података и усаглашеност** тако што ћете изабрати поље за потврду **Слажем се**
+1. Прегледајте и дајте сагласност за **Приватност података и усклађеност** избором опције **Слажем се**.
 
 1. Изаберите **Верификуј** да бисте проверили ваљаност конфигурације.
 
 1. По завршетку верификације, изаберите **Сачувај**.
 
-> [!div class="mx-imgBorder"]
+   > [!div class="mx-imgBorder"]
    > ![Страница за конфигурацију везе за HERE Technologies](media/enrichment-HERE-connection.png "Страница за конфигурацију везе за HERE Technologies")
 
 ## <a name="enrichment-results"></a>Резултати обогаћивања
@@ -85,12 +85,12 @@ ms.locfileid: "5896069"
 
 ## <a name="next-steps"></a>Следећи кораци
 
-Надоградите на обогаћеним подацима о клијентима. Креирајте [сегменте](segments.md), [мере](measures.md), па чак и [извезите податке](export-destinations.md) да бисте пружили персонализована искуства својим клијентима.
+Надоградите на обогаћеним подацима о клијентима. Креирајте [сегменте](segments.md) и [мере](measures.md), па чак и [извоз података](export-destinations.md) да пружите персонализована искуства својим клијентима.
 
 ## <a name="data-privacy-and-compliance"></a>Приватност података и усаглашеност
 
 Када омогућите да Dynamics 365 Customer Insights преноси податке у HERE Technologies, дозвољавате пренос података изван границе усклађености за Dynamics 365 Customer Insights, укључујући потенцијално осетљиве податке као што су лични подаци. Microsoft ће преносити такве податке по вашем упутству, али ви сте одговорни за то да HERE Technologies испуњава све обавезе приватности или безбедности које имате. За више информација погледајте [Изјаву о приватности компаније Microsoft](https://go.microsoft.com/fwlink/?linkid=396732).
-Dynamics 365 Customer Insights администратор може у сваком тренутку да уклони ово обогаћивање како бисте престали са коришћењем ове функционалности.
+Ваш Dynamics 365 Customer Insights администратор може у сваком тренутку да уклони ово обогаћивање како бисте престали са коришћењем ове функционалности.
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
