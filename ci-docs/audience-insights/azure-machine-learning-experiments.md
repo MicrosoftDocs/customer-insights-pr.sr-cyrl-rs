@@ -9,12 +9,12 @@ author: naravill
 ms.author: naravill
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: edd2cf488b52cef87b09b90336e48fdc7f470a68
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: 3f97e22687ae4f5536d492bac83bdf9c711e2c94
+ms.sourcegitcommit: dab2cbf818fafc9436e685376df94c5e44e4b144
 ms.translationtype: HT
 ms.contentlocale: sr-Cyrl-RS
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5597437"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6554453"
 ---
 # <a name="use-azure-machine-learning-based-models"></a>Користите моделе засноване на Azure машинском учењу
 
@@ -52,7 +52,7 @@ ms.locfileid: "5597437"
      У дизајнеру отворите **Изаберите колоне у скупу података** и изаберите **Постави као параметар канала** где дајете име за параметар.
 
      > [!div class="mx-imgBorder"]
-     > ![Одређивање параметара скупа података у дизајнеру](media/intelligence-designer-dataset-parameters.png "Одређивање параметара скупа података у дизајнеру")
+     > ![Одређивање параметара скупа података у дизајнеру.](media/intelligence-designer-dataset-parameters.png "Одређивање параметара скупа података у дизајнеру")
    
 * Параметар скупа података у SDK-у (Python)
    
@@ -78,7 +78,7 @@ ms.locfileid: "5597437"
 
 * Дизајнер обезбеђује [модул за извоз података](/azure/machine-learning/algorithm-module-reference/export-data) који омогућава извоз излаза канала у Azure складиште. Тренутно модул мора да користи тип складишта података **Azure складиште блоб објеката** и да одреди параметре та **складиште података** и релативну **путању**. Customer Insights замењује оба ова параметра током извршавања канала помоћу складишта података и путање која је доступна производу.
    > [!div class="mx-imgBorder"]
-   > ![Извоз конфигурације модула података](media/intelligence-designer-importdata.png "Извоз конфигурације модула података")
+   > ![Извоз конфигурације модула података.](media/intelligence-designer-importdata.png "Извоз конфигурације модула података")
    
 * Када записујете излаз закључка помоћу кода, можете отпремити излаз на путању унутар *регистрованог складишта података* у радном простору. Ако су за путању и складиште података одређени параметри у каналу, Customer insights моћи ће да прочита и увезе излаз закључка. Тренутно је подржан један табеларни излаз у csv формату. Путања мора да садржи директоријум и име датотеке.
 

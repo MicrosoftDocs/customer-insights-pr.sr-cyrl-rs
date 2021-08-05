@@ -9,12 +9,12 @@ ms.topic: how-to
 author: Nils-2m
 ms.author: nikeller
 manager: shellyha
-ms.openlocfilehash: 3fa91553fd50a22ab62b5a2b1e3f13b9483776a8
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: 2ab5a9059991611a2959a19cc688d232ec782e1e
+ms.sourcegitcommit: dab2cbf818fafc9436e685376df94c5e44e4b144
 ms.translationtype: HT
 ms.contentlocale: sr-Cyrl-RS
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5598173"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6554131"
 ---
 # <a name="microsoft-power-apps-connector-preview"></a>Microsoft Power Apps конектор (преглед)
 
@@ -56,12 +56,12 @@ Customer Insights је један од многих [доступних изво
 1. Додајте контролу **Галерија** у апликацију коју градите.
 
 > [!div class="mx-imgBorder"]
-> ![Додајте елемент галерије](media/connector-powerapps9.png "Додајте елемент галерије")
+> ![Додајте елемент галерије.](media/connector-powerapps9.png "Додајте елемент галерије")
 
 1. Изаберите **Клијент** као извор података за ставке.
 
     > [!div class="mx-imgBorder"]
-    > ![Изаберите извор података](media/choose-datasource-powerapps.png "Изаберите извор података")
+    > ![Изаберите извор података.](media/choose-datasource-powerapps.png "Изаберите извор података")
 
 1. Можете да промените таблу са подацима на десној страни да бисте изабрали поље које ће ентитет Клијент приказати у галерији.
 

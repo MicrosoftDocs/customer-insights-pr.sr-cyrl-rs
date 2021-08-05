@@ -9,19 +9,19 @@ ms.topic: conceptual
 author: NimrodMagen
 ms.author: nimagen
 manager: shellyha
-ms.openlocfilehash: b6cc0ad1a47a6c00e3bf220271f42870fc53621b
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: a6131d4dddce48b0fba153bcefe5631e0d22d808
+ms.sourcegitcommit: dab2cbf818fafc9436e685376df94c5e44e4b144
 ms.translationtype: HT
 ms.contentlocale: sr-Cyrl-RS
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5597161"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6554039"
 ---
 # <a name="customer-profiles-search--filter-index"></a>Профили клијената: Индекс за претраживање и филтрирање
 
 Резултат обједињавања података о клијентима је ентитет профила клијента који пружа јединствен поглед на вашу укупну корисничку базу. Да бисте брзо [пронашли информације о одређеном клијенту или групи клијената](customer-profiles.md), можете да конфигуришете могућности **претраге** и **филтрирања** на страници **Клијенти**. Читајте даље како бисте сазнали како администратори могу да уређују атрибуте на страници **Индекс претраге и филтрирања**, које су на располагању корисницима за претраживање и филтрирање.
 
 > [!div class="mx-imgBorder"]
-> ![Филтер претраге](media/search-filter.png "Филтер претраге")
+> ![Филтер претраге.](media/search-filter.png "Филтер претраге")
 
 ## <a name="add-fields-and-specify-attributes"></a>Додајте поља и одредите атрибуте
 

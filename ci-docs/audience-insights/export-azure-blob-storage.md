@@ -1,7 +1,7 @@
 ---
 title: Извоз Customer Insights података у Azure складиште блоб објекта
 description: Сазнајте како да конфигуришете везу и извезете садржај у складиште блоб објекта.
-ms.date: 03/03/2021
+ms.date: 06/30/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: how-to
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 3c19dc6d4956a33a5bd3cea706f8a154198d487f
-ms.sourcegitcommit: e8e03309ba2515374a70c132d0758f3e1e1851d0
+ms.openlocfilehash: e38fc06a948178fcbc62c08a4cf4816e1d030e79
+ms.sourcegitcommit: 656b1a6cdff37ba4f808311fd0327ab38e02ed13
 ms.translationtype: HT
 ms.contentlocale: sr-Cyrl-RS
-ms.lasthandoff: 05/04/2021
-ms.locfileid: "5976199"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "6318317"
 ---
 # <a name="export-segment-list-and-other-data-to-azure-blob-storage-preview"></a>Извоз листе сегмената и других података у Azure складиште блоб објекта (преглед)
 
@@ -40,11 +40,14 @@ ms.locfileid: "5976199"
 
 Овај извоз можете да конфигуришете ако имате приступ вези ове врсте. За више информација погледајте [Дозволе потребне за конфигурисање извоза](export-destinations.md#set-up-a-new-export).
 
+> [!IMPORTANT]
+> Ако сте укључили подешавање меког брисања за налог Azure складишта блоб објекта, извоз неће успети. Искључите меко брисање за извоз података у блоб објекте. За више информација погледајте [Омогућавање меког брисања блоб објеката](/azure/storage/blobs/soft-delete-blob-enable.md)
+
 1. Идите на **Подаци** > **Извози**.
 
 1. Да бисте креирали нови извоз, изаберите **Додај одредиште**.
 
-1. У пољу **Веза за извоз**, одаберите везу из одељка Azure складишта блоб објекта. Ако не видите назив овог одељка, не постоје вам доступне везе овог типа.
+1. У пољу **Веза за извоз**, одаберите везу из одељка Azure складишта блоб објекта. Ако не видите назив овог одељка, тада вам нису доступне везе овог типа.
 
 1. Изаберите поље поред сваког ентитета који желите да извезете на ово одредиште.
 
@@ -53,13 +56,16 @@ ms.locfileid: "5976199"
 Чување извоза не покреће извоз одмах.
 
 Извоз се покреће са сваким [заказаним освежавањем](system.md#schedule-tab).     
+
 Такође можете да [извезете податке на захтев](export-destinations.md#run-exports-on-demand). 
 
 Извезени подаци се чувају у контејнеру складишта блоб објекта који сте конфигурисали. Следеће путање фасциклу се аутоматски креирају у вашем контејнеру:
 
-- За изворне ентитете и ентитете које генерише систем: `%ContainerName%/CustomerInsights_%instanceID%/%ExportDestinationName%/%EntityName%/%Year%/%Month%/%Day%/%HHMM%/%EntityName%_%PartitionId%.csv`
+- За изворне ентитете и ентитете које генерише систем:   
+  `%ContainerName%/CustomerInsights_%instanceID%/%ExportDestinationName%/%EntityName%/%Year%/%Month%/%Day%/%HHMM%/%EntityName%_%PartitionId%.csv`  
   - Пример: `Dynamics365CustomerInsights/CustomerInsights_abcd1234-4312-11f4-93dc-24f72f43e7d5/BlobExport/HighValueSegment/2020/08/24/1433/HighValueSegment_1.csv`
-- Датотека model.json за извезене ентитете биће на нивоу %ExportDestinationName%
+ 
+- Датотека model.json за извезене ентитете биће на нивоу %ExportDestinationName%.  
   - Пример: `Dynamics365CustomerInsights/CustomerInsights_abcd1234-4312-11f4-93dc-24f72f43e7d5/BlobExport/model.json`
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

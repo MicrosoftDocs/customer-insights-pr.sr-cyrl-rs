@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: NimrodMagen
 ms.author: nimagen
 manager: shellyha
-ms.openlocfilehash: c9adb4d7db74573d0512ae7a68a0e7ab51c994a0
-ms.sourcegitcommit: d84d664e67f263bfeb741154d309088c5101b9c3
+ms.openlocfilehash: 8ab55d101f98169b8f794ce580ddd0a71ede6642
+ms.sourcegitcommit: dab2cbf818fafc9436e685376df94c5e44e4b144
 ms.translationtype: HT
 ms.contentlocale: sr-Cyrl-RS
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "6304622"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6554636"
 ---
 # <a name="customer-profiles"></a>Профили клијената
 
@@ -23,11 +23,11 @@ ms.locfileid: "6304622"
 Клијенти могу бити појединци или организације (преглед). Сваки профил клијента или организације представљен је плочицом. Изаберите плочицу да бисте видели додатне информације о том конкретном клијенту или организацији. Употребите контроле за страничење на дну странице да бисте видели додатне записе.
 
 > [!div class="mx-imgBorder"] 
-> ![B2C профили клијената](media/profiles-customers.png "B2C профили клијената")
+> ![B2C профили клијената.](media/profiles-customers.png "B2C профили клијената")
 
 Организације (Преглед)
 > [!div class="mx-imgBorder"] 
-> ![B2B профили клијената](media/profile-customers-b2b.png "B2B профили клијената")
+> ![B2B профили клијената.](media/profile-customers-b2b.png "B2B профили клијената")
 
 > [!NOTE]
 > Ако не можете да видите плочице када изаберете **Клијенти** у навигацији, ваш администратор треба да [дефиниши барем један атрибут се може да се претражује](search-filter-index.md) у одељку **Индекс претраге и филтрирања**.
@@ -47,7 +47,7 @@ ms.locfileid: "6304622"
 2. Означите поља поред атрибута по којима желите да филтрирате клијенте.
 
    > [!div class="mx-imgBorder"] 
-   > ![Профили клијената](media/profiles-customers3.png "Профили клијената")
+   > ![Профили клијената.](media/profiles-customers3.png "Профили клијената")
 
 3. Уклоните филтере избором **Обриши филтере** на страници **Клијенти**.
 

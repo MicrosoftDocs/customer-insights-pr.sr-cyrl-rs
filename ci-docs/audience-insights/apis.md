@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: m-hartmann
 ms.author: wimohabb
 manager: shellyha
-ms.openlocfilehash: 9326f821f9970ba2254ab804814e369abb677eb0
-ms.sourcegitcommit: d84d664e67f263bfeb741154d309088c5101b9c3
+ms.openlocfilehash: f98af8fb1c1d1ae050a5273286d35cf276d9fb17
+ms.sourcegitcommit: dab2cbf818fafc9436e685376df94c5e44e4b144
 ms.translationtype: HT
 ms.contentlocale: sr-Cyrl-RS
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "6304760"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6554499"
 ---
 # <a name="work-with-customer-insights-apis"></a>Радите са Customer Insights API-јем
 
@@ -35,7 +35,7 @@ Dynamics 365 Customer Insights пружа API-је за изградњу вла�
  
    Омогућавање API-ја креира примарни и секундарни кључ претплате за вашу инстанцу који се користи у API захтевима. Кључеве можете да поново генеришете тако што ћете изабрати **Поново генериши примарни** или **Поново генериши секундарни** на **Администратор** > **Дозволе** > **API-ји**.
 
-   :::image type="content" source="media/enable-apis.gif" alt-text="Омогућавање Customer Insights API-ја":::
+   :::image type="content" source="media/enable-apis.gif" alt-text="Омогућавање Customer Insights API-ја.":::
 
 1. Изаберите **Истражите наше API-је** да [испробате API-је](https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights&operation=Get-all-instances).
 
@@ -129,7 +129,7 @@ HTTP одговор ће се ускоро појавити испод.
  
    Алтернативно, покрените ову команду у **NuGet конзоли менаџера пакета**:`Install-Package -Id Microsoft.Dynamics.CustomerInsights.Api -Source nuget.org -ProjectName <project name> [-Version <version>]`
 
-   :::image type="content" source="media/visual-studio-nuget-package.gif" alt-text="Додајте NuGet пакет у Visual Studio пројекат":::
+   :::image type="content" source="media/visual-studio-nuget-package.gif" alt-text="Додајте NuGet пакет у Visual Studio пројекат.":::
 
 #### <a name="use-the-c-client-library"></a>Користите C# клијентску библиотеку
 
@@ -141,7 +141,7 @@ HTTP одговор ће се ускоро појавити испод.
 
 1. Проследите `HttpClient` у конструкцију `CustomerInsights` клијента.
 
-   :::image type="content" source="media/httpclient-sample.png" alt-text="Узорак httpclient-а":::
+   :::image type="content" source="media/httpclient-sample.png" alt-text="Узорак httpclient-а.":::
 
 1. Упућујте позиве клијенту за „методе проширења“, на пример, `GetAllInstancesAsync`. Ако је потребан приступ основном `Microsoft.Rest.HttpOperationResponse`, користите „методе http порука“ – на пример, `GetAllInstancesWithHttpMessagesAsync`.
 

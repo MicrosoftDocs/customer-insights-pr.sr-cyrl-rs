@@ -9,12 +9,12 @@ author: JimsonChalissery
 ms.author: jimsonc
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: f588f45ed11efffbb335003642a4b92810153017
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: 96fbd18a20e0df7abd4e79ff77e2c3a396e33ccc
+ms.sourcegitcommit: dab2cbf818fafc9436e685376df94c5e44e4b144
 ms.translationtype: HT
 ms.contentlocale: sr-Cyrl-RS
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5596793"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6554223"
 ---
 # <a name="similar-customers-preview"></a>Слични купци (верзија за преглед)
 
@@ -50,7 +50,7 @@ ms.locfileid: "5596793"
 Након обраде сличног сегмента, нови сегмент ћете наћи наведеног страници **Сегменти**.
 
 > [!div class="mx-imgBorder"]
-> ![Сегмент сличних клијената](media/expanded-segment.png "Сегмент сличних клијената")
+> ![Сегмент сличних клијената.](media/expanded-segment.png "Сегмент сличних клијената")
 
 Изаберите **Прикажи** на траци са радњама да бисте отворили детаље сегмента. Овај приказ садржи информације о расподели резултата кроз [оцене сличности](#about-similarity-scores). Такође ћете наћи сличности у вредностима резултата у **Преглед чланова сегмента**.
 

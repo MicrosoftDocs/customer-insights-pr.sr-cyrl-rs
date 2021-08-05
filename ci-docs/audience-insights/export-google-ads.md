@@ -9,12 +9,12 @@ author: pkieffer
 ms.author: philk
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: c23c8b4e6758df08e04bf1e3ae0cba4dee06fe2b
-ms.sourcegitcommit: d84d664e67f263bfeb741154d309088c5101b9c3
+ms.openlocfilehash: c16967bf8ea1fd02b3f991d7b7d3715a71fa8681
+ms.sourcegitcommit: 9a99e48e96dfb3d895db428f37c30ae55eea66b7
 ms.translationtype: HT
 ms.contentlocale: sr-Cyrl-RS
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "6305358"
+ms.lasthandoff: 07/14/2021
+ms.locfileid: "6604295"
 ---
 # <a name="export-segments-to-google-ads-preview"></a>Извоз сегмената у Google Ads (верзија за преглед)
 
@@ -71,7 +71,7 @@ ms.locfileid: "6305358"
 
 1. Унесите **[ID корисника за Google огласе](https://support.google.com/google-ads/answer/7558048?hl=en#:~:text=Audience%20lists%20is%20a%20section,Display%20Network%20through%20remarketing%20campaigns.)** и изаберите **Повежите се** да бисте започели повезивање са Google огласима.
 
-1. У одељку **Подударање података**, у пољу **Адреса е-поште** изаберите поље у обједињеном корисничком профилу које представља е-адресу клијента. Поновите неке кораке за поља **Име** и **Презиме**.
+1. У одељку **Подударање података**, у пољу **Адреса е-поште** изаберите поље у обједињеном корисничком профилу које представља е-адресу клијента.
 
 1. Изаберите сегменте које желите да извезете. У Google огласима можете укупно извести до 1 милион корисничких профила.
 

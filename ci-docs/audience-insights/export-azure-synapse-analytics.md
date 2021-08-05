@@ -9,12 +9,12 @@ ms.topic: how-to
 author: stefanie-msft
 ms.author: sthe
 manager: shellyha
-ms.openlocfilehash: 822082d661863e737ea3d3a749a6c878db766967
-ms.sourcegitcommit: e8e03309ba2515374a70c132d0758f3e1e1851d0
+ms.openlocfilehash: 7ee57aa9e86ebf9bd1989d88750642f0b01bd4bf
+ms.sourcegitcommit: f18635c29bb25d9e424a3f5825dc2696278450cf
 ms.translationtype: HT
 ms.contentlocale: sr-Cyrl-RS
-ms.lasthandoff: 05/04/2021
-ms.locfileid: "5977395"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "6327382"
 ---
 # <a name="export-data-to-azure-synapse-analytics-preview"></a>Извоз података у услугу Azure Synapse Analytics (преглед)
 
@@ -74,8 +74,10 @@ Azure Synapse је аналитичка услуга која убрзава в�
 1. Обезбедите препознатљиво **Име за приказ** за ваш извоз и **Назив базе података**.
 
 1. Изаберите које ентитете желите да извезете у услугу Azure Synapse Analytics.
+   > [!NOTE]
+   > Извори података на основу [Common Data Model фасцикле](connect-common-data-model.md) нису подржани.
 
-1. Изаберите ставку **Сачувај**.
+2. Изаберите ставку **Сачувај**.
 
 Чување извоза не покреће извоз одмах.
 

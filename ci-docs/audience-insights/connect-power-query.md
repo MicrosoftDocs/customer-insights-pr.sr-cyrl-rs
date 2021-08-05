@@ -9,12 +9,12 @@ ms.topic: how-to
 author: adkuppa
 ms.author: adkuppa
 manager: shellyha
-ms.openlocfilehash: 50c231070ff9930c1ea82971bf4f8541a89d5027
-ms.sourcegitcommit: 0b754d194d765afef70d1008db7b347dd1f0ee40
+ms.openlocfilehash: b37bb5dfeed2326784ef276a93a04bec626aaf6e
+ms.sourcegitcommit: dab2cbf818fafc9436e685376df94c5e44e4b144
 ms.translationtype: HT
 ms.contentlocale: sr-Cyrl-RS
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "6305909"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6554708"
 ---
 # <a name="connect-to-a-power-query-data-source"></a>Повезивање са Power Query извором података
 
@@ -42,7 +42,7 @@ Power Query нуди широк скуп конектора за унос под
 1. Дијалог **Power Query – Уређивање профила** вам омогућава да прегледате и прецизирате податке. Ентитети које су системи идентификовали у вашем изабраном извору података приказују се у левом окну.
 
    > [!div class="mx-imgBorder"]
-   > ![Дијалог за уређивање упита](media/data-manager-configure-edit-queries.png "Дијалог за уређивање упита")
+   > ![Дијалог за уређивање упита.](media/data-manager-configure-edit-queries.png "Дијалог за уређивање упита")
 
 1. Такође можете да трансформишете своје податке. Изаберите ентитет за уређивање или трансформисање. Користите опције у Power Query прозору како бисте применили трансформације. Свака трансформација се наводи у оквиру **Примењених корака**. Power Query пружа бројне унапред направљене могућности трансформације. За више информација, погледајте [Power Query трансформације](/power-query/power-query-what-is-power-query#transformations).
 
@@ -75,7 +75,7 @@ Power Query нуди широк скуп конектора за унос под
 2. Изаберите вертикалне три тачке поред извора података које желите да промените и изаберите **Уреди** из падајућег менија.
 
    > [!div class="mx-imgBorder"]
-   > ![Уређивање опције](media/edit-option-data-sources.png "Уређивање опције")
+   > ![Уређивање опције.](media/edit-option-data-sources.png "Уређивање опције")
 
 3. Примените промене и трансформације у дијалогу **Power Query – уређивање упита** као што је описано у одељку [Креирање новог извора података](#create-a-new-data-source).
 

@@ -2,6 +2,8 @@
   href: index.yml
 - name: Преглед производа
   href: overview.md
+- name: Креирање пробне верзије
+  href: audience-insights/get-started-trial.md
 - name: Приступ окружењу
   href: 'https://home.ci.ai.dynamics.com/'
 - name: Увиди у циљну групу
@@ -10,12 +12,10 @@
       href: audience-insights/index.yml
     - name: Преглед могућности
       href: audience-insights/overview.md
-    - name: Бесплатна пробна верзија
-      href: 'https://dynamics.microsoft.com/get-started/?appname=customerinsights'
     - name: Нове и ажуриране функције
       href: audience-insights/whats-new-audience-insights.md
-    - name: Направите ново окружење
-      href: audience-insights/home.md
+    - name: Креирање новог окружења
+      href: audience-insights/get-started-paid.md
     - name: Упознавање модула
       items:
         - name: Унесите податке
@@ -34,8 +34,8 @@
           href: audience-insights/connect-power-query.md
         - name: Додајте Common Data Model фасциклу као извор података
           href: audience-insights/connect-common-data-model.md
-        - name: Додавање Common Data Service управљано језеро података
-          href: audience-insights/connect-common-data-service-lake.md
+        - name: Додавање Dataverse управљано језеро података
+          href: audience-insights/connect-dataverse-managed-lake.md
         - name: Постепено освежавање за изворе података
           href: audience-insights/incremental-refresh-data-sources.md
         - name: Унос података у реалном времену
@@ -76,11 +76,11 @@
           href: audience-insights/enrichment-experian.md
         - name: Обогаћивање уз SFTP прилагођени увоз
           href: audience-insights/enrichment-SFTP-custom-import.md
-    - name: Сегменти и мере
+    - name: Сегменти
       items:
         - name: Преглед сегмената
           href: audience-insights/segments.md
-        - name: Креирање сегмената и група клијената
+        - name: Креирање сегмената
           href: audience-insights/segment-builder.md
         - name: Предложени сегменти засновани на мерама
           href: audience-insights/suggested-segments.md
@@ -254,6 +254,8 @@
       items:
         - name: Направите и измените догађаје
           href: engagement-insights/refined-events.md
+        - name: Препознајте веб-догађаје од посетилаца којима је претходно потврђен идентитет
+          href: engagement-insights/unknown-to-known.md
         - name: Извоз догађаја
           href: engagement-insights/export-events.md
     - name: Извештаји
@@ -304,7 +306,9 @@
       items:
         - name: Избришите и извезите личне податке
           href: engagement-insights/delete-export-personal-data.md
+    - name: Регионална доступност
+      href: engagement-insights/regional-availability.md
     - name: Ограничења услуге
       href: engagement-insights/quotas.md
-- name: Обратите се подршци
+- name: Контактирајте подршку
   href: 'https://admin.powerplatform.microsoft.com/support'

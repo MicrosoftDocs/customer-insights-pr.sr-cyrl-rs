@@ -9,12 +9,12 @@ author: JimsonChalissery
 ms.author: jimsonc
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 2856888d6ac64d5daabcc5a234f13bc6f88bb3df
-ms.sourcegitcommit: 0b754d194d765afef70d1008db7b347dd1f0ee40
+ms.openlocfilehash: 0803be651662480ddf1fd22952f6a69ee1603001
+ms.sourcegitcommit: dab2cbf818fafc9436e685376df94c5e44e4b144
 ms.translationtype: HT
 ms.contentlocale: sr-Cyrl-RS
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "6306092"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6555003"
 ---
 # <a name="segment-insights-preview"></a>Увиди у сегменте (верзија за преглед)
 
@@ -44,7 +44,7 @@ ms.locfileid: "6306092"
 По завршетку анализе пронађите детаље о овом увиду у **Сегменти** > **Увиди (верзија за преглед)**.
 
 > [!div class="mx-imgBorder"]
-> :::image type="content" source="media/segment-overlap.png" alt-text="Детаљи увида у преклапање сегмената":::
+> :::image type="content" source="media/segment-overlap.png" alt-text="Детаљи увида у преклапање сегмената.":::
 
 Изаберите увид да бисте видели резултате анализе:
 
@@ -77,7 +77,7 @@ ms.locfileid: "6306092"
 По завршетку анализе пронађите детаље о овом увиду у **Сегменти** > **Увиди (верзија за преглед)**.
 
 > [!div class="mx-imgBorder"]
-> :::image type="content" source="media/segment-differentiators.png" alt-text="Детаљи увида у разлике између сегмената":::
+> :::image type="content" source="media/segment-differentiators.png" alt-text="Детаљи увида у разлике између сегмената.":::
 
 Изаберите увид да бисте видели резултате анализе. Анализа разлика укључује две картице. Картица **Атрибути** наводи атрибуте профила који се сматрају разликама. Картица **Мере** наводи разлике. Свака картица садржи следеће детаље:
 

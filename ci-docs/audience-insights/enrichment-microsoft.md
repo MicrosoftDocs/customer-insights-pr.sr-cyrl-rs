@@ -9,12 +9,12 @@ ms.topic: how-to
 author: kishorem-MS
 ms.author: kishorem
 manager: shellyha
-ms.openlocfilehash: 1b11c325649b91ebb47cde924227eacedae64b7a
-ms.sourcegitcommit: d84d664e67f263bfeb741154d309088c5101b9c3
+ms.openlocfilehash: 3b10fb23cca03ed918aa7fd46478b568d5ebbf1a
+ms.sourcegitcommit: dab2cbf818fafc9436e685376df94c5e44e4b144
 ms.translationtype: HT
 ms.contentlocale: sr-Cyrl-RS
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "6305174"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6555509"
 ---
 # <a name="enrich-customer-profiles-with-brand-and-interest-affinities-preview"></a>Обогатите корисничке профиле афинитетима бренда и интересовања (преглед)
 
@@ -27,7 +27,7 @@ ms.locfileid: "6305174"
 Да бисте конфигурисали обогаћивање афинитета интересовања, идите на картицу **Откријте** и изаберите **Обогати моје податке** на плочици **Интересовања**.
 
    > [!div class="mx-imgBorder"]
-   > ![Плочице Брендови и Интересовања](media/BrandsInterest-tile-Hub.png "Плочице Брендови и Интересовања")
+   > ![Плочице Брендови и Интересовања.](media/BrandsInterest-tile-Hub.png "Плочице Брендови и Интересовања")
 
 ## <a name="how-we-determine-affinities"></a>Како утврђујемо афинитете
 
@@ -123,7 +123,7 @@ ms.locfileid: "6305174"
 
 Након покретања поступка обогаћивања, идите на **Моја обогаћивања** да бисте прегледали укупан број обогаћених клијената и расподелу брендова или интересовања у обогаћеним корисничким профилима.
 
-:::image type="content" source="media/my-enrichments.png" alt-text="Преглед резултата након покретања процеса обогаћивања":::
+:::image type="content" source="media/my-enrichments.png" alt-text="Преглед резултата након покретања процеса обогаћивања.":::
 
 Прегледајте обогаћене податке избором опције **Приказ обогаћених података** у графикону. Обогаћени подаци о брендовима иду у ентитет **BrandAffinityFromMicrosoft**. Подаци за интересовања су у ентитету **InterestAffinityFromMicrosoft**. Наћи ћете и ове ентитете наведене у групи **Обогаћивање** у одељку **Подаци** > **Ентитети**.
 
@@ -131,7 +131,7 @@ ms.locfileid: "6305174"
 
 Афинитети према бренду и интересовању могу се такође видети на картицама појединачних клијената. Идите на **Клијенти** и изаберите кориснички профил. На картици клијента ћете пронаћи графиконе за брендове или интересовања за које људи у демографском профилу тог клијента имају афинитет.
 
-:::image type="content" source="media/enrichment-customer-card.png" alt-text="Картица клијента са обогаћеним подацима":::
+:::image type="content" source="media/enrichment-customer-card.png" alt-text="Картица клијента са обогаћеним подацима.":::
 
 ## <a name="next-steps"></a>Следећи кораци
 
