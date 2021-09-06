@@ -1,7 +1,7 @@
 ---
-title: Повежите се са Azure Data Lake Storage Gen2 налог помоћу принципала услуге
-description: Користите принципал Azure услуге за увиде у кориснике да бисте се повезали са сопственим језером података када га приложите увидима у кориснике.
-ms.date: 02/10/2021
+title: Повезивање са Azure Data Lake Storage налогом коришћењем принципала услуге
+description: За повезивање са сопственим језером података, користите принципала услуге Azure.
+ms.date: 07/23/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
@@ -9,54 +9,63 @@ author: adkuppa
 ms.author: adkuppa
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: cc94ad49f12067d513db4663bff60620d6501eb0
-ms.sourcegitcommit: 8cc70f30baaae13dfb9c4c201a79691f311634f5
+ms.openlocfilehash: 845d1f55eb99f2adf9b437124addec4f6d016fec
+ms.sourcegitcommit: 1c396394470df8e68c2fafe3106567536ff87194
 ms.translationtype: HT
 ms.contentlocale: sr-Cyrl-RS
-ms.lasthandoff: 07/30/2021
-ms.locfileid: "6692131"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "7461166"
 ---
-# <a name="connect-to-an-azure-data-lake-storage-gen2-account-with-an-azure-service-principal-for-audience-insights"></a>Повежите се са Azure Data Lake Storage Gen2 налогом помоћу принципала Azure услуге за увиде у циљну групу
+# <a name="connect-to-an-azure-data-lake-storage-account-by-using-an-azure-service-principal"></a>Повезивање са Azure Data Lake Storage налогом коришћењем Azure принципала услуге
+<!--note from editor: The Cloud Style Guide would have us just use "Azure Data Lake Storage" to mean the current version, unless the old version (Gen1) is mentioned. I've followed this guidance, even though it seems that our docs and Azure docs are all over the map on this.-->
+Аутоматизовани алати који користе Azure услуге увек би требало да имају ограничене дозволе. Уместо да се апликације пријављују као потпуно привилеговани корисник, Azure нуди принципале услуга. Читајте даље да бисте сазнали како да повежете услугу Dynamics 365 Customer Insights са Azure Data Lake Storage налогом користећи принципала услуге Azure уместо кључева налога за складиштење. 
 
-Аутоматизовани алати који користе Azure услуге увек би требало да имају ограничене дозволе. Уместо да се апликације пријављују као потпуно привилеговани корисник, Azure нуди принципале услуга. Читајте даље да бисте сазнали како да повежете увиде у кориснике са Azure Data Lake Storage Gen2 налогом који користи Azure принципал услуге уместо кључева налога за складиштење. 
-
-Принципал услуге можете користити за сигурно [додавање или уређивање Common Data Model фасцикле као извора података](connect-common-data-model.md) или [креирајте ново или ажурирајте постојеће окружење](get-started-paid.md).
+Можете користити принципала услуге да безбедно [додате или уредите Common Data Service фасциклу као извор података](connect-common-data-model.md) или да [креирате или ажурирате окружење](get-started-paid.md).<!--note from editor: Suggested. Or it could be ", or create a new environment or update an existing one". I think "new" is implied with "create". The comma is necessary.-->
 
 > [!IMPORTANT]
-> - Azure Data Lake Gen2 налог за складиштење који намерава да користи принципала услуге мора да има [омогућену функцију хијерархијског простора имена (HNS)](/azure/storage/blobs/data-lake-storage-namespace).
+> - Data Lake Storage налог који ће користити<!--note from editor: Suggested. Or perhaps it could be "The Data Lake Storage account to which you want to give access to the service principal..."--> принципал услуге мора да има [омогућен хијерархијски простор имена](/azure/storage/blobs/data-lake-storage-namespace).
 > - Потребне су вам администраторске дозволе за Azure претплату да бисте креирали принципал услуге.
 
-## <a name="create-azure-service-principal-for-audience-insights"></a>Направите принципал Azure услуге за увиде у кориснике
+## <a name="create-an-azure-service-principal-for-customer-insights"></a>Креирање принципала услуге Azure за Customer Insights
 
-Пре него што направите нов принципал услуге за увиде у кориснике, проверите да ли већ постоји у вашој организацији.
+Пре него што креирате новог принципала услуге за увиде у циљну групу или увиде у ангажовање, проверите да ли већ постоји у вашој организацији.
 
 ### <a name="look-for-an-existing-service-principal"></a>Потражите постојећи принципал услуге
 
 1. Идите на [Azure портал за администрацију](https://portal.azure.com) и пријавите се у своју организацију.
 
-2. Изаберите **Azure Active Directory** из Azure услуга.
+2. На страници **Azure услуге** изаберите **Azure Active Directory**.
 
 3. У одељку **Управљање**, изаберите **Пословне апликације**.
 
-4. Потражите ID директне апликације увида у кориснике `0bfc4568-a4ba-4c58-bd3e-5d3e76bd7fff` или име `Dynamics 365 AI for Customer Insights`.
+4. Потражите Microsoft<!--note from editor: Via Microsoft Writing Style Guide.--> ID апликације:
+   - Увиди у циљну групу: `0bfc4568-a4ba-4c58-bd3e-5d3e76bd7fff` под називом `Dynamics 365 AI for Customer Insights`
+   - Увиди у ангажовање: `ffa7d2fe-fc04-4599-9f6d-7ca06dd0c4fd` под називом `Dynamics 365 AI for Customer Insights engagement insights`
 
-5. Ако пронађете одговарајући запис, то значи да постоји принципал услуге за увиде у кориснике. Не морате да га поново креирате.
+5. Ако пронађете одговарајући запис, то значи да принципал услуге већ постоји. 
    
-   :::image type="content" source="media/ADLS-SP-AlreadyProvisioned.png" alt-text="Снимак екрана који приказује постојећи принципал услуге.":::
+   :::image type="content" source="media/ADLS-SP-AlreadyProvisioned.png" alt-text="Снимак екрана који приказује постојећег принципала услуге.":::
    
 6. Ако се не прикажу резултати, креирајте нов принципал услуге.
 
+>[!NOTE]
+>Да бисте искористили сву моћ услуге Dynamics 365 Customer Insights, предлажемо да обе апликације додате принципалу услуге.<!--note from editor: Using the note format is suggested, just so this doesn't get lost by being tucked up in the step.-->
+
 ### <a name="create-a-new-service-principal"></a>Креирај нов принципал услуге
+<!--note from editor: Some general formatting notes: The MWSG wants bold for text the user enters (in addition to UI strings and the settings users select), but there's plenty of precedent for using code format for entering text in PowerShell so I didn't change that. Note that italic should be used for placeholders, but not much else.-->
+1. Инсталирајте најновију верзију услуге Azure Active Directory PowerShell for Graph. За више информација погледајте чланак [Инсталирање услуге Azure Active Directory PowerShell for Graph](/powershell/azure/active-directory/install-adv2).
 
-1. Инсталирајте најновију верзију **Azure Active Directory PowerShell за Graph**. За више информација погледајте [Инсталирајте Azure Active Directory PowerShell за Graph](/powershell/azure/active-directory/install-adv2).
-   - На рачунару изаберите Windows тастер на тастатури и потражите **Windows PowerShell** и **Покрени као администратор**.
+   1. На рачунару изаберите тастер Windows на тастатури и потражите **Windows PowerShell** и изаберите **Покрени као администратор**.<!--note from editor: Or should this be something like "search for **Windows PowerShell** and, if asked, select **Run as administrator**."?-->
    
-   - У PowerShell прозору који се отвори унесите `Install-Module AzureAD`.
+   1. У PowerShell прозору који се отвори унесите `Install-Module AzureAD`.
 
-2. Направите принципал услуге за увиде у кориснике помоћу Azure AD PowerShell модула.
-   - У PowerShell прозор унесите `Connect-AzureAD -TenantId "[your tenant ID]" -AzureEnvironmentName Azure`. Замените „свој ID закупца“ стварним ID-ом вашег закупца тамо где желите да направите принципал услуге. Параметар назива окружења `AzureEnvironmentName` је опционалан.
+2. Креирајте принципала услуге за Customer Insights помоћу Azure AD PowerShell модула.
+
+   1. У PowerShell прозор унесите `Connect-AzureAD -TenantId "[your tenant ID]" -AzureEnvironmentName Azure`. Замените *"[your tenant ID]"*<!--note from editor: Edit okay? Or should the quotation marks stay in the command line, in which case it would be "Replace *[your tenant ID]* --> стварним ID-ом вашег закупца у којем желите да креирате принципала услуге. Параметар назива окружења `AzureEnvironmentName` је опционалан.
   
-   - Унесите `New-AzureADServicePrincipal -AppId "0bfc4568-a4ba-4c58-bd3e-5d3e76bd7fff" -DisplayName "Dynamics 365 AI for Customer Insights"`. Ова наредба креира принципал услуге за увиде о корисницима на изабраном закупцу.  
+   1. Унесите `New-AzureADServicePrincipal -AppId "0bfc4568-a4ba-4c58-bd3e-5d3e76bd7fff" -DisplayName "Dynamics 365 AI for Customer Insights"`. Ова наредба креира принципал услуге за увиде о корисницима на изабраном закупцу. 
+
+   1. Унесите `New-AzureADServicePrincipal -AppId "ffa7d2fe-fc04-4599-9f6d-7ca06dd0c4fd" -DisplayName "Dynamics 365 AI for Customer Insights engagement insights"`. Ова команда креира принципала за увиде у ангажовање<!--note from editor: Edit okay?--> на изабраном закупцу.
 
 ## <a name="grant-permissions-to-the-service-principal-to-access-the-storage-account"></a>Доделите дозволе принципалу услуге за приступ налогу за складиштење
 
@@ -66,51 +75,49 @@ ms.locfileid: "6692131"
 
 1. Отворите налог за складиштење којем желите да принципал услуге за увиде о корисницима има приступ.
 
-1. Изаберите **Контрола приступа (IAM)** у окну за навигацију и изаберите **Додај** > **Додајте доделу улога**.
-   
-   :::image type="content" source="media/ADLS-SP-AddRoleAssignment.png" alt-text="Снимак екрана који приказује Azure портал током додавања улога.":::
-   
-1. У окну **Додајте доделу улога** поставите следећа својства:
-   - Улога: *Сарадник за податке складишта блоб објекта*
-   - Доделите приступ: *Корисник, група или принципал услуге*
-   - Изаберите: *Dynamics 365 AI for Customer Insights* ([принципал услуге који сте креирали](#create-a-new-service-principal))
+1. У левом окну изаберите **Контрола приступа (IAM)**, а затим изаберите **Додавање** > **Додај доделу улоге**.
+
+   :::image type="content" source="media/ADLS-SP-AddRoleAssignment.png" alt-text="Снимак екрана који приказује Azure портал док додајете доделу улоге.":::
+
+1. У окну **Додај доделу улоге** подесите следећа својства:
+   - Улога: **Сарадник за податке складишта блоб објекта**
+   - Доделите приступ: **Корисник, група или принципал услуге**
+   - Изаберите: **Dynamics 365 AI for Customer Insights** и **Увиди у ангажовање у услузи Dynamics 365 AI for Customer Insights** (два [принципала услуга](#create-a-new-service-principal) која сте креирали раније у овој процедури)
 
 1.  Изаберите ставку **Сачувај**.
 
 Пренос промена може трајати до 15 минута.
 
-## <a name="enter-the-azure-resource-id-or-the-azure-subscription-details-in-the-storage-account-attachment-to-audience-insights"></a>Унесите ID Azure ресурса или детаље о Azure претплати у прилогу налога за складиштење у увидима о корисницима.
+## <a name="enter-the-azure-resource-id-or-the-azure-subscription-details-in-the-storage-account-attachment-to-audience-insights"></a>Унесите ID Azure ресурса или детаље о Azure претплати у прилогу налога за складиштење у увидима о циљној групи
 
-Приложите Azure Data Lake налог за складиштење у увиде о корисницима ради [чувања излазних података](manage-environments.md) или [га користите као извор података](connect-dataverse-managed-lake.md). Избор опције Azure Data Lake омогућава вам да одаберете између приступа заснованог на ресурсима или претплати.
-
-Следите кораке у наставку да бисте пружили потребне информације о одабраном приступу.
+Можете да<!--note from editor: Edit suggested only if this section is optional.--> приложите Data Lake Storage налог у увиде о циљној групи у [излазне податке за складиштење](manage-environments.md) или их [користите као извор података](connect-common-data-service-lake.md). Ова опција вам омогућава да бирате између приступа заснованог на ресурсима или приступа заснованог на претплати. У зависности од приступа који изаберете, следите поступак у једном од следећих одељака.<!--note from editor: Suggested.-->
 
 ### <a name="resource-based-storage-account-connection"></a>Повезивање налога за складиштење засновано на ресурсима
 
 1. Идите на [Azure портал за администрацију](https://portal.azure.com), пријавите се на своју претплату и отворите налог за складиштење.
 
-1. Идите у **Подешавања** > **Својства** у окну за навигацију.
+1. У левом окну идите на **Подешавања** > **Својства**.
 
 1. Копирајте вредност ID-а ресурса налога за складиштење.
 
    :::image type="content" source="media/ADLS-SP-ResourceId.png" alt-text="Копирајте ID ресурса налога за складиштење.":::
 
-1. У увидима о корисницима уметните ID ресурса у поље ресурса приказано на екрану за повезивање са налогом за складиштење.
+1. У увидима о циљној групи, уметните ID ресурса у поље ресурса приказано на екрану за повезивање налога за складиштење.
 
    :::image type="content" source="media/ADLS-SP-ResourceIdConnection.png" alt-text="Унесите информације о ID-у ресурса налога за складиштење.":::   
-   
+
 1. Наставите са преосталим корацима у увидима о корисницима да бисте приложили налог за складиштење.
 
 ### <a name="subscription-based-storage-account-connection"></a>Повезивање налога за складиштење заснованог на претплатама
 
 1. Идите на [Azure портал за администрацију](https://portal.azure.com), пријавите се на своју претплату и отворите налог за складиштење.
 
-1. Идите у **Подешавања** > **Својства** у окну за навигацију.
+1. У левом окну идите на **Подешавања** > **Својства**.
 
 1. Прегледајте **Претплата**,**Група ресурса** и **Име** налога за складиштење како бисте били сигурни да сте изабрали праве вредности у увидима о корисницима.
 
-1. У увиду о корисницима одаберите вредности или одговарајућа поља приликом прилагања налога за складиштење.
-   
+1. У увидима о циљној групи, одаберите вредности за одговарајућа поља приликом прилагања налога за складиштење.
+
 1. Наставите са преосталим корацима у увидима о корисницима да бисте приложили налог за складиштење.
 
 
