@@ -9,12 +9,12 @@ ms.topic: how-to
 author: adkuppa
 ms.author: adkuppa
 manager: shellyha
-ms.openlocfilehash: 1af2e4c42dc5890556c90bb3e5ef1aeb0621fda0
-ms.sourcegitcommit: dab2cbf818fafc9436e685376df94c5e44e4b144
+ms.openlocfilehash: d204228f8d6881cbf0e7fac6609bf50dd5296610
+ms.sourcegitcommit: 42692a815695b9fdc93b9358eae09f2c3e97293c
 ms.translationtype: HT
 ms.contentlocale: sr-Cyrl-RS
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "6554177"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7377852"
 ---
 # <a name="incremental-refresh-for-data-sources-based-on-power-query"></a>Инкрементално освежавање за изворе података засноване на услузи Power Query
 
@@ -44,8 +44,7 @@ ms.locfileid: "6554177"
 
 1. У **подешавањима постепеног освежавања**, конфигурисаћете постепено освежавање за све ентитете које сте изабрали приликом креирања извора података.
 
-   > [!div class="mx-imgBorder"]
-   > ![Конфигурисање ентитета у извору података за постепено освежавање.](media/incremental-refresh-settings.png "Конфигурисање ентитета у извору података за постепено освежавање")
+   :::image type="content" source="media/incremental-refresh-settings.png" alt-text="Конфигурисање ентитета у извору података за постепено освежавање.":::
 
 1. Изаберите ентитет и наведите следеће детаље:
 
