@@ -1,7 +1,7 @@
 ---
 title: Обогатите обједињене корисничке профиле
 description: Користите могућности за обогаћивање података о клијентима.
-ms.date: 07/01/2021
+ms.date: 08/31/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -10,12 +10,12 @@ author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
 ms.custom: intro-internal
-ms.openlocfilehash: a64bbd754d4013d0a6243074ac9f55991547be82b269047a9937b583baf98697
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: 992c45e30e2dff00f5207290940b56b2fe1c08ad
+ms.sourcegitcommit: b9a81c2acd42d774669d2db3d0430c7d81de991c
 ms.translationtype: HT
 ms.contentlocale: sr-Cyrl-RS
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7032546"
+ms.lasthandoff: 09/02/2021
+ms.locfileid: "7470030"
 ---
 # <a name="enrichment-for-customer-profiles-preview"></a>Обогаћивање за корисничке профиле (преглед)
 
@@ -29,6 +29,7 @@ ms.locfileid: "7032546"
 
 На картици **Откривање** ћете пронаћи следећа обогаћивања:
 
+- [Azure Maps](enrichment-azure-maps.md) обезбеђује Microsoft
 - [Брендове](enrichment-microsoft.md) обезбеђује Microsoft
 - [Интересовања](enrichment-microsoft.md) обезбеђује Microsoft
 - [Побољшане адресе](enrichment-enhanced-addresses.md) обезбеђује Microsoft
@@ -62,5 +63,17 @@ ms.locfileid: "7032546"
 ## <a name="multiple-enrichments-of-the-same-type"></a>Вишеструка обогаћивања истог типа
 
 Ентитет који треба обогатити наводи се током конфигурације обогаћивања, што вам омогућава да обогатите само подскуп својих профила. На пример, обогатите податке само за одређени сегмент. Можете да конфигуришете неколико обогаћивања истог типа и да поново користите исту везу. Нека обогаћивања ће имати ограничења у броју обогаћивања истог типа која се могу креирати. Ограничења и тренутна употреба могу се видети на страници **Обогаћивање**.
+
+## <a name="see-the-progress-of-the-enrichment-process"></a>Погледајте напредак процеса обогаћивања
+
+Можете пронаћи детаље о обради обогаћивања, укључујући његов статус и потенцијалне проблеме док се освежава или након завршетка освежавања. Схватите који су процеси укључени за освежавање обогаћивања и колико је времена потребно за покретање процеса. Статус обогаћивања је подржан за Experian, Leadspace, HERE Technologies, SFTP Import и Azure Maps.
+
+Да бисте видели статус обогаћивања
+
+1. Идите на **Подаци** > **Обогаћивање**. 
+1. На картици **Моја обогаћивања**, изаберите статус обогаћивања да бисте отворили бочно окно. 
+1. У окну **Детаљи о напретку**, проширите одељак **Обогаћивања**. 
+1. Испод обогаћивања за које желите да видите напредак, изаберите **Види детаље**. 
+1. У окну **Детаљи о задатку**, изаберите **Прикажи детаље** да бисте видели процесе који су укључени у ажурирање обогаћивања и њихов статус. 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

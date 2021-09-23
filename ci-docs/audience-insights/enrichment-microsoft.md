@@ -9,12 +9,12 @@ ms.topic: how-to
 author: kishorem-MS
 ms.author: kishorem
 manager: shellyha
-ms.openlocfilehash: 726edb19a9fd97d80ae357103dc7d48ed38b005131ad44137b47d629a1c60b12
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: 45c81a037258e42d8975e0372c104865a9d4cbfe
+ms.sourcegitcommit: 2acda3c5adf40bc3f5bbb4b2b4b6c22f84371da7
 ms.translationtype: HT
 ms.contentlocale: sr-Cyrl-RS
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7033879"
+ms.lasthandoff: 09/01/2021
+ms.locfileid: "7466642"
 ---
 # <a name="enrich-customer-profiles-with-brand-and-interest-affinities-preview"></a>Обогатите корисничке профиле афинитетима бренда и интересовања (преглед)
 
@@ -126,6 +126,8 @@ ms.locfileid: "7033879"
 :::image type="content" source="media/my-enrichments.png" alt-text="Преглед резултата након покретања процеса обогаћивања.":::
 
 Прегледајте обогаћене податке избором опције **Приказ обогаћених података** у графикону. Обогаћени подаци о брендовима иду у ентитет **BrandAffinityFromMicrosoft**. Подаци за интересовања су у ентитету **InterestAffinityFromMicrosoft**. Наћи ћете и ове ентитете наведене у групи **Обогаћивање** у одељку **Подаци** > **Ентитети**.
+
+Видећете графикон са бројем обогаћених профила клијената током времена и преглед обогаћеног ентитета. Изаберите **Прикажи више** у плочици прегледа да бисте отворили обогаћени ентитет.
 
 ## <a name="see-enrichment-data-on-the-customer-card"></a>Погледајте податке о обогаћивању на картици клијента
 

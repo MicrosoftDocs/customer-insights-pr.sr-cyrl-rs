@@ -1,7 +1,7 @@
 ---
 title: Повезивање са Azure Data Lake Storage налогом коришћењем принципала услуге
 description: За повезивање са сопственим језером података, користите принципала услуге Azure.
-ms.date: 07/23/2021
+ms.date: 09/08/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
@@ -9,21 +9,21 @@ author: adkuppa
 ms.author: adkuppa
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 845d1f55eb99f2adf9b437124addec4f6d016fec
-ms.sourcegitcommit: 1c396394470df8e68c2fafe3106567536ff87194
+ms.openlocfilehash: b96c7f580b4067e059e00a9cdb4e872e9acd4a5c
+ms.sourcegitcommit: 5704002484cdf85ebbcf4e7e4fd12470fd8e259f
 ms.translationtype: HT
 ms.contentlocale: sr-Cyrl-RS
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "7461166"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "7483543"
 ---
 # <a name="connect-to-an-azure-data-lake-storage-account-by-using-an-azure-service-principal"></a>Повезивање са Azure Data Lake Storage налогом коришћењем Azure принципала услуге
-<!--note from editor: The Cloud Style Guide would have us just use "Azure Data Lake Storage" to mean the current version, unless the old version (Gen1) is mentioned. I've followed this guidance, even though it seems that our docs and Azure docs are all over the map on this.-->
+
 Аутоматизовани алати који користе Azure услуге увек би требало да имају ограничене дозволе. Уместо да се апликације пријављују као потпуно привилеговани корисник, Azure нуди принципале услуга. Читајте даље да бисте сазнали како да повежете услугу Dynamics 365 Customer Insights са Azure Data Lake Storage налогом користећи принципала услуге Azure уместо кључева налога за складиштење. 
 
-Можете користити принципала услуге да безбедно [додате или уредите Common Data Service фасциклу као извор података](connect-common-data-model.md) или да [креирате или ажурирате окружење](get-started-paid.md).<!--note from editor: Suggested. Or it could be ", or create a new environment or update an existing one". I think "new" is implied with "create". The comma is necessary.-->
+Можете користити принципала услуге да безбедно [додате или уредите Common Data Service фасциклу као извор података](connect-common-data-model.md) или да [креирате или ажурирате окружење](get-started-paid.md).
 
 > [!IMPORTANT]
-> - Data Lake Storage налог који ће користити<!--note from editor: Suggested. Or perhaps it could be "The Data Lake Storage account to which you want to give access to the service principal..."--> принципал услуге мора да има [омогућен хијерархијски простор имена](/azure/storage/blobs/data-lake-storage-namespace).
+> - Data Lake Storage налог који ће користити принципала услуге мора имати [омогућен хијерархијски простор за име](/azure/storage/blobs/data-lake-storage-namespace).
 > - Потребне су вам администраторске дозволе за Azure претплату да бисте креирали принципал услуге.
 
 ## <a name="create-an-azure-service-principal-for-customer-insights"></a>Креирање принципала услуге Azure за Customer Insights
@@ -38,7 +38,7 @@ ms.locfileid: "7461166"
 
 3. У одељку **Управљање**, изаберите **Пословне апликације**.
 
-4. Потражите Microsoft<!--note from editor: Via Microsoft Writing Style Guide.--> ID апликације:
+4. Потражите ID Microsoft апликације:
    - Увиди у циљну групу: `0bfc4568-a4ba-4c58-bd3e-5d3e76bd7fff` под називом `Dynamics 365 AI for Customer Insights`
    - Увиди у ангажовање: `ffa7d2fe-fc04-4599-9f6d-7ca06dd0c4fd` под називом `Dynamics 365 AI for Customer Insights engagement insights`
 
@@ -49,23 +49,23 @@ ms.locfileid: "7461166"
 6. Ако се не прикажу резултати, креирајте нов принципал услуге.
 
 >[!NOTE]
->Да бисте искористили сву моћ услуге Dynamics 365 Customer Insights, предлажемо да обе апликације додате принципалу услуге.<!--note from editor: Using the note format is suggested, just so this doesn't get lost by being tucked up in the step.-->
+>Да бисте искористили сву моћ услуге Dynamics 365 Customer Insights, предлажемо да обе апликације додате принципалу услуге.
 
 ### <a name="create-a-new-service-principal"></a>Креирај нов принципал услуге
-<!--note from editor: Some general formatting notes: The MWSG wants bold for text the user enters (in addition to UI strings and the settings users select), but there's plenty of precedent for using code format for entering text in PowerShell so I didn't change that. Note that italic should be used for placeholders, but not much else.-->
+
 1. Инсталирајте најновију верзију услуге Azure Active Directory PowerShell for Graph. За више информација погледајте чланак [Инсталирање услуге Azure Active Directory PowerShell for Graph](/powershell/azure/active-directory/install-adv2).
 
-   1. На рачунару изаберите тастер Windows на тастатури и потражите **Windows PowerShell** и изаберите **Покрени као администратор**.<!--note from editor: Or should this be something like "search for **Windows PowerShell** and, if asked, select **Run as administrator**."?-->
+   1. На рачунару изаберите тастер Windows на тастатури и потражите **Windows PowerShell** и изаберите **Покрени као администратор**.
    
    1. У PowerShell прозору који се отвори унесите `Install-Module AzureAD`.
 
 2. Креирајте принципала услуге за Customer Insights помоћу Azure AD PowerShell модула.
 
-   1. У PowerShell прозор унесите `Connect-AzureAD -TenantId "[your tenant ID]" -AzureEnvironmentName Azure`. Замените *"[your tenant ID]"*<!--note from editor: Edit okay? Or should the quotation marks stay in the command line, in which case it would be "Replace *[your tenant ID]* --> стварним ID-ом вашег закупца у којем желите да креирате принципала услуге. Параметар назива окружења `AzureEnvironmentName` је опционалан.
+   1. У PowerShell прозор унесите `Connect-AzureAD -TenantId "[your tenant ID]" -AzureEnvironmentName Azure`. Замените *[свој ID закупца]* стварним ID-ом вашег закупца тамо где желите да направите принципал услуге. Параметар назива окружења `AzureEnvironmentName` је опционалан.
   
    1. Унесите `New-AzureADServicePrincipal -AppId "0bfc4568-a4ba-4c58-bd3e-5d3e76bd7fff" -DisplayName "Dynamics 365 AI for Customer Insights"`. Ова наредба креира принципал услуге за увиде о корисницима на изабраном закупцу. 
 
-   1. Унесите `New-AzureADServicePrincipal -AppId "ffa7d2fe-fc04-4599-9f6d-7ca06dd0c4fd" -DisplayName "Dynamics 365 AI for Customer Insights engagement insights"`. Ова команда креира принципала за увиде у ангажовање<!--note from editor: Edit okay?--> на изабраном закупцу.
+   1. Унесите `New-AzureADServicePrincipal -AppId "ffa7d2fe-fc04-4599-9f6d-7ca06dd0c4fd" -DisplayName "Dynamics 365 AI for Customer Insights engagement insights"`. Ова команда креира принципала за увиде у ангажовање на изабраном закупцу.
 
 ## <a name="grant-permissions-to-the-service-principal-to-access-the-storage-account"></a>Доделите дозволе принципалу услуге за приступ налогу за складиштење
 
@@ -90,7 +90,7 @@ ms.locfileid: "7461166"
 
 ## <a name="enter-the-azure-resource-id-or-the-azure-subscription-details-in-the-storage-account-attachment-to-audience-insights"></a>Унесите ID Azure ресурса или детаље о Azure претплати у прилогу налога за складиштење у увидима о циљној групи
 
-Можете да<!--note from editor: Edit suggested only if this section is optional.--> приложите Data Lake Storage налог у увиде о циљној групи у [излазне податке за складиштење](manage-environments.md) или их [користите као извор података](connect-common-data-service-lake.md). Ова опција вам омогућава да бирате између приступа заснованог на ресурсима или приступа заснованог на претплати. У зависности од приступа који изаберете, следите поступак у једном од следећих одељака.<!--note from editor: Suggested.-->
+Можете да приложите Data Lake Storage налог у увиде о циљној групи у [излазне податке за складиштење](manage-environments.md) или их [користите као извор података](connect-common-data-service-lake.md). Ова опција вам омогућава да бирате између приступа заснованог на ресурсима или приступа заснованог на претплати. У зависности од приступа који изаберете, следите поступак у једном од следећих одељака.
 
 ### <a name="resource-based-storage-account-connection"></a>Повезивање налога за складиштење засновано на ресурсима
 

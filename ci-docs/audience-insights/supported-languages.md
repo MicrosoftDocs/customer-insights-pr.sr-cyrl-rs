@@ -1,24 +1,23 @@
 ---
-title: Подржани језици за увид о корисницима
+title: Подржани језици за Dynamics 365 Customer Insights
 description: Разумевање и конфигурисање језичке подршке.
-ms.date: 02/26/2021
+ms.date: 09/01/2021
 ms.service: customer-insights
-ms.subservice: audience-insights
 ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: e9161ebbfdf3ae6c48c12cdf7515b77ca49ae8055ae9a69f9ec314bc1247aeaf
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: f80c3019df9b5d82273842ca6f6f18bef0239687
+ms.sourcegitcommit: 5704002484cdf85ebbcf4e7e4fd12470fd8e259f
 ms.translationtype: HT
 ms.contentlocale: sr-Cyrl-RS
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7035157"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "7483360"
 ---
-# <a name="supported-languages-for-audience-insights-capability"></a>Подржани језици за могућност увида о корисницима
+# <a name="supported-languages-for-dynamics-365-customer-insights"></a>Подржани језици за Dynamics 365 Customer Insights
 
-Услуга Увиди о корисницима за Dynamics 365 Customer Insights је преведена на многе језике. Следећа листа садржи доступне језике и информације о томе шта је преведено. Такође можете сазнати више о томе како да промените језичка подешавања. 
+Dynamics 365 Customer Insights је преведен на многе језике. Следећа листа садржи доступне језике и информације о томе шта је преведено. Такође можете сазнати више о томе како да промените језичка подешавања. 
 
 ## <a name="languages"></a>Језици
 
@@ -69,7 +68,7 @@ ms.locfileid: "7035157"
 
 ## <a name="whats-translated"></a>Шта је преведено
 
-Апликација користи ваше језичке преференце за приказивање елемената попут менија, текста ознаке на контролној табли и системских порука на језику коме корисник даје предност.
+Customer Insights користи ваше језичке преференце за приказивање елемената попут менија, текста ознаке и порука на језику коме корисник даје предност.
 
 Пошто се већина функција заснива на вашим подацима, неке ставке остају на изворном језику. На пример:
 
