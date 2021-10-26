@@ -9,18 +9,18 @@ author: adkuppa
 ms.author: adkuppa
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: b96c7f580b4067e059e00a9cdb4e872e9acd4a5c
-ms.sourcegitcommit: 5704002484cdf85ebbcf4e7e4fd12470fd8e259f
+ms.openlocfilehash: b901d799dbd73841a6ddbae754c4e4275f61146a
+ms.sourcegitcommit: 53b133a716c73cb71e8bcbedc6273cec70ceba6c
 ms.translationtype: HT
 ms.contentlocale: sr-Cyrl-RS
-ms.lasthandoff: 09/08/2021
-ms.locfileid: "7483543"
+ms.lasthandoff: 10/15/2021
+ms.locfileid: "7645190"
 ---
 # <a name="connect-to-an-azure-data-lake-storage-account-by-using-an-azure-service-principal"></a>Повезивање са Azure Data Lake Storage налогом коришћењем Azure принципала услуге
 
 Аутоматизовани алати који користе Azure услуге увек би требало да имају ограничене дозволе. Уместо да се апликације пријављују као потпуно привилеговани корисник, Azure нуди принципале услуга. Читајте даље да бисте сазнали како да повежете услугу Dynamics 365 Customer Insights са Azure Data Lake Storage налогом користећи принципала услуге Azure уместо кључева налога за складиштење. 
 
-Можете користити принципала услуге да безбедно [додате или уредите Common Data Service фасциклу као извор података](connect-common-data-model.md) или да [креирате или ажурирате окружење](get-started-paid.md).
+Можете користити принципала услуге да безбедно [додате или уредите Common Data Service фасциклу као извор података](connect-common-data-model.md) или да [креирате или ажурирате окружење](create-environment.md).
 
 > [!IMPORTANT]
 > - Data Lake Storage налог који ће користити принципала услуге мора имати [омогућен хијерархијски простор за име](/azure/storage/blobs/data-lake-storage-namespace).

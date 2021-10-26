@@ -1,7 +1,7 @@
 ---
 title: Извезите Customer Insights податке у DotDigital
 description: Сазнајте како да конфигуришете везу и извезете у DotDigital.
-ms.date: 03/03/2021
+ms.date: 10/08/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: how-to
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: f09be0dfa599c1ef7cf0055b7ce1df8784cf447ada64b56bc7543c214f9a5b99
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: 3e3a79603f9f5746ee176d3d4299a30510c7459e
+ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
 ms.translationtype: HT
 ms.contentlocale: sr-Cyrl-RS
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7034654"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "7618401"
 ---
 # <a name="export-segments-to-dotdigital-preview"></a>Извоз сегмената у DotDigital (верзија за преглед)
 
@@ -22,17 +22,17 @@ ms.locfileid: "7034654"
 
 ## <a name="prerequisites-for-a-connection"></a>Предуслови за везу
 
--   Имате [DotDigital налог](https://dotdigital.com/) и одговарајуће акредитиве администратора.
+-   Имате [DotDigital налог](https://dotdigital.com/) и креирали сте [API корисника](https://support.dotdigital.com/hc/articles/115001718730-How-do-I-create-an-API-user). Да бисте креирали везу, морате да користите акредитиве API корисника
 -   Постоји постојећа публика у адресарима у услузи DotDigital и одговарајући ID-ови. ID се може наћи у URL-у када одаберете и отворите адресар. За више информација погледајте [адресаре за DotDigital](https://support.dotdigital.com/hc/articles/212211968-Creating-an-address-book).
 -   [Конфигурисали сте сегменте](segments.md) у увидима о корисницима.
 -   Обједињени кориснички профили у извезеним сегментима садрже поље које представља адресу е-поште.
 
 ## <a name="known-limitations"></a>Позната ограничења
 
-- До 1 милион профила по извозу у услузи DotDigital.
+- До милион профила клијената по извозу у DotDigital.
 - Извоз у DotDigital је ограничен на сегменте.
-- Извоз сегмената са укупно 1 милион профила може трајати до 3 сата због ограничења на страни добављача. 
-- Број профила које можете да извезете у DotDigital зависи од и ограничен је вашим уговором са компанијом DotDigital.
+- Извоз сегмената са укупно милион профила клијената може потрајати до 3 сата због ограничења на страни провајдера. 
+- Број профила клијената које можете извести у DotDigital зависи и ограничен је на ваш уговор са DotDigital-ом.
 
 ## <a name="set-up-connection-to-dotdigital"></a>Подешавање везе у услузи DotDigital
 
@@ -44,7 +44,7 @@ ms.locfileid: "7034654"
 
 1. Одаберите ко може да користи ову везу. Ако ништа не предузмете, подразумевани ће бити Администратори. За више информација, погледајте [Дозволите сарадницима да користе везу за извоз](connections.md#allow-contributors-to-use-a-connection-for-exports).
 
-1. Унесите своје **корисничко име и лозинку за DotDigital**.
+1. Унесите своје **корисничко име и лозинку за DotDigital API**. 
 
 1. Унесите **[ID DotDigital адресара](https://support.dotdigital.com/hc/articles/212211968-Creating-an-address-book)**.
 
@@ -67,7 +67,7 @@ ms.locfileid: "7034654"
 1. У пољу **Веза за извоз**, одаберите везу из одељка DotDigital. Ако не видите назив овог одељка, не постоје вам доступне везе овог типа.
 
 
-1. У одељку **Подударање података**, у пољу **Адреса е-поште** изаберите поље у обједињеном корисничком профилу које представља е-адресу клијента. Поновите исте кораке за друга опционална поља као што су **Име**, **Презиме**, **Пуно име**, **Пол** и **Поштански број**.
+1. У одељку **Подударање података**, у пољу **Е-пошта**, изаберите поље које представља е-адресу клијента. Поновите исте кораке за друга опционална поља као што су **Име**, **Презиме**, **Пуно име**, **Пол** и **Поштански број**.
 
 1. Изаберите сегменте које желите да извезете. У услузи DotDigital можете укупно извести до 1 милион корисничких профила.
 

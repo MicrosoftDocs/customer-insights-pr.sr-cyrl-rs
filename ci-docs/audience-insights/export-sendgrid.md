@@ -1,7 +1,7 @@
 ---
 title: Извезите Customer Insights податке у SendGrid
 description: Сазнајте како да конфигуришете везу и извезете у SendGrid.
-ms.date: 03/03/2021
+ms.date: 10/08/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: how-to
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 03df2ab5fce1da1f4f662e1975533f2b538b47dbdd5cf96aae4f1007163e3729
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: da3da5ea68d178deab3b9ab31dd810dee610f607
+ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
 ms.translationtype: HT
 ms.contentlocale: sr-Cyrl-RS
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7036119"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "7617849"
 ---
 # <a name="export-segments-to-sendgrid-preview"></a>Извоз сегмената у SendGrid (верзија за преглед)
 
@@ -29,10 +29,10 @@ ms.locfileid: "7036119"
 
 ## <a name="known-limitations"></a>Позната ограничења
 
-- Укупно до 100.000 профила у SendGrid.
+- Укупно до 100.000 профила клијената у SendGrid.
 - Извоз у SendGrid је ограничен на сегменте.
-- Извоз до 100.000 профила у SendGrid може да потраје до неколико сати. 
-- Број профила које можете да извезете у SendGrid зависи од вашег уговора са компанијом SendGrid и ограничен је њиме.
+- Извоз до 100.000 профила клијената у SendGrid може потрајати неколико часова. 
+- Број профила клијената које можете извести у SendGrid зависи и ограничен је на ваш уговор са SendGrid-ом.
 
 ## <a name="set-up-connection-to-sendgrid"></a>Подешавање везе у услузи SendGrid
 
@@ -66,7 +66,7 @@ ms.locfileid: "7036119"
 
 1. Унесите **[ID SendGrid листе](https://sendgrid.com/docs/ui/managing-contacts/create-and-manage-contacts/#manage-contacts)**.
 
-1. У одељку **Подударање података**, у пољу **Адреса е-поште** изаберите поље у обједињеном корисничком профилу које представља е-адресу клијента. Поновите исте кораке за друга опционална поља као што су **Име**, **Презиме**, **Земља/Регион**, **Држава**, **Град** и **Поштански број**.
+1. У одељку **Подударање података**, у пољу **Е-пошта**, изаберите поље које представља е-адресу клијента. Поновите исте кораке за друга опционална поља као што су **Име**, **Презиме**, **Земља/Регион**, **Држава**, **Град** и **Поштански број**.
 
 1. Изаберите сегменте које желите да извезете. Изричито **препоручујемо да не извозите укупно више од 100.000 корисничких профила** у SendGrid. 
 

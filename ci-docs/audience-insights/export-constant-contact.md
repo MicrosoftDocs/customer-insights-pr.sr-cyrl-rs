@@ -1,7 +1,7 @@
 ---
 title: Извоз Customer Insights података у Constant Contact
 description: Сазнајте како да конфигуришете везу и извезете садржај у Constant Contact.
-ms.date: 03/22/2021
+ms.date: 10/08/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 30dfe4d6c2374ba9979827ea70a71c52a1334b45dd3e36ccb1de90fae0c61ad9
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: b25e4f11e21d059c2d867e925c0ae5635a87addc
+ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
 ms.translationtype: HT
 ms.contentlocale: sr-Cyrl-RS
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7031859"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "7619137"
 ---
 # <a name="export-segments-to-constant-contact-preview"></a>Извоз сегмената у Constant Contact (верзија за преглед)
 
@@ -24,14 +24,14 @@ ms.locfileid: "7031859"
 
 -   Имате [Constant Contact налог](https://www.constantcontact.com/account-home) и одговарајуће акредитиве администратора.
 -   [Конфигурисали сте сегменте](segments.md) у увидима о корисницима.
--   Обједињени профили клијената у извезеним сегментима садрже поље које представља адресу е-поште.
+-   Обједињени кориснички профили у извезеним сегментима садрже поље које представља адресу е-поште.
 
 ## <a name="known-limitations"></a>Позната ограничења
 
-- Можете извести до 1 милион профила по извозу у Constant Contact.
+- Можете извозити до милион корисничких профила по извозу у Constant Contact.
 - Извоз у Constant Contact ограничен је на сегменте.
-- Извоз до 1 милион профила у Constant Contact може потрајати до 1 сата. 
-- Број профила које можете да извезете у Constant Contact зависи и ограничен је вашим уговором са услугом Constant Contact.
+- Извоз до 1 милиона профила клијената у Constant Contact може потрајати до 1 сата. 
+- Број профила клијената које можете извести у Constant Contact зависи и ограничен је на ваш уговор са Constant Contact-ом.
 
 ## <a name="set-up-connection-to-constant-contact"></a>Подешавање везе са услугом Constant Contact
 
@@ -65,7 +65,7 @@ ms.locfileid: "7031859"
 
 1. Унесите [**ID Constant Contact листе**](https://app.constantcontact.com/pages/contacts/ui#lists). Отворите листу у услузи Constant Contact да бисте пронашли ID листе у URL адреси.
 
-1. У одељку **Подударање података**, у пољу **Адреса е-поште** изаберите поље у обједињеном профилу клијента које представља е-адресу клијента. То је потребно да извезете сегменте у Constant Contact.
+1. У одељку **Подударање података**, у пољу **Е-пошта**, изаберите поље које представља е-адресу клијента. То је потребно да извезете сегменте у Constant Contact.
 
 1. По жељи можете да извезете Име и Презиме као додатна поља за стварање персонализованих е-порука. Изаберите **Додај атрибут** за мапирање ових поља.
 

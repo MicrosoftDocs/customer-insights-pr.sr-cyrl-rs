@@ -9,12 +9,12 @@ ms.topic: how-to
 author: kishorem-ms
 ms.author: kishorem
 manager: shellyha
-ms.openlocfilehash: c54f6a00cb28b0ab11716c02aa8761dfa382f07e3360183b5d38b9720e890c21
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: fabc3cc9faf4e11f46c396782b561ef61cd0f6d5
+ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
 ms.translationtype: HT
 ms.contentlocale: sr-Cyrl-RS
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7032638"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "7618539"
 ---
 # <a name="enrich-customer-profiles-with-demographics-from-experian-preview"></a>Обогатите профиле клијената демографским подацима из услуге Experian (верзија за преглед)
 
@@ -91,7 +91,7 @@ Experian је глобални лидер у извештавању о потр�
 
 ## <a name="next-steps"></a>Следећи кораци
 
-Надоградите на обогаћеним подацима о клијентима. Креирајте [сегменте](segments.md) и [мере](measures.md), па чак и [извоз података](export-destinations.md) да пружите персонализована искуства својим клијентима.
+[!INCLUDE [next-steps-enrichment](../includes/next-steps-enrichment.md)]
 
 ## <a name="data-privacy-and-compliance"></a>Приватност података и усаглашеност
 

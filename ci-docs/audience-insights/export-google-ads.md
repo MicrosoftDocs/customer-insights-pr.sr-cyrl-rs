@@ -9,12 +9,12 @@ author: pkieffer
 ms.author: philk
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: c958f58c927b76364f305dad8f524dde29b2a638
-ms.sourcegitcommit: f1e3cc51ea4cf68210eaf0210ad6e14b15ac4fe8
+ms.openlocfilehash: ce9579f3d31207e666665237fd8935bb86889f8d
+ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
 ms.translationtype: HT
 ms.contentlocale: sr-Cyrl-RS
-ms.lasthandoff: 09/27/2021
-ms.locfileid: "7558990"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "7617941"
 ---
 # <a name="export-segments-to-google-ads-preview"></a>Извоз сегмената у Google Ads (верзија за преглед)
 
@@ -35,9 +35,9 @@ ms.locfileid: "7558990"
 
 ## <a name="known-limitations"></a>Позната ограничења
 
-- До 1 милион профила по извозу у Google огласима.
+- До милион профила клијената по извозу у Google Ads.
 - Извоз у Google огласе је ограничен на сегменте.
-- Извоз сегмената са укупно 1 милион профила може трајати до 5 минута због ограничења на страни добављача. 
+- Извоз сегмената са укупно милион профила клијената може потрајати до 5 минута због ограничења на страни провајдера. 
 - Подударање у Google огласима може да потраје до 48 сати.
 
 ## <a name="set-up-connection-to-google-ads"></a>Подешавање везе са услугом Google Ads
@@ -74,7 +74,7 @@ ms.locfileid: "7558990"
 
 1. Унесите **[ID корисника за Google огласе](https://support.google.com/google-ads/answer/7558048?hl=en#:~:text=Audience%20lists%20is%20a%20section,Display%20Network%20through%20remarketing%20campaigns.)** и изаберите **Повежите се** да бисте започели повезивање са Google огласима.
 
-1. У одељку **Подударање података**, у пољу **Адреса е-поште** изаберите поље у обједињеном корисничком профилу које представља е-адресу клијента.
+1. У одељку **Подударање података**, у пољу **Е-пошта**, изаберите поље које представља е-адресу клијента.
 
 1. Изаберите сегменте које желите да извезете. У Google огласима можете укупно извести до 1 милион корисничких профила.
 

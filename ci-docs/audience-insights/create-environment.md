@@ -1,0 +1,102 @@
+---
+title: Креирање окружења у услузи Customer Insights
+description: Кораци за креирање окружења са лиценцираном претплатом за Dynamics 365 Customer Insights.
+ms.date: 10/14/2021
+ms.reviewer: mhart
+ms.service: customer-insights
+ms.subservice: audience-insights
+ms.topic: how-to
+author: MichelleDevaney
+ms.author: midevane
+manager: shellyha
+ms.custom: intro-internal
+ms.openlocfilehash: 95afd1fedb98a451e4978ee66be2ea98ad7a4a76
+ms.sourcegitcommit: 53b133a716c73cb71e8bcbedc6273cec70ceba6c
+ms.translationtype: HT
+ms.contentlocale: sr-Cyrl-RS
+ms.lasthandoff: 10/15/2021
+ms.locfileid: "7645726"
+---
+# <a name="create-an-environment-in-audience-insights"></a>Креирање окружења у увидима у циљну групу
+
+Овај чланак објашњава како да креирате ново окружење након што је ваша организација купила Dynamics 365 Customer Insights претплату. 
+
+Организације могу да креирају *два* окружења за сваку Customer Insights лиценцу. Ако ваша организација купи више лиценци, [контактирајте наш тим за подршку](https://go.microsoft.com/fwlink/?linkid=2079641) да би повећали број доступних окружења. За више информација о капацитету и додатном капацитету преузмите [Dynamics 365 водич за лиценцирање](https://go.microsoft.com/fwlink/?LinkId=866544).
+
+> [!NOTE]
+> Ако желите да испробате услугу, погледајте [Конфигурисање пробног окружења](../trial-signup.md).
+
+## <a name="create-a-new-environment"></a>Креирајте ново окружење
+
+Након што купите претплатничку лиценцу за Customer Insights, глобални администратор Microsoft 365 закупца прима поруку е-поште која га позива да креира окружење. Идите на [https://home.ci.ai.dynamics.com/start](https://home.ci.ai.dynamics.com/start) да бисте започели. 
+
+Вођено искуство вам помаже кроз кораке прикупљања свих потребних информација за ново окружење. Потребне су вам [дозволе администратора](permissions.md) у увидима у циљну групу да бисте креирали или управљали окружењима.
+
+1. У увидима у циљну групу, отворите бирач окружења и изаберите **+ Ново**.
+  
+   :::image type="content" source="../engagement-insights/media/environment-picker.png" alt-text="Изаберите бирач окружења.":::
+
+1. Пратите вођено искуство описано у следећим одељцима.
+
+### <a name="step-1-provide-environment-information"></a>1. корак: Пружите информације о окружењу
+
+У кораку **Основне информације**, одаберите да ли желите да креирате окружење од нуле или да [копирате податке из другог окружења](manage-environments.md#copy-the-environment-configuration).
+
+   :::image type="content" source="media/environment-settings-dialog.png" alt-text="Дијалог за креирање новог Customer Insights окружења.":::
+
+Наведите следеће детаље:
+   - **Назив**: Унесите назив овог окружења. Ово поље је већ попуњено ако сте копирали постојеће окружење, али можете га променити.
+   - **Одаберите своје пословање**: Одаберите примарну циљну групу за ново окружење. Можете радити са индивидуалним клијентима (B2C) или [пословним налозима ](work-with-business-accounts.md) (B2B).
+   - **Тип**: изаберите да ли желите да креирате производно или Sandbox окружење. Sandbox окружења не дозвољавају заказано освежавање података и намењена су за предимплементацију и тестирање. Sandbox окружења користе исту примарну циљну групу као и тренутно изабрано производно окружење.
+   - **Регион**: Регион у којем је услуга примењена и хостована.
+
+### <a name="step-2-configure-data-storage"></a>2. корак: Конфигуришите складиште података
+
+У кораку **Складиштење података**, изаберите где ћете складиштити податке из увида у циљну групу.
+
+Имаћете две могућности: **Customer Insights складиште** (Azure Data Lake којим управља Customer Insights тим) и **Azure Data Lake Storage** (ваш сопствени Azure Data Lake Storage). Подразумевано је одабрана опција Customer Insights складишта.
+
+:::image type="content" source="media/data-storage-environment.png" alt-text="Изаберите Azure Data Lake Storage за складиштење података из увида у циљну групу.":::
+
+Чувањем података у услузи Azure Data Lake Storage, слажете се да ће се подаци преносити и складиштити на одговарајућој географској локацији за тај Azure налог за складиштење. Ова локација се може разликовати од места на коме се чувају подаци из услуге Dynamics 365 Customer Insights. Сазнајте више у [Microsoft центру за поузданост](https://www.microsoft.com/trust-center).
+
+> [!NOTE]
+> Customer Insights тренутно подржава следеће:
+> - Унети ентитети из Power BI токова података који се чувају у Microsoft Dataverse управљаној услузи Data Lake.  
+> - Azure Data Lake Storage налози из истог Azure региона који сте изабрали приликом креирања окружења.
+> - Azure Data Lake Storage налози који имају омогућен *хијерархијски простор за име*.
+
+За опцију Azure Data Lake Storage, можете одабрати између опције засноване на ресурсима и опције засноване на претплати за потврду идентитета. За више информација погледајте [Повезивање увида о корисницима са Azure Data Lake Storage Gen2 налогом помоћу принципала Azure услуге](connect-service-principal.md). Назив за **Контејнер** ће бити `customerinsights` и не можете га променити.
+
+Када су системски процеси попут уноса података, завршени, систем креира одговарајуће фасцикле на налогу за складиштење који сте навели. Датотеке са подацима и *model.json* датотеке се креирају и додају у фасцикле на основу назива процеса.
+
+Ако креирате више окружења услуге Customer Insights и одаберете да сачувате излазне ентитете из тих окружења на свој налог за складиштење, Customer Insights креира засебне фасцикле за свако окружење са `ci_environmentID` у контејнеру.
+
+### <a name="step-3-connect-to-microsoft-dataverse"></a>3. корак: Повезивање са системом Microsoft Dataverse
+   
+Корак **Microsoft Dataverse** вам омогућава да повежете Customer Insights са вашим Dataverse окружењем.
+
+Да бисте користили [готове моделе предвиђања](predictions-overview.md#out-of-box-models), конфигуришите дељење података са услугом Dataverse. Или можете омогућити унос података из локалних извора података,обезбеђујући URL адресу Microsoft Dataverse окружења којим управља ваша организација. Изаберите **Омогући дељење података** да бисте делили Customer Insights излазне податке помоћу платформе Dataverse Managed Data Lake.
+
+:::image type="content" source="media/dataverse-data-sharing.png" alt-text="Опције конфигурације за омогућавање дељења података са платформом Microsoft Dataverse.":::
+
+> [!NOTE]
+> Customer Insights не подржава следеће сценарије дељења података:
+> - Ако све податке сачувате у сопственој услузи Azure Data Lake Storage, нећете моћи да омогућите дељење података са Microsoft Dataverse управљаној услузи Data Lake.
+> - Ако омогућите дељење података са Microsoft Dataverse управљаној услузи Data Lake нећете моћи да [креирате предвиђене или вредности које недостају у ентитету](predictions.md).
+
+### <a name="step-4-finalize-the-settings"></a>4. корак: Довршавање подешавања
+
+У кораку **Преглед**, прођите кроз сва наведена подешавања. Када све изгледа завршено, изаберите **Креирај** да бисте конфигурисали окружење. 
+
+Већину подешавања можете променити и касније. Више информација потражите у чланку [Управљање окружењем](manage-environments.md).
+
+## <a name="work-with-your-new-environment"></a>Рад са новим окружењем
+
+Прегледајте следеће чланке који ће вам помоћи да започнете са конфигурисањем решења Customer Insights. 
+
+- [Додајте још корисника и доделите дозволе](permissions.md).
+- [Унесите своје изворе података](data-sources.md) и провуците их кроз [процес обједињавања података](data-unification.md) како бисте добили [обједињене профиле клијената](customer-profiles.md).
+- [Обогатите обједињене профиле клијената](enrichment-hub.md) или [покрените моделе предвиђања](predictions-overview.md).
+- [Креирајте сегменте](segments.md) да бисте груписали клијенте и [мере](measures.md) прегледа KPI показатеља.
+- [Подесите везе](connections.md) и [извозе](export-destinations.md) за обраду подскупова података у другим апликацијама.

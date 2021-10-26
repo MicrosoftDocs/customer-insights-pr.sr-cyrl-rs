@@ -1,7 +1,7 @@
 ---
-title: Уједначавање података
-description: Сазнајте како да обједините унете податке.
-ms.date: 04/16/2020
+title: Креирање обједињеног приказа својих клијената
+description: Прођите кроз процес обједињавања података са својим подацима да бисте креирали један главни скуп података о профилима клијената.
+ms.date: 10/18/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -10,12 +10,14 @@ author: adkuppa
 ms.author: adkuppa
 manager: shellyha
 ms.custom: intro-internal
-ms.openlocfilehash: bf1bbcd31333c8a557b59b001112042a1783546ab0cd2af394d8af2953a493f4
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+searchScope:
+- ci-unify
+ms.openlocfilehash: 694bfd0e407975af64ca0971a73fe4c3f5ba5a23
+ms.sourcegitcommit: 37182127b93b90846cc91fbeb26dd7a18cf5610a
 ms.translationtype: HT
 ms.contentlocale: sr-Cyrl-RS
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7032776"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "7648089"
 ---
 # <a name="data-unification-overview"></a>Преглед уједначавања података
 

@@ -1,7 +1,7 @@
 ---
 title: Извоз Customer Insights података у Campaign Monitor
 description: Сазнајте како да конфигуришете везу и извезете садржај у Campaign Monitor.
-ms.date: 03/03/2021
+ms.date: 10/08/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: d2cc3ec944faa1d77ffb44e8abb422d753c5625d0ccef75cbb7efb14cb7c3741
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: 063de14c4ffd51b3afd89786606d7b37626695dc
+ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
 ms.translationtype: HT
 ms.contentlocale: sr-Cyrl-RS
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7031905"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "7618999"
 ---
 # <a name="export-segments-to-campaign-monitor-preview"></a>Извоз сегмената у Campaign Monitor (верзија за преглед)
 
@@ -24,14 +24,14 @@ ms.locfileid: "7031905"
 
 -   Имате [Campaign Monitor налог](https://www.campaignmonitor.com/) и одговарајуће акредитиве администратора.
 -   [Конфигурисали сте сегменте](segments.md) у увидима о корисницима.
--   Обједињени профили клијената у извезеним сегментима садрже поље које представља адресу е-поште.
+-   Обједињени кориснички профили у извезеним сегментима садрже поље које представља адресу е-поште.
 
 ## <a name="known-limitations"></a>Позната ограничења
 
-- Можете извести до 1 милион профила по извозу у Campaign Monitor.
+- Можете извозити до милион корисничких профила по извозу у Campaign Monitor.
 - Извоз у Campaign Monitor ограничен је на сегменте.
-- Извоз до 1 милион профила у Campaign Monitor може потрајати до 20 минута. 
-- Број профила које можете да извезете у Campaign Monitor зависи и ограничен је вашим уговором са услугом Campaign Monitor.
+- Извоз до милион профила клијената у Campaign Monitor може потрајати до 20 минута. 
+- Број профила клијената које можете извести у Campaign Monitor зависи и ограничен је на ваш уговор са Campaign Monitor-ом.
 
 ## <a name="set-up-connection-to-campaign-monitor"></a>Подешавање везе са услугом Campaign Monitor
 
@@ -66,7 +66,7 @@ ms.locfileid: "7031905"
 1. Унесите [**ID Campaign Monitor листе**](https://www.campaignmonitor.com/api/getting-started/#your-list-id).    
    Прво [генеришите API кључ](https://www.campaignmonitor.com/api/getting-started/) у одељку **Подешавања налога** у услузи Campaign Monitor да бисте видели ID API листе.  
 
-3. У одељку **Подударање података**, у пољу **Адреса е-поште** изаберите поље у обједињеном профилу клијента које представља е-адресу клијента. То је потребно да извезете сегменте у Campaign Monitor.
+1. У одељку **Подударање података**, у пољу **Е-пошта**, изаберите поље које представља е-адресу клијента. То је потребно да извезете сегменте у Campaign Monitor.
 
 1. Изаберите ставку **Сачувај**.
 

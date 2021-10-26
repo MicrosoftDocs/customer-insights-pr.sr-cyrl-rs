@@ -1,7 +1,7 @@
 ---
 title: Извоз Customer Insights података у Microsoft Advertising
 description: Сазнајте како да конфигуришете везу и извезете садржај у Microsoft Advertising.
-ms.date: 05/12/2021
+ms.date: 10/08/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 8f8a4cbb9590f9c5311789154319283530e0a10343cccbe9c7aec99765b4fbf2
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: 12fd221acb7c0eed443c9b860aca42dcb2b3788c
+ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
 ms.translationtype: HT
 ms.contentlocale: sr-Cyrl-RS
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7031490"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "7618079"
 ---
 # <a name="export-segments-to-microsoft-advertising-preview"></a>Извоз сегмената у Microsoft Advertising (верзија за преглед)
 
@@ -29,9 +29,9 @@ ms.locfileid: "7031490"
 
 ## <a name="known-limitations"></a>Позната ограничења
 
-- Можете извести до 500.000 профила по извозу у Microsoft Advertising.
+- Можете извозити до 500.000 профила клијената по извозу у Microsoft Advertising.
 - Извоз у Microsoft Advertising ограничен је на сегменте.
-- Извоз до 500.000 профила у Microsoft Advertising може потрајати до 10 минута. 
+- Извоз до 500.000 профила клијената у Microsoft Advertising може потрајати до 10 минута. 
 
 
 ## <a name="set-up-the-connection-to-microsoft-advertising"></a>Подешавање везе са услугом Microsoft Advertising
@@ -68,7 +68,7 @@ ms.locfileid: "7031490"
 
 1. Унесите свој **ID Microsoft Advertising клијента и ID налога**. Можете пронаћи ID клијента (`cid`) и ID пословног контакта (`aid`) у параметрима URL адресе када се пријавите у Microsoft Advertising.
 
-1. У одељку **Подударање података**, у пољу **Е-пошта**, изаберите поље у вашем обједињеном профилу клијента са е-адресом клијента. Потребно је да извезете сегменте у Microsoft Advertising.
+1. У одељку **Подударање података**, у пољу **Е-пошта**, изаберите поље са е-адресом клијента. Потребно је да извезете сегменте у Microsoft Advertising.
 
 1. Изаберите ставку **Сачувај**.
 

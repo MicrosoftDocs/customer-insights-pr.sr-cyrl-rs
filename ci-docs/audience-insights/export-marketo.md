@@ -1,7 +1,7 @@
 ---
 title: Извезите Customer Insights податке у Marketo
 description: Сазнајте како да конфигуришете везу и извезете у Marketo.
-ms.date: 03/03/2021
+ms.date: 10/08/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: how-to
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 0d5eaa769973c861d89287bba0ed29509ab2efc653bdd8e177cc49b3560c698e
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: 71a16bd71a58b5cc0a6a2ed421561d91f782dd8e
+ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
 ms.translationtype: HT
 ms.contentlocale: sr-Cyrl-RS
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7033511"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "7619183"
 ---
 # <a name="export-segments-to-marketo-preview"></a>Извоз сегмената у Marketo (верзија за преглед)
 
@@ -29,10 +29,10 @@ ms.locfileid: "7033511"
 
 ## <a name="known-limitations"></a>Позната ограничења
 
-- До 1 милион профила по извозу у услузи Marketo.
+- До милион профила клијената по извозу у Marketo.
 - Извоз у Marketo је ограничен на сегменте.
-- Извоз сегмената са укупно 1 милион профила може трајати до 3 сата. 
-- Број профила које можете да извезете у Marketo зависи од и ограничен је вашим уговором са компанијом Marketo.
+- Извоз сегмената са укупно милион профила клијената може потрајати до 3 сата. 
+- Број профила клијената које можете извести у Marketo зависи и ограничен је на ваш уговор са Marketo-ом.
 
 ## <a name="set-up-connection-to-marketo"></a>Подешавање везе за Marketo
 
@@ -64,7 +64,7 @@ ms.locfileid: "7033511"
 
 1. Унесите **[ID Marketo листе](https://docs.marketo.com/display/public/DOCS/Understanding+Static+Lists)**. ID листе је чисто нумеричка вредност. На пример, ако је ваш ID Marketo листе ST12345A7, уклоните знак пре и после бројева и унесите `12345`. 
 
-1. У одељку **Подударање података**, у пољу **Адреса е-поште** изаберите поље у обједињеном корисничком профилу које представља е-адресу клијента. 
+1. У одељку **Подударање података**, у пољу **Е-пошта**, изаберите поље које представља е-адресу клијента. 
 
 1. По жељи можете да извезете **Име**, **Презиме**, **Град**, **Држава** и **Земља/регион** да бисте креирали персонализованије е-поруке. Изаберите **Додај атрибут** за мапирање ових поља.
 

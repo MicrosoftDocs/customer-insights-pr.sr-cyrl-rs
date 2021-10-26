@@ -10,12 +10,12 @@ ms.author: adkuppa
 ms.reviewer: mhart
 manager: shellyha
 ms.custom: intro-internal
-ms.openlocfilehash: 75d597158233f75f0eb5f94389f9dba199d81719f2bbe4e5cc58d2a3afc7dcf8
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: de31e1f25c08d0bcb5341c5f465b1999de48acf3
+ms.sourcegitcommit: 53b133a716c73cb71e8bcbedc6273cec70ceba6c
 ms.translationtype: HT
 ms.contentlocale: sr-Cyrl-RS
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7032868"
+ms.lasthandoff: 10/15/2021
+ms.locfileid: "7645373"
 ---
 # <a name="data-sources-overview"></a>Преглед извора података
 
@@ -35,7 +35,7 @@ ms.locfileid: "7032868"
 
 ## <a name="add-data-from-on-premises-data-sources"></a>Додавање података из локалних извора података
 
-Уношење података из локалних извора података у услугу Увиди у кориснике подржано је на основу Microsoft Power Platform токова података. Токови података се могу омогућити у услузи Customer Insights [навођењем URL адресе Microsoft Dataverse окружења](get-started-paid.md) приликом подешавања окружења.
+Уношење података из локалних извора података у услугу Увиди у кориснике подржано је на основу Microsoft Power Platform токова података. Токови података се могу омогућити у услузи Customer Insights [навођењем URL адресе Microsoft Dataverse окружења](create-environment.md) приликом подешавања окружења.
 
 Извори података који се креирају након повезивања Dataverse окружења са услугом Customer Insights ће подразумевано користити [Power Platform токове података](/power-query/dataflows/overview-dataflows-across-power-platform-dynamics-365). Токови података подржавају локалну повезаност помоћу мрежног пролаза за податке. Уклоните и поново креирајте изворе података који су постојали пре него што је Dataverse окружење било повезано за [употребу локалних мрежних пролаза за податке](/data-integration/gateway/service-gateway-app).
 

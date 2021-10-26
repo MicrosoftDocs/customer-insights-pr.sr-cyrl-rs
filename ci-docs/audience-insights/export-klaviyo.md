@@ -1,7 +1,7 @@
 ---
 title: Извоз Customer Insights података у услугу Klaviyo
 description: Сазнајте како да конфигуришете везу и извезете је у услугу Klaviyo.
-ms.date: 08/13/2021
+ms.date: 10/08/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 7c1297fd5381c00c07d6501186c51fe4798773d1
-ms.sourcegitcommit: 205f931ec671a0ab1850f2c1c94df3307ffb62c9
+ms.openlocfilehash: 5f7c91afed8eeb1f767f1efc58dceb7782c37bb4
+ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
 ms.translationtype: HT
 ms.contentlocale: sr-Cyrl-RS
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7385806"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "7619091"
 ---
 # <a name="export-segment-lists-to-klaviyo-preview"></a>Извоз листи сегмената у Klaviyo (верзија за преглед)
 
@@ -28,10 +28,10 @@ ms.locfileid: "7385806"
 
 ## <a name="known-limitations"></a>Позната ограничења
 
-- Можете извозити до 100.000 профила по извозу у Klaviyo.
+- Можете извозити до 100.000 профила клијената по извозу у Klaviyo.
 - Извоз у Klaviyo је ограничен на сегменте.
-- Извоз до 1 милион профила у Klaviyo може да потраје до 20 минута. 
-- Број профила које можете да извезете у Klaviyo зависи од вашег уговора са услугом Klaviyo и ограничен је њиме.
+- Извоз до милион профила клијената у Klaviyo може потрајати до 20 минута. 
+- Број профила клијената које можете извести у Klaviyo зависи и ограничен је на ваш уговор са Klaviyo-ом.
 
 ## <a name="set-up-connection-to-klaviyo"></a>Подешавање везе са услугом Klaviyo
 
@@ -67,7 +67,7 @@ ms.locfileid: "7385806"
 
 1. Унесите свој [**ID Klaviyo листе**](https://help.klaviyo.com/hc/articles/115005078647-How-to-Find-a-List-ID).     
 
-3. У одељку **Подударање података**, у пољу **Адреса е-поште** изаберите поље у обједињеном корисничком профилу које представља е-адресу клијента. У Klaviyo морате извозити сегменте.
+3. У одељку **Подударање података**, у пољу **Е-пошта**, изаберите поље које представља е-адресу клијента. У Klaviyo морате извозити сегменте.
 
 1. Изаберите ставку **Сачувај**.
 

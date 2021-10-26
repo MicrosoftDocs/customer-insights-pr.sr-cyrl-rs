@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: 37c5d152a4cc91a90df8db387d25923ed150e238bc6b54c54f7bba59fbd48c82
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: 3689c7016454ed44e22b4d4ff5a338836a8fe288
+ms.sourcegitcommit: 693458e13e4b4d94b6205093559912f6a4dc4a1c
 ms.translationtype: HT
 ms.contentlocale: sr-Cyrl-RS
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7033236"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "7605967"
 ---
 # <a name="connections-preview-overview"></a>Преглед веза (верзија за преглед)
 
@@ -47,6 +47,7 @@ ms.locfileid: "7033236"
 1. У окну **Подешавање везе**, наведите потребне детаље. 
    1. **Име за приказ** и врста везе описују везу. Препоручујемо да одаберете назив који објашњава сврху и циљ ове везе.
    1. Тачна поља зависе од услуге на коју се повезујете. Више о детаљима одређеног типа везе можете сазнати у чланку о циљној услузи.
+   1. Ако [користите сопствени Key Vault](use-azure-key-vault.md) за чување тајни, активирајте **Користи Key Vault** и изаберите тајну са листе.
 
 1. Да бисте креирали везу, изаберите **Сачувај**.
 
@@ -93,3 +94,6 @@ ms.locfileid: "7033236"
 
 1. Да бисте потврдили брисање, изаберите **Уклони**.
 
+## <a name="set-up-connections-with-secrets-managed-by-your-own-key-vault"></a>Успостављање веза са тајнама којима управља ваш Key Vault
+
+Неким везама су потребне тајне, попут API кључева или лозинки. Неке везе подржавају тајне сачуване у вашем Key Vault-у. Сазнајте више о подржаним везама и начину подешавања [сопственог Key Vault-а за увиде у циљну групу](use-azure-key-vault.md).

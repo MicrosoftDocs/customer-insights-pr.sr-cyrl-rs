@@ -1,7 +1,7 @@
 ---
 title: Извоз Customer Insights података у LinkedIn Ads
 description: Сазнајте како да конфигуришете везу и извозите у LinkedIn Ads.
-ms.date: 05/12/2021
+ms.date: 10/08/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 2cfaa37fd0ac697f29665792bab27a925d8ea1eede0519d424524a7e5accbfeb
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: 948a7e980df5714034009c92282e78cf2bdcb231
+ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
 ms.translationtype: HT
 ms.contentlocale: sr-Cyrl-RS
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7034241"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "7618309"
 ---
 # <a name="export-segments-to-linkedin-ads-preview"></a>Извоз сегмената у LinkedIn Ads (верзија за преглед)
 
@@ -28,9 +28,9 @@ ms.locfileid: "7034241"
 
 ## <a name="known-limitations"></a>Позната ограничења
 
-- Можете извести до 100.000 профила по извозу у LinkedIn Ads.
+- Можете извозити до 100.000 профила клијената по извозу у LinkedIn Ads.
 - Извоз у LinkedIn Ads ограничен је на сегменте.
-- Извоз до 100.000 профила у LinkedIn Ads може потрајати до 10 минута. 
+- Извоз до 100.000 профила клијената у LinkedIn Ads може потрајати до 10 минута. 
 
 ## <a name="set-up-the-connection-to-linkedin-ads"></a>Подесите везу са услугом LinkedIn Ads
 
@@ -66,7 +66,7 @@ ms.locfileid: "7034241"
 
 1. Одаберите да ли желите да извезете податке да обавите [контакт циљање](https://business.linkedin.com/marketing-solutions/ad-targeting/contact-targeting) или [циљање компаније](https://business.linkedin.com/marketing-solutions/ad-targeting/account-targeting) у услузи LinkedIn. 
 
-1. У одељку **Подударање података** изаберите поље у вашем обједињеном профилу клијента које представља е-адресу клијента. Потребно је да извезете сегменте у LinkedIn Ads.
+1. У одељку **Подударање података**, за циљање контаката изаберите најмање једно поље које представља е-адресу клијента, Apple Ad ID, ID Google огласа, Google ID корисника, или име и презиме. Ако одаберете циљање предузећа, изаберите барем једно поље које представља назив предузећа, домен е-поште, URL LinkedIn странице, симбол акције или веб-локацију. Додатна поља се могу изабрати за додатну дефиницију извоза. 
 
 1. Изаберите сегменте које желите да извезете. Публика која се подудара у услузи LinkedIn Campaign Manager аутоматски ће се креирати са називом сегмената које сте изабрали за извоз. Сваки сегмент ће резултирати засебном подударном циљном групом. 
 
