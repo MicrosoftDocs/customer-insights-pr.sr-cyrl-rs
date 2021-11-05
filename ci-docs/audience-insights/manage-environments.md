@@ -9,12 +9,12 @@ ms.reviewer: mhart
 author: NimrodMagen
 ms.author: nimagen
 manager: shellyha
-ms.openlocfilehash: ce2fdd435a81bb04148057554c5958e3ab59f125
-ms.sourcegitcommit: 53b133a716c73cb71e8bcbedc6273cec70ceba6c
+ms.openlocfilehash: 2d977ef4eb585e26b36139681552db22d84759c9
+ms.sourcegitcommit: 31985755c7c973fb1eb540c52fd1451731d2bed2
 ms.translationtype: HT
 ms.contentlocale: sr-Cyrl-RS
-ms.lasthandoff: 10/15/2021
-ms.locfileid: "7645144"
+ms.lasthandoff: 10/22/2021
+ms.locfileid: "7673762"
 ---
 # <a name="manage-environments"></a>Управљање окружењима
 
@@ -67,7 +67,8 @@ ms.locfileid: "7645144"
 
 - Профили клијената.
 - Акредитиви извора података. Мораћете да доставите акредитиве за сваки извор података и ручно освежите изворе података.
-- Извори података из Common Data Model фасцикле и Dataverse управљане услуге Data Lake. Те изворе података ћете морати да креирате ручно, с истим називом као у изворном окружењу.
+
+- Извори података из Common Data Model фасцикле и Dataverse управљаног језера података. Те изворе података ћете морати да креирате ручно, с истим називом као у изворном окружењу.
 
 Када копирате окружење, видећете поруку потврде да је креирано ново окружење. Изаберите **Идите на изворе података** да бисте видели листу извора података.
 

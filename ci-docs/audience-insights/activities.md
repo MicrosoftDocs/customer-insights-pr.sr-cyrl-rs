@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: CadeSanthaMSFT
 ms.author: cadesantha
 manager: shellyha
-ms.openlocfilehash: c250efcd54ec126c0726b22a971cdedd89760d6b
-ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
+ms.openlocfilehash: bcb8d42963719f5d225556c31b3fc06db8573e5b
+ms.sourcegitcommit: 31985755c7c973fb1eb540c52fd1451731d2bed2
 ms.translationtype: HT
 ms.contentlocale: sr-Cyrl-RS
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "7617987"
+ms.lasthandoff: 10/22/2021
+ms.locfileid: "7673156"
 ---
 # <a name="customer-activities"></a>Активности клијента
 
@@ -49,7 +49,7 @@ ms.locfileid: "7617987"
    :::image type="content" source="media/Activity_Wizard2.PNG" alt-text="Дефинисање релације између ентитета.":::
 
    > [!TIP]
-   > У B2B окружењима можете изабрати између ентитета пословног контакта и других ентитета. Ако изаберете ентитет пословног контакта, путања односа се аутоматски поставља. За друге ентитете морате дефинисати путању односа преко једног или више посредничких ентитета док не дођете до ентитета пословног контакта.
+   > У B-to-B окружењима можете изабрати између ентитета пословног контакта и других ентитета. Ако изаберете ентитет пословног контакта, путања односа се аутоматски поставља. За друге ентитете морате дефинисати путању односа преко једног или више посредничких ентитета док не дођете до ентитета пословног контакта.
 
 1. Изаберите **Следеће** да пређете на следећи корак. 
 
