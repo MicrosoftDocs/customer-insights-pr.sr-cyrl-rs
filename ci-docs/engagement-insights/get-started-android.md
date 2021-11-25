@@ -1,26 +1,26 @@
 ---
-title: Почетни кораци у раду са Android SDK
-description: Сазнајте како да персонализујете и покренете Android SDK
+title: Први кораци са Андроид СДК-ом
+description: Сазнајте како да персонализујете и покренете Андроид СДК
 author: britl
 ms.reviewer: mhart
 ms.author: britl
-ms.date: 09/15/2021
+ms.date: 10/19/2021
 ms.service: customer-insights
 ms.subservice: engagement-insights
 ms.topic: conceptual
 ms.manager: shellyha
-ms.openlocfilehash: a060ac60db71a7b0fb8c0d7a3b0e266004fbee6a
-ms.sourcegitcommit: fecdee73e26816c42d39d160d4d5cfb6c8a91596
-ms.translationtype: HT
+ms.openlocfilehash: c678c2dafbb77926269b5602bca363c678ec6b3f
+ms.sourcegitcommit: ef823f3d7fa28d3a90cfde9409be9465ffa2cf09
+ms.translationtype: MT
 ms.contentlocale: sr-Cyrl-RS
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "7494293"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "7655360"
 ---
-# <a name="get-started-with-the-android-sdk"></a>Почетни кораци у раду са Android SDK
+# <a name="get-started-with-the-android-sdk"></a>Први кораци у Андроид СДК-у
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
-Ово упутство вас води кроз процес опремања Android апликације са Dynamics 365 Customer Insights SDK за увиде у ангажовање. Догађаје на порталу почећете да видите за пет минута или пре.
+Ово упутство вас води кроз процес инструмената ваше Андроид апликације са Дyнамицс 365 Цустомер Инсигхтс увидом УДК. Догађаје на порталу почећете да видите за пет минута или пре.
 
 ## <a name="configuration-options"></a>Опције конфигурације
 Следеће опције конфигурације могу се проследити SDK-у:
@@ -29,25 +29,25 @@ ms.locfileid: "7494293"
 
 ## <a name="prerequisites"></a>Предуслови
 
-- Android Studio
+- Андроид Студио
 
-- Минимални ниво за Android API: 16 (Jelly Bean)
+- Минимални Андроид АПИ ниво: 16 (Јеллy Беан)
 
 - Кључ за унос (погледајте у наставку упутство за добијање)
 
 ## <a name="integrate-the-sdk-into-your-application"></a>Интегришите SDK у своју апликацију
-Започните поступак одабиром радног простора у, одабиром Android мобилне платформе и преузимањем Android SDK.
+Започните процес избором радног простора, избором Андроид мобилне платформе и преузимањем Андроид СДК- а.
 
 - Користите преклопник радног простора у левом окну за навигацију да бисте изабрали радни простор.
 
 - Ако немате постојећи радни простор, изаберите **Нови радни простор** и следите кораке да креирате [нови радни простор](create-workspace.md).
 
-- Када креирате радни простор, идите на **Администратор** > **Радни простор**, а затим изаберите **Водич за инсталацију**. 
+- Када креирате радни простор, идите на **Администратор** > **Радни простор**, а затим изаберите **Водич за инсталацију**.
 
 ## <a name="configure-the-sdk"></a>Конфигурисање SDK
 
-Када преузмете SDK, можете радити с њим на платформи Android Studio да бисте омогућили и дефинисали догађаје. Постоје два начина да то урадите:
-### <a name="option-1-using-jitpack-recommended"></a>1. опција: Коришћење услуге JitPack (препоручено)
+Када преузмете СДК, можете да радите са њим у Андроид Студио бисте омогућили и дефинисали догађаје. Постоје два начина да то урадите:
+### <a name="option-1-use-jitpack-recommended"></a>Опција 1: Користите ЈитПацк (препоручује се)
 1. Додајте JitPack спремиште свом корену `build.gradle`:
     ```gradle
     allprojects {
@@ -61,13 +61,13 @@ ms.locfileid: "7494293"
 1. Додајте зависност:
     ```gradle
     dependencies {
-        implementation 'com.github.microsoft:engagementinsights-sdk-android:1.0.0'
+        implementation 'com.github.microsoft:engagementinsights-sdk-android:v1.0.0'
         api 'com.google.code.gson:gson:2.8.1'
     }
     ```
 
-### <a name="option-2-using-download-link"></a>2. опција: Коришћење везе за преузимање
-1. Преузмите [Android SDK за увиде у ангажовање](https://download.pi.dynamics.com/sdk/EI-SDKs/ei-android-sdk.zip) и поставите датотеку `eiandroidsdk-debug.aar` у фасциклу `libs`.
+### <a name="option-2-use-download-link"></a>Опција 2: Коришћење везе за преузимање
+1. Преузмите [увиде о Андроид СДК](https://download.pi.dynamics.com/sdk/EI-SDKs/ei-android-sdk.zip) и ставите `eiandroidsdk-debug.aar` датотеку у `libs` фасциклу.
 
 1. Отворите датотеку `build.gradle` на нивоу пројекта и додајте следеће исечке:
     ```gradle
@@ -83,22 +83,23 @@ ms.locfileid: "7494293"
     }
     ```
 
-1. Додајте дозволу за мрежу и интернет у своју `AndroidManifest.xml` датотеку која се налази у фасцикли `manifests`. 
+## <a name="enable-auto-instrumentation"></a>Омогућавање аутоматског опремања
+
+1. Додајте дозволу за мрежу и интернет у своју `AndroidManifest.xml` датотеку која се налази у фасцикли `manifests`.
     ```xml
     <manifest>
         ...
         <uses-permission android:name="android.permission.INTERNET" />
         <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     ```
-    
-1. Подесите конфигурацију SDK за увиде у ангажовање путем ваше датотеке `AndroidManifest.xml`. 
 
-## <a name="enable-auto-instrumentation"></a>Омогућавање аутоматског опремања
+1. Подесите конфигурацију SDK за увиде у ангажовање путем ваше датотеке `AndroidManifest.xml`.
+
 1. Копирајте XML исечак из **водича за инсталацију**. `Your-Ingestion-Key` би требало да се попуни аутоматски.
 
    > [!NOTE]
    > Не морате да замените одељак `${applicationId}`. Он се попуњава аутоматски.
-   
+
 
    ```xml
    <application>
@@ -116,20 +117,24 @@ ms.locfileid: "7494293"
    </application>
    ```
 
-1. Омогућите или онемогућите аутоматско налажење догађаја `View` подешавањем вредности `true` или `false` у горенаведеном пољу `autoCapture`. Тренутно догађаје `Action` је потребно додати ручно.
+1. Омогућите или онемогућите аутоматско налажење догађаја `View` подешавањем вредности `true` или `false` у горенаведеном пољу `autoCapture`. 
 
-1. (Опционално) Остале конфигурације укључују подешавање URL адресе сакупљача крајњих тачака. Могу се додати под метаподацима кључа за унос у датотеци `AndroidManifest.xml`:
-    ```xml
+   >[!NOTE]
+   >`Action` догађаје треба додати ручно.
+
+1. (Опционално) Остале конфигурације укључују подешавање URL адресе сакупљача крајњих тачака. Они се могу додати испод метаподатака кључа за ингестион у програму `AndroidManifest.xml`.
+
+   ```xml
         <meta-data
             android:name="com.microsoft.engagementinsights.endpointUrl"
             android:value="https://some-endpoint-url.com" />
-    ```
+   ```
 
 ## <a name="implement-custom-events"></a>Примена прилагођених догађаја
 
 Када покренете SDK, можете радити са догађајима и њиховим својствима у `MainActivity` окружењу.
 
-    
+
 Java:
 ```java
 Analytics analytics = new Analytics();
@@ -141,7 +146,7 @@ var analytics = Analytics()
 ```
 
 ### <a name="set-property-for-all-events-optional"></a>Подесите својство за све догађаје (опционално)
-    
+
 Java:
 ```java
 analytics.setProperty("year", 2021);

@@ -1,7 +1,7 @@
 ---
 title: Семантичка мапирања (верзија за преглед)
 description: Преглед семантичких мапирања и како их користити.
-ms.date: 09/28/2021
+ms.date: 11/01/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.reviewer: mhart
@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: CadeSanthaMSFT
 ms.author: cadesantha
 manager: shellyha
-ms.openlocfilehash: b0884b8b6a2c5abe4b3967d1b57d11a3a6d65c5b
-ms.sourcegitcommit: 5d82e5b808517e0e99fdfdd7e4a4422a5b8ebd5c
-ms.translationtype: HT
+ms.openlocfilehash: f23c622572ff9f967eca07de7898419d1ffc18b0
+ms.sourcegitcommit: 834651b933b1e50e7557d44f926a3fb757c1f83a
+ms.translationtype: MT
 ms.contentlocale: sr-Cyrl-RS
-ms.lasthandoff: 10/11/2021
-ms.locfileid: "7622953"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "7731961"
 ---
 # <a name="semantic-mappings"></a>Семантичка мапирања
 
@@ -75,8 +75,7 @@ ms.locfileid: "7622953"
 
 1. Да бисте касније покренули семантичко мапирање, изаберите семантичко мапирање и изаберите **Освежи**.
 
-> [!TIP]
-> Постоји [шест врста статуса](system.md#status-types) за задатке/процесе. Уз то, већина процеса [зависи од других процеса на нижем току](system.md#refresh-policies). Можете изабрати статус процеса да бисте видели детаље о току целог посла. Након избора опције **Види детаље** за један од задатака посла пронаћи ћете додатне информације: време обраде, датум последње обраде и све грешке и упозорења повезана са задатком.
+[!INCLUDE [progress-details-include](../includes/progress-details-pane.md)]
 
 ## <a name="manage-existing-semantic-mappings"></a>Управљање постојећим семантичким мапирањима
 
@@ -91,5 +90,6 @@ ms.locfileid: "7622953"
 - **Преименуј**: Отвара дијалог у који можете унети другачије име за изабрано семантичко мапирање. Изаберите **Сачувај** да примените промене.
 
 - **Избриши**: Отвара дијалог за потврду брисања изабраног семантичког мапирања. Такође можете избрисати више семантичких мапирања одједном одабиром семантичких мапирања и иконе за брисање. Изаберите **Избриши** да бисте потврдили брисање.
+
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -1,5 +1,5 @@
 ---
-title: Ограничења услуге у услузи Dynamics 365 Customer Insights
+title: Ограничења услуге у Дyнамицс 365 Цустомер Инсигхтс
 description: Разумевање ограничења и рестрикција.
 ms.date: 09/03/2021
 ms.service: customer-insights
@@ -9,12 +9,12 @@ author: JimsonChalissery
 ms.author: jimsonc
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: eba7871faf304d5945191b5b9bc215243b4f8a05
-ms.sourcegitcommit: 5704002484cdf85ebbcf4e7e4fd12470fd8e259f
-ms.translationtype: HT
+ms.openlocfilehash: eb25e050b8aa768e6e1d8d4c5adce6095cccc346
+ms.sourcegitcommit: 31a9b531dacd3a6465b3030c704ff5c085b7e122
+ms.translationtype: MT
 ms.contentlocale: sr-Cyrl-RS
-ms.lasthandoff: 09/08/2021
-ms.locfileid: "7483705"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7791998"
 ---
 # <a name="service-limits-in-customer-insights-capabilities"></a>Ограничења услуга у могућностима услуге Customer Insights
 
@@ -22,11 +22,11 @@ ms.locfileid: "7483705"
 
 ## <a name="audience-insights"></a>Увиди у циљну групу
 
-### <a name="service-limits-in-dynamics-365-customer-insights-audience-insights-capability"></a>Ограничења услуге у Dynamics 365 Customer Insights могућности увида о корисницима
+### <a name="service-limits-in-dynamics-365-customer-insights-audience-insights-capability"></a>Ограничења услуге у Дyнамицс 365 Цустомер Инсигхтс корисници увида
 
 | Обласни графикон  | Ограничења  | Белешке |
 |-------------|---------------------------------------------------------------------|---------------------------------------------------------------------|
-| Сегменти и мере | 100 сегмената или мера. | Укупан број активних[ сегмената](audience-insights/segments.md) и[ мера](audience-insights/measures.md) комбиновано не може прећи 100.  |
+| Сегменти, мере и предвиђања | 300  | Укупан број [сегмената](audience-insights/segments.md), мера и [...](audience-insights/measures.md)[предвиђања](audience-insights/predictions.md) заједно не може да премаши 300.  |
 | Релације | 20 нивоа дубине у односима у путањама ентитета. | Приликом креирања [сегмената](audience-insights/segments.md) или [мера](audience-insights/measures.md) користећи интерфејс за израду, путање ентитета могу имати до 20 корака односа између почетног ентитета и циљног ентитета.  |
 
 

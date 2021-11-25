@@ -4,7 +4,7 @@
   href: overview.md
 - name: Бесплатна пробна верзија
   items:
-    - name: Уписивање за бесплатну верзију
+    - name: Уписивање за бесплатну пробну верзију
       href: trial-signup.md
     - name: Честа питања о пробној верзији
       href: trial-FAQ.md
@@ -48,7 +48,7 @@
           href: audience-insights/connect-power-query.md
         - name: Додајте Common Data Model фасциклу као извор података
           href: audience-insights/connect-common-data-model.md
-        - name: Додавање Dataverse управљано језеро података
+        - name: Додај Датаверсе управљано језеро са подацима
           href: audience-insights/connect-dataverse-managed-lake.md
         - name: Постепено освежавање за изворе података
           href: audience-insights/incremental-refresh-data-sources.md
@@ -84,13 +84,15 @@
           href: audience-insights/enrichment-microsoft.md
         - name: Побољшане адресе
           href: audience-insights/enrichment-enhanced-addresses.md
+        - name: Побољшање података предузећа
+          href: audience-insights/enrichment-enhanced-company-data.md
         - name: Обогаћивање са решењем Azure Maps
           href: audience-insights/enrichment-azure-maps.md
         - name: Обогатите уз HERE Technologies
           href: audience-insights/enrichment-here.md
         - name: Обогаћивање уз Leadspace
           href: audience-insights/enrichment-leadspace.md
-        - name: Обогаћивање уз Experian
+        - name: Обогатите помоћу услуге Experian
           href: audience-insights/enrichment-experian.md
         - name: Обогаћивање уз SFTP прилагођени увоз
           href: audience-insights/enrichment-SFTP-custom-import.md
@@ -164,11 +166,11 @@
               href: audience-insights/export-azure-blob-storage.md
             - name: Azure Data Lake Storage Gen2
               href: audience-insights/export-azure-data-lake-storage-gen2.md
-            - name: Azure Synapse Analytics
+            - name: Азуре Сyнапсе Аналитика
               href: audience-insights/export-azure-synapse-analytics.md
             - name: Adobe Campaign Standard
               href: audience-insights/export-adobe-campaign-standard.md
-            - name: Adobe Experience Platform
+            - name: Adobe платформа искуства
               href: audience-insights/export-adobe-experience-platform.md
             - name: Campaign Monitor
               href: audience-insights/export-campaign-monitor.md
@@ -180,7 +182,7 @@
               href: audience-insights/export-dynamics365-marketing.md
             - name: Dynamics 365 Sales
               href: audience-insights/export-dynamics365-sales.md
-            - name: Facebook менаџер огласа
+            - name: Фацебоок огласа
               href: audience-insights/export-facebook.md
             - name: Google Ads
               href: audience-insights/export-google-ads.md
@@ -214,7 +216,7 @@
           items:
             - name: Програмски додатак за картицу клијента за Dynamics 365
               href: audience-insights/customer-card-add-in.md
-            - name: Microsoft Teams (робот)
+            - name: Мицрософт Теамс (бот)
               href: audience-insights/export-teams-bot.md
             - name: Power Apps
               href: audience-insights/export-power-apps.md
@@ -244,12 +246,46 @@
           href: audience-insights/integrate-engagement-insights.md
         - name: Преглед шема ентитета на платформи Common Data Model
           href: audience-insights/entity-schemas.md
-        - name: Customer Insights подаци у платформи Dataverse
+        - name: Подаци о увидима клијената у Датаверсе
           href: audience-insights/customer-insights-dataverse.md
         - name: Рад са API-јима
           href: audience-insights/apis.md
         - name: Референце на API-је
           href: 'https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights'
+- name: Управљање сагласностима (преглед)
+  items:
+    - name: Чвориште помоћи
+      href: consent-management/index.yml
+    - name: Преглед могућности
+      href: consent-management/overview.md
+    - name: Први кораци
+      items:
+        - name: Први кораци
+          href: consent-management/get-started.md
+        - name: Појмови и терминологија
+          href: consent-management/glossary.md
+    - name: Увоз података о сагласности
+      items:
+        - name: Увоз података о сагласности
+          href: consent-management/import-consent-data.md
+        - name: Постављање података о пристанку и примена жељених опција сагласности
+          href: consent-management/set-consent-rules.md
+    - name: Управљање подацима о пристанку
+      items:
+        - name: Омогућавање правила пристанка у корисници увидима
+          href: audience-insights/activate-consent.md
+        - name: Управљање подразумеваним правилима пристанка у сегментима корисници увида
+          href: audience-insights/change-default-consent-rules.md
+    - name: Управљање поставкама и корисницима
+      items:
+        - name: Конфигурисање поставки система
+          href: consent-management/system-settings.md
+        - name: Управљање корисницима и дозволама
+          href: consent-management/manage-users.md
+    - name: Коришћење података о пристанку
+      items:
+        - name: Креирање предвиђања са подацима о пристанку
+          href: consent-management/predictions-consent-data.md
 - name: Увиди у ангажовање (верзија за преглед)
   items:
     - name: Чвориште помоћи
@@ -304,7 +340,7 @@
           href: engagement-insights/websdk-sample.md
         - name: Упутство за Android SDK
           href: engagement-insights/get-started-android.md
-        - name: Android SDK пример
+        - name: Андроид СДК-а
           href: engagement-insights/androidsdk-sample.md
         - name: Упутство за iOS SDK
           href: engagement-insights/get-started-ios.md

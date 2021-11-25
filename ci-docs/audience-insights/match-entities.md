@@ -1,7 +1,7 @@
 ---
 title: Подударање ентитета за обједињавање података
 description: Подударајте ентитете за комбиновање скупова података и креирање јединствених профила клијената.
-ms.date: 02/23/2021
+ms.date: 11/01/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: tutorial
@@ -11,12 +11,12 @@ ms.reviewer: mhart
 manager: shellyha
 searchScope:
 - ci-match
-ms.openlocfilehash: 67e17495fa6da1cfac7ee4ee165e798364f6cb27
-ms.sourcegitcommit: 37182127b93b90846cc91fbeb26dd7a18cf5610a
+ms.openlocfilehash: cabeddbc9d485108d166e6355175a01721b75a55
+ms.sourcegitcommit: 834651b933b1e50e7557d44f926a3fb757c1f83a
 ms.translationtype: HT
 ms.contentlocale: sr-Cyrl-RS
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "7648226"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "7732652"
 ---
 # <a name="match-entities"></a>Подударање ентитета
 
@@ -180,10 +180,7 @@ ms.locfileid: "7648226"
 
 Резултат успешног покретања, обједињени ентитет корисничког профила, пронаћи ћете на страници **Ентитети**. Ваш обједињени ентитет клијента се зове **Клијенти** у одељку **Профили**. Прво успешно покретање подударања креира обједињени ентитет *Клијент*. Сва наредна покретања подударања проширују тај ентитет.
 
-> [!TIP]
-> Након покретања процеса подударања, изаберите статус процеса да бисте отворили окно **Детаљи о задатку**. Он даје преглед времена обраде, последњег датума обраде и свих грешака и упозорења повезаних са задатком. Изаберите **Види детаље** да бисте видели који су ентитети учествовали у процесу подударања, која правила су примењена на њих и да ли су ажурирања успешно објављена.  
-> Постоји [шест врста статуса](system.md#status-types) за задатке/процесе. Уз то, већина процеса [зависи од других процеса на нижем току](system.md#refresh-policies).  
-> :::image type="content" source="media/process-detail-path.png" alt-text="Детаљно анализирајте путању како бисте приступили детаљима о обради са везе статуса задатка.":::
+[!INCLUDE [progress-details-include](../includes/progress-details-pane.md)]
 
 ## <a name="review-and-validate-your-matches"></a>Прегледајте и потврдите своја подударања
 

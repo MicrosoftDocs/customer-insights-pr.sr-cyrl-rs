@@ -1,7 +1,7 @@
 ---
 title: Унос података путем Power Query конектора
 description: Конектори за изворе података засноване на решењу Power Query.
-ms.date: 09/29/2020
+ms.date: 11/01/2020
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,16 +9,16 @@ ms.topic: how-to
 author: adkuppa
 ms.author: adkuppa
 manager: shellyha
-ms.openlocfilehash: ab6edc3f33ebacb81f55c0882a78c5827b4384ed
-ms.sourcegitcommit: 1565f4f7b4e131ede6ae089c5d21a79b02bba645
-ms.translationtype: HT
+ms.openlocfilehash: 5d54d33c235e646644e8874e5b0c28898dcff11a
+ms.sourcegitcommit: 834651b933b1e50e7557d44f926a3fb757c1f83a
+ms.translationtype: MT
 ms.contentlocale: sr-Cyrl-RS
-ms.lasthandoff: 10/14/2021
-ms.locfileid: "7643512"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "7732236"
 ---
 # <a name="connect-to-a-power-query-data-source"></a>Повезивање са Power Query извором података
 
-Power Query нуди широк скуп конектора за унос података. Већину ових конектора подржава Dynamics 365 Customer Insights. Додавање извора података на основу Power Query конектора углавном следи кораке наведене у следећем одељку. Међутим, у зависности од конектора који користите, потребне су различите информације. За више информација погледајте документацију о појединачним конекторима у [референци Power Query конектора](/power-query/connectors/).
+Power Query нуди широк скуп конектора за унос података. Већину ових линија спајања подржавају Дyнамицс 365 Цустомер Инсигхтс. Додавање извора података на основу Power Query конектора углавном следи кораке наведене у следећем одељку. Међутим, у зависности од конектора који користите, потребне су различите информације. За више информација погледајте документацију о појединачним конекторима у [референци Power Query конектора](/power-query/connectors/).
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWN6EK]
 
@@ -79,6 +79,8 @@ Power Query нуди широк скуп конектора за унос под
    > [!div class="mx-imgBorder"]
    > ![Уређивање опције.](media/edit-option-data-sources.png "Уређивање опције")
 
+   [!INCLUDE [progress-details-include](../includes/progress-details-pane.md)]
+   
 3. Примените промене и трансформације у дијалогу **Power Query – уређивање упита** као што је описано у одељку [Креирање новог извора података](#create-a-new-data-source).
 
 4. Како бисте сачували измене, изаберите **Сачувај** у решењу Power Query након што довршите уређивања.

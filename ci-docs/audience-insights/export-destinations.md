@@ -1,7 +1,7 @@
 ---
 title: Извоз података из услуге Customer Insights
 description: Управљајте извозима да бисте делили податке.
-ms.date: 10/08/2021
+ms.date: 11/01/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -10,12 +10,12 @@ author: pkieffer
 ms.author: philk
 manager: shellyha
 ms.custom: intro-internal
-ms.openlocfilehash: 61e95e47489495e367498547687b0065169519e6
-ms.sourcegitcommit: 31985755c7c973fb1eb540c52fd1451731d2bed2
-ms.translationtype: HT
+ms.openlocfilehash: bff0486fdb3a02ecb0aa86e81abe1c506e234bc5
+ms.sourcegitcommit: 834651b933b1e50e7557d44f926a3fb757c1f83a
+ms.translationtype: MT
 ms.contentlocale: sr-Cyrl-RS
-ms.lasthandoff: 10/22/2021
-ms.locfileid: "7673341"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "7732181"
 ---
 # <a name="exports-preview-overview"></a>Преглед извоза (верзија за преглед)
 
@@ -97,7 +97,9 @@ ms.locfileid: "7673341"
 
 Сваки извоз који конфигуришете има распоред освежавања. Током освежавања, систем тражи нове или ажуриране податке које ће укључити у извоз. Подразумевано се извози као део сваког [заказаног освежавања система](system.md#schedule-tab). Можете прилагодити распоред освежавања или га искључити за ручно покретање извоза.
 
-Распореди извоза зависе од статуса вашег окружења. Ако су у току ажурирања [зависних елемената](system.md#refresh-policies) када треба да започне планирани извоз, систем ће прво довршити ажурирања, а затим покренути извоз. У колони **Освежено** можете видети када је извоз последњи пут освежен.
+[!INCLUDE [progress-details-include](../includes/progress-details-pane.md)]
+
+Распореди извоза зависе од статуса вашег окружења. Ако су у току ажурирања [зависних елемената](system.md#refresh-processes) када треба да започне планирани извоз, систем ће прво довршити ажурирања, а затим покренути извоз. У колони **Освежено** можете видети када је извоз последњи пут освежен.
 
 ### <a name="schedule-exports"></a>Распоред извоза
 

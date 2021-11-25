@@ -1,7 +1,7 @@
 ---
 title: Обогаћивање корисничких профила подацима компаније Microsoft
 description: Користите заштићене податке компаније Microsoft да бисте обогатили податке о клијентима афинитетима према бренду и интересовањима.
-ms.date: 06/14/2021
+ms.date: 11/01/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: how-to
 author: kishorem-MS
 ms.author: kishorem
 manager: shellyha
-ms.openlocfilehash: 51b150cbf5d9cfb3a5df42e680bcfa57ec5496cb
-ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
+ms.openlocfilehash: c25dbb7a877da2d3fccc1a4e5b219b9792bc6402
+ms.sourcegitcommit: 834651b933b1e50e7557d44f926a3fb757c1f83a
 ms.translationtype: HT
 ms.contentlocale: sr-Cyrl-RS
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "7617896"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "7732560"
 ---
 # <a name="enrich-customer-profiles-with-brand-and-interest-affinities-preview"></a>Обогатите корисничке профиле афинитетима бренда и интересовања (преглед)
 
@@ -116,8 +116,7 @@ ms.locfileid: "7617896"
 
 У зависности од величине података о клијентима, може проћи неколико минута да се оплемењивање заврши.
 
-> [!TIP]
-> Постоји [шест врста статуса](system.md#status-types) за задатке/процесе. Уз то, већина процеса [зависи од других процеса на нижем току](system.md#refresh-policies). Можете изабрати статус процеса да бисте видели детаље о току целог посла. Након избора **Види детаље** за један од задатака посла, пронаћи ћете додатне информације: време обраде, датум последње обраде и све грешке и упозорења повезана са задатком.
+[!INCLUDE [progress-details-include](../includes/progress-details-pane.md)]
 
 ## <a name="enrichment-results"></a>Резултати обогаћивања
 

@@ -1,7 +1,7 @@
 ---
 title: Активности клијента
 description: Дефинишите активности клијената и прикажите их у временској оси на профилима клијената.
-ms.date: 09/27/2021
+ms.date: 11/01/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.reviewer: mhart
@@ -9,16 +9,16 @@ ms.topic: conceptual
 author: CadeSanthaMSFT
 ms.author: cadesantha
 manager: shellyha
-ms.openlocfilehash: bcb8d42963719f5d225556c31b3fc06db8573e5b
-ms.sourcegitcommit: 31985755c7c973fb1eb540c52fd1451731d2bed2
-ms.translationtype: HT
+ms.openlocfilehash: c99ec2e7d5e4bf32a509bbe4c0c53999129b2305
+ms.sourcegitcommit: 834651b933b1e50e7557d44f926a3fb757c1f83a
+ms.translationtype: MT
 ms.contentlocale: sr-Cyrl-RS
-ms.lasthandoff: 10/22/2021
-ms.locfileid: "7673156"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "7732478"
 ---
 # <a name="customer-activities"></a>Активности клијента
 
-Комбинујте активности клијената из [разних извора података](data-sources.md) у услузи Dynamics 365 Customer Insights како бисте креирали временску осу која хронолошки наводи активности. Укључите хронологију у Dynamics 365 апликације са решењем [Програмски додатак за корисничку картицу](customer-card-add-in.md) или у Power BI контролној табли.
+Комбинујте активности [клијената из различитих извора](data-sources.md) података у Дyнамицс 365 Цустомер Инсигхтс бисте креирали временску осу која хронолошки наводи активности. Укључите временску осу у Дyнамицс 365 апликације [са решењем програмског додатка"Картица](customer-card-add-in.md) купца" или у Поwер БИ контролној табли.
 
 ## <a name="define-an-activity"></a>Дефинишите активност
 
@@ -82,9 +82,7 @@ ms.locfileid: "7673156"
 
 1. На страници **Активности**, изаберите **Покрени** да бисте обрадили активност. 
 
-> [!TIP]
-> Постоји [шест врста статуса](system.md#status-types) за задатке/процесе. Уз то, већина процеса [зависи од других процеса на нижем току](system.md#refresh-policies). Можете изабрати статус процеса да бисте видели детаље о току целог посла. Након избора опције **Види детаље** за један од задатака посла пронаћи ћете додатне информације: време обраде, датум последње обраде и све грешке и упозорења повезана са задатком.
-
+[!INCLUDE [progress-details-include](../includes/progress-details-pane.md)]
 
 ## <a name="manage-existing-activities"></a>Управљање постојећим активностима
 

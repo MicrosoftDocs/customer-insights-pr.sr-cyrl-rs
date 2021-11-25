@@ -9,16 +9,18 @@ ms.topic: how-to
 author: zacookmsft
 ms.author: zacook
 manager: shellyha
-ms.openlocfilehash: 409dfce02c41d7c52295409912880b9224469908805e199066faeb2b7a4f1f9d
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
-ms.translationtype: HT
+ms.openlocfilehash: f9397729d2f79d079b4dea2ee92d0823b6d987e4
+ms.sourcegitcommit: fb9f118b4e16b5aabb3e503463efca21718f5d72
+ms.translationtype: MT
 ms.contentlocale: sr-Cyrl-RS
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7035341"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "7799745"
 ---
 # <a name="subscription-churn-prediction-preview"></a>Предвиђање губитка претплата (преглед)
 
 Предвиђање губитка претплата вам помаже да предвидите да ли је клијент угрожен због тога што више не користи производе или услуге вашег предузећа са претплатом. Можете да креирате ново предвиђање губитка претплата на страници **Обавештавање** > **Предвиђања**. Изаберите **Моја предвиђања** да видите друга предвиђања која сте креирали.
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWOKNQ]
 
 > [!TIP]
 > Испробајте водич за предвиђање губитка претплата користећи узорке података: [Пример водича за предвиђање губитка претплата](sample-guide-predict-subscription-churn.md).
