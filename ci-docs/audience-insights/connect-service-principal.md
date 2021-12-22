@@ -1,7 +1,7 @@
 ---
 title: Повезивање са Azure Data Lake Storage налогом коришћењем принципала услуге
 description: За повезивање са сопственим језером података, користите принципала услуге Azure.
-ms.date: 09/08/2021
+ms.date: 12/06/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
@@ -9,26 +9,26 @@ author: adkuppa
 ms.author: adkuppa
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: b901d799dbd73841a6ddbae754c4e4275f61146a
-ms.sourcegitcommit: 53b133a716c73cb71e8bcbedc6273cec70ceba6c
-ms.translationtype: HT
+ms.openlocfilehash: faef3583337fd495e7baf40b0a208f1d9f10281a
+ms.sourcegitcommit: 11b343f6622665251ab84ae39ebcd91fa1c928ca
+ms.translationtype: MT
 ms.contentlocale: sr-Cyrl-RS
-ms.lasthandoff: 10/15/2021
-ms.locfileid: "7645190"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "7900293"
 ---
 # <a name="connect-to-an-azure-data-lake-storage-account-by-using-an-azure-service-principal"></a>Повезивање са Azure Data Lake Storage налогом коришћењем Azure принципала услуге
 
-Аутоматизовани алати који користе Azure услуге увек би требало да имају ограничене дозволе. Уместо да се апликације пријављују као потпуно привилеговани корисник, Azure нуди принципале услуга. Читајте даље да бисте сазнали како да повежете услугу Dynamics 365 Customer Insights са Azure Data Lake Storage налогом користећи принципала услуге Azure уместо кључева налога за складиштење. 
+Овај чланак говори о томе како да се Dynamics 365 Customer Insights повежете са Azure Data Lake Storage налогом помоћу директора Азуре услуге уместо кључева налога за складиштење. 
 
-Можете користити принципала услуге да безбедно [додате или уредите Common Data Service фасциклу као извор података](connect-common-data-model.md) или да [креирате или ажурирате окружење](create-environment.md).
+Аутоматизовани алати који користе Azure услуге увек би требало да имају ограничене дозволе. Уместо да се апликације пријављују као потпуно привилеговани корисник, Azure нуди принципале услуга. Принципалне услуге можете да користите за безбедно [додавање или уређивање фасцикле "Уобичајени модел података" као извор података](connect-common-data-model.md) или креирање или ажурирање [окружења](create-environment.md).
 
 > [!IMPORTANT]
 > - Data Lake Storage налог који ће користити принципала услуге мора имати [омогућен хијерархијски простор за име](/azure/storage/blobs/data-lake-storage-namespace).
-> - Потребне су вам администраторске дозволе за Azure претплату да бисте креирали принципал услуге.
+> - Потребне су вам администраторске дозволе за Азуре претплату да бисте креирали главницу услуге.
 
 ## <a name="create-an-azure-service-principal-for-customer-insights"></a>Креирање принципала услуге Azure за Customer Insights
 
-Пре него што креирате новог принципала услуге за увиде у циљну групу или увиде у ангажовање, проверите да ли већ постоји у вашој организацији.
+Пре него што креирате новог директора сервиса за увиде клијената, проверите да ли он већ постоји у вашој организацији.
 
 ### <a name="look-for-an-existing-service-principal"></a>Потражите постојећи принципал услуге
 

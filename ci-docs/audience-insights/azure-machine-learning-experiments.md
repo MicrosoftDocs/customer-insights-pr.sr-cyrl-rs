@@ -1,7 +1,7 @@
 ---
 title: Експерименти Azure машинског учења
 description: Користите моделе засноване на Azure машинском учењу у услузи Dynamics 365 Customer Insights.
-ms.date: 11/30/2020
+ms.date: 12/02/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: tutorial
@@ -9,16 +9,16 @@ author: naravill
 ms.author: naravill
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 4c04a1d08aba152ce91d452ae2300c1ce0fc79e5d6980ac506dc40d9914c9fca
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
-ms.translationtype: HT
+ms.openlocfilehash: e37eec503c9df83ef72497e22afa1266296e642c
+ms.sourcegitcommit: 58651d33e0a7d438a2587c9ceeaf7ff58ae3b648
+ms.translationtype: MT
 ms.contentlocale: sr-Cyrl-RS
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7033190"
+ms.lasthandoff: 12/02/2021
+ms.locfileid: "7881756"
 ---
 # <a name="use-azure-machine-learning-based-models"></a>Користите моделе засноване на Azure машинском учењу
 
-Обједињени подаци у услузи Dynamics 365 Customer Insights јесу извор за изградњу модела машинског учења који могу створити додатне пословне увиде. Customer Insights се интегрише са Machine Learning Studio (класични) и Azure машинским учењем да би користио ваше прилагођене моделе. Погледајте [Machine Learning Studio (класични) експерименте](machine-learning-studio-experiments.md) за примере експеримената изграђених на основу услуге Machine Learning Studio (класичан). 
+Обједињени подаци у услузи Dynamics 365 Customer Insights јесу извор за изградњу модела машинског учења који могу створити додатне пословне увиде. Customer Insights се интегрише са Azure машинским учењем како би користио ваше сопствене прилагођене моделе.
 
 ## <a name="prerequisites"></a>Предуслови
 
@@ -35,7 +35,7 @@ ms.locfileid: "7033190"
 
 ## <a name="work-with-azure-machine-learning-designer"></a>Радите са дизајнером за Azure машинско учење
 
-Дизајнер за Azure машинско учење пружа визуелну подлогу по којој можете превлачити и отпуштати скупове података и модуле, слично као Machine Learning Studio (класични). Групни канал креиран из дизајнера може се интегрисати у Customer Insights ако су конфигурисани у складу с тим. 
+Азуре Машинско учење обезбеђује визуелну подлогу на којој можете да превлачите и отпустите групе података и модуле. Групни канал креиран из дизајнера може се интегрисати у Customer Insights ако су конфигурисани у складу с тим. 
    
 ## <a name="working-with-azure-machine-learning-sdk"></a>Рад са SDK-ом за Azure машинско учење
 

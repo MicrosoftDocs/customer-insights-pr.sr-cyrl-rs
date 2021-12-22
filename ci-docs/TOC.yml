@@ -4,7 +4,7 @@
   href: overview.md
 - name: Бесплатна пробна верзија
   items:
-    - name: Уписивање за бесплатну пробну верзију
+    - name: Уписивање за бесплатну верзију
       href: trial-signup.md
     - name: Честа питања о пробној верзији
       href: trial-FAQ.md
@@ -48,7 +48,7 @@
           href: audience-insights/connect-power-query.md
         - name: Додајте Common Data Model фасциклу као извор података
           href: audience-insights/connect-common-data-model.md
-        - name: Додај Датаверсе управљано језеро са подацима
+        - name: Додавање Dataverse управљано језеро података
           href: audience-insights/connect-dataverse-managed-lake.md
         - name: Постепено освежавање за изворе података
           href: audience-insights/incremental-refresh-data-sources.md
@@ -84,7 +84,7 @@
           href: audience-insights/enrichment-microsoft.md
         - name: Побољшане адресе
           href: audience-insights/enrichment-enhanced-addresses.md
-        - name: Побољшање података предузећа
+        - name: Побољшани подаци о предузећу
           href: audience-insights/enrichment-enhanced-company-data.md
         - name: Обогаћивање са решењем Azure Maps
           href: audience-insights/enrichment-azure-maps.md
@@ -92,8 +92,10 @@
           href: audience-insights/enrichment-here.md
         - name: Обогаћивање уз Leadspace
           href: audience-insights/enrichment-leadspace.md
-        - name: Обогатите помоћу услуге Experian
+        - name: Обогаћивање уз Experian
           href: audience-insights/enrichment-experian.md
+        - name: Обогатите Office 365 подацима
+          href: audience-insights/enrichment-office.md
         - name: Обогаћивање уз SFTP прилагођени увоз
           href: audience-insights/enrichment-SFTP-custom-import.md
     - name: Сегменти
@@ -144,8 +146,6 @@
               href: audience-insights/sample-guide-predict-product-recommendation.md
             - name: Експерименти са Azure машинским учењем
               href: audience-insights/azure-machine-learning-experiments.md
-            - name: Експерименти уз Студио за Azure машинско учење
-              href: audience-insights/machine-learning-studio-experiments.md
         - name: Управљање предвиђањима
           href: audience-insights/manage-predictions.md
         - name: Креирање сегмената заснованих на предвиђањима
@@ -166,11 +166,11 @@
               href: audience-insights/export-azure-blob-storage.md
             - name: Azure Data Lake Storage Gen2
               href: audience-insights/export-azure-data-lake-storage-gen2.md
-            - name: Азуре Сyнапсе Аналитика
+            - name: Azure Synapse Analytics
               href: audience-insights/export-azure-synapse-analytics.md
             - name: Adobe Campaign Standard
               href: audience-insights/export-adobe-campaign-standard.md
-            - name: Adobe платформа искуства
+            - name: Adobe Experience Platform
               href: audience-insights/export-adobe-experience-platform.md
             - name: Campaign Monitor
               href: audience-insights/export-campaign-monitor.md
@@ -182,7 +182,7 @@
               href: audience-insights/export-dynamics365-marketing.md
             - name: Dynamics 365 Sales
               href: audience-insights/export-dynamics365-sales.md
-            - name: Фацебоок огласа
+            - name: Facebook менаџер огласа
               href: audience-insights/export-facebook.md
             - name: Google Ads
               href: audience-insights/export-google-ads.md
@@ -216,7 +216,7 @@
           items:
             - name: Програмски додатак за картицу клијента за Dynamics 365
               href: audience-insights/customer-card-add-in.md
-            - name: Мицрософт Теамс (бот)
+            - name: Microsoft Teams (робот)
               href: audience-insights/export-teams-bot.md
             - name: Power Apps
               href: audience-insights/export-power-apps.md
@@ -240,13 +240,15 @@
               href: audience-insights/use-azure-key-vault.md
             - name: Повежите се са ADLS налогом за складиштење помоћу принципала услуге
               href: audience-insights/connect-service-principal.md
+            - name: Извоз дијагностичких евиденција
+              href: audience-insights/diagnostics.md
     - name: Проширивост
       items:
         - name: Интегришите веб-податке из увида у ангажовање
           href: audience-insights/integrate-engagement-insights.md
         - name: Преглед шема ентитета на платформи Common Data Model
           href: audience-insights/entity-schemas.md
-        - name: Подаци о увидима клијената у Датаверсе
+        - name: Customer Insights подаци у платформи Dataverse
           href: audience-insights/customer-insights-dataverse.md
         - name: Рад са API-јима
           href: audience-insights/apis.md
@@ -258,9 +260,9 @@
       href: consent-management/index.yml
     - name: Преглед могућности
       href: consent-management/overview.md
-    - name: Први кораци
+    - name: Започните
       items:
-        - name: Први кораци
+        - name: Започните
           href: consent-management/get-started.md
         - name: Појмови и терминологија
           href: consent-management/glossary.md
@@ -340,7 +342,7 @@
           href: engagement-insights/websdk-sample.md
         - name: Упутство за Android SDK
           href: engagement-insights/get-started-android.md
-        - name: Андроид СДК-а
+        - name: Android SDK пример
           href: engagement-insights/androidsdk-sample.md
         - name: Упутство за iOS SDK
           href: engagement-insights/get-started-ios.md

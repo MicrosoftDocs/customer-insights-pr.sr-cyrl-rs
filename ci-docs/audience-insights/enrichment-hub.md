@@ -10,12 +10,12 @@ author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
 ms.custom: intro-internal
-ms.openlocfilehash: de27da92118b83dafa0742b6a1e10ee315750c61
-ms.sourcegitcommit: 6efcba688d1db1a5d6343c229f292a26c48fc007
+ms.openlocfilehash: e44e973bf7713ed5c31dfb9849419decd4ad1c78
+ms.sourcegitcommit: 48d799535fad84e8b63c80aef48b5c5e87628f58
 ms.translationtype: MT
 ms.contentlocale: sr-Cyrl-RS
-ms.lasthandoff: 11/05/2021
-ms.locfileid: "7770142"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "7884234"
 ---
 # <a name="enrichment-for-customer-profiles-preview"></a>Обогаћивање за корисничке профиле (преглед)
 
@@ -34,7 +34,7 @@ ms.locfileid: "7770142"
 - [Брендове](enrichment-microsoft.md) обезбеђује Microsoft
 - [Интересовања](enrichment-microsoft.md) обезбеђује Microsoft
 - [Побољшане адресе](enrichment-enhanced-addresses.md) обезбеђује Microsoft 
-- [Демографски подаци](enrichment-experian.md) које пружа Experian
+- [Демографски подаци](enrichment-experian.md) које обезбеђује Experian
 - [Прилагођени подаци](enrichment-SFTP-custom-import.md) помоћу протокола Secure File Transfer Protocol (SFTP) 
 - [Azure Maps](enrichment-azure-maps.md) обезбеђује Microsoft
 
@@ -46,6 +46,7 @@ ms.locfileid: "7770142"
 - [Податке о локацији](enrichment-here.md) пружа HERE Technologies 
 - [Прилагођени подаци](enrichment-SFTP-custom-import.md) помоћу протокола Secure File Transfer Protocol (SFTP) 
 - [Azure Maps](enrichment-azure-maps.md) обезбеђује Microsoft
+- [Подаци о ангажовању](enrichment-office.md) налога које је обезбедио Мицрософт
 
 ---
 
@@ -77,7 +78,7 @@ ms.locfileid: "7770142"
 
 ## <a name="see-the-progress-of-the-enrichment-process"></a>Погледајте напредак процеса обогаћивања
 
-Можете пронаћи детаље о обради обогаћивања, укључујући његов статус и потенцијалне проблеме док се освежава или након завршетка освежавања. Схватите који су процеси укључени за освежавање обогаћивања и колико је времена потребно за покретање процеса. Статус обогаћивања је подржан за Еxпериан, Леадспаце, ХЕРЕ Тецхнологиес, СФТП Импорт и Азуре мапе.
+Можете пронаћи детаље о обради обогаћивања, укључујући његов статус и потенцијалне проблеме док се освежава или након завршетка освежавања. Схватите који су процеси укључени за освежавање обогаћивања и колико је времена потребно за покретање процеса. Статус обогаћивања је подржан за Experian, Leadspace, HERE Technologies, SFTP Import и Azure Maps.
 
 Да бисте видели статус обогаћивања
 
