@@ -5,21 +5,21 @@ description: Упознајте се са искуством првог покр
 ms.author: mhart
 ms.date: 10/05/2021
 ms.service: customer-insights
-ms.topic: overview
+ms.topic: conceptual
 ms.manager: shellyha
 ms.custom: intro-internal
-ms.openlocfilehash: 9f96a70d0cc316e8793921fedb0cc3fa4751c827
-ms.sourcegitcommit: 31985755c7c973fb1eb540c52fd1451731d2bed2
-ms.translationtype: HT
+ms.openlocfilehash: e17b66217415c0b554a449f0d992deec7e2d96e7
+ms.sourcegitcommit: bb1ca84bc38e81fb2ff2961c457384b7beb5b5fa
+ms.translationtype: MT
 ms.contentlocale: sr-Cyrl-RS
-ms.lasthandoff: 10/22/2021
-ms.locfileid: "7673491"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7977690"
 ---
 # <a name="get-started-after-purchasing-customer-insights"></a>Започните након куповине услуге Customer Insights
 
 Овај чланак објашњава како да направите прве кораке у услузи Dynamics 365 Customer Insights након што је ваша организација купила претплату. Ако желите да купите решење Customer Insights, наше опције за контакт су наведене на [Dynamics 365 Customer Insights веб-локацији](https://dynamics.microsoft.com/ai/customer-insights/). 
 
-Након што купите претплатничку лиценцу за Customer Insights, глобални администратор Microsoft 365 закупца прима поруку е-поште која га позива да креира окружење. 
+Након куповине лиценце за претплату за Цустомер Инсигхтс, глобални администратор Microsoft 365 закупца добија е-поруку која их позива да креирају окружење. 
 
 Услуга Customer Insights је лиценцирана по закупцу и обухвата више могућности. Можете купити већи капацитет и више лиценци да бисте повећали подразумеване квоте. 
 - [Преглед одређивања цена](https://dynamics.microsoft.com/ai/customer-insights/pricing/)

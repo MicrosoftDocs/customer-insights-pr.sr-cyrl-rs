@@ -9,12 +9,12 @@ ms.topic: how-to
 author: stefanie-msft
 ms.author: sthe
 manager: shellyha
-ms.openlocfilehash: cff696834e3dad00ce5b0f1b5bcb13d86354a4e7
-ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
-ms.translationtype: HT
+ms.openlocfilehash: 6a9575de922bc2ff9c9d2212b99b4c0c8b61ab0e
+ms.sourcegitcommit: 15b1521041149716f8031cfa6d0dc61a56a5e2ff
+ms.translationtype: MT
 ms.contentlocale: sr-Cyrl-RS
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "7617619"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "7967837"
 ---
 # <a name="teams-bot-for-dynamics-365-customer-insights-preview"></a>Teams робот за Dynamics 365 Customer Insights (верзија за преглед)
 
@@ -33,6 +33,8 @@ ms.locfileid: "7617619"
 - Customer Insights и Teams су у истој организацији.
 - Ваше окружење има примарну циљну групу постављену за појединачне клијенте. Пословни налози нису подржани.
 
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWRElj]
 ## <a name="configure-the-bot"></a>Конфигурисање робота
 
 1. У увидима о корисницима идите на **Администратор** > **Одредишта за извоз**.
