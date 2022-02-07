@@ -9,16 +9,11 @@ author: adkuppa
 ms.author: adkuppa
 manager: shellyha
 ms.reviewer: mhart
-ms.openlocfilehash: fecf3e33b5bc1eec17006fc196004be902c03b40
-ms.sourcegitcommit: 11b343f6622665251ab84ae39ebcd91fa1c928ca
-ms.translationtype: MT
-ms.contentlocale: sr-Cyrl-RS
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "7900169"
 ---
+
 # <a name="connect-to-data-in-a-microsoft-dataverse-managed-data-lake"></a>Повежите се са подацима у Microsoft Dataverse управљаном језеру података
 
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
+
 
 Овај чланак пружа информације о томе како Dataverse корисници могу брзо да се повежу са аналитичким ентитетима у управљаном Microsoft Dataverse језеру. 
 
@@ -27,7 +22,7 @@ ms.locfileid: "7900169"
 
 ## <a name="important-considerations"></a>Важна разматрања
 
-Подаци ускладиштени у мрежним услугама, као што је Azure Data Lake Storage, могу се складиштити на локацији различитој од оне на којој се подаци обрађују или складиште у услузи Dynamics 365 Customer Insights.Увозом или повезивањем са подацима ускладиштеним у услугама на мрежи слажете се да се подаци могу преносити и складиштити са Dynamics 365 Customer Insights програмом .  [Сазнајте више у Мицрософт центру за поузданост](https://www.microsoft.com/trust-center).
+Подаци ускладиштени у мрежним услугама, као што је Azure Data Lake Storage, могу се складиштити на локацији различитој од оне на којој се подаци обрађују или складиште у услузи Dynamics 365 Customer Insights.Увозом или повезивањем са подацима ускладиштеним у услугама на мрежи слажете се да се подаци могу преносити и складиштити са програмом Dynamics 365 Customer Insights .  [Сазнајте више у Мицрософт центру за поузданост](https://www.microsoft.com/trust-center).
 
 ## <a name="connect-to-a-dataverse-managed-lake"></a>Повежите се са Dataverse управљаним језером
 
@@ -35,7 +30,7 @@ ms.locfileid: "7900169"
 
 2. Изаберите **Додај извор података**.
 
-3. Изаберите **Microsoft Dataverse** и кликните на **дугме Даље**.
+3. Изаберите и **Microsoft Dataverse** кликните на дугме **Даље**.
 
 4. Унесите **Назив** извора података и изаберите **Следеће**. 
 
