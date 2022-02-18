@@ -1,7 +1,7 @@
 ---
 title: Обогатите обједињене корисничке профиле
 description: Користите могућности за обогаћивање података о клијентима.
-ms.date: 11/05/2021
+ms.date: 02/07/2022
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -10,12 +10,12 @@ author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
 ms.custom: intro-internal
-ms.openlocfilehash: e44e973bf7713ed5c31dfb9849419decd4ad1c78
-ms.sourcegitcommit: 48d799535fad84e8b63c80aef48b5c5e87628f58
-ms.translationtype: MT
+ms.openlocfilehash: 5c3dda3b9bae828857258025ff79958ee22bdb6f
+ms.sourcegitcommit: a399bd17523c8d06afd7d78af4fc711f93c0e8be
+ms.translationtype: HT
 ms.contentlocale: sr-Cyrl-RS
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "7884234"
+ms.lasthandoff: 02/07/2022
+ms.locfileid: "8098807"
 ---
 # <a name="enrichment-for-customer-profiles-preview"></a>Обогаћивање за корисничке профиле (преглед)
 
@@ -37,6 +37,7 @@ ms.locfileid: "7884234"
 - [Демографски подаци](enrichment-experian.md) које обезбеђује Experian
 - [Прилагођени подаци](enrichment-SFTP-custom-import.md) помоћу протокола Secure File Transfer Protocol (SFTP) 
 - [Azure Maps](enrichment-azure-maps.md) обезбеђује Microsoft
+- [Податке о локацији](enrichment-here.md) пружа HERE Technologies 
 
 # <a name="business-accounts-b-to-b"></a>[Пословни налози (B-to-B)](#tab/b2b)
 

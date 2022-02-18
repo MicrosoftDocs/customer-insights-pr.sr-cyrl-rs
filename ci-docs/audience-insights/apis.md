@@ -9,16 +9,16 @@ ms.topic: conceptual
 author: m-hartmann
 ms.author: wimohabb
 manager: shellyha
-ms.openlocfilehash: 7201ed9e5315d73e6b9c25b4bc4c4e4ed839a215
-ms.sourcegitcommit: 834651b933b1e50e7557d44f926a3fb757c1f83a
-ms.translationtype: MT
+ms.openlocfilehash: 413746e1896928d2c648ba59d67d4247a173da57
+ms.sourcegitcommit: 21854bb66ffa53948f659886f2e131236539ae88
+ms.translationtype: HT
 ms.contentlocale: sr-Cyrl-RS
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "7732282"
+ms.lasthandoff: 02/08/2022
+ms.locfileid: "8100158"
 ---
 # <a name="work-with-customer-insights-apis"></a>Радите са Customer Insights API-јем
 
-Дyнамицс 365 Цустомер Инсигхтс обезбеђује АПИ-је за израду сопствених апликација на основу ваших података у "Увидима купаца".
+Dynamics 365 Customer Insights пружа API-је за изградњу властитих апликација на основу ваших података у услузи Customer Insights.
 
 > [!IMPORTANT]
 > Детаљи ових API-ја наведени су у чланку [Референца за Customer Insights API](https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights). Садрже додатне информације о операцијама, параметрима и одговорима.
@@ -35,7 +35,7 @@ ms.locfileid: "7732282"
  
    Омогућавање API-ја креира примарни и секундарни кључ претплате за вашу инстанцу који се користи у API захтевима. Кључеве можете да поново генеришете тако што ћете изабрати **Поново генериши примарни** или **Поново генериши секундарни** на **Администратор** > **Дозволе** > **API-ји**.
 
-   :::image type="content" source="media/enable-apis.gif" alt-text="Омогућавање Customer Insights API-ја.":::
+<!--  :::image type="content" source="media/enable-apis.gif" alt-text="Enable Customer Insights APIs."::: -->
 
 1. Изаберите **Истражите наше API-је** да [испробате API-је](https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights&operation=Get-all-instances).
 
@@ -49,7 +49,7 @@ ms.locfileid: "7732282"
 
 HTTP одговор ће се ускоро појавити испод.
 
-   :::image type="content" source="media/try-apis.gif" alt-text="Како да тестирате API-је.":::
+<!--   :::image type="content" source="media/try-apis.gif" alt-text="How to test the APIs."::: -->
 
 ## <a name="create-a-new-app-registration-in-the-azure-portal"></a>Направите нову регистрацију апликације на Azure порталу
 
@@ -65,7 +65,7 @@ HTTP одговор ће се ускоро појавити испод.
 
 1. На новој регистрацији апликације идите на **Дозволе за API-је**.
 
-   :::image type="content" source="media/app-registration-1.gif" alt-text="Како се подешавају дозволе за API у регистрацији апликације.":::
+<!--   :::image type="content" source="media/app-registration-1.gif" alt-text="How to set API permissions in App registration."::: -->
 
 1. Изаберите **Додајте дозволу** и изаберите **Customer Insights** у бочном окну.
 
@@ -77,7 +77,7 @@ HTTP одговор ће се ускоро појавити испод.
 
 Можете да користите ID апликације/клијента за регистрацију ове апликације у Microsoft Authentication Library (MSAL) да бисте добили токен носиоца који ћете са захтевом послати у API.
 
-:::image type="content" source="media/grant-admin-consent.gif" alt-text="Како да одобрите сагласност администратора.":::
+<!-- :::image type="content" source="media/grant-admin-consent.gif" alt-text="How to grant admin consent."::: -->
 
 За више информација о MSAL-у, погледајте [Преглед Microsoft Authentication Library (MSAL)](/azure/active-directory/develop/msal-overview).
 
@@ -103,7 +103,7 @@ HTTP одговор ће се ускоро појавити испод.
 
 1. Изаберите **Дајте сагласност администратора за...** да бисте довршили регистрацију апликације.
 
-   :::image type="content" source="media/grant-admin-consent.gif" alt-text="Како да одобрите сагласност администратора.":::
+ <!--  :::image type="content" source="media/grant-admin-consent.gif" alt-text="How to grant admin consent."::: -->
 
 1. Да закључимо, морамо да додамо име регистрације апликације као корисника у Customer Insights.  
    
@@ -115,33 +115,33 @@ HTTP одговор ће се ускоро појавити испод.
 
 Овај одељак вам помаже да започнете коришћење клијентских библиотека доступних за Customer Insights API-је. Сав изворни кôд библиотеке и примери апликација могу се наћи на [Customer Insights GitHub страници](https://github.com/microsoft/Dynamics365-CustomerInsights-Client-Libraries). 
 
-### <a name="c-nuget"></a>Ц# НуГет
+### <a name="c-nuget"></a>C# NuGet
 
-Сазнајте како да почнете да користите библиотеке Ц# клијената из NuGet.org. Више информација о пакету НуГет потражите у [чланку Мицрософт.Дyнамицс.ЦустомерИнсигхтс.Апи](https://www.nuget.org/packages/Microsoft.Dynamics.CustomerInsights.Api/). Тренутно овај пакет циља оквире netstandard2.0 и netcoreapp2.0.
+Сазнајте како да започнете коришћење C# клијентских библиотека са NuGet.org. За више информација о NuGet пакету, видите [Microsoft.Dynamics.CustomerInsights.Api](https://www.nuget.org/packages/Microsoft.Dynamics.CustomerInsights.Api/). Тренутно овај пакет циља оквире netstandard2.0 и netcoreapp2.0.
 
 #### <a name="add-the-c-client-library-to-a-c-project"></a>Додајте C# клијентску библиотеку у C# пројекат
 
-1. У Висуал Студио отворите **НуГет пакета** за ваш пројекат.
+1. У програму Visual Studio, отворите **NuGet менаџер пакета** за пројекат.
 
 1. Потражите **Microsoft.Dynamics.CustomerInsights.Api**.
 
 1. Изаберите **Инсталирај** за додавање пакета у пројекат.
  
-   Друга могућност је да покренете ову команду **у НуГет за управљање пакетима:**`Install-Package -Id Microsoft.Dynamics.CustomerInsights.Api -Source nuget.org -ProjectName <project name> [-Version <version>]`
+   Алтернативно, покрените ову команду у **NuGet конзоли менаџера пакета**:`Install-Package -Id Microsoft.Dynamics.CustomerInsights.Api -Source nuget.org -ProjectName <project name> [-Version <version>]`
 
-   :::image type="content" source="media/visual-studio-nuget-package.gif" alt-text="Додајте НуГет пакет Висуал Студио пројекат.":::
+ <!--  :::image type="content" source="media/visual-studio-nuget-package.gif" alt-text="Add NuGet package to Visual Studio project."::: -->
 
 #### <a name="use-the-c-client-library"></a>Користите C# клијентску библиотеку
 
 1. Користите [Microsoft Authentication Library (MSAL)](/azure/active-directory/develop/msal-overview) да бисте добили `AccessToken` користећи своје постојећу [регистрацију Azure апликације](#create-a-new-app-registration-in-the-azure-portal).
 
-1. Након успешног потврде идентитета и прибављања симбола, направите нови или користите постојећи са додатним `HttpClient`**ДефаултРеqуестХеадерс "Ауторизатион" постављеним на** **Беарер "токен за приступ"** и **Оцп-Апим-Субсцриптион-Кеy постављен на претплатнички** кључ из [**·** окружења"Увиди купаца".](#get-started-trying-the-customer-insights-apis)   
+1. Након успешног потврде идентитета и прибављања симбола, направите нови или користите постојећи са додатним ДефаултРеqуестХеадерс "Ауторизатион" постављеним `HttpClient` на Беарер "токен за приступ" **и** Оцп-Апим-Субсцриптион-Кеy **постављеним на** претплатнички кључ из **окружења"Увиди купаца"**[**.**](#get-started-trying-the-customer-insights-apis)   
  
    Ресетујте заглавље **Овлашћење** по потреби. На пример, када је токен истекао.
 
 1. Проследите `HttpClient` у конструкцију `CustomerInsights` клијента.
 
-   :::image type="content" source="media/httpclient-sample.png" alt-text="Узорак httpclient-а.":::
+<!--   :::image type="content" source="media/httpclient-sample.png" alt-text="Sample of httpclient."::: -->
 
 1. Упућујте позиве клијенту за „методе проширења“, на пример, `GetAllInstancesAsync`. Ако је потребан приступ основном `Microsoft.Rest.HttpOperationResponse`, користите „методе http порука“ – на пример, `GetAllInstancesWithHttpMessagesAsync`.
 

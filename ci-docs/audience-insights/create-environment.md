@@ -10,12 +10,12 @@ author: MichelleDevaney
 ms.author: midevane
 manager: shellyha
 ms.custom: intro-internal
-ms.openlocfilehash: 4f26220f6ba7f5b5ae00c11216129f9ad814b77d
-ms.sourcegitcommit: 626d485dae1e001e63e4d4bf78f6770766822ba0
-ms.translationtype: MT
+ms.openlocfilehash: d29992c88bd54fcfcf5e6429a89a34b6f73148c8
+ms.sourcegitcommit: b7189b8621e66ee738e4164d4b3ce2af0def3f51
+ms.translationtype: HT
 ms.contentlocale: sr-Cyrl-RS
-ms.lasthandoff: 12/06/2021
-ms.locfileid: "7892356"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "8088131"
 ---
 # <a name="create-an-environment-in-audience-insights"></a>Креирање окружења у увидима у циљну групу
 
@@ -28,7 +28,7 @@ ms.locfileid: "7892356"
 
 ## <a name="create-a-new-environment"></a>Креирајте ново окружење
 
-Након што купите претплатничку лиценцу за Customer Insights, глобални администратор Microsoft 365 закупца прима поруку е-поште која га позива да креира окружење. Идите на [https://home.ci.ai.dynamics.com/start](https://home.ci.ai.dynamics.com/start) да бисте започели. 
+Након куповине лиценце за претплату за Цустомер Инсигхтс, глобални администратор закупца Microsoft 365 добија е-поруку која их позива да креирају окружење. Идите на [https://home.ci.ai.dynamics.com/start](https://home.ci.ai.dynamics.com/start) да бисте започели. 
 
 Вођено искуство вам помаже кроз кораке прикупљања свих потребних информација за ново окружење. Потребне су вам [дозволе администратора](permissions.md) у увидима у циљну групу да бисте креирали или управљали окружењима.
 
@@ -64,7 +64,7 @@ ms.locfileid: "7892356"
 > Customer Insights тренутно подржава следеће:
 > - Унети ентитети из Power BI токова података који се чувају у Microsoft Dataverse управљаној услузи Data Lake.  
 > - Azure Data Lake Storage налози из истог Azure региона који сте изабрали приликом креирања окружења.
-> - Azure Data Lake Storage налози који имају омогућен *хијерархијски простор за име*.
+> - Azure Data Lake Storage налоге који су gen2 и имају *омогућен хијерархијски простор за* име. Азуре Дата Лаке Gen1 налози за складиштење нису подржани.
 
 За опцију Azure Data Lake Storage, можете одабрати између опције засноване на ресурсима и опције засноване на претплати за потврду идентитета. Више информација потражите у чланку [Повезивање са Azure Data Lake Storage налогом користећи Azure принципал услуге](connect-service-principal.md). Назив за **Контејнер** ће бити `customerinsights` и не можете га променити.
 

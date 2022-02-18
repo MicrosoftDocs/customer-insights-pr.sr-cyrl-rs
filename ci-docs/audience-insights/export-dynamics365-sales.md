@@ -9,13 +9,23 @@ ms.topic: how-to
 author: pkieffer
 ms.author: philk
 manager: shellyha
+ms.openlocfilehash: d8a35424f4271b350b8d84e72a01deb6d69652a0
+ms.sourcegitcommit: 08a5dfcc4f9d293c8e7ac4fef604bc52985b1b78
+ms.translationtype: HT
+ms.contentlocale: sr-Cyrl-RS
+ms.lasthandoff: 02/04/2022
+ms.locfileid: "8090941"
 ---
-
 # <a name="use-segments-in-dynamics-365-sales-preview"></a>Коришћење сегмената у услузи Dynamics 365 Sales (верзија за преглед)
 
 
 
 Користите податке о клијентима да бисте креирали маркетиншке спискове, пратили токове посла и слали промоције са услугом Dynamics 365 Sales.
+
+## <a name="known-limitations"></a>Позната ограничења
+
+- Извоз у Дyнамицс 365 Продају је ограничен на 100.000 чланова по сегменту.
+- Извоз сегмента у Дyнамицс 365 Продаја може трајати до 3 сата. 
 
 ## <a name="prerequisite-for-connection"></a>Предуслов за везу
 

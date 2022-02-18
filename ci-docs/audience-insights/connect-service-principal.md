@@ -9,21 +9,21 @@ author: adkuppa
 ms.author: adkuppa
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: faef3583337fd495e7baf40b0a208f1d9f10281a
-ms.sourcegitcommit: 11b343f6622665251ab84ae39ebcd91fa1c928ca
-ms.translationtype: MT
+ms.openlocfilehash: 1af01e5579f85d7c8bc8976a003f53ef2dd280d1
+ms.sourcegitcommit: b7189b8621e66ee738e4164d4b3ce2af0def3f51
+ms.translationtype: HT
 ms.contentlocale: sr-Cyrl-RS
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "7900293"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "8088165"
 ---
 # <a name="connect-to-an-azure-data-lake-storage-account-by-using-an-azure-service-principal"></a>Повезивање са Azure Data Lake Storage налогом коришћењем Azure принципала услуге
 
-Овај чланак говори о томе како да се Dynamics 365 Customer Insights повежете са Azure Data Lake Storage налогом помоћу директора Азуре услуге уместо кључева налога за складиштење. 
+Овај чланак говори о томе како да се повежете Dynamics 365 Customer Insights са налогом Azure Data Lake Storage помоћу директора Азуре услуге уместо кључева налога за складиштење. 
 
-Аутоматизовани алати који користе Azure услуге увек би требало да имају ограничене дозволе. Уместо да се апликације пријављују као потпуно привилеговани корисник, Azure нуди принципале услуга. Принципалне услуге можете да користите за безбедно [додавање или уређивање фасцикле "Уобичајени модел података" као извор података](connect-common-data-model.md) или креирање или ажурирање [окружења](create-environment.md).
+Аутоматизовани алати који користе Azure услуге увек би требало да имају ограничене дозволе. Уместо да се апликације пријављују као потпуно привилеговани корисник, Azure нуди принципале услуга. Директоре услуга можете да користите за безбедно додавање [или уређивање фасцикле "Уобичајени модел података" као извор података](connect-common-data-model.md) или креирање [или ажурирање окружења](create-environment.md).
 
 > [!IMPORTANT]
-> - Data Lake Storage налог који ће користити принципала услуге мора имати [омогућен хијерархијски простор за име](/azure/storage/blobs/data-lake-storage-namespace).
+> - Дата Лаке Стораге налог који ће користити главницу услуге мора бити Gen2 и [имати омогућен хијерархијски простор за име](/azure/storage/blobs/data-lake-storage-namespace). Азуре Дата Лаке Gen1 налози за складиштење нису подржани.
 > - Потребне су вам администраторске дозволе за Азуре претплату да бисте креирали главницу услуге.
 
 ## <a name="create-an-azure-service-principal-for-customer-insights"></a>Креирање принципала услуге Azure за Customer Insights
