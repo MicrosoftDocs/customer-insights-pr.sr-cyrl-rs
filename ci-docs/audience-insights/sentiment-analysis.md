@@ -9,8 +9,13 @@ ms.topic: conceptual
 author: wmelewong
 ms.author: wameng
 manager: shellyha
+ms.openlocfilehash: 8a4473c1c395bbcf8efa2bfa24cddb82e1784279
+ms.sourcegitcommit: 15ec8c5f54242feda9489e7665726ec5e0983dc9
+ms.translationtype: HT
+ms.contentlocale: sr-Cyrl-RS
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "8008783"
 ---
-
 # <a name="analyze-sentiment-in-customer-feedback-preview"></a>Анализирај сентимент у повратним информацијама клијената (Преглед)
 
 Купце ових дана очекују висококвалитетни производи, услуге и искуства. Нарочито клијенти који деле своје повратне информације. Веома је изазовно за организације да анализирају све већи обим података без смањења тачности и веће цене рада. Dynamics 365 Customer Insights нуди модел анализе сентимента за повратне информације клијената који омогућава организацијама да прецизније и по нижој цени анализирају своје податке.
