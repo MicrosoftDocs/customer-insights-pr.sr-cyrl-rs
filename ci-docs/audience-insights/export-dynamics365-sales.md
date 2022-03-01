@@ -1,48 +1,38 @@
 ---
 title: Извезите Customer Insights податке у Dynamics 365 Sales
-description: Сазнајте како да конфигуришете везу и извезете у Dynamics 365 Sales.
-ms.date: 03/03/2021
-ms.reviewer: mhart
+description: Сазнајте како да конфигуришете везу са услугом Dynamics 365 Sales.
+ms.date: 08/21/2020
+ms.reviewer: philk
 ms.service: customer-insights
 ms.subservice: audience-insights
-ms.topic: how-to
-author: pkieffer
-ms.author: philk
+ms.topic: conceptual
+author: m-hartmann
+ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: d8a35424f4271b350b8d84e72a01deb6d69652a0
-ms.sourcegitcommit: 08a5dfcc4f9d293c8e7ac4fef604bc52985b1b78
+ms.openlocfilehash: af0824e69dfdf620a0ac756e32a9bd3dd85e5151
+ms.sourcegitcommit: 6a6df62fa12dcb9bd5f5a39cc3ee0e2b3988184b
 ms.translationtype: HT
 ms.contentlocale: sr-Cyrl-RS
-ms.lasthandoff: 02/04/2022
-ms.locfileid: "8090941"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "4643836"
 ---
-# <a name="use-segments-in-dynamics-365-sales-preview"></a>Коришћење сегмената у услузи Dynamics 365 Sales (верзија за преглед)
+# <a name="connector-for-dynamics-365-sales-preview"></a>Конектор за Dynamics 365 Sales (преглед)
 
-
+[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
 
 Користите податке о клијентима да бисте креирали маркетиншке спискове, пратили токове посла и слали промоције са услугом Dynamics 365 Sales.
 
-## <a name="known-limitations"></a>Позната ограничења
+## <a name="prerequisite"></a>Предуслов
 
-- Извоз у Дyнамицс 365 Продају је ограничен на 100.000 чланова по сегменту.
-- Извоз сегмента у Дyнамицс 365 Продаја може трајати до 3 сата. 
+Записи контаката [из Dynamics 365 Sales унетих помоћу услуге Common Data Service](connect-power-query.md).
 
-## <a name="prerequisite-for-connection"></a>Предуслов за везу
+## <a name="configure-the-connector-for-sales"></a>Конфигуришите конектор за Sales
 
-1. Записи контаката морају бити присутни у услузи Dynamics 365 Sales да бисте могли да извезете сегмент из услуге Customer Insights у Sales. Прочитајте више о томе како се уносе контакти у [Dynamics 365 Sales помоћу услуге Microsoft Dataverse](connect-power-query.md).
+1. У увидима о корисницима идите на **Администратор** > **Одредишта за извоз**.
 
-   > [!NOTE]
-   > Извоз сегмената из увида о корисницима у Sales неће креирати нове записе контаката у инстанцама услуге Sales. Евиденција контаката из услуге Sales мора се унети у увид о корисницима и користити као извор података. Такође их треба укључити у јединствени ентитет клијента да би се ID-ови клијената мапирали у ID-ове контаката да би сегменти могли да се извезу.
+1. У одељку **Dynamics 365 Sales** изаберите **Подеси**.
 
-## <a name="set-up-the-connection-to-sales"></a>Подешавање везе са услугом Sales
-
-1. Идите на **Администратор** > **Везе**.
-
-1. Изаберите **Додај везу** и бирајте **Dynamics 365 Sales** да бисте конфигурисали везу.
-
-1. Дајте вези препознатљиво име у пољу **Име за приказ**. Име за приказ и врста везе описују ову везу. Препоручујемо да одаберете назив који објашњава сврху и циљ везе.
-
-1. Одаберите ко може да користи ову везу. Ако ништа не предузмете, подразумевани ће бити Администратори. За више информација, погледајте [Дозволите сарадницима да користе везу за извоз](connections.md#allow-contributors-to-use-a-connection-for-exports).
+1. Дајте одредишту за извоз препознатљиво име у пољу **Име за приказ**.
 
 1. Унесите URL организације за Sales у поље **Адреса сервера**.
 
@@ -50,24 +40,12 @@ ms.locfileid: "8090941"
 
 1. Мапирајте поље корисничког ID-а са Dynamics 365 ID-ом контакта.
 
-1. Изаберите **Сачувај** да бисте креирали везу. 
-
-## <a name="configure-an-export"></a>Конфигурисање извоза
-
-Овај извоз можете да конфигуришете ако имате приступ вези ове врсте. За више информација погледајте [Дозволе потребне за конфигурисање извоза](export-destinations.md#set-up-a-new-export).
-
-1. Идите на **Подаци** > **Извози**.
-
-1. Да бисте креирали нови извоз, изаберите **Додај одредиште**.
-
-1. У пољу **Веза за извоз**, одаберите везу из одељка Dynamics 365 Sales. Ако не видите назив овог одељка, не постоје вам доступне везе овог типа.
+1. Изаберите **Следеће**.
 
 1. Изаберите један или више сегмената.
 
-1. Изаберите ставку **Сачувај**
+1. Изаберите ставку **Сачувај**.
 
-Чување извоза не покреће извоз одмах.
+## <a name="export-the-data"></a>Извоз података
 
-Извоз се покреће са сваким [заказаним освежавањем](system.md#schedule-tab). Такође можете да [извезете податке на захтев](export-destinations.md#run-exports-on-demand). 
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+Можете да [извезете податке на захтев](export-destinations.md). Извоз ће се такође покренути са сваким [планираним освежавањем](system.md#schedule-tab).

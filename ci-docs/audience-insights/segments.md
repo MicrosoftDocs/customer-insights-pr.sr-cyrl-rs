@@ -1,20 +1,20 @@
 ---
 title: Сегменти у увидима у циљну групу
 description: Преглед сегмената и начин креирања и управљања њима.
-ms.date: 11/01/2021
+ms.date: 09/30/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
-ms.topic: overview
+ms.topic: how-to
 author: JimsonChalissery
 ms.author: jimsonc
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 740d293b21f43b50201f23fcba109318823ef3af
-ms.sourcegitcommit: bb1ca84bc38e81fb2ff2961c457384b7beb5b5fa
+ms.openlocfilehash: 6840f4bc345b0821fb2349666130b39d542878e7
+ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
 ms.translationtype: HT
 ms.contentlocale: sr-Cyrl-RS
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7978077"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "7617393"
 ---
 # <a name="segments-overview"></a>Преглед сегмената
 
@@ -26,7 +26,7 @@ ms.locfileid: "7978077"
 
 Постоји више начина за креирање новог сегмента: 
 
-# <a name="individual-consumers-b-to-c"></a>[Појединачни потрошачи (B-to-C)](#tab/b2c)
+# <a name="individual-customers-b2c"></a>[Појединачни клијенти (B2C)](#tab/b2c)
 
 - Сложени сегмент са градитељем сегмената: [Направите своје](segment-builder.md#create-a-new-segment) 
 - Једноставни сегменти са једним оператором: [Брзи сегмент](segment-builder.md#quick-segments) 
@@ -34,7 +34,7 @@ ms.locfileid: "7978077"
 - Предлози омогућени вештачком интелигенцијом засновани на мерама или атрибутима: [Предложени сегменти за побољшање мера](suggested-segments.md) 
 - Предлози засновани на активностима: [Предложени сегменти на основу активности клијената](suggested-segments-activity.md) 
 
-# <a name="business-accounts-b-to-b"></a>[Пословни налози (B-to-B)](#tab/b2b)
+# <a name="business-accounts-b2b"></a>[Пословни налози (B2B)](#tab/b2b)
 
 - Сложени сегмент са градитељем сегмената: [Направите своје](segment-builder.md#create-a-new-segment)
 
@@ -65,7 +65,8 @@ ms.locfileid: "7978077"
 
 Можете да освежите све сегменте одједном ако изаберете **Освежите све** на страници **Сегменти**, а можете и да освежити један или више сегмената када их изаберете, па одаберете **Освежи** из опција. Алтернативно, можете конфигурисати понављајуће освежавање у одељку **Администратор** > **Систем** > **Распоред**.
 
-[!INCLUDE [progress-details-include](../includes/progress-details-pane.md)]
+> [!TIP]
+> Постоји [шест врста статуса](system.md#status-types) за задатке/процесе. Уз то, већина процеса [зависи од других процеса на нижем току](system.md#refresh-policies). Можете изабрати статус процеса да бисте видели детаље о току целог посла. Након избора опције **Види детаље** за један од задатака посла пронаћи ћете додатне информације: време обраде, датум последње обраде и све грешке и упозорења повезана са задатком.
 
 ## <a name="export-segments"></a>Извоз сегмената
 
@@ -104,6 +105,5 @@ ms.locfileid: "7978077"
 > Поља која се појављују на овој листи заснивају се на атрибутима ентитета вашег сегмента.
 >
 >Листа је преглед одговарајућих чланова сегмента и показује првих 100 записа вашег сегмента тако да га можете брзо проценити и прегледати његове дефиниције, ако је потребно. Да бисте видели све одговарајуће записе, морате да [извезете сегмент](export-destinations.md).
-
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)] 

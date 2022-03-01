@@ -1,7 +1,7 @@
 ---
 title: Извоз Customer Insights података у Snapchat
 description: Сазнајте како да конфигуришете везу и извезете у Snapchat.
-ms.date: 10/08/2021
+ms.date: 03/22/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,14 +9,14 @@ ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: b7a929d65a730b60e77ae111b458c68d3cce2020
-ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
+ms.openlocfilehash: d3dae7f0fef1fc3792c90c8ac0d3b037f5c0923d
+ms.sourcegitcommit: 1b671c6100991fea1cace04b5d4fcedcd88aa94f
 ms.translationtype: HT
 ms.contentlocale: sr-Cyrl-RS
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "7618701"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5760625"
 ---
-# <a name="export-segments-to-snapchat-preview"></a>Извоз сегмената у Snapchat (верзија за преглед)
+# <a name="export-segment-lists-to-snapchat-preview"></a>Извоз листи сегмената у Snapchat (верзија за преглед)
 
 Извезите сегменте обједињених профила клијената у Snapchat и користите их за оглашавање. 
 
@@ -29,7 +29,7 @@ ms.locfileid: "7618701"
 ## <a name="known-limitations"></a>Позната ограничења
 
 - Извоз у Snapchat ограничен је на сегменте.
-- Извоз до 1 милиона профила клијената у Snapchat може потрајати до 15 минута. 
+- Извоз до 1 милион профила у Snapchat може потрајати до 15 минута. 
 
 ## <a name="set-up-connection-to-snapchat"></a>Подешавање везе у услузи Snapchat
 
@@ -63,7 +63,7 @@ ms.locfileid: "7618701"
 
 1. Унесите [**ID циљне групе за Snapchat**](https://businesshelp.snapchat.com/s/article/custom-audiences).
 
-1. У одељку **Подударање података**, у пољу **Е-пошта**, изаберите поље које представља е-адресу клијента. То је потребно да извезете сегменте у Snapchat.
+1. У одељку **Подударање података**, у пољу **Адреса е-поште** изаберите поље у обједињеном профилу клијента које представља е-адресу клијента. То је потребно да извезете сегменте у Snapchat.
 
 1. Изаберите сегменте које желите да извезете. 
 

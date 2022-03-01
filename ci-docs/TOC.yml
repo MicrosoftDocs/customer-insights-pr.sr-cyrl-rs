@@ -2,30 +2,8 @@
   href: index.yml
 - name: Преглед производа
   href: overview.md
-- name: Каталог за учење
-  items:
-    - name: Започните
-      href: /learn/modules/get-started-customer-data-platform/
-    - name: Унесите податке
-      href: /learn/modules/ingest-data-customer-insights/
-    - name: Креирајте уједначени кориснички профил
-      href: /learn/modules/unified-customer-profile/
-    - name: Рад са корисници увидима
-      href: /learn/modules/working-with-customer-insights/
-    - name: Обогатите податке и направите предвиђања
-      href: /learn/modules/enrich-data/
-    - name: Управљање спољним везама
-      href: /learn/modules/configure-third-party-connections/
-    - name: Администрирање услуге Customer Insights
-      href: /learn/modules/administer-customer-data-platform/
-- name: Бесплатна пробна верзија
-  items:
-    - name: Уписивање за бесплатну верзију
-      href: trial-signup.md
-    - name: Честа питања о пробној верзији
-      href: trial-FAQ.md
-- name: Започните са лиценцом која се плаћа
-  href: paid-license.md
+- name: Креирање пробне верзије
+  href: audience-insights/get-started-trial.md
 - name: Приступ окружењу
   href: 'https://home.ci.ai.dynamics.com/'
 - name: Увиди у циљну групу
@@ -40,17 +18,25 @@
       items:
         - name: Водич за брзи почетак
           href: audience-insights/get-started.md
-        - name: Креирајте ново окружење
-          href: audience-insights/create-environment.md
+        - name: Креирање новог окружења
+          href: audience-insights/get-started-paid.md
         - name: Истражите увиде у циљну групу
           href: audience-insights/home.md
-    - name: Рад са пословним налозима
-      href: audience-insights/work-with-business-accounts.md
+    - name: Упознавање модула
+      items:
+        - name: Унесите податке
+          href: /learn/modules/ingest-data-customer-insights/
+        - name: Креирајте уједначени кориснички профил
+          href: /learn/modules/unified-customer-profile/
+        - name: Рад са апликацијом
+          href: /learn/modules/working-with-customer-insights/
+        - name: Обогатите податке и предвиђања
+          href: /learn/modules/enrich-data/
     - name: Извори података
       items:
         - name: Преглед извора података
           href: audience-insights/data-sources.md
-        - name: Додавање извора података путем линија Power Query спајања
+        - name: Додајте изворе података путем Power Query конектора
           href: audience-insights/connect-power-query.md
         - name: Додајте Common Data Model фасциклу као извор података
           href: audience-insights/connect-common-data-model.md
@@ -80,18 +66,14 @@
           href: audience-insights/relationships.md
         - name: Листање активности за клијента
           href: audience-insights/activities.md
-        - name: Дефинисање семантичких мапирања
-          href: audience-insights/semantic-mappings.md
     - name: Обогаћивање података
       items:
         - name: Обогаћивање корисничких профила
           href: audience-insights/enrichment-hub.md
-        - name: Брендови и интересовања
+        - name: Афинитети према бренду и интересовањима
           href: audience-insights/enrichment-microsoft.md
         - name: Побољшане адресе
           href: audience-insights/enrichment-enhanced-addresses.md
-        - name: Побољшани подаци о предузећу
-          href: audience-insights/enrichment-enhanced-company-data.md
         - name: Обогаћивање са решењем Azure Maps
           href: audience-insights/enrichment-azure-maps.md
         - name: Обогатите уз HERE Technologies
@@ -100,8 +82,6 @@
           href: audience-insights/enrichment-leadspace.md
         - name: Обогаћивање уз Experian
           href: audience-insights/enrichment-experian.md
-        - name: Обогатите подацима Office 365
-          href: audience-insights/enrichment-office.md
         - name: Обогаћивање уз SFTP прилагођени увоз
           href: audience-insights/enrichment-SFTP-custom-import.md
     - name: Сегменти
@@ -134,10 +114,8 @@
               href: audience-insights/predict-product-recommendation.md
             - name: Предвиђање губитка претплата
               href: audience-insights/predict-subscription-churn.md
-            - name: Предвиђање губитка трансакција
+            - name: Предвидите губитак трансакција
               href: audience-insights/predict-transactional-churn.md
-            - name: Анализа сентимента у повратним информацијама клијената
-              href: audience-insights/sentiment-analysis.md
             - name: Коришћење прилагођених модела из Azure машинског учења
               href: audience-insights/custom-models.md
             - name: Допуњавање делимично недостајућих података
@@ -154,6 +132,8 @@
               href: audience-insights/sample-guide-predict-product-recommendation.md
             - name: Експерименти са Azure машинским учењем
               href: audience-insights/azure-machine-learning-experiments.md
+            - name: Експерименти уз Студио за Azure машинско учење
+              href: audience-insights/machine-learning-studio-experiments.md
         - name: Управљање предвиђањима
           href: audience-insights/manage-predictions.md
         - name: Креирање сегмената заснованих на предвиђањима
@@ -242,14 +222,10 @@
           href: audience-insights/connections.md
         - name: Управљање са више окружења
           href: audience-insights/manage-environments.md
-        - name: Безбедност
-          items:
-            - name: Донесите сопствени Key Vault
-              href: audience-insights/use-azure-key-vault.md
-            - name: Повежите се са ADLS налогом за складиштење помоћу принципала услуге
-              href: audience-insights/connect-service-principal.md
-            - name: Извоз дијагностичких евиденција
-              href: audience-insights/diagnostics.md
+        - name: Повежите се са ADLS налогом за складиштење помоћу принципала услуге
+          href: audience-insights/connect-service-principal.md
+        - name: Подржани језици
+          href: audience-insights/supported-languages.md
     - name: Проширивост
       items:
         - name: Интегришите веб-податке из увида у ангажовање
@@ -262,52 +238,16 @@
           href: audience-insights/apis.md
         - name: Референце на API-је
           href: 'https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights'
-- name: Управљање сагласностима (преглед)
-  items:
-    - name: Чвориште помоћи
-      href: consent-management/index.yml
-    - name: Преглед могућности
-      href: consent-management/overview.md
-    - name: Започните
-      items:
-        - name: Започните
-          href: consent-management/get-started.md
-        - name: Појмови и терминологија
-          href: consent-management/glossary.md
-    - name: Увоз података о сагласности
-      items:
-        - name: Увоз података о сагласности
-          href: consent-management/import-consent-data.md
-        - name: Постављање података о пристанку и примена жељених опција сагласности
-          href: consent-management/set-consent-rules.md
-    - name: Управљање подацима о пристанку
-      items:
-        - name: Омогућавање правила пристанка у корисници увидима
-          href: audience-insights/activate-consent.md
-        - name: Управљање подразумеваним правилима пристанка у сегментима корисници увида
-          href: audience-insights/change-default-consent-rules.md
-    - name: Управљање поставкама и корисницима
-      items:
-        - name: Конфигурисање поставки система
-          href: consent-management/system-settings.md
-        - name: Управљање корисницима и дозволама
-          href: consent-management/manage-users.md
-    - name: Коришћење података о пристанку
-      items:
-        - name: Креирање предвиђања са подацима о пристанку
-          href: consent-management/predictions-consent-data.md
 - name: Увиди у ангажовање (верзија за преглед)
   items:
     - name: Чвориште помоћи
       href: engagement-insights/index.yml
-    - name: О увидима у ангажовање
+    - name: Преглед могућности
       href: engagement-insights/overview.md
     - name: Први кораци
       items:
         - name: Водич за брзи почетак
           href: engagement-insights/get-started.md
-        - name: Креирање окружења
-          href: engagement-insights/create-new-environment.md
         - name: Креирање радног простора
           href: engagement-insights/create-workspace.md
         - name: Бележење догађаја из веб-локација и апликација за мобилне уређаје
@@ -366,7 +306,7 @@
           href: engagement-insights/user-consent-storage.md
     - name: Регионална доступност
       href: engagement-insights/regional-availability.md
-- name: Дељење података између могућности
+- name: Интегришите циљну групу и увиде у ангажовање
   items:
     - name: Повежите увиде у циљну групу са увидима у ангажовање
       href: engagement-insights/integrate-audience-insights-engagement-insights.md
@@ -379,4 +319,4 @@
 - name: DSR права и захтеви
   href: dsr-rights-requests.md
 - name: Добијте подршку
-  href: /power-platform/admin/get-help-support
+  href: 'https://dynamics.microsoft.com/support/'

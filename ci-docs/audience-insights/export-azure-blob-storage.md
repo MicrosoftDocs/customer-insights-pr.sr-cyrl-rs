@@ -1,75 +1,50 @@
 ---
-title: Извоз Customer Insights података у Azure складиште блоб објекта
-description: Сазнајте како да конфигуришете везу и извезете садржај у складиште блоб објекта.
-ms.date: 10/06/2021
-ms.reviewer: mhart
+title: Извезите Customer Insights податке у Azure складиште блоб објеката
+description: Сазнајте како да конфигуришете везу са Azure складиштем блоб објеката.
+ms.date: 09/18/2020
+ms.reviewer: philk
 ms.service: customer-insights
 ms.subservice: audience-insights
-ms.topic: how-to
-author: pkieffer
-ms.author: philk
+ms.topic: conceptual
+author: m-hartmann
+ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: d02c09a1869d0099db4861b65ac8ff006914873e
-ms.sourcegitcommit: 693458e13e4b4d94b6205093559912f6a4dc4a1c
+ms.openlocfilehash: 925b53260e7c633e17d7f172d2dd2d581e982e10
+ms.sourcegitcommit: 334633cbd58f5659d20b4f87252c1a10cc7130db
 ms.translationtype: HT
 ms.contentlocale: sr-Cyrl-RS
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "7605868"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "4667157"
 ---
-# <a name="export-segment-list-and-other-data-to-azure-blob-storage-preview"></a>Извоз листе сегмената и других података у Azure складиште блоб објекта (преглед)
+# <a name="connector-for-azure-blob-storage-preview"></a>Конектор за Azure складиште блоб објеката (преглед)
 
-Складиштите Customer Insights податке у складиште блоб објекта или их користите за пренос података у друге апликације.
+Ускладиштите Customer Insights податке у Azure складиште блоб објеката или их користите за пренос података у друге апликације.
 
-## <a name="known-limitations"></a>Позната ограничења
+## <a name="configure-the-connector-for-azure-blob-storage"></a>Конфигурисање конектора за Azure складиште блоб објеката
 
-1. За складиште Azure блоб објекта можете бирати између [нивоа стандардних перформанси и премијум перформанси](/azure/storage/blobs/storage-blob-performance-tiers). Ако одаберете ниво премијум перформанси, изаберите [премијум ове блоб објеката тип пословног контакта](/azure/storage/common/storage-account-overview#types-of-storage-accounts).
+1. У увидима о корисницима идите на **Администратор** > **Одредишта за извоз**.
 
-## <a name="set-up-the-connection-to-blob-storage"></a>Подесите везу са складиштем блоб објекта
+1. У одељку **Azure складиште блоб објеката** изаберите **Подеси**.
 
-1. Идите на **Администратор** > **Везе**.
+1. Унесите **Назив налога**, **Кључ налога** и **Контејнер** за ваш налог за Azure складиште блоб објеката.
+    - Да бисте сазнали више о проналажењу имена и кључа налога за Azure складиште блоб објекта, погледајте [Управљајте подешавањима налога за складиштење на Azure порталу](https://docs.microsoft.com/azure/storage/common/storage-account-manage).
+    - Да бисте сазнали како да креирате контејнер, погледајте чланак [Креирање контејнера](https://docs.microsoft.com/azure/storage/blobs/storage-quickstart-blobs-portal#create-a-container).
 
-1. Изаберите **Додај везу** и бирајте **Azure складиште блоб објекта** да бисте конфигурисали везу.
+1. Дајте одредишту препознатљиво име у пољу **Име за приказ**.
 
-1. Дајте вези препознатљиво име у пољу **Име за приказ**. Име за приказ и врста везе описују ову везу. Препоручујемо да одаберете назив који објашњава сврху и циљ везе.
-
-1. Одаберите ко може да користи ову везу. Ако ништа не предузмете, подразумевани ће бити Администратори. За више информација, погледајте [Дозволите сарадницима да користе везу за извоз](connections.md#allow-contributors-to-use-a-connection-for-exports).
-
-1. Унесите **Назив налога**, **Кључ налога** и **Контејнер** за свој налог складишта блоб објекта.
-    - Да бисте сазнали више о томе како да пронађете назив налога складишта блоб објекта и кључ налога, погледајте [Управљање подешавањима налога за складиштење на Azure порталу](/azure/storage/common/storage-account-manage).
-    - Да бисте сазнали како да креирате контејнер, погледајте чланак [Креирање контејнера](/azure/storage/blobs/storage-quickstart-blobs-portal#create-a-container).
-
-1. Изаберите **Сачувај** да бисте креирали везу. 
-
-## <a name="configure-an-export"></a>Конфигурисање извоза
-
-Овај извоз можете да конфигуришете ако имате приступ вези ове врсте. За више информација погледајте [Дозволе потребне за конфигурисање извоза](export-destinations.md#set-up-a-new-export).
-
-> [!IMPORTANT]
-> Ако сте укључили подешавање меког брисања за налог Azure складишта блоб објекта, извоз неће успети. Искључите меко брисање за извоз података у блоб објекте. За више информација погледајте [Омогућавање меког брисања блоб објеката](/azure/storage/blobs/soft-delete-blob-enable.md)
-
-1. Идите на **Подаци** > **Извози**.
-
-1. Да бисте креирали нови извоз, изаберите **Додај одредиште**.
-
-1. У пољу **Веза за извоз**, одаберите везу из одељка Azure складишта блоб објекта. Ако не видите назив овог одељка, тада вам нису доступне везе овог типа.
+1. Изаберите **Следеће**.
 
 1. Изаберите поље поред сваког ентитета који желите да извезете на ово одредиште.
 
 1. Изаберите ставку **Сачувај**.
 
-Чување извоза не покреће извоз одмах.
+Извезени подаци се чувају у контејнеру Azure складишта блоб објеката који сте конфигурисали. Следеће путање фасциклу се аутоматски креирају у вашем контејнеру:
 
-Извоз се покреће са сваким [заказаним освежавањем](system.md#schedule-tab).     
-
-Такође можете да [извезете податке на захтев](export-destinations.md#run-exports-on-demand). 
-
-Извезени подаци се чувају у контејнеру складишта блоб објекта који сте конфигурисали. Следеће путање фасциклу се аутоматски креирају у вашем контејнеру:
-
-- За изворне ентитете и ентитете које генерише систем:   
-  `%ContainerName%/CustomerInsights_%instanceID%/%ExportDestinationName%/%EntityName%/%Year%/%Month%/%Day%/%HHMM%/%EntityName%_%PartitionId%.csv`  
+- За изворне ентитете и ентитете које генерише систем: `%ContainerName%/CustomerInsights_%instanceID%/%ExportDestinationName%/%EntityName%/%Year%/%Month%/%Day%/%HHMM%/%EntityName%_%PartitionId%.csv`
   - Пример: `Dynamics365CustomerInsights/CustomerInsights_abcd1234-4312-11f4-93dc-24f72f43e7d5/BlobExport/HighValueSegment/2020/08/24/1433/HighValueSegment_1.csv`
- 
-- Датотека model.json за извезене ентитете биће на нивоу %ExportDestinationName%.  
+- Model.json за извезене ентитете ће се налази на нивоу %ExportDestinationName%
   - Пример: `Dynamics365CustomerInsights/CustomerInsights_abcd1234-4312-11f4-93dc-24f72f43e7d5/BlobExport/model.json`
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+## <a name="export-the-data"></a>Извоз података
+
+Можете да [извезете податке на захтев](/export-destinations.md#export-data-on-demand). Извоз ће се такође покренути са сваким [планираним освежавањем](system.md#schedule-tab).

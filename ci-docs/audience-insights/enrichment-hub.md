@@ -1,7 +1,7 @@
 ---
 title: Обогатите обједињене корисничке профиле
 description: Користите могућности за обогаћивање података о клијентима.
-ms.date: 02/07/2022
+ms.date: 09/30/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -10,12 +10,12 @@ author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
 ms.custom: intro-internal
-ms.openlocfilehash: 5c3dda3b9bae828857258025ff79958ee22bdb6f
-ms.sourcegitcommit: a399bd17523c8d06afd7d78af4fc711f93c0e8be
+ms.openlocfilehash: 5d5e12ee44dfa40c470738eaee5c68fdf23d1b2d
+ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
 ms.translationtype: HT
 ms.contentlocale: sr-Cyrl-RS
-ms.lasthandoff: 02/07/2022
-ms.locfileid: "8098807"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "7617573"
 ---
 # <a name="enrichment-for-customer-profiles-preview"></a>Обогаћивање за корисничке профиле (преглед)
 
@@ -29,7 +29,7 @@ ms.locfileid: "8098807"
 
 На картици **Откривање**, пронаћи ћете све подржане опције обогаћивања.
 
-# <a name="individual-consumers-b-to-c"></a>[Појединачни потрошачи (B-to-C)](#tab/b2c)
+# <a name="individual-customers-b2c"></a>[Појединачни клијенти (B2C)](#tab/b2c)
 
 - [Брендове](enrichment-microsoft.md) обезбеђује Microsoft
 - [Интересовања](enrichment-microsoft.md) обезбеђује Microsoft
@@ -37,17 +37,14 @@ ms.locfileid: "8098807"
 - [Демографски подаци](enrichment-experian.md) које обезбеђује Experian
 - [Прилагођени подаци](enrichment-SFTP-custom-import.md) помоћу протокола Secure File Transfer Protocol (SFTP) 
 - [Azure Maps](enrichment-azure-maps.md) обезбеђује Microsoft
-- [Податке о локацији](enrichment-here.md) пружа HERE Technologies 
 
-# <a name="business-accounts-b-to-b"></a>[Пословни налози (B-to-B)](#tab/b2b)
+# <a name="business-accounts-b2b"></a>[Пословни налози (B2B)](#tab/b2b)
 
 - [Подаци о компанији](enrichment-leadspace.md) које пружа Leadspace
 - [Побољшане адресе](enrichment-enhanced-addresses.md) обезбеђује Microsoft 
-- [Побољшани подаци о](enrichment-enhanced-company-data.md) предузећу које обезбеђује Мицрософт
 - [Податке о локацији](enrichment-here.md) пружа HERE Technologies 
 - [Прилагођени подаци](enrichment-SFTP-custom-import.md) помоћу протокола Secure File Transfer Protocol (SFTP) 
 - [Azure Maps](enrichment-azure-maps.md) обезбеђује Microsoft
-- [Подаци о ангажовању](enrichment-office.md) налога које је обезбедио Мицрософт
 
 ---
 
