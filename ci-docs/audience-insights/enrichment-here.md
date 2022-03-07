@@ -3,17 +3,18 @@ title: Обогаћивање путем независног обогаћива
 description: Опште информације о HERE Technologies обогаћивању треће стране.
 ms.date: 04/09/2021
 ms.reviewer: mhart
+ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
 author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: 1b46e8913c6d288b93cdf32e195b5e9387916e70
-ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
+ms.openlocfilehash: b3c1da0f541efb85b2ca9d87a2e3b97bbfb6ca7f
+ms.sourcegitcommit: d84d664e67f263bfeb741154d309088c5101b9c3
 ms.translationtype: HT
 ms.contentlocale: sr-Cyrl-RS
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "8230400"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "6305312"
 ---
 # <a name="enrichment-of-customer-profiles-with-here-technologies-preview"></a>Обогаћивање профила клијената уз HERE Technologies (верзија за преглед)
 
@@ -34,7 +35,7 @@ ms.locfileid: "8230400"
 1. Изаберите **Обогати моје податке** на плочици HERE Technologies и изаберите **Започни**.
 
    > [!div class="mx-imgBorder"]
-   > ![HERE Technologies плочица.](media/HERE-tile.png "HERE Technologies плочица")
+   > ![HERE Technologies плочица](media/HERE-tile.png "HERE Technologies плочица")
 
 1. Изаберите [везу](connections.md) са падајуће листе. Ако веза није доступна, обратите се администратору. Ако сте администратор, везу можете да направите избором **Додај везу**. Одаберите **HERE Technologies** са падајуће листе. 
 
@@ -49,7 +50,7 @@ ms.locfileid: "8230400"
 1. Дефинишите која поља из ваших обједињених профила треба користити за подударање података о локацији од компаније HERE Technologies. Поља **Улица 1** и **Поштански број** су обавезна за одабрану примарну и/или секундарну адресу. За већу прецизност подударања може се додати више поља.
 
    > [!div class="mx-imgBorder"]
-   > ![Страница за конфигурацију HERE Technologies обогаћивања.](media/enrichment-HERE-configuration.png "Страница за конфигурацију HERE Technologies обогаћивања")
+   > ![Страница за конфигурацију HERE Technologies обогаћивања](media/enrichment-HERE-configuration.png "Страница за конфигурацију HERE Technologies обогаћивања")
 
 1. Изаберите **Следеће** да бисте довршили мапирање поља.
 
@@ -72,7 +73,7 @@ ms.locfileid: "8230400"
 1. По завршетку верификације, изаберите **Сачувај**.
 
    > [!div class="mx-imgBorder"]
-   > ![Страница за конфигурацију везе за HERE Technologies.](media/enrichment-HERE-connection.png "Страница за конфигурацију везе за HERE Technologies")
+   > ![Страница за конфигурацију везе за HERE Technologies](media/enrichment-HERE-connection.png "Страница за конфигурацију везе за HERE Technologies")
 
 ## <a name="enrichment-results"></a>Резултати обогаћивања
 
@@ -84,7 +85,7 @@ ms.locfileid: "8230400"
 
 ## <a name="next-steps"></a>Следећи кораци
 
-[!INCLUDE [next-steps-enrichment](../includes/next-steps-enrichment.md)]
+Надоградите на обогаћеним подацима о клијентима. Креирајте [сегменте](segments.md) и [мере](measures.md), па чак и [извоз података](export-destinations.md) да пружите персонализована искуства својим клијентима.
 
 ## <a name="data-privacy-and-compliance"></a>Приватност података и усаглашеност
 

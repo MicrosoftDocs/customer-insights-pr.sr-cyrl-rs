@@ -1,19 +1,20 @@
 ---
 title: Извоз Customer Insights података у Sendinblue
 description: Сазнајте како да конфигуришете везу и извезете је у услугу Sendinblue.
-ms.date: 10/08/2021
+ms.date: 06/29/2021
 ms.reviewer: mhart
+ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
 author: phkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 8d870ff31ce2d441e619ac18899c4d1b6c69ca41
-ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
-ms.translationtype: MT
+ms.openlocfilehash: be52554763b57e1c1ef2f960d52bbae79ac9827913c97ac73b429f66bbf4db37
+ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.translationtype: HT
 ms.contentlocale: sr-Cyrl-RS
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "8231437"
+ms.lasthandoff: 08/10/2021
+ms.locfileid: "7036073"
 ---
 # <a name="export-segments-to-sendinblue-preview"></a>Извоз сегмената у Sendinblue (верзија за преглед)
 
@@ -28,10 +29,10 @@ ms.locfileid: "8231437"
 
 ## <a name="known-limitations"></a>Позната ограничења
 
-- До милион профила клијената по извозу у Sendinblue.
+- До 1 милион профила по извозу у Sendinblue.
 - Извоз у Sendinblue је ограничен на сегменте.
-- Извоз сегмената са укупно милион профила клијената може потрајати до 90 минута. 
-- Број профила клијената које можете извести у Sendinblue зависи и ограничен је на ваш уговор са Sendinblue-ом.
+- Извоз сегмената са укупно милион профила може трајати до 90 минута. 
+- Број профила које можете да извезете у Sendinblue зависи од вашег уговора са услугом Sendinblue и ограничен је њиме.
 
 ## <a name="set-up-connection-to-sendinblue"></a>Подешавање везе са услугом Sendinblue
 
@@ -63,7 +64,7 @@ ms.locfileid: "8231437"
 
 1. Унесите **ID Sendinblue листе** 
 
-1. У одељку **Подударање података**, у пољу **Е-пошта**, изаберите поље које представља е-адресу клијента. 
+1. У одељку **Подударање података**, у пољу **Адреса е-поште** изаберите поље у обједињеном корисничком профилу које представља е-адресу клијента. 
 
 1. Опционално, можете да извезете поља **Име**, **Презиме** и **Телефон** да бисте креирали персонализованије адресе е-поште. Изаберите **Додај атрибут** за мапирање ових поља.
 

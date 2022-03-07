@@ -4,16 +4,17 @@ description: Сазнајте како да персонализујете и п
 author: britl
 ms.reviewer: mhart
 ms.author: britl
-ms.date: 10/01/2021
+ms.date: 10/30/2020
+ms.service: customer-insights
 ms.subservice: engagement-insights
 ms.topic: conceptual
 ms.manager: shellyha
-ms.openlocfilehash: a50a10db784ec7c1943c94e74000713309787e5c
-ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
-ms.translationtype: MT
+ms.openlocfilehash: 97e50a51231bcf05f3e381397f0cf41e49afc10e3c3674d7c709c8f521979e12
+ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.translationtype: HT
 ms.contentlocale: sr-Cyrl-RS
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "8225349"
+ms.lasthandoff: 08/10/2021
+ms.locfileid: "7036621"
 ---
 # <a name="run-the-web-sdk-sample-for-dynamics-365-customer-insights-engagement-insights-capability"></a>Покрените веб SKD узорак за Dynamics 365 Customer Insights могућност увида у ангажовање
 
@@ -25,7 +26,7 @@ ms.locfileid: "8225349"
 
 - Инсталирајте [Visual Studio Code](https://code.visualstudio.com/).
 - [Инсталирајте Live Server проширење](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) у Visual Studio Code уређивачу и упознајте се како да покрећете Live Server.
-- Морате имати [радни простор увиди у ангажовање](create-workspace.md).
+- Морате имати [кључ за унос](instrument-website.md).
 
 ## <a name="run-sample"></a>Покретање узорка
 
@@ -35,11 +36,7 @@ ms.locfileid: "8225349"
 
 1. Отворите распаковану фасциклу у Visual Studio Code.
 
-1. Идите на портал увида у ангажовање за свој радни простор. Изаберите **Администратор** > **Радни простор** и онда **Упутство за инсталацију**. Пратите прву опцију и изаберите **Копирај код** да бисте копирали JavaScript исечак кода.
-
-1. У датотеци `ei_websdk_sample.html`, испод ове линије налепите исечак кода који сте управо копирали:
-
-   - <-- НАЛЕПИТЕ JAVASCRIPT ИСЕЧАК КОДА СА ПОРТАЛА УВИДА У АНГАЖОВАЊЕ ОВДЕ ИСПОД ОВЕ ЛИНИЈЕ -->
+1. У `ei_websdk_sample.html` датотеци, замените ниску „КЉУЧ ЗА УНОС“ кључем за унос са портала могућности увида у ангажовање, а ниску „НАЗИВ“ глобалним називом за који желите да вежете SDK инстанцу. Обавезно замените на свим местима.
 
 1. Отворите `ei_websdk_sample.html` датотеку користећи Live Server у решењу Visual Studio Code тако што ћете изабрати **Изведи уживо** са статусне траке.
 

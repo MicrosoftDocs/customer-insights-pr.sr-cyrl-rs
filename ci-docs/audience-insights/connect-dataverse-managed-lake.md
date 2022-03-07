@@ -2,25 +2,23 @@
 title: Повезивање са табелама у услузи Microsoft Dataverse
 description: Увоз података из Microsoft Dataverse управљаног језера података.
 ms.date: 12/06/2021
+ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
 author: adkuppa
 ms.author: adkuppa
 manager: shellyha
 ms.reviewer: mhart
-searchScope:
-- ci-dataverse
-- customerInsights
-ms.openlocfilehash: 8e11b60295fa5c187b1ac4877fb347e2d9bb41a1
-ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
-ms.translationtype: MT
+ms.openlocfilehash: fecf3e33b5bc1eec17006fc196004be902c03b40
+ms.sourcegitcommit: 11b343f6622665251ab84ae39ebcd91fa1c928ca
+ms.translationtype: HT
 ms.contentlocale: sr-Cyrl-RS
-ms.lasthandoff: 02/25/2022
-ms.locfileid: "8354160"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "7900169"
 ---
 # <a name="connect-to-data-in-a-microsoft-dataverse-managed-data-lake"></a>Повежите се са подацима у Microsoft Dataverse управљаном језеру података
 
-
+[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
 
 Овај чланак пружа информације о томе како Dataverse корисници могу брзо да се повежу са аналитичким ентитетима у управљаном Microsoft Dataverse језеру. 
 
@@ -29,7 +27,7 @@ ms.locfileid: "8354160"
 
 ## <a name="important-considerations"></a>Важна разматрања
 
-Подаци ускладиштени у мрежним услугама, као што је Azure Data Lake Storage, могу се складиштити на локацији различитој од оне на којој се подаци обрађују или складиште у услузи Dynamics 365 Customer Insights.Увозом или повезивањем са подацима ускладиштеним у услугама на мрежи слажете се да се подаци могу преносити и складиштити са програмом Dynamics 365 Customer Insights .  [Сазнајте више у Мицрософт центру за поузданост](https://www.microsoft.com/trust-center).
+Подаци ускладиштени у мрежним услугама, као што је Azure Data Lake Storage, могу се складиштити на локацији различитој од оне на којој се подаци обрађују или складиште у услузи Dynamics 365 Customer Insights.Увозом или повезивањем са подацима ускладиштеним у услугама на мрежи слажете се да се подаци могу преносити и складиштити са Dynamics 365 Customer Insights програмом .  [Сазнајте више у Мицрософт центру за поузданост](https://www.microsoft.com/trust-center).
 
 ## <a name="connect-to-a-dataverse-managed-lake"></a>Повежите се са Dataverse управљаним језером
 
@@ -37,7 +35,7 @@ ms.locfileid: "8354160"
 
 2. Изаберите **Додај извор података**.
 
-3. Изаберите и **Microsoft Dataverse** кликните на дугме **Даље**.
+3. Изаберите **Microsoft Dataverse** и кликните на **дугме Даље**.
 
 4. Унесите **Назив** извора података и изаберите **Следеће**. 
 

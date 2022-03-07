@@ -4,21 +4,22 @@ author: m-hartmann
 description: Упознајте се са искуством првог покретања у услузи Dynamics 365 Customer Insights и истражити њене могућности.
 ms.author: mhart
 ms.date: 10/05/2021
+ms.service: customer-insights
 ms.topic: conceptual
 ms.manager: shellyha
 ms.custom: intro-internal
-ms.openlocfilehash: c9517ed2b50ff37e361a27538dfb9f9ccbf3df8f
-ms.sourcegitcommit: 1946d7af0bd2ca216885bec3c5c95009996d9a28
-ms.translationtype: MT
+ms.openlocfilehash: e17b66217415c0b554a449f0d992deec7e2d96e7
+ms.sourcegitcommit: bb1ca84bc38e81fb2ff2961c457384b7beb5b5fa
+ms.translationtype: HT
 ms.contentlocale: sr-Cyrl-RS
-ms.lasthandoff: 02/25/2022
-ms.locfileid: "8350149"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7977690"
 ---
 # <a name="get-started-after-purchasing-customer-insights"></a>Започните након куповине услуге Customer Insights
 
 Овај чланак објашњава како да направите прве кораке у услузи Dynamics 365 Customer Insights након што је ваша организација купила претплату. Ако желите да купите решење Customer Insights, наше опције за контакт су наведене на [Dynamics 365 Customer Insights веб-локацији](https://dynamics.microsoft.com/ai/customer-insights/). 
 
-Након куповине лиценце за претплату за Цустомер Инсигхтс, глобални администратор закупца Microsoft 365 добија е-поруку која их позива да креирају окружење. 
+Након куповине лиценце за претплату за Цустомер Инсигхтс, глобални администратор Microsoft 365 закупца добија е-поруку која их позива да креирају окружење. 
 
 Услуга Customer Insights је лиценцирана по закупцу и обухвата више могућности. Можете купити већи капацитет и више лиценци да бисте повећали подразумеване квоте. 
 - [Преглед одређивања цена](https://dynamics.microsoft.com/ai/customer-insights/pricing/)
@@ -39,7 +40,10 @@ ms.locfileid: "8350149"
 
 ## <a name="create-your-own-environment"></a>Креирајте сопствено окружење
 
-Након првог пријављивања видећете окружење са примерима података. Можете користити те податке за истраживање функција и упознавање са апликацијом. Да бисте користили сопствене податке, морате да [креирате окружење](audience-insights/get-started-paid.md).
+Након првог пријављивања видећете окружење са примерима података. Можете користити те податке за истраживање функција и упознавање са апликацијом. Да бисте користили сопствене податке, морате креирати окружење у могућности у којој желите да радите.
+
+- [Креирање окружења у увидима у циљну групу.](audience-insights/get-started-paid.md)
+- [Креирање окружења у увидима у ангажовање.](engagement-insights/create-new-environment.md) 
 
 
 
