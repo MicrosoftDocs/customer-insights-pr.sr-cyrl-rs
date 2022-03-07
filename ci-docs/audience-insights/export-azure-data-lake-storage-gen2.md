@@ -1,43 +1,64 @@
 ---
 title: Извезите Customer Insights податке у Azure Data Lake Storage Gen2
 description: Сазнајте како да конфигуришете везу са услугом Azure Data Lake Storage Gen2.
-ms.date: 02/04/2021
-ms.reviewer: sthe
-ms.service: customer-insights
+ms.date: 10/06/2021
+ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: how-to
-author: m-hartmann
-ms.author: mhart
+author: stefanie-msft
+ms.author: sthe
 manager: shellyha
-ms.openlocfilehash: b00c3d6178150cbc93fe800779f094809d4dc67b
-ms.sourcegitcommit: 0260ed244b97c2fd0be5e9a084c4c489358e8d4f
-ms.translationtype: HT
+ms.openlocfilehash: cc0b3aac11a33facc366e9c57071d1fb8be4ecc4
+ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
+ms.translationtype: MT
 ms.contentlocale: sr-Cyrl-RS
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "5477197"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "8231692"
 ---
-# <a name="connector-for-azure-data-lake-storage-gen2-preview"></a>Конектор за Azure Data Lake Storage Gen2 (преглед)
+# <a name="export-segment-list-and-other-data-to-azure-data-lake-storage-gen2-preview"></a>Извоз листе сегмената и других података у Azure Data Lake Storage Gen2 (верзија за преглед)
 
-Складиштите податке Customer Insights података у услугу Azure Data Lake Storage Gen2 или их користите за пренос података у друге апликације.
+Складиштите податке из услуге Customer Insights у Data Lake Storage Gen2 налог или их користите за пренос података у друге апликације.
 
-## <a name="configure-the-connector-for-azure-data-lake-storage-gen2"></a>Конфигуришите конектор за Azure Data Lake Storage Gen2
+## <a name="known-limitations"></a>Позната ограничења
 
-1. У увидима о корисницима идите на **Администратор** > **Одредишта за извоз**.
+1. За Azure Data Lake Storage Gen2 можете бирати између [нивоа стандардних перформанси и премијум перформанси](/azure/storage/blobs/create-data-lake-storage-account) када креирате налог за складиштење за своје језеро података. Ако одаберете ниво премијум перформанси, изаберите премијум ове блоб објеката тип пословног контакта. 
 
-1. Уз одељку **Azure Data Lake Storage Gen2** изаберите **Подеси**.
 
-1. Дајте одредишту препознатљиво име у пољу **Име за приказ**.
+## <a name="set-up-the-connection-to-azure-data-lake-storage-gen2"></a>Подешавање везе са Azure Data Lake Storage Gen2 
+
+
+1. Идите на **Администратор** > **Везе**.
+
+1. Изаберите **Додај везу** и бирајте **Azure Data Lake Gen 2** да бисте конфигурисали везу.
+
+1. Дајте вези препознатљиво име у пољу **Име за приказ**. Име за приказ и врста везе описују ову везу. Препоручујемо да одаберете назив који објашњава сврху и циљ везе.
+
+1. Одаберите ко може да користи ову везу. Ако ништа не предузмете, подразумевани ће бити Администратори. За више информација, погледајте [Дозволите сарадницима да користе везу за извоз](connections.md#allow-contributors-to-use-a-connection-for-exports).
 
 1. Унесите **Назив пословног контакта**, **Кључ пословног контакта** и **Контејнер** за ваш Azure Data Lake Storage Gen2.
-    - Да бисте сазнали како да направите налог за складиштење са којим ћете користити Azure Data Lake Storage Gen2, погледајте чланак [Креирање налога за складиштење](https://docs.microsoft.com/azure/storage/blobs/create-data-lake-storage-account). 
-    - Да бисте сазнали више о томе како да пронађете име пословног контакта за Azure Data Lake Gen2 складиште, погледајте чланак [Управљање подешавањима налога за складиштење на Azure порталу](https://docs.microsoft.com/azure/storage/common/storage-account-manage).
+    - Да бисте сазнали како да направите налог за складиштење са којим ћете користити Azure Data Lake Storage Gen2, погледајте чланак [Креирање налога за складиштење](/azure/storage/blobs/create-data-lake-storage-account). 
+    - Да бисте сазнали више о називу налога Azure Data Lake Gen2 складишта и кључу складишта, погледајте [Управљање подешавањима налога за складиштење на Azure порталу](/azure/storage/common/storage-account-manage).
 
-1. Изаберите **Следеће**.
+1. Изаберите **Сачувај** да бисте креирали везу. 
+
+## <a name="configure-an-export"></a>Конфигурисање извоза
+
+Овај извоз можете да конфигуришете ако имате приступ вези ове врсте. За више информација погледајте [Дозволе потребне за конфигурисање извоза](export-destinations.md#set-up-a-new-export).
+
+1. Идите на **Подаци** > **Извози**.
+
+1. Да бисте креирали нови извоз, изаберите **Додај извоз**.
+
+1. У пољу **Веза за извоз**, одаберите везу из одељка **Azure Data Lake**. Ако не видите назив овог одељка, не постоје вам доступне везе овог типа.
 
 1. Изаберите поље поред сваког ентитета који желите да извезете на ово одредиште.
 
 1. Изаберите ставку **Сачувај**.
 
-## <a name="export-the-data"></a>Извоз података
+Чување извоза не покреће извоз одмах.
 
-Можете да [извезете податке на захтев](export-destinations.md#export-data-on-demand). Извоз ће се такође покренути са сваким [планираним освежавањем](system.md#schedule-tab).
+Извоз се покреће са сваким [заказаним освежавањем](system.md#schedule-tab). Такође можете да [извезете податке на захтев](export-destinations.md#run-exports-on-demand). 
+
+Извезени подаци се чувају у Azure Data Lake Gen 2 контејнеру за складиштење који сте конфигурисали. 
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

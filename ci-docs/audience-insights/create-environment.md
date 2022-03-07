@@ -1,21 +1,23 @@
 ---
 title: Креирање окружења у услузи Customer Insights
 description: Кораци за креирање окружења са лиценцираном претплатом за Dynamics 365 Customer Insights.
-ms.date: 12/06/2021
+ms.date: 02/24/2022
 ms.reviewer: mhart
-ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
 author: MichelleDevaney
 ms.author: midevane
 manager: shellyha
 ms.custom: intro-internal
-ms.openlocfilehash: d29992c88bd54fcfcf5e6429a89a34b6f73148c8
-ms.sourcegitcommit: b7189b8621e66ee738e4164d4b3ce2af0def3f51
-ms.translationtype: HT
+searchScope:
+- ci-home
+- customerInsights
+ms.openlocfilehash: c37afd5649f8cf40d5379f3d39d0cbd96cde3bd3
+ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
+ms.translationtype: MT
 ms.contentlocale: sr-Cyrl-RS
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "8088131"
+ms.lasthandoff: 02/25/2022
+ms.locfileid: "8354113"
 ---
 # <a name="create-an-environment-in-audience-insights"></a>Креирање окружења у увидима у циљну групу
 
@@ -64,7 +66,7 @@ ms.locfileid: "8088131"
 > Customer Insights тренутно подржава следеће:
 > - Унети ентитети из Power BI токова података који се чувају у Microsoft Dataverse управљаној услузи Data Lake.  
 > - Azure Data Lake Storage налози из истог Azure региона који сте изабрали приликом креирања окружења.
-> - Azure Data Lake Storage налоге који су gen2 и имају *омогућен хијерархијски простор за* име. Азуре Дата Лаке Gen1 налози за складиштење нису подржани.
+> - Azure Data Lake Storage налоге који су Gen2 и имају *хијерархијски простор за* име. Азуре Дата Лаке Gen1 налози за складиштење нису подржани.
 
 За опцију Azure Data Lake Storage, можете одабрати између опције засноване на ресурсима и опције засноване на претплати за потврду идентитета. Више информација потражите у чланку [Повезивање са Azure Data Lake Storage налогом користећи Azure принципал услуге](connect-service-principal.md). Назив за **Контејнер** ће бити `customerinsights` и не можете га променити.
 
@@ -76,12 +78,14 @@ ms.locfileid: "8088131"
    
 Корак **Microsoft Dataverse** вам омогућава да повежете Customer Insights са вашим Dataverse окружењем.
 
-Да бисте користили [готове моделе предвиђања](predictions-overview.md#out-of-box-models), конфигуришите дељење података са услугом Dataverse. Или можете омогућити унос података из локалних извора података,обезбеђујући URL адресу Microsoft Dataverse окружења којим управља ваша организација. Изаберите **Омогући дељење података** да бисте делили Customer Insights излазне податке помоћу Dataverse управљаног језера података.
+Обезбедите сопствено Microsoft Dataverse окружење за дељење података (профила и увида) са пословним апликацијама заснованим Dataverse на систему, као што је Дyнамицс 365 Маркетинг или апликације са моделима у програму Power Apps. Оставите ово поље празно ако немате своје окружење, а Dataverse ми ћемо вам га обезбедити.
+
+Повезивање са окружењем Dataverse вам такође омогућава да уносите [податке из локални података помоћу Power Platform прилива података и мрежних пролаза](data-sources.md#add-data-from-on-premises-data-sources). Моделе из кутије можете [да користите и предвиђање повезивањем](predictions-overview.md?tabs=b2c#out-of-box-models) са окружењем Dataverse.
 
 > [!IMPORTANT]
 > Увиди клијената и Dataverse морају да буду у истом региону да би омогућили дељење података.
 
-:::image type="content" source="media/dataverse-data-sharing.png" alt-text="Опције конфигурације за омогућавање дељења података са платформом Microsoft Dataverse.":::
+:::image type="content" source="media/dataverse-provisioning.png" alt-text="дељење података са Microsoft Dataverse аутоматски омогућеним за нове нето инстанце.":::
 
 > [!NOTE]
 > Customer Insights не подржава следеће сценарије дељења података:

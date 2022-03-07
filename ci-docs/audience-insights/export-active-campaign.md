@@ -1,20 +1,19 @@
 ---
 title: Извоз Customer Insights података у ActiveCampaign
 description: Сазнајте како да конфигуришете везу и извезете је у услугу ActiveCampaign.
-ms.date: 06/29/2021
+ms.date: 10/08/2021
 ms.reviewer: mhart
-ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 6d85fa9836618e27f7f3da6ce17c07b4bc89e187
-ms.sourcegitcommit: 057079532e31c12bac36f374857ba3dc847d6ad0
-ms.translationtype: HT
+ms.openlocfilehash: 089b9b0d76437e695f797f941ed384734d8f772e
+ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
+ms.translationtype: MT
 ms.contentlocale: sr-Cyrl-RS
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "6314671"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "8227827"
 ---
 # <a name="export-segments-to-activecampaign-preview"></a>Извоз сегмената у ActiveCampaign (верзија за преглед)
 
@@ -28,9 +27,9 @@ ms.locfileid: "6314671"
 
 ## <a name="known-limitations"></a>Позната ограничења
 
-- Можете извозити до 1 милион профила по извозу у ActiveCampaign, а то може потрајати и до 90 минута.
+- Можете извести до милион профила клијената по извозу у ActiveCampaign, а за то може бити потребно и до 90 минута.
 - Извоз у ActiveCampaign је ограничен на сегменте.
-- Број профила које можете да извезете у ActiveCampaign зависи од вашег уговора са услугом ActiveCampaign.
+- Број профила клијената које можете извести у ActiveCampaign зависи од вашег уговора са ActiveCampaign-ом.
 
 ## <a name="set-up-connection-to-activecampaign"></a>Подесите везу са услугом ActiveCampaign
 
@@ -64,7 +63,7 @@ ms.locfileid: "6314671"
 
 1. Унесите [**ID ActiveCampaign листе**](https://help.activecampaign.com/hc/articles/360000030559-How-to-create-a-list-in-ActiveCampaign).    
 
-3. У одељку **Подударање података**, у пољу **Адреса е-поште** изаберите поље у обједињеном корисничком профилу које представља е-адресу клијента. У ActiveCampaign морате извозити сегменте. Опционално, можете да извезете поља Име, Презиме и Телефон да бисте креирали персонализованије адресе е-поште. Изаберите Додај атрибут за мапирање ових поља.
+1. У одељку **Подударање података**, у пољу **Е-пошта**, изаберите поље које представља е-адресу клијента. У ActiveCampaign морате извозити сегменте. Опционално, можете да извезете поља Име, Презиме и Телефон да бисте креирали персонализованије адресе е-поште. Изаберите Додај атрибут за мапирање ових поља.
 
 1. Изаберите ставку **Сачувај**.
 

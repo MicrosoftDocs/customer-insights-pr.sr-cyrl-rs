@@ -3,18 +3,20 @@ title: Везе са осталим услугама из услуге Customer 
 description: Поделите податке са другим услугама.
 ms.date: 04/09/2021
 ms.reviewer: nikeller
-ms.service: customer-insights
 ms.subservice: audience-insights
-ms.topic: conceptual
+ms.topic: overview
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: 17e04b243e9b3d4375c86f5a890a18be35956835
-ms.sourcegitcommit: d84d664e67f263bfeb741154d309088c5101b9c3
-ms.translationtype: HT
+searchScope:
+- ci-connections
+- customerInsights
+ms.openlocfilehash: ccad090d3bf6eab96eff37f7a96289ca2882d369
+ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
+ms.translationtype: MT
 ms.contentlocale: sr-Cyrl-RS
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "6304990"
+ms.lasthandoff: 02/25/2022
+ms.locfileid: "8354402"
 ---
 # <a name="connections-preview-overview"></a>Преглед веза (верзија за преглед)
 
@@ -47,6 +49,7 @@ ms.locfileid: "6304990"
 1. У окну **Подешавање везе**, наведите потребне детаље. 
    1. **Име за приказ** и врста везе описују везу. Препоручујемо да одаберете назив који објашњава сврху и циљ ове везе.
    1. Тачна поља зависе од услуге на коју се повезујете. Више о детаљима одређеног типа везе можете сазнати у чланку о циљној услузи.
+   1. Ако [користите сопствени Key Vault](use-azure-key-vault.md) за чување тајни, активирајте **Користи Key Vault** и изаберите тајну са листе.
 
 1. Да бисте креирали везу, изаберите **Сачувај**.
 
@@ -93,3 +96,6 @@ ms.locfileid: "6304990"
 
 1. Да бисте потврдили брисање, изаберите **Уклони**.
 
+## <a name="set-up-connections-with-secrets-managed-by-your-own-key-vault"></a>Успостављање веза са тајнама којима управља ваш Key Vault
+
+Неким везама су потребне тајне, попут API кључева или лозинки. Неке везе подржавају тајне сачуване у вашем Key Vault-у. Сазнајте више о подржаним везама и начину подешавања [сопственог Key Vault-а за увиде у циљну групу](use-azure-key-vault.md).

@@ -4,26 +4,25 @@ description: Сазнајте више о регионима и географс
 author: mkisel11
 ms.reviewer: mhart
 ms.author: mkisel
-ms.date: 09/01/2021
-ms.service: customer-insights
+ms.date: 09/28/2021
 ms.topic: article
 ms.manager: shellyha
-ms.openlocfilehash: c89637cbbe6626f95bcadb1f69831a1647f448a4
-ms.sourcegitcommit: 5704002484cdf85ebbcf4e7e4fd12470fd8e259f
-ms.translationtype: HT
+ms.openlocfilehash: 08435e651c3706257b8c0548e6e9bbf98f39dce9
+ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
+ms.translationtype: MT
 ms.contentlocale: sr-Cyrl-RS
-ms.lasthandoff: 09/08/2021
-ms.locfileid: "7483315"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "8228124"
 ---
 # <a name="regional-availability-for-dynamics-365-customer-insights"></a>Регионална доступност за Dynamics 365 Customer Insights
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
-Увиди у ангажовање, могућност решења Dynamics 365 Customer Insights, постепено уводе све више региона у којима клијенти могу изабрати да складиште своје податке. Администратори могу изабрати регион када [креирају ново окружење](manage-environments-workspaces.md#create-an-environment). 
+Увиди у ангажовање, могућност решења Dynamics 365 Customer Insights, постепено уводе све више региона у којима клијенти могу изабрати да складиште своје податке. Администратори могу изабрати регион када [креирају ново окружење](create-new-environment.md). 
 
-Када први пут конфигурише увиде у ангажовање, можете да бирате регион док пролазите кроз [вођено искуство првог покретања](quickstart.md). Касније, свако ново окружење вам омогућава да изаберете регион у који ће се подаци складиштити.
+Када први пут конфигурише увиде у ангажовање, можете да бирате регион док пролазите кроз [вођено искуство првог покретања](quickstart.md). Касније, свако ново окружење вам омогућава да изаберете регион у којем ће се подаци складиштити.
 
-Тренутно постоје два географска подручја: САД и Европа. Корисници могу да бирају између региона Западног САД и Европе – север.
+Тренутно подржавамо географије САД и Европе. Корисници могу да бирају између ових региона: САД – запад, САД – исток, Европа – север и Европа – запад.
 
 Организација може да одржава окружења у различитим регионима. На пример, окружење А складишти податке у Западној САД, а окружење Б у Европи – север.
 

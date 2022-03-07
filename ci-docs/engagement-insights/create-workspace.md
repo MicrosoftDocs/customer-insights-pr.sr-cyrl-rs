@@ -5,16 +5,15 @@ author: jusali
 ms.reviewer: mhart
 ms.author: jusali
 ms.date: 10/01/2021
-ms.service: customer-insights
 ms.subservice: engagement-insights
 ms.topic: how-to
 ms.manager: shellyha
-ms.openlocfilehash: 816f948331a06794c15000eb779f93cc7fdda202
-ms.sourcegitcommit: 53b133a716c73cb71e8bcbedc6273cec70ceba6c
-ms.translationtype: HT
+ms.openlocfilehash: 76b3466afd84aa439ea55afe90ae037825884f2d
+ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
+ms.translationtype: MT
 ms.contentlocale: sr-Cyrl-RS
-ms.lasthandoff: 10/15/2021
-ms.locfileid: "7645328"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "8229095"
 ---
 # <a name="create-a-new-workspace-and-add-members"></a>Креирање новог радног простора и додавање чланова
 
@@ -26,17 +25,17 @@ ms.locfileid: "7645328"
 
 ## <a name="create-a-new-workspace"></a>Креирајте нови радни простор
 
-Процес креирања радног простора укључује конфигурисање *окружења* да бисте организовали свој радни простор. Окружење је простор који може да садржи један радни простор или више њих. Можете да користите окружење за управљање радним просторима и везама са Customer Insights могућношћу увида у циљну групу.
+Процес креирања радног простора укључује конфигурисање *окружења* да бисте организовали свој радни простор. Окружење је простор који може да садржи један радни простор или више њих. Окружење можете да користите за управљање радним простором и везама са корисници увида.
 
-1. Изаберите **Ново** из опције за пребацивање радног простора.
+1. Изаберите **+ Ново** из прекидача радног простора.
 
-   :::image type="content" source="media/new-workspace.png" alt-text="Страница Customer Insights са облачићем у окну за навигацију и описом.":::
+   :::image type="content" source="media/new-workspace.png" alt-text="Страница&quot;Увиди купаца&quot; са позивом у окну за навигацију и описом.":::
 
 1. У окну **Радни простор**, унесите **Назив радног простора**.
 
    :::image type="content" source="media/workspace-name.png" alt-text="Унесите назив радног простора.":::
 
-1. Одаберите тип платформе (веб или мобилна) коју желите да измерите.
+1. Одаберите тип платформе (веб или мобилни) који желите да измерите.
 
 1. Изаберите **Прикажи напредна подешавања** да бисте омогућили или онемогућили ова опциона подешавања:
 

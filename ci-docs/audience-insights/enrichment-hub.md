@@ -1,21 +1,25 @@
 ---
 title: Обогатите обједињене корисничке профиле
 description: Користите могућности за обогаћивање података о клијентима.
-ms.date: 09/30/2021
+ms.date: 02/18/2022
 ms.reviewer: mhart
-ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
 ms.custom: intro-internal
-ms.openlocfilehash: 5d5e12ee44dfa40c470738eaee5c68fdf23d1b2d
-ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
-ms.translationtype: HT
+searchScope:
+- ci-enrichments
+- ci-enrichment-details
+- ci-enrichment-wizard
+- customerInsights
+ms.openlocfilehash: b44f5a4b74c63629811837b853b4e069dea63504
+ms.sourcegitcommit: bb1f9e96023490ab340c114f54200ab4dd48da78
+ms.translationtype: MT
 ms.contentlocale: sr-Cyrl-RS
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "7617573"
+ms.lasthandoff: 03/02/2022
+ms.locfileid: "8372737"
 ---
 # <a name="enrichment-for-customer-profiles-preview"></a>Обогаћивање за корисничке профиле (преглед)
 
@@ -29,7 +33,7 @@ ms.locfileid: "7617573"
 
 На картици **Откривање**, пронаћи ћете све подржане опције обогаћивања.
 
-# <a name="individual-customers-b2c"></a>[Појединачни клијенти (B2C)](#tab/b2c)
+# <a name="individual-consumers-b-to-c"></a>[Појединачни потрошачи (B-to-C)](#tab/b2c)
 
 - [Брендове](enrichment-microsoft.md) обезбеђује Microsoft
 - [Интересовања](enrichment-microsoft.md) обезбеђује Microsoft
@@ -37,14 +41,18 @@ ms.locfileid: "7617573"
 - [Демографски подаци](enrichment-experian.md) које обезбеђује Experian
 - [Прилагођени подаци](enrichment-SFTP-custom-import.md) помоћу протокола Secure File Transfer Protocol (SFTP) 
 - [Azure Maps](enrichment-azure-maps.md) обезбеђује Microsoft
+- [Податке о локацији](enrichment-here.md) пружа HERE Technologies 
+- [Идентитет](enrichment-liveramp.md) обезбедио ЛивеРамп АбилиТец
 
-# <a name="business-accounts-b2b"></a>[Пословни налози (B2B)](#tab/b2b)
+# <a name="business-accounts-b-to-b"></a>[Пословни налози (B-to-B)](#tab/b2b)
 
 - [Подаци о компанији](enrichment-leadspace.md) које пружа Leadspace
 - [Побољшане адресе](enrichment-enhanced-addresses.md) обезбеђује Microsoft 
+- [Побољшани подаци о](enrichment-enhanced-company-data.md) предузећу које обезбеђује Мицрософт
 - [Податке о локацији](enrichment-here.md) пружа HERE Technologies 
 - [Прилагођени подаци](enrichment-SFTP-custom-import.md) помоћу протокола Secure File Transfer Protocol (SFTP) 
 - [Azure Maps](enrichment-azure-maps.md) обезбеђује Microsoft
+- [Подаци о ангажовању](enrichment-office.md) налога које је обезбедио Мицрософт
 
 ---
 
@@ -73,6 +81,10 @@ ms.locfileid: "7617573"
 ## <a name="multiple-enrichments-of-the-same-type"></a>Вишеструка обогаћивања истог типа
 
 Ентитет који треба обогатити наводи се током конфигурације обогаћивања, што вам омогућава да обогатите само подскуп својих профила. На пример, обогатите податке само за одређени сегмент. Можете да конфигуришете неколико обогаћивања истог типа и да поново користите исту везу. Нека обогаћивања ће имати ограничења у броју обогаћивања истог типа која се могу креирати. Ограничења и тренутна употреба могу се видети на страници **Обогаћивање**.
+
+## <a name="enrich-data-sources-before-unification"></a>Обогати изворе података пре уједињења
+
+Податке о корисницима можете обогатити пре уједињења података да бисте повећали квалитет подударања података. Више информација потражите у чланку [извор података обогаћивању](data-sources-enrichment.md).
 
 ## <a name="see-the-progress-of-the-enrichment-process"></a>Погледајте напредак процеса обогаћивања
 

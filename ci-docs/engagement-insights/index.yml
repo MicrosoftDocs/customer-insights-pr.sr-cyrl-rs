@@ -1,92 +1,29 @@
 ### YamlMime:Landing
-title: Могућност увида у ангажовање у услузи Dynamics 365 Customer Insights (верзија за преглед)
-summary: Прикупљајте податке за своје веб-локације. Интерактивно схватите интеракције и употребу клијената на вашим веб-локацијама. Искористите дубоку интеграцију између увида у ангажовање и увида у циљну групу како бисте обогатили своју аналитику понашања у реалном времену извештајима о профилу клијената. Обогатите профиле клијената веб-активностима како бисте добијали податке о понашању у реалном времену заједно са релевантним подацима о клијентима. Трансформишите своје пословање да бисте изводили тренутну вредност из података о клијентима.
+title: Преглед увида о веридби се завршава
+summary: Преглед Dynamics 365 Customer Insights могућности увида у ангажовање завршен је 15. фебруара 2022. године. Ова промена значи да пробно искуство "Увиди клијената" више не укључује могућност креирања левака нити друге функционалности извештавања. Позивамо вас да истражите и процените многе друге функције корисничког увида, Мицрософт платформе за податке о корисницима (ЦДП). Обратите се директно тиму Мицрософт налога ако имате питања о крају прегледа могућности. Тим налога ће вас обавештавати о предстојећим лансирањима. Хвала!
 metadata:
   title: Документација о увидима у ангажовање (верзија за преглед)
   description: Помозите чворишту са кључним везама за увиде у ангажовање.
-  ms.service: customer-insights
   ms.subservice: engagement-insights
   ms.topic: hub-page
   author: m-hartmann
   ms.author: mhart
   ms.reviewer: mhart
   ms.date: 09/15/2021
-  ms.openlocfilehash: bf2e40b1ca304e7b26687eaff298d2e70615cd2b
-  ms.sourcegitcommit: fecdee73e26816c42d39d160d4d5cfb6c8a91596
-  ms.translationtype: HT
+  ms.openlocfilehash: 99933c69c791da12815ebee3edb6413276b19b09
+  ms.sourcegitcommit: 1946d7af0bd2ca216885bec3c5c95009996d9a28
+  ms.translationtype: MT
   ms.contentlocale: sr-Cyrl-RS
-  ms.lasthandoff: 09/15/2021
-  ms.locfileid: "7494202"
+  ms.lasthandoff: 02/25/2022
+  ms.locfileid: "8350517"
 landingContent:
-- title: Основне информације
+- title: Ступите у контакт
   linkLists:
   - linkListType: overview
     links:
-    - text: Предности могућности
-      url: overview.md
-    - text: Речник појмова
-      url: glossary.md
-    - text: Нове и ажуриране функције
-      url: /dynamics365-release-plan/2021wave1/customer-data-platform/engagement-insights/planned-features
-- title: Постављање је у току
-  linkLists:
-  - linkListType: how-to-guide
-    links:
-    - text: Први кораци
-      url: get-started.md
-    - text: Креирање радног простора
-      url: create-workspace.md
-    - text: Инструментализујте веб-локацију
-      url: instrument-website.md
-- title: Приказ и филтрирање извештаја
-  linkLists:
-  - linkListType: how-to-guide
-    links:
-    - text: Прикажи извештаје
-      url: view-reports.md
-    - text: Погледајте извештај о обједињеним профилима
-      url: profile-reports.md
-    - text: Коришћење сегмената циљне групе за филтрирање извештаја
-      url: integrate-audience-insights-segments.md
-- title: Анализа
-  linkLists:
-  - linkListType: how-to-guide
-    links:
-    - text: Креирање извештаја о току продаје
-      url: funnel-reports.md
-    - text: Анализа података о понашању
-      url: curate-dimensions.md
-    - text: Креирање прилагођених извештаја
-      url: custom-reports.md
-    - text: Креирање прецизираних догађаја
-      url: refined-events.md
-    - text: Извоз догађаја
-      url: export-events.md
-- title: Ресурси за програмере
-  linkLists:
-  - linkListType: reference
-    links:
-    - text: Ресурси за програмере
-      url: developer-resources.md
-    - text: Web SDK узорак
-      url: websdk-sample.md
-    - text: Напредни веб SDK сценарији
-      url: advanced-SDK-implementation.md
-    - text: Android SDK пример
-      url: get-started-android.md
-    - text: iOS SDK пример
-      url: get-started-ios.md
-- title: Администрација
-  linkLists:
-  - linkListType: how-to-guide
-    links:
-    - text: Управљајте окружењима и радним просторима
-      url: manage-environments-workspaces.md
-    - text: Повезивање са увидима у циљну групу
-      url: integrate-audience-insights-engagement-insights.md
-    - text: Управљајте колачићима и пристанком корисника
-      url: user-consent-storage.md
-    - text: Избришите и извезите личне податке
-      url: delete-export-personal-data.md
-    - text: Ограничења услуге
-      url: ../service-limits.md
+    - text: Придружите се Dynamics 365 заједници
+      url: https://go.microsoft.com/fwlink/?linkid=2073991
+    - text: Делите идеје
+      url: https://go.microsoft.com/fwlink/?linkid=2074172
+    - text: Пријавите проблем
+      url: https://go.microsoft.com/fwlink/?linkid=2079641

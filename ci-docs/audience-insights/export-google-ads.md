@@ -1,24 +1,26 @@
 ---
 title: Извезите Customer Insights податке у Google огласима
 description: Сазнајте како да конфигуришете везу и извезете у Google Ads.
-ms.date: 03/03/2021
-ms.service: customer-insights
+ms.date: 09/27/2021
 ms.subservice: audience-insights
 ms.topic: how-to
 author: pkieffer
 ms.author: philk
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: c16967bf8ea1fd02b3f991d7b7d3715a71fa8681
-ms.sourcegitcommit: 9a99e48e96dfb3d895db428f37c30ae55eea66b7
-ms.translationtype: HT
+ms.openlocfilehash: 28e2b35c5a47a025b8cdcccdb3f61c79878bf056
+ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
+ms.translationtype: MT
 ms.contentlocale: sr-Cyrl-RS
-ms.lasthandoff: 07/14/2021
-ms.locfileid: "6604295"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "8227028"
 ---
 # <a name="export-segments-to-google-ads-preview"></a>Извоз сегмената у Google Ads (верзија за преглед)
 
 Извезите сегменте обједињених профила клијената на Google Ads листу циљних група и користите их за оглашавање на Google претрази, Gmail-у, YouTube-у и Google мрежи мултимедијалног оглашавања. 
+
+> [!IMPORTANT]
+> Тренутно можете да креирате нову везу и извозите податке у Google Ads само ако већ имате одобрени токен програмера за Google Ads. Због промена смерница, ускоро ћемо ажурирати Google Ads извоз и обезбедити опцију извоза која неће захтевати токен програмера како бисмо осигурали континуитет вашег искуства и поједноставили извоз у Google Ads. Препоручујемо вам да не конфигуришете више веза са Google Ads ради лакшег преласка на нову опцију извоза.
 
 ## <a name="prerequisites-for-connection"></a>Предуслови за везу
 
@@ -32,9 +34,9 @@ ms.locfileid: "6604295"
 
 ## <a name="known-limitations"></a>Позната ограничења
 
-- До 1 милион профила по извозу у Google огласима.
+- До милион профила клијената по извозу у Google Ads.
 - Извоз у Google огласе је ограничен на сегменте.
-- Извоз сегмената са укупно 1 милион профила може трајати до 5 минута због ограничења на страни добављача. 
+- Извоз сегмената са укупно милион профила клијената може потрајати до 5 минута због ограничења на страни провајдера. 
 - Подударање у Google огласима може да потраје до 48 сати.
 
 ## <a name="set-up-connection-to-google-ads"></a>Подешавање везе са услугом Google Ads
@@ -71,7 +73,7 @@ ms.locfileid: "6604295"
 
 1. Унесите **[ID корисника за Google огласе](https://support.google.com/google-ads/answer/7558048?hl=en#:~:text=Audience%20lists%20is%20a%20section,Display%20Network%20through%20remarketing%20campaigns.)** и изаберите **Повежите се** да бисте започели повезивање са Google огласима.
 
-1. У одељку **Подударање података**, у пољу **Адреса е-поште** изаберите поље у обједињеном корисничком профилу које представља е-адресу клијента.
+1. У одељку **Подударање података**, у пољу **Е-пошта**, изаберите поље које представља е-адресу клијента.
 
 1. Изаберите сегменте које желите да извезете. У Google огласима можете укупно извести до 1 милион корисничких профила.
 

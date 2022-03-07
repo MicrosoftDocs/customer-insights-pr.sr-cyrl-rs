@@ -1,32 +1,37 @@
 ---
 title: Сегменти у увидима у циљну групу
 description: Преглед сегмената и начин креирања и управљања њима.
-ms.date: 09/30/2021
-ms.service: customer-insights
+ms.date: 11/01/2021
 ms.subservice: audience-insights
-ms.topic: how-to
+ms.topic: overview
 author: JimsonChalissery
 ms.author: jimsonc
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 6840f4bc345b0821fb2349666130b39d542878e7
-ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
-ms.translationtype: HT
+searchScope:
+- ci-customers-page
+- ci-enrichment-details
+- ci-segments
+- ci-segment-details
+- customerInsights
+ms.openlocfilehash: c58f79c2beda1083d19bd36d94549ff1a46b096e
+ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
+ms.translationtype: MT
 ms.contentlocale: sr-Cyrl-RS
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "7617393"
+ms.lasthandoff: 02/25/2022
+ms.locfileid: "8356001"
 ---
 # <a name="segments-overview"></a>Преглед сегмената
 
 Сегменти вам омогућавају да групишете клијенте на основу демографских, трансакционих или атрибута понашања. Можете да користите сегменте за циљање промотивних кампања, продајних активности и активности подршке клијената како бисте постигли своје пословне циљеве.
 
-Кориснички профили који се подударају са филтерима дефиниције сегмента називају се *члановима* сегмента. Нека [ограничења услуга](service-limits.md) се примењују.
+Кориснички профили који се подударају са филтерима дефиниције сегмента називају се *члановима* сегмента. Нека [ограничења услуга](/dynamics365/customer-insights/service-limits) се примењују.
 
 ## <a name="create-a-new-segment"></a>Креирајте нови сегмент
 
 Постоји више начина за креирање новог сегмента: 
 
-# <a name="individual-customers-b2c"></a>[Појединачни клијенти (B2C)](#tab/b2c)
+# <a name="individual-consumers-b-to-c"></a>[Појединачни потрошачи (B-to-C)](#tab/b2c)
 
 - Сложени сегмент са градитељем сегмената: [Направите своје](segment-builder.md#create-a-new-segment) 
 - Једноставни сегменти са једним оператором: [Брзи сегмент](segment-builder.md#quick-segments) 
@@ -34,7 +39,7 @@ ms.locfileid: "7617393"
 - Предлози омогућени вештачком интелигенцијом засновани на мерама или атрибутима: [Предложени сегменти за побољшање мера](suggested-segments.md) 
 - Предлози засновани на активностима: [Предложени сегменти на основу активности клијената](suggested-segments-activity.md) 
 
-# <a name="business-accounts-b2b"></a>[Пословни налози (B2B)](#tab/b2b)
+# <a name="business-accounts-b-to-b"></a>[Пословни налози (B-to-B)](#tab/b2b)
 
 - Сложени сегмент са градитељем сегмената: [Направите своје](segment-builder.md#create-a-new-segment)
 
@@ -65,8 +70,7 @@ ms.locfileid: "7617393"
 
 Можете да освежите све сегменте одједном ако изаберете **Освежите све** на страници **Сегменти**, а можете и да освежити један или више сегмената када их изаберете, па одаберете **Освежи** из опција. Алтернативно, можете конфигурисати понављајуће освежавање у одељку **Администратор** > **Систем** > **Распоред**.
 
-> [!TIP]
-> Постоји [шест врста статуса](system.md#status-types) за задатке/процесе. Уз то, већина процеса [зависи од других процеса на нижем току](system.md#refresh-policies). Можете изабрати статус процеса да бисте видели детаље о току целог посла. Након избора опције **Види детаље** за један од задатака посла пронаћи ћете додатне информације: време обраде, датум последње обраде и све грешке и упозорења повезана са задатком.
+[!INCLUDE [progress-details-include](../includes/progress-details-pane.md)]
 
 ## <a name="export-segments"></a>Извоз сегмената
 
@@ -106,4 +110,5 @@ ms.locfileid: "7617393"
 >
 >Листа је преглед одговарајућих чланова сегмента и показује првих 100 записа вашег сегмента тако да га можете брзо проценити и прегледати његове дефиниције, ако је потребно. Да бисте видели све одговарајуће записе, морате да [извезете сегмент](export-destinations.md).
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)] 
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

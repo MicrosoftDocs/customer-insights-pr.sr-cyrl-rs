@@ -1,24 +1,25 @@
 ---
-title: Извезите Customer Insights податке у SFTP хостове
+title: Извоз података о увиду купаца у СФТП домаћине (садржи видео)
 description: Сазнајте како да конфигуришете везу и извезете на SFTP локацију.
 ms.date: 03/03/2021
 ms.reviewer: mhart
-ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: b19ca6b8085846785682046f83d0ed4758269e5b98303692c703d995407ca7dd
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
-ms.translationtype: HT
+ms.openlocfilehash: 7b09da093d6332c5081da1beadc1df59f63c31d2
+ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
+ms.translationtype: MT
 ms.contentlocale: sr-Cyrl-RS
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7035479"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "8231172"
 ---
 # <a name="export-segments-and-other-data-to-sftp-preview"></a>Извоз сегмената и осталих података у SFTP (верзија за преглед)
 
 Користите податке о клијентима у независним апликацијама тако што ћете их извести на локацију протокола за безбедни пренос датотека (SFTP).
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWO94X]
 
 ## <a name="prerequisites-for-connection"></a>Предуслови за везу
 
@@ -26,6 +27,7 @@ ms.locfileid: "7035479"
 
 ## <a name="known-limitations"></a>Позната ограничења
 
+- СФТП одредишта иза заштитних зидова тренутно нису подржана. 
 - Време извожења зависи од перформанси вашег система. Препоручујемо два језгра процесора и 1 GB меморије као минималну конфигурацију вашег сервера. 
 - Извоз ентитета са до 100 милиона корисничких профила може потрајати 90 минута када се користи препоручена минимална конфигурација са два језгра процесора и 1 GB меморије. 
 

@@ -2,18 +2,17 @@
 title: Користите демографске аспекте за раздвајање података о понашању (одржавани аспекти)
 description: Користите одржаване аспекте обједињених профила да бисте омогућили својства профила клијента увида у циљну групу.
 ms.date: 07/27/2021
-ms.service: customer-insights
 ms.topic: conceptual
 author: mkisel
 ms.author: mkisel
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 50bb800c9e097d03cc6f26f79819c741ab5e8baf
-ms.sourcegitcommit: 1c396394470df8e68c2fafe3106567536ff87194
-ms.translationtype: HT
+ms.openlocfilehash: 95395e09bc0ba5ba93138957c62105f31c709e91
+ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
+ms.translationtype: MT
 ms.contentlocale: sr-Cyrl-RS
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "7461121"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "8233065"
 ---
 # <a name="use-demographic-dimensions-for-splitting-behavioral-data"></a>Користите демографске аспекте за раздвајање података о понашању
 
@@ -29,7 +28,7 @@ ms.locfileid: "7461121"
 - Окружење увида у ангажовање у којем имате податке о корисничком профилу повезане са окружењем увида у циљну групу где се креирају профили клијената. Још информација: [Креирање везе између увида у циљне групе и увида у ангажовање](integrate-audience-insights-engagement-insights.md)
 
 > [!NOTE]
-> Када креирате везу између окружења увида у циљну групу и увида у ангажовање, можда ће вам требати само подаци специфични за својства профила корисника, који могу бити корисни као димензије у увидима у ангажовање. За више информација, идите на [Омогућавање атрибута и сегмената обједињених профила увида у циљну групу](integrate-audience-insights-engagement-insights.md#enable-audience-insights-unified-profiles-attributes-and-segments).<!--note from editor: Suggested. -->
+> Када креирате везу између окружења увида у циљну групу и увида у ангажовање, можда ће вам требати само подаци специфични за својства профила корисника, који могу бити корисни као димензије у увидима у ангажовање. За више информација, идите на [Омогућавање атрибута и сегмената обједињених профила увида у циљну групу](integrate-audience-insights-engagement-insights.md#enable-audience-insights-unified-profiles-attributes-and-segments).
 
 ## <a name="create-a-new-custom-report"></a>Креирање новог прилагођеног извештаја
 

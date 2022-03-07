@@ -1,43 +1,45 @@
 ---
-title: Подаци о увиду клијената у Мицрософт Датаверсе
-description: Користите ентитете увида купаца као табеле у Мицрософт Датаверсе.
+title: Customer Insights подаци у платформи Microsoft Dataverse
+description: Користите Customer Insights ентитете као табеле у платформи Microsoft Dataverse.
 ms.date: 11/25/2021
 ms.reviewer: mhart
-ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: m-hartmann
 ms.author: wimohabb
 manager: shellyha
-ms.openlocfilehash: 6f74559b34a95ed976a4e353c2dbabe59e1a8839
-ms.sourcegitcommit: 9558ff772ee6c944fcb8db4bfc8cda13b38a1bff
-ms.translationtype: HT
+searchScope:
+- ci-system-diagnostic
+- customerInsights
+ms.openlocfilehash: 9f730f5856221592cddf34b714beeaca24c52130
+ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
+ms.translationtype: MT
 ms.contentlocale: sr-Cyrl-RS
-ms.lasthandoff: 11/29/2021
-ms.locfileid: "7866952"
+ms.lasthandoff: 02/25/2022
+ms.locfileid: "8355447"
 ---
-# <a name="work-with-customer-insights-data-in-microsoft-dataverse"></a>Рад са подацима увида клијената у Мицрософт Датаверсе
+# <a name="work-with-customer-insights-data-in-microsoft-dataverse"></a>Рад са Customer Insights подацима у платформи Microsoft Dataverse
 
-Увиди клијената пружају опцију да излазни ентитети буду доступни [у Мицрософт Датаверсе](/powerapps/maker/data-platform/data-platform-intro.md). Ова интеграција омогућава лако дељење података и прилагођени развој кроз приступ са мало кодирања / без кодирања. Излазни ентитети ће бити доступни као табеле у Датаверсе. Ове табеле омогућавају сценарије као што [су аутоматизовани токови посла Поwер Аутомате](/power-automate/getting-started), апликације са [моделима и апликације на](/powerapps/maker/model-driven-apps/)[платну](/powerapps/maker/canvas-apps/) путем Поwер Аппс. Податке можете да користите за било коју другу апликацију која се заснива на Датаверсе табеле. Тренутна примена углавном подржава проналажења где се подаци из доступних ентитета увида у циљне групе могу добити за дати ID клијента.
+Customer Insights пружа могућност омогућавања доступности излазних ентитета у платформи [Microsoft Dataverse](/powerapps/maker/data-platform/data-platform-intro.md). Ова интеграција омогућава лако дељење података и прилагођени развој кроз приступ са мало кодирања / без кодирања. Излазни ентитети биће доступни као табеле у платформи Dataverse. Ове табеле омогућавају сценарије као што су [аутоматизовани токови посла кроз Power Automate](/power-automate/getting-started), [апликације засноване на моделу](/powerapps/maker/model-driven-apps/) и [апликације са подлогом](/powerapps/maker/canvas-apps/) кроз Power Apps. Податке можете користити за било коју другу апликацију засновану на Dataverse табелама. Тренутна примена углавном подржава проналажења где се подаци из доступних ентитета увида у циљне групе могу добити за дати ID клијента.
 
-## <a name="attach-a-dataverse-environment-to-customer-insights"></a>Прилагање Датаверсе окружења уз увиде клијената
+## <a name="attach-a-dataverse-environment-to-customer-insights"></a>Прилагање Dataverse окружења за Customer Insights
 
-**Организације са постојећим Датаверсе окружењима**
+**Организације са постојећим Dataverse окружењем**
 
-Организације које већ користе Датаверсе могу [да користе једно од постојећих Датаверсе окружења када администратор корисници](create-environment.md) увиде. Обезбеђивањем УРЛ адресе Датаверсе окружењу, она се придаје њиховом новом окружењу корисници увида. Да бисте обезбедили најбоље могуће перформансе, кориснички увиди и Датаверсе окружења морају бити хостована у истом региону.
+Организације које већ користе Dataverse могу да [користи једно од својих постојећих Dataverse окружења](create-environment.md) када администратор постави увиде у циљне групе. Навођењем URL адресе за Dataverse окружење, везује се за њихово ново окружење за увиде у циљну групу. Да би се обезбедиле најбоље могуће перформансе, Customer Insights и Dataverse окружења морају бити хостовани у истом региону.
 
 **Нова организација**
 
-Ако приликом подешавања увида купаца креирате нову организацију, аутоматски ћете добити нови Датаверсе окружења.
+Ако направите нову организацију када подесите Customer Insights, аутоматски ћете добити ново Dataverse окружење.
 
 > [!NOTE]
-> Ако ваше организације већ Датаверсе у свом закупу, важно [је да запамтите да Датаверсе окружења контролише администратор](/power-platform/admin/control-environment-creation.md) . На пример, ако подешавате ново окружење за корисници увиде са организационим налогом, а администратор је онемогућио креирање Датаверсе пробних окружења за све осим за администраторе, не можете да креирате ново пробно окружење.
+> Ако ваше организације већ користе Dataverse код својих закупаца, важно је да упамтите да [креирање Dataverse окружења контролише администратор](/power-platform/admin/control-environment-creation.md). На пример, ако постављате ново окружење за увиде у циљну групу са својим организационим налогом, а администратор је онемогућио креирање Dataverse пробних окружења за све осим администратора, не можете креирати ново пробно окружење.
 > 
-> Пробна Датаверсе окружења креирана у увидима клијената имају 3 ГБ простора за складиштење које се неће рачунати у односу на укупне капацитете који имају право на станара. Плаћене претплате добијају Датаверсе од 15 ГБ за базу података и 20 ГБ за складиштење датотека.
+> Dataverse пробна окружења креирана у услузи Customer Insights имају 3 GB простора за складиштење који се неће рачунати у укупни капацитет који има право на закупца. Плаћене претплате добијају Dataverse право од 15 GB за базу података и 20 GB за складиштење датотека.
 
 ## <a name="output-entities"></a>Излазни ентитети
 
-Неки излазни ентитети из корисници доступни су као табеле у Датаверсе. Одељци у наставку описују очекивану шему ових табела.
+Неки излазни ентитети из увида у циљне групе доступни су као табеле у услузи Dataverse. Одељци у наставку описују очекивану шему ових табела.
 
 - [CustomerProfile](#customerprofile)
 - [AlternateKey](#alternatekey)
@@ -61,7 +63,7 @@ ms.locfileid: "7866952"
 |DataSourceName    |String         | Назив извора података. На пример: `datasource5`        |
 |EntityName        | String        | Назив ентитета у увидима у циљну групу. На пример: `contact1`        |
 |AlternateValue    |String         |Алтернативни ID који се пресликава на ID клијента. Пример: `cntid_1078`         |
-|KeyRing           | Текст у више редова        | JSON вредност  </br> Узорак : [{"датаСоурцеНаме":" datasource5 ",</br>"entityName":" contact1",</br>"preferredKey":" cntid_1078",</br>"кеyс ":[" cntid_1078"]}]       |
+|KeyRing           | Текст у више редова        | JSON вредност  </br> Пример: [{"dataSourceName":" datasource5 ",</br>"entityName":" contact1",</br>"preferredKey":" cntid_1078",</br>"keys":[" cntid_1078"]}]       |
 |CustomerId         | String        | ID обједињеног профила клијента.         |
 |AlternateKeyId     | GUID         |  AlternateKey одређени GUID заснован на параметру msdynci_identifier       |
 |msdynci_identifier |   String      |   `DataSourceName|EntityName|AlternateValue`  </br> Пример: `testdatasource|contact1|cntid_1078`    |

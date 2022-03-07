@@ -4,17 +4,16 @@ metadata:
   author: m-hartmann
   description: Пронађите релевантне чланке да бисте започели са садржајем помоћи.
   ms.author: mhart
-  ms.date: 10/29/2020
-  ms.service: customer-insights
+  ms.date: 03/02/2022
   ms.topic: landing-page
-  ms.openlocfilehash: e9c4aa3347d6f477751804790bd3dc9b20eb5dbe
-  ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
-  ms.translationtype: HT
+  ms.openlocfilehash: 5efa266dfe8d70812f4c668b04cee2f93f206f7b
+  ms.sourcegitcommit: 1946d7af0bd2ca216885bec3c5c95009996d9a28
+  ms.translationtype: MT
   ms.contentlocale: sr-Cyrl-RS
-  ms.lasthandoff: 03/15/2021
-  ms.locfileid: "5598489"
+  ms.lasthandoff: 02/25/2022
+  ms.locfileid: "8350487"
 title: Документација за Dynamics 365 Customer Insights
-summary: Пронађите корисне ресурсе да бисте започели и научили о функцијама и могућностима услуге Customer Insights.
+summary: Пронађите корисне ресурсе за почетак и сазнајте о функцијама и могућностима услуге Customer Insights.
 landingContent:
 - title: Упознајте Customer Insights
   linkLists:
@@ -23,19 +22,41 @@ landingContent:
     - text: Преглед услуге Customer Insights
       url: overview.md
     - text: Планови издавања
-      url: /dynamics365-release-plan/2020wave2/customer-data-platform/dynamics365-customer-insights/planned-features
-    - text: Приступ окружењу
-      url: https://home.ci.ai.dynamics.com/
-- title: Започните са увидима о корисницима
+      url: /dynamics365/release-plans/
+    - text: Откријте CDP
+      url: https://dynamics.microsoft.com/ai/customer-insights/
+  - linkListType: learn
+    links:
+    - text: Путања учења увида клијената
+      url: /learn/paths/build-customer-insights/
+- title: Први кораци са услугом Customer Insights
   linkLists:
   - linkListType: get-started
     links:
     - text: Уписивање за пробну верзију
       url: https://dynamics.microsoft.com/en-us/get-started/?appname=customerinsights
-    - text: Шта је ново
+    - text: Шта је ново у увидима у циљну групу
       url: audience-insights/whats-new-audience-insights.md
-    - text: Документација о увидима о корисницима
-      url: audience-insights/index.yml
+    - text: Водич за брзи почетак
+      url: audience-insights/get-started.md
+  - linkListType: learn
+    links:
+    - text: Започните
+      url: /learn/modules/get-started-customer-data-platform/
+- title: Администрирање услуге Customer Insights
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Конфигурисање система
+      url: audience-insights/system.md
+    - text: Дефинисање дозвола корисника
+      url: audience-insights/permissions.md
+    - text: Управљање са више окружења
+      url: audience-insights/manage-environments.md
+  - linkListType: learn
+    links:
+    - text: Администрирање услуге Customer Insights
+      url: /learn/modules/administer-customer-data-platform/
 - title: Ступите у контакт
   linkLists:
   - linkListType: overview
@@ -46,63 +67,3 @@ landingContent:
       url: https://go.microsoft.com/fwlink/?linkid=2074172
     - text: Пријавите проблем
       url: https://go.microsoft.com/fwlink/?linkid=2079641
-- title: Упутства за увиде о корисницима
-  linkLists:
-  - linkListType: tutorial
-    links:
-    - text: Направите ново окружење
-      url: audience-insights/home.md
-    - text: Креирајте уједначени профил клијента
-      url: /learn/modules/unified-customer-profile/
-    - text: Рад са апликацијом
-      url: /learn/modules/working-with-customer-insights/
-- title: Извоз података увида о корисницима
-  linkLists:
-  - linkListType: how-to-guide
-    links:
-    - text: Подешавање одредишта извоза
-      url: audience-insights/export-destinations.md
-    - text: Картице клијената у Dynamics 365 апликацијама
-      url: audience-insights/customer-card-add-in.md
-    - text: Power BI конектор
-      url: audience-insights/export-power-bi.md
-- title: Администрирање увида о корисницима
-  linkLists:
-  - linkListType: how-to-guide
-    links:
-    - text: Конфигурисање система
-      url: audience-insights/system.md
-    - text: Дефинисање дозвола корисника
-      url: audience-insights/permissions.md
-    - text: Управљање са више окружења
-      url: audience-insights/manage-environments.md
-- title: Основни подаци о ангажовањима (верзија за преглед)
-  linkLists:
-  - linkListType: overview
-    links:
-    - text: Преглед могућности
-      url: engagement-insights/overview.md
-    - text: Одредбе и концепти
-      url: engagement-insights/glossary.md
-    - text: Први кораци
-      url: engagement-insights/get-started.md
-- title: Извештаји за увиди у ангажовање (верзија за преглед)
-  linkLists:
-  - linkListType: how-to-guide
-    links:
-    - text: Прикажи извештаје
-      url: engagement-insights/view-reports.md
-    - text: Креирање прилагођених извештаја
-      url: engagement-insights/custom-reports.md
-    - text: Погледајте извештај о обједињеним профилима
-      url: engagement-insights/profile-reports.md
-- title: Догађаји за увиде у ангажовање (верзија за преглед)
-  linkLists:
-  - linkListType: how-to-guide
-    links:
-    - text: Направите истанчане догађаје
-      url: engagement-insights/refined-events.md
-    - text: Извоз догађаја
-      url: engagement-insights/export-events.md
-    - text: Избришите и извезите личне податке
-      url: engagement-insights/delete-export-personal-data.md
