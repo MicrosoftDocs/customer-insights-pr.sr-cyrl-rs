@@ -2,19 +2,18 @@
 title: Анализа сентимента за повратне информације корисника
 description: Сазнајте како да користите модел анализе сентимента за повратне информације клијената у Dynamics 365 Customer Insights.
 ms.date: 12/23/2021
-ms.service: customer-insights
 ms.subservice: audience-insights
 ms.reviewer: mhart
 ms.topic: conceptual
 author: wmelewong
 ms.author: wameng
 manager: shellyha
-ms.openlocfilehash: 8a4473c1c395bbcf8efa2bfa24cddb82e1784279
-ms.sourcegitcommit: 15ec8c5f54242feda9489e7665726ec5e0983dc9
-ms.translationtype: HT
+ms.openlocfilehash: b06613b00a512a31479f9d30d539a010e17d33ba
+ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
+ms.translationtype: MT
 ms.contentlocale: sr-Cyrl-RS
-ms.lasthandoff: 01/19/2022
-ms.locfileid: "8008783"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "8231483"
 ---
 # <a name="analyze-sentiment-in-customer-feedback-preview"></a>Анализирај сентимент у повратним информацијама клијената (Преглед)
 
@@ -145,7 +144,7 @@ ms.locfileid: "8008783"
 
 - **Дистрибуција купаца по сентименталном резултату** : Купци се категоришу у негативне, неутралне и позитивне групе на основу оцена сентимента. Задржите показивач изнад решетака у хистограму да бисте видели број купаца и просечну оцену сентимента у свакој групи. Ове податке вам могу помоћи да [креирате сегменте клијената на](segments.md) основу њихових оцена сентимента.  
 
-  :::image type="content" source="media/distribution-customer-sentiment.png" alt-text="тракасти графикон показује осећање муштерија у три сентименталне групе.":::
+  :::image type="content" source="media/distribution-customer-sentiment.png" alt-text="тракасти графикон показује осећај купца у три сентименталне групе.":::
 
 - **Просечна оцена сентимента током времена** : Сентимент купца се може временом променити. Обезбеђујемо трендове у осећањима ваших клијената за временски опсег ваших података. Овај приказ вам може помоћи да процените ефекат сезонских промоција, лансирања производа или других временских интервенција на сентимент купца. Погледајте графикон тако што ћете изабрати годину интересовања из падајућег менија. 
 
