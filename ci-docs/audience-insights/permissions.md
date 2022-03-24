@@ -1,7 +1,7 @@
 ---
 title: Управљање дозволама корисника
 description: Сазнајте више о дозволама и улогама корисника.
-ms.date: 03/25/2021
+ms.date: 02/09/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: conceptual
@@ -12,12 +12,12 @@ searchScope:
 - ci-permissions
 - ci-system-security
 - customerInsights
-ms.openlocfilehash: a3d21d55d86950953611967bb66712312eb42b4b
-ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
-ms.translationtype: HT
+ms.openlocfilehash: 85e1f4f93ac0e99ce6634dfc8fceab0c9a14885e
+ms.sourcegitcommit: 50d32a4cab01421a5c3689af789e20857ab009c4
+ms.translationtype: MT
 ms.contentlocale: sr-Cyrl-RS
-ms.lasthandoff: 02/25/2022
-ms.locfileid: "8355955"
+ms.lasthandoff: 03/03/2022
+ms.locfileid: "8376756"
 ---
 # <a name="user-permissions"></a>Корисничке дозволе
 
@@ -48,7 +48,7 @@ ms.locfileid: "8355955"
 - Управљајте конфигурацијом и обогатите корисничке профиле на страници **Обогаћивање** (само за обогаћивање прве стране).
 - Управљајте и креирајте извозе на основу веза које се деле са сарадницима. [Сазнајте више о томе како администратори дозвољавају сарадницима да користе везу за извоз](connections.md#allow-contributors-to-use-a-connection-for-exports).
 
-## <a name="administrator"></a>Администратор
+## <a name="admin"></a>Администрација
 
 - Све дозволе су доступне сараднику.
 - Промените подешавања на страници **Систем**, укључујући радни језик и распоред освежавања за ваше системске процесе.
@@ -60,6 +60,12 @@ ms.locfileid: "8355955"
 - Инсталирајте и користите **Додатак картице Клијент**.
 - Додајте и користите **Power Apps конектор**.
 - Омогућавање употребе [Customer Insights API-ја](apis.md).
+- [Доделите власништво над окружењем](manage-environments.md#change-the-owner-of-an-environment) другом администратору.
+
+## <a name="admin-owner"></a>Администратор (власник)
+
+- Све дозволе доступне администратору.
+- [Успоставите почетне вредности и](manage-environments.md#reset-an-existing-environment) избришите окружење.
 
 ## <a name="assign-roles-and-permissions"></a>Додељивање улога и дозвола
 

@@ -13,12 +13,12 @@ searchScope:
 - ci-merge
 - ci-map
 - customerInsights
-ms.openlocfilehash: 3c0dd9c417e569ed37d8122c637072893732418a
-ms.sourcegitcommit: bb1f9e96023490ab340c114f54200ab4dd48da78
-ms.translationtype: HT
+ms.openlocfilehash: ab4ab0dba1bd91b1893cd4b16b8d51381d5b6ef8
+ms.sourcegitcommit: 50d32a4cab01421a5c3689af789e20857ab009c4
+ms.translationtype: MT
 ms.contentlocale: sr-Cyrl-RS
-ms.lasthandoff: 03/02/2022
-ms.locfileid: "8372645"
+ms.lasthandoff: 03/03/2022
+ms.locfileid: "8376940"
 ---
 # <a name="match-entities"></a>Подударање ентитета
 
@@ -184,6 +184,8 @@ ms.locfileid: "8372645"
 ## <a name="include-enriched-entities-preview"></a>Укључи обогаћене ентитете (преглед)
 
 Ако сте обогатили ентитете на извор података, изаберите их пре покретања процеса подударања. Обогаћени ентитети могу да побољшају резултате уједињења. Више информација потражите у чланку [Обогаћивање извора података](data-sources-enrichment.md). 
+
+Обогаћени ентитет садржи оригиналне извор података поља и обогаћена поља. Дакле, ако одаберете да радите са обогаћеним ентитетом, на постојећу конфигурацију неће утицати. Међутим, можда ћете морати да ажурирате правила подударања да бисте уместо тога користили обогаћена поља.
 
 1. Идите **на ДатаУнифyМатцх** > **·** > **и** изаберите **Користи обогаћене** ентитете на врху странице.
 

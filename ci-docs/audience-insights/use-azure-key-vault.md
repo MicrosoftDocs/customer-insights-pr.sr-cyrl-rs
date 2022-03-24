@@ -11,12 +11,12 @@ manager: shellyha
 searchScope:
 - ci-system-security
 - customerInsights
-ms.openlocfilehash: 5b22c1464b3f089551f485f98d6d93840ff77136
-ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
-ms.translationtype: HT
+ms.openlocfilehash: 418575f724090628da8bd01e2569a4cb9e646337
+ms.sourcegitcommit: 50d32a4cab01421a5c3689af789e20857ab009c4
+ms.translationtype: MT
 ms.contentlocale: sr-Cyrl-RS
-ms.lasthandoff: 02/25/2022
-ms.locfileid: "8355909"
+ms.lasthandoff: 03/03/2022
+ms.locfileid: "8376526"
 ---
 # <a name="bring-your-own-azure-key-vault-preview"></a>Донесите свој властити Azure Key Vault (верзија за преглед)
 
@@ -31,7 +31,7 @@ ms.locfileid: "8355909"
 
 - Имате активну Azure претплату.
 
-- Имате улогу [администратора](permissions.md#administrator) у увидима у циљну групу. Сазнајте више о [корисничким дозволама у увидима у циљну групу](permissions.md#assign-roles-and-permissions).
+- Имате улогу [администратора](permissions.md#admin) у увидима у циљну групу. Сазнајте више о [корисничким дозволама у увидима у циљну групу](permissions.md#assign-roles-and-permissions).
 
 - Имате улоге [Сарадник](/azure/role-based-access-control/built-in-roles#contributor) и [Администратор корисничког приступа](/azure/role-based-access-control/built-in-roles#user-access-administrator) у безбедносном складишту или групи ресурса којој припада безбедносно складиште. За још информација идите на [Додавање или уклањање Azure додела улога користећи Azure портал](/azure/role-based-access-control/role-assignments-portal). Ако немате улогу администратора корисничког приступа у безбедносном складишту, морате засебно успоставити дозволе контроле приступа засноване на улогама за принципала услуге Azure за Dynamics 365 Customer Insights. Пратите кораке да бисте [користили принципала услуге Azure](connect-service-principal.md) за безбедносно складиште које треба повезати.
 

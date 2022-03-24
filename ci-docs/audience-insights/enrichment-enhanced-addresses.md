@@ -14,16 +14,18 @@ searchScope:
 - ci-enrichments
 - ci-enrichment-wizard
 - customerInsights
-ms.openlocfilehash: 067757019078d3a46b224ba259d2d097dfbbe381
-ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
-ms.translationtype: HT
+ms.openlocfilehash: 2ab550e83a4969c1f547e66bcbf6ddb96d7789df
+ms.sourcegitcommit: 50d32a4cab01421a5c3689af789e20857ab009c4
+ms.translationtype: MT
 ms.contentlocale: sr-Cyrl-RS
-ms.lasthandoff: 02/25/2022
-ms.locfileid: "8353654"
+ms.lasthandoff: 03/03/2022
+ms.locfileid: "8376340"
 ---
 # <a name="enrichment-of-customer-profiles-with-enhanced-addresses"></a>Обогаћивање корисничких профила са побољшаним адресама
 
 Адресе у вашим подацима могу бити неструктуриране, непотпуне или нетачне. Користите Microsoft моделе за нормализацију и обогаћивање адреса у [формату Common Data Model](/common-data-model/schema/core/applicationcommon/address) ради веће тачности и увида.
+
+Такође можете да [обогатите адресе на изворима података да](data-sources-enrichment.md) бисте побољшали тачност подударања у процесу уједињења података. 
 
 ## <a name="how-we-enhance-addresses"></a>Како побољшавамо адресе
 
