@@ -8,12 +8,12 @@ ms.topic: how-to
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: ec286bb6a90fb4d18e89caf9166aa659b29d668e
-ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
+ms.openlocfilehash: d56ed779c342bb0855ee84d949f8d3ca604b92c1
+ms.sourcegitcommit: a5e4503cf9ce0cea562bab9389748d8ca1451f9d
 ms.translationtype: MT
 ms.contentlocale: sr-Cyrl-RS
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "8232009"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "8487533"
 ---
 # <a name="export-segments-to-marketo-preview"></a>Извоз сегмената у Marketo (верзија за преглед)
 
@@ -63,7 +63,7 @@ ms.locfileid: "8232009"
 
 1. Унесите **[ID Marketo листе](https://docs.marketo.com/display/public/DOCS/Understanding+Static+Lists)**. ID листе је чисто нумеричка вредност. На пример, ако је ваш ID Marketo листе ST12345A7, уклоните знак пре и после бројева и унесите `12345`. 
 
-1. У одељку **Подударање података**, у пољу **Е-пошта**, изаберите поље које представља е-адресу клијента. 
+1. У одељку **Подударање** података изаберите најмање једно поље које представља е-адресу купца или Маркето ИД купца. 
 
 1. По жељи можете да извезете **Име**, **Презиме**, **Град**, **Држава** и **Земља/регион** да бисте креирали персонализованије е-поруке. Изаберите **Додај атрибут** за мапирање ових поља.
 

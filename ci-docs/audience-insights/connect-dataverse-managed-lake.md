@@ -1,7 +1,7 @@
 ---
 title: Повезивање са табелама у услузи Microsoft Dataverse
 description: Увоз података из Microsoft Dataverse управљаног језера података.
-ms.date: 12/06/2021
+ms.date: 03/18/2022
 ms.subservice: audience-insights
 ms.topic: how-to
 author: adkuppa
@@ -11,16 +11,14 @@ ms.reviewer: mhart
 searchScope:
 - ci-dataverse
 - customerInsights
-ms.openlocfilehash: 8e11b60295fa5c187b1ac4877fb347e2d9bb41a1
-ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
+ms.openlocfilehash: 81412ea8259e690eb839676d82ab31847854a97e
+ms.sourcegitcommit: a8e99cf8b23ccc00d76c1dee22afd808a160a5c8
 ms.translationtype: MT
 ms.contentlocale: sr-Cyrl-RS
-ms.lasthandoff: 02/25/2022
-ms.locfileid: "8354160"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "8464117"
 ---
 # <a name="connect-to-data-in-a-microsoft-dataverse-managed-data-lake"></a>Повежите се са подацима у Microsoft Dataverse управљаном језеру података
-
-
 
 Овај чланак пружа информације о томе како Dataverse корисници могу брзо да се повежу са аналитичким ентитетима у управљаном Microsoft Dataverse језеру. 
 
@@ -29,7 +27,8 @@ ms.locfileid: "8354160"
 
 ## <a name="important-considerations"></a>Важна разматрања
 
-Подаци ускладиштени у мрежним услугама, као што је Azure Data Lake Storage, могу се складиштити на локацији различитој од оне на којој се подаци обрађују или складиште у услузи Dynamics 365 Customer Insights.Увозом или повезивањем са подацима ускладиштеним у услугама на мрежи слажете се да се подаци могу преносити и складиштити са програмом Dynamics 365 Customer Insights .  [Сазнајте више у Мицрософт центру за поузданост](https://www.microsoft.com/trust-center).
+1. Подаци ускладиштени у мрежним услугама, као што је Azure Data Lake Storage, могу се складиштити на локацији различитој од оне на којој се подаци обрађују или складиште у услузи Dynamics 365 Customer Insights.Увозом или повезивањем са подацима ускладиштеним у услугама на мрежи слажете се да се подаци могу преносити и складиштити са програмом Dynamics 365 Customer Insights .  [Сазнајте више у Мицрософт центру за поузданост](https://www.microsoft.com/trust-center).
+2. Видљиви Dataverse су само ентитети [са омогућеним](/power-platform/admin/enable-change-tracking-control-data-synchronization) праћењем промена. Ови ентитети се могу извести у језеро са подацима Dataverse којим се управља и користити у увидима купаца. Табеле без оквира Dataverse подразумевано имају омогућено праћење промена. Потребно је да укључите праћење промена за прилагођене табеле. Да бисте проверили да Dataverse ли је табела омогућена за праћење промена, идите на ДатаТаблес [Power Apps](https://make.powerapps.com) > **·** > **·**. Пронађите табелу која вас интересује и изаберите је. Идите на **опције** > **"ПоставкеАдванцед" и прегледајте** поставку **Праћења** промена.
 
 ## <a name="connect-to-a-dataverse-managed-lake"></a>Повежите се са Dataverse управљаним језером
 
