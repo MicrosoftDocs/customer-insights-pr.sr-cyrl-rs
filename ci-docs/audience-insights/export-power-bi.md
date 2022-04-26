@@ -8,12 +8,12 @@ ms.topic: how-to
 author: stefanie-msft
 ms.author: sthe
 manager: shellyha
-ms.openlocfilehash: dccc069a355725bae09c1fece9292b9aee374e6d
-ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
-ms.translationtype: HT
+ms.openlocfilehash: 06c5bed74b82f9ae2a764a2eb363348e0edab531
+ms.sourcegitcommit: 4b2ad63aa7a4d4f31b573870bccbc40befe5f8fd
+ms.translationtype: MT
 ms.contentlocale: sr-Cyrl-RS
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "8225543"
+ms.lasthandoff: 04/07/2022
+ms.locfileid: "8552074"
 ---
 # <a name="connector-for-power-bi-preview"></a>Конектор за Power BI (преглед)
 
@@ -72,6 +72,6 @@ Customer Insights конектор за Power BI је дизајниран да 
 
 Приликом учитавања ентитета који садрже поља са форматом датума попут ММ/ДД/ГГГГ, можете наићи на грешке због неусклађених формата за локални стандард. До овог неподударања долази када је Power BI Desktop датотека постављена на неки други локални стандард осим на енглеског (Сједињене Државе), јер се поља датума у о циљној групи чувају у формату за САД.
 
-Power BI Desktop датотека има једно подешавање локалног стандарда, која се примењује при преузимању података. Да бисте исправно протумачили ова поља датума, поставите локални стандард .BPI датотеке на енглески (Сједињене Државе). [Сазнајте како да промените локални стандард Power BI Desktop датотеке](/power-bi/fundamentals/supported-languages-countries-regions.md#choose-the-locale-for-importing-data-into-power-bi-desktop).
+Power BI Desktop датотека има једно подешавање локалног стандарда, која се примењује при преузимању података. Да бисте исправно протумачили ова поља датума, поставите локални стандард .BPI датотеке на енглески (Сједињене Државе). [Сазнајте како да промените локални стандард Power BI Desktop датотеке](/power-bi/fundamentals/supported-languages-countries-regions#choose-the-language-or-locale-of-power-bi-desktop).
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
