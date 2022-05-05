@@ -8,38 +8,23 @@ author: JimsonChalissery
 ms.author: jimsonc
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 9bf8f03b785fb3035e3fc979a3304d4e98fd8d28
-ms.sourcegitcommit: 1946d7af0bd2ca216885bec3c5c95009996d9a28
+ms.openlocfilehash: e2e7fc3033c25646693831d4c4c800d84ae6d6da
+ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
 ms.translationtype: MT
 ms.contentlocale: sr-Cyrl-RS
-ms.lasthandoff: 02/25/2022
-ms.locfileid: "8350425"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8641780"
 ---
-# <a name="service-limits-in-customer-insights-capabilities"></a>Ограничења услуга у могућностима услуге Customer Insights
+# <a name="service-limits-in-customer-insights"></a>Ограничења услуге у увидима клијената
 
 Овај чланак описује уграђена ограничења за услугу Customer Insights, која су дизајнирана да осигурају поузданост и стабилност услуге. Сви захтеви за промене могу се упутити преко [форума идеја](https://go.microsoft.com/fwlink/?linkid=2074172). 
 
-## <a name="audience-insights"></a>Увиди у циљну групу
+## <a name="customer-insights"></a>Customer Insights
 
 | Обласни графикон  | Ограничења  | Белешке |
 |-------------|---------------------------------------------------------------------|---------------------------------------------------------------------|
-| Сегменти, мере и предвиђања | 300  | Укупан број [сегмената](audience-insights/segments.md), [мера и](audience-insights/measures.md) предвиђања [заједно](audience-insights/predictions.md) не може да премаши 300.  |
-| Релације | 20 нивоа дубине у односима у путањама ентитета. | Приликом креирања [сегмената](audience-insights/segments.md) или [мера](audience-insights/measures.md) користећи интерфејс за израду, путање ентитета могу имати до 20 корака односа између почетног ентитета и циљног ентитета.  |
+| Сегменти, мере и предвиђања | 300  | Укупан број [сегмената](segments.md), [мера и](measures.md) предвиђања [заједно](predictions.md) не може да премаши 300.  |
+| Релације | 20 нивоа дубине у односима у путањама ентитета. | Приликом креирања [сегмената](segments.md) или [мера](measures.md) користећи интерфејс за израду, путање ентитета могу имати до 20 корака односа између почетног ентитета и циљног ентитета.  |
 
-<!--
-## Engagement insights
 
-### Workspace and event quotas
-
-Engagement insights is a highly scalable application that can support millions of events per second. During public preview, events have a volume threshold. There's also a limit to the number of workspaces in an organization.
-
-### Engagement insights limits
-
-- Maximum event volume per workspace  = 100 events per second
-
-- Maximum number of workspaces per organization = 100
-
-When events exceed the threshold, it can lead to loss of data in reports based on those events. You can [contact support](https://go.microsoft.com/fwlink/?linkid=2145734) to request a volume increase before you exceed limits. We'll work with you to determine your need for a volume increase and support your request.
--->
-
-[!INCLUDE[footer-include](includes/footer-banner.md)]
+[!INCLUDE [footer-include](includes/footer-banner.md)]

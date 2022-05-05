@@ -2,6 +2,8 @@
   href: index.yml
 - name: Преглед производа
   href: overview.md
+- name: Нове и ажуриране функције
+  href: whats-new-customer-insights.md
 - name: Каталог за учење
   items:
     - name: Започните
@@ -10,7 +12,7 @@
       href: /learn/modules/ingest-data-customer-insights/
     - name: Креирајте уједначени кориснички профил
       href: /learn/modules/unified-customer-profile/
-    - name: Рад са корисници увидима
+    - name: Рад са увидима клијената
       href: /learn/modules/working-with-customer-insights/
     - name: Обогатите податке и направите предвиђања
       href: /learn/modules/enrich-data/
@@ -26,266 +28,260 @@
       href: trial-FAQ.md
 - name: Приступ окружењу
   href: 'https://home.ci.ai.dynamics.com/'
-- name: Увиди у циљну групу
+- name: Започните
   items:
-    - name: Чвориште помоћи
-      href: audience-insights/index.yml
-    - name: Преглед могућности
-      href: audience-insights/overview.md
-    - name: Нове и ажуриране функције
-      href: audience-insights/whats-new-audience-insights.md
-    - name: Започните
+    - name: Водич за брзи почетак
+      href: get-started.md
+    - name: Започните са лиценцом која се плаћа
+      href: paid-license.md
+    - name: Креирајте ново окружење
+      href: create-environment.md
+    - name: Истражите увиде клијената
+      href: home.md
+    - name: Рад са ознакама и колонама
+      href: work-with-tags-columns.md
+    - name: Рад са пословним налозима
+      href: work-with-business-accounts.md
+    - name: Интегрисање са Дyнамицс 365 маркетингом
+      href: marketing-get-started.md
+- name: Извори података
+  items:
+    - name: Преглед извора података
+      href: data-sources.md
+    - name: Додавање извора података путем линија Power Query спајања
+      href: connect-power-query.md
+    - name: Додајте Common Data Model фасциклу као извор података
+      href: connect-common-data-model.md
+    - name: Додавање Dataverse управљано језеро података
+      href: connect-dataverse-managed-lake.md
+    - name: Додавање услуге Azure Synapse Analytics
+      href: connect-synapse.md
+    - name: Обогаћивање извора података
+      href: data-sources-enrichment.md
+    - name: Постепено освежавање за изворе података
+      href: incremental-refresh-data-sources.md
+    - name: Унос података у реалном времену
+      href: real-time-data-ingestion.md
+- name: Уједначавање података
+  items:
+    - name: Преглед уједначавања података
+      href: data-unification.md
+    - name: Ентитети и атрибути мапе
+      href: map-entities.md
+    - name: Подударање ентитета
+      href: match-entities.md
+    - name: Обједињавање ентитета
+      href: merge-entities.md
+- name: Обогаћивање података
+  items:
+    - name: Обогаћивање корисничких профила
+      href: enrichment-hub.md
+    - name: Брендови и интересовања
+      href: enrichment-microsoft.md
+    - name: Побољшане адресе
+      href: enrichment-enhanced-addresses.md
+    - name: Побољшани подаци о предузећу
+      href: enrichment-enhanced-company-data.md
+    - name: Обогаћивање са решењем Azure Maps
+      href: enrichment-azure-maps.md
+    - name: Обогатите са Дун &амп; Брадстреет
+      href: enrichment-dnb.md
+    - name: Обогатите уз HERE Technologies
+      href: enrichment-here.md
+    - name: Обогаћивање уз Leadspace
+      href: enrichment-leadspace.md
+    - name: Обогатите ЛивеРамп-ом
+      href: enrichment-liveramp.md
+    - name: Обогаћивање уз Experian
+      href: enrichment-experian.md
+    - name: Обогатите подацима Office 365
+      href: enrichment-office.md
+    - name: Обогаћивање уз SFTP прилагођени увоз
+      href: enrichment-SFTP-custom-import.md
+- name: Обједињени профили
+  items:
+    - name: Преглед уједначених корисничких профила
+      href: customer-profiles.md
+    - name: Филтрирање уједначених корисничких профила
+      href: search-filter-index.md
+    - name: Дефинисање активности купаца
+      href: activities.md
+- name: Сегменти
+  items:
+    - name: Преглед сегмената
+      href: segments.md
+    - name: Креирање сегмената
+      href: segment-builder.md
+    - name: Предложени сегменти засновани на мерама
+      href: suggested-segments.md
+    - name: Предложени сегменти засновани на активности
+      href: suggested-segments-activity.md
+    - name: Добијте увид у сегменте
+      href: segment-insights.md
+    - name: Пронађи сличне клијенте
+      href: find-similar-customer-segments.md
+- name: Мере
+  items:
+    - name: Преглед мера
+      href: measures.md
+    - name: Креирање нове мере
+      href: measure-builder.md
+    - name: Коришћење предлошка мере
+      href: measure-templates.md
+- name: Предвиђања
+  items:
+    - name: Предвиђање података уз помоћ вештачке интелигенције
       items:
-        - name: Водич за брзи почетак
-          href: audience-insights/get-started.md
-        - name: Започните са лиценцом која се плаћа
-          href: paid-license.md
-        - name: Креирајте ново окружење
-          href: audience-insights/create-environment.md
-        - name: Истражите увиде у циљну групу
-          href: audience-insights/home.md
-        - name: Рад са ознакама и колонама
-          href: audience-insights/work-with-tags-columns.md
-        - name: Рад са пословним налозима
-          href: audience-insights/work-with-business-accounts.md
-    - name: Извори података
+        - name: Преглед модела предвиђања
+          href: predictions-overview.md
+        - name: Предвидите трајну вредност клијента (CLV)
+          href: predict-customer-lifetime-value.md
+        - name: Предвидите препоруке за производе
+          href: predict-product-recommendation.md
+        - name: Предвиђање губитка претплата
+          href: predict-subscription-churn.md
+        - name: Предвиђање губитка трансакција
+          href: predict-transactional-churn.md
+        - name: Анализа сентимента у повратним информацијама клијената
+          href: sentiment-analysis.md
+        - name: Коришћење прилагођених модела из Azure машинског учења
+          href: custom-models.md
+        - name: Допуњавање делимично недостајућих података
+          href: predictions.md
+    - name: Примери водича
       items:
-        - name: Преглед извора података
-          href: audience-insights/data-sources.md
-        - name: Додавање извора података путем линија Power Query спајања
-          href: audience-insights/connect-power-query.md
-        - name: Додајте Common Data Model фасциклу као извор података
-          href: audience-insights/connect-common-data-model.md
-        - name: Додавање Dataverse управљано језеро података
-          href: audience-insights/connect-dataverse-managed-lake.md
-        - name: Додавање услуге Azure Synapse Analytics
-          href: audience-insights/connect-synapse.md
-        - name: Обогаћивање извора података
-          href: audience-insights/data-sources-enrichment.md
-        - name: Постепено освежавање за изворе података
-          href: audience-insights/incremental-refresh-data-sources.md
-        - name: Унос података у реалном времену
-          href: audience-insights/real-time-data-ingestion.md
-    - name: Уједначавање података
+        - name: Пример водича за превиђање трајне вредности клијента
+          href: sample-guide-predict-clv.md
+        - name: Пример водича за предвиђање губитка претплата
+          href: sample-guide-predict-subscription-churn.md
+        - name: Пример водича за предвиђање губитка трансакција
+          href: sample-guide-predict-transactional-churn.md
+        - name: Пример водича за предвиђање препорука производа
+          href: sample-guide-predict-product-recommendation.md
+        - name: Експерименти са Azure машинским учењем
+          href: azure-machine-learning-experiments.md
+    - name: Управљање предвиђањима
+      href: manage-predictions.md
+    - name: Креирање сегмената заснованих на предвиђањима
+      href: prediction-based-segment.md
+- name: Опције извоза
+  items:
+    - name: Извоз
       items:
-        - name: Преглед уједначавања података
-          href: audience-insights/data-unification.md
-        - name: Ентитети и атрибути мапе
-          href: audience-insights/map-entities.md
-        - name: Подударање ентитета
-          href: audience-insights/match-entities.md
-        - name: Обједињавање ентитета
-          href: audience-insights/merge-entities.md
-    - name: Обогаћивање података
+        - name: Преглед извоза
+          href: export-destinations.md
+        - name: Активна кампања
+          href: export-active-campaign.md
+        - name: AdRoll
+          href: export-adroll.md
+        - name: Autopilot
+          href: export-autopilot.md
+        - name: Azure Blob Storage
+          href: export-azure-blob-storage.md
+        - name: Azure Data Lake Storage Gen2
+          href: export-azure-data-lake-storage-gen2.md
+        - name: Azure Synapse Analytics
+          href: export-azure-synapse-analytics.md
+        - name: Adobe Campaign Standard
+          href: export-adobe-campaign-standard.md
+        - name: Adobe Experience Platform
+          href: export-adobe-experience-platform.md
+        - name: Бразе
+          href: export-braze.md
+        - name: Campaign Monitor
+          href: export-campaign-monitor.md
+        - name: Constant Contact
+          href: export-constant-contact.md
+        - name: DotDigital
+          href: export-dotdigital.md
+        - name: Dynamics 365 Marketing
+          href: export-dynamics365-marketing.md
+        - name: Dynamics 365 Sales
+          href: export-dynamics365-sales.md
+        - name: Facebook менаџер огласа
+          href: export-facebook.md
+        - name: Google Ads
+          href: export-google-ads.md
+        - name: Подношљиво
+          href: export-iterable.md
+        - name: Klaviyo
+          href: export-klaviyo.md
+        - name: LinkedIn Ads
+          href: export-linkedin-ads.md
+        - name: LiveRamp
+          href: export-liveramp.md
+        - name: Mailchimp
+          href: export-mailchimp.md
+        - name: Marketo
+          href: export-marketo.md
+        - name: Microsoft Advertising
+          href: export-microsoft-advertising.md
+        - name: Omnisend
+          href: export-omnisend.md
+        - name: RollWorks
+          href: export-rollworks.md
+        - name: Salesforce Marketing Cloud
+          href: export-salesforce.md
+        - name: SendGrid
+          href: export-sendgrid.md
+        - name: SendInBlue
+          href: export-sendinblue.md
+        - name: Snapchat
+          href: export-snapchat.md
+        - name: SFTP
+          href: export-sftp.md
+    - name: Друге употребе
       items:
-        - name: Обогаћивање корисничких профила
-          href: audience-insights/enrichment-hub.md
-        - name: Брендови и интересовања
-          href: audience-insights/enrichment-microsoft.md
-        - name: Побољшане адресе
-          href: audience-insights/enrichment-enhanced-addresses.md
-        - name: Побољшани подаци о предузећу
-          href: audience-insights/enrichment-enhanced-company-data.md
-        - name: Обогаћивање са решењем Azure Maps
-          href: audience-insights/enrichment-azure-maps.md
-        - name: Обогатите уз HERE Technologies
-          href: audience-insights/enrichment-here.md
-        - name: Обогаћивање уз Leadspace
-          href: audience-insights/enrichment-leadspace.md
-        - name: Обогатите ЛивеРамп-ом
-          href: audience-insights/enrichment-liveramp.md
-        - name: Обогаћивање уз Experian
-          href: audience-insights/enrichment-experian.md
-        - name: Обогатите подацима Office 365
-          href: audience-insights/enrichment-office.md
-        - name: Обогаћивање уз SFTP прилагођени увоз
-          href: audience-insights/enrichment-SFTP-custom-import.md
-    - name: Обједињени профили
-      items:
-        - name: Преглед уједначених корисничких профила
-          href: audience-insights/customer-profiles.md
-        - name: Филтрирање уједначених корисничких профила
-          href: audience-insights/search-filter-index.md
-        - name: Дефинисање активности купаца
-          href: audience-insights/activities.md
-    - name: Сегменти
-      items:
-        - name: Преглед сегмената
-          href: audience-insights/segments.md
-        - name: Креирање сегмената
-          href: audience-insights/segment-builder.md
-        - name: Предложени сегменти засновани на мерама
-          href: audience-insights/suggested-segments.md
-        - name: Предложени сегменти засновани на активности
-          href: audience-insights/suggested-segments-activity.md
-        - name: Добијте увид у сегменте
-          href: audience-insights/segment-insights.md
-        - name: Пронађи сличне клијенте
-          href: audience-insights/find-similar-customer-segments.md
-    - name: Мере
-      items:
-        - name: Преглед мера
-          href: audience-insights/measures.md
-        - name: Креирање нове мере
-          href: audience-insights/measure-builder.md
-        - name: Коришћење предлошка мере
-          href: audience-insights/measure-templates.md
-    - name: Предвиђања
-      items:
-        - name: Предвиђање података уз помоћ вештачке интелигенције
-          items:
-            - name: Преглед модела предвиђања
-              href: audience-insights/predictions-overview.md
-            - name: Предвидите трајну вредност клијента (CLV)
-              href: audience-insights/predict-customer-lifetime-value.md
-            - name: Предвидите препоруке за производе
-              href: audience-insights/predict-product-recommendation.md
-            - name: Предвиђање губитка претплата
-              href: audience-insights/predict-subscription-churn.md
-            - name: Предвиђање губитка трансакција
-              href: audience-insights/predict-transactional-churn.md
-            - name: Анализа сентимента у повратним информацијама клијената
-              href: audience-insights/sentiment-analysis.md
-            - name: Коришћење прилагођених модела из Azure машинског учења
-              href: audience-insights/custom-models.md
-            - name: Допуњавање делимично недостајућих података
-              href: audience-insights/predictions.md
-        - name: Примери водича
-          items:
-            - name: Пример водича за превиђање трајне вредности клијента
-              href: audience-insights/sample-guide-predict-clv.md
-            - name: Пример водича за предвиђање губитка претплата
-              href: audience-insights/sample-guide-predict-subscription-churn.md
-            - name: Пример водича за предвиђање губитка трансакција
-              href: audience-insights/sample-guide-predict-transactional-churn.md
-            - name: Пример водича за предвиђање препорука производа
-              href: audience-insights/sample-guide-predict-product-recommendation.md
-            - name: Експерименти са Azure машинским учењем
-              href: audience-insights/azure-machine-learning-experiments.md
-        - name: Управљање предвиђањима
-          href: audience-insights/manage-predictions.md
-        - name: Креирање сегмената заснованих на предвиђањима
-          href: audience-insights/prediction-based-segment.md
-    - name: Опције извоза
-      items:
-        - name: Извоз
-          items:
-            - name: Преглед извоза
-              href: audience-insights/export-destinations.md
-            - name: Активна кампања
-              href: audience-insights/export-active-campaign.md
-            - name: AdRoll
-              href: audience-insights/export-adroll.md
-            - name: Autopilot
-              href: audience-insights/export-autopilot.md
-            - name: Azure Blob Storage
-              href: audience-insights/export-azure-blob-storage.md
-            - name: Azure Data Lake Storage Gen2
-              href: audience-insights/export-azure-data-lake-storage-gen2.md
-            - name: Azure Synapse Analytics
-              href: audience-insights/export-azure-synapse-analytics.md
-            - name: Adobe Campaign Standard
-              href: audience-insights/export-adobe-campaign-standard.md
-            - name: Adobe Experience Platform
-              href: audience-insights/export-adobe-experience-platform.md
-            - name: Бразе
-              href: audience-insights/export-braze.md
-            - name: Campaign Monitor
-              href: audience-insights/export-campaign-monitor.md
-            - name: Constant Contact
-              href: audience-insights/export-constant-contact.md
-            - name: DotDigital
-              href: audience-insights/export-dotdigital.md
-            - name: Dynamics 365 Marketing
-              href: audience-insights/export-dynamics365-marketing.md
-            - name: Dynamics 365 Sales
-              href: audience-insights/export-dynamics365-sales.md
-            - name: Facebook менаџер огласа
-              href: audience-insights/export-facebook.md
-            - name: Google Ads
-              href: audience-insights/export-google-ads.md
-            - name: Подношљиво
-              href: audience-insights/export-iterable.md
-            - name: Klaviyo
-              href: audience-insights/export-klaviyo.md
-            - name: LinkedIn Ads
-              href: audience-insights/export-linkedin-ads.md
-            - name: LiveRamp
-              href: audience-insights/export-liveramp.md
-            - name: Mailchimp
-              href: audience-insights/export-mailchimp.md
-            - name: Marketo
-              href: audience-insights/export-marketo.md
-            - name: Microsoft Advertising
-              href: audience-insights/export-microsoft-advertising.md
-            - name: Omnisend
-              href: audience-insights/export-omnisend.md
-            - name: RollWorks
-              href: audience-insights/export-rollworks.md
-            - name: Salesforce Marketing Cloud
-              href: audience-insights/export-salesforce.md
-            - name: SendGrid
-              href: audience-insights/export-sendgrid.md
-            - name: SendInBlue
-              href: audience-insights/export-sendinblue.md
-            - name: Snapchat
-              href: audience-insights/export-snapchat.md
-            - name: SFTP
-              href: audience-insights/export-sftp.md
-        - name: Друге употребе
-          items:
-            - name: Програмски додатак за картицу клијента за Dynamics 365
-              href: audience-insights/customer-card-add-in.md
-            - name: Microsoft Teams (робот)
-              href: audience-insights/export-teams-bot.md
-            - name: Power Apps
-              href: audience-insights/export-power-apps.md
-            - name: Power Automate
-              href: audience-insights/export-power-automate.md
-            - name: Power BI
-              href: audience-insights/export-power-bi.md
-    - name: Ентитети
-      items:
-        - name: Објашњење ентитета
-          href: audience-insights/entities.md
-        - name: Преглед шема ентитета на платформи Common Data Model
-          href: audience-insights/entity-schemas.md
-        - name: Customer Insights подаци у платформи Dataverse
-          href: audience-insights/customer-insights-dataverse.md
-        - name: Градња односа и повезаних ентитета
-          href: audience-insights/relationships.md
-        - name: Дефинисање семантичких мапирања
-          href: audience-insights/semantic-mappings.md
-    - name: Администрација
-      items:
-        - name: Подешавање конфигурације система
-          href: audience-insights/system.md
-        - name: Додела дозвола корисника
-          href: audience-insights/permissions.md
-        - name: Преглед веза
-          href: audience-insights/connections.md
-        - name: Управљање са више окружења
-          href: audience-insights/manage-environments.md
-        - name: Донесите сопствени Key Vault
-          href: audience-insights/use-azure-key-vault.md
-        - name: Повезивање са налогом за складиштење помоћу главне услуге
-          href: audience-insights/connect-service-principal.md
-        - name: Извоз дијагностичких евиденција
-          href: audience-insights/diagnostics.md
-        - name: Ограничења услуге
-          href: service-limits.md
-        - name: DSR права и захтеви
-          href: dsr-rights-requests.md
-    - name: API-ји
-      items:
-        - name: Преглед шема ентитета на платформи Common Data Model
-          href: audience-insights/entity-schemas.md
-        - name: Customer Insights подаци у платформи Dataverse
-          href: audience-insights/customer-insights-dataverse.md
-        - name: Рад са API-јима
-          href: audience-insights/apis.md
-        - name: Референце на API-је
-          href: 'https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights'
+        - name: Програмски додатак за картицу клијента за Dynamics 365
+          href: customer-card-add-in.md
+        - name: Microsoft Teams (робот)
+          href: export-teams-bot.md
+        - name: Power Apps
+          href: export-power-apps.md
+        - name: Power Automate
+          href: export-power-automate.md
+        - name: Power BI
+          href: export-power-bi.md
+- name: Ентитети
+  items:
+    - name: Објашњење ентитета
+      href: entities.md
+    - name: Преглед шема ентитета на платформи Common Data Model
+      href: entity-schemas.md
+    - name: Customer Insights подаци у платформи Dataverse
+      href: customer-insights-dataverse.md
+    - name: Градња односа и повезаних ентитета
+      href: relationships.md
+    - name: Дефинисање семантичких мапирања
+      href: semantic-mappings.md
+- name: Администрација
+  items:
+    - name: Подешавање конфигурације система
+      href: system.md
+    - name: Конфигурисање безбедносних поставки
+      href: security-overview.md
+    - name: Додела дозвола корисника
+      href: permissions.md
+    - name: Преглед веза
+      href: connections.md
+    - name: Управљање са више окружења
+      href: manage-environments.md
+    - name: Донесите сопствени Key Vault
+      href: use-azure-key-vault.md
+    - name: Повезивање са налогом за складиштење помоћу главне услуге
+      href: connect-service-principal.md
+    - name: Извоз дијагностичких евиденција
+      href: diagnostics.md
+    - name: Ограничења услуге
+      href: service-limits.md
+    - name: DSR права и захтеви
+      href: dsr-rights-requests.md
+- name: API-ји
+  items:
+    - name: Рад са API-јима
+      href: apis.md
+    - name: Референце на API-је
+      href: 'https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights'
 - name: Управљање сагласностима (преглед)
   items:
     - name: Чвориште помоћи
@@ -306,10 +302,10 @@
           href: consent-management/set-consent-rules.md
     - name: Управљање подацима о пристанку
       items:
-        - name: Омогући правила пристанка у корисници увидима
-          href: audience-insights/activate-consent.md
-        - name: Управљање подразумеваним правилима пристанка у сегментима корисници увида
-          href: audience-insights/change-default-consent-rules.md
+        - name: Омогући правила пристанка у увидима клијената
+          href: activate-consent.md
+        - name: Управљање подразумеваним правилима пристанка у сегментима увида клијената
+          href: change-default-consent-rules.md
     - name: Управљање поставкама и корисницима
       items:
         - name: Конфигурисање поставки система
@@ -320,7 +316,5 @@
       items:
         - name: Креирање предвиђања са подацима о пристанку
           href: consent-management/predictions-consent-data.md
-- name: Увиди у ангажовање (верзија за преглед)
-  href: engagement-insights/overview.md
 - name: Добијте подршку
   href: /power-platform/admin/get-help-support
