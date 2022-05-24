@@ -66,12 +66,18 @@
   items:
     - name: Преглед уједначавања података
       href: data-unification.md
-    - name: Ентитети и атрибути мапе
+    - name: Избор изворних поља
       href: map-entities.md
-    - name: Подударање ентитета
+    - name: Уклањање дуплираних записа
+      href: remove-duplicates.md
+    - name: Услови подударања
       href: match-entities.md
-    - name: Обједињавање ентитета
+    - name: Обједињавање поља купаца
       href: merge-entities.md
+    - name: Редиговање уједињења података
+      href: review-unification.md
+    - name: Ажурирање поставки уједињења
+      href: data-unification-update.md
 - name: Обогаћивање података
   items:
     - name: Обогаћивање корисничких профила
@@ -282,6 +288,8 @@
       href: apis.md
     - name: Референце на API-је
       href: 'https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights'
+    - name: Пробни упити ОДата
+      href: odata-examples.md
 - name: Управљање сагласностима (преглед)
   items:
     - name: Чвориште помоћи

@@ -8,12 +8,12 @@ ms.topic: conceptual
 author: mukeshpo
 ms.author: mukeshpo
 manager: shellyha
-ms.openlocfilehash: e155f75ffbc2c1bb228bece1b3e34846df794543
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: 33a0562854e97b9ac5218e060f965996305627fd
+ms.sourcegitcommit: d45c00a5f6cb106714366af81e8070e7f53654b3
 ms.translationtype: MT
 ms.contentlocale: sr-Cyrl-RS
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8643372"
+ms.lasthandoff: 05/15/2022
+ms.locfileid: "8757450"
 ---
 # <a name="entity-schemas-in-common-data-model"></a>Шеме ентитета у платформи Common Data Model
 
@@ -23,7 +23,7 @@ ms.locfileid: "8643372"
 
 Овај заједнички модел података омогућава апликацијама и интеграторима података да лакше сарађују пружајући обједињену дефиницију података. Common Data Model укључује богат систем метаподатака са стандардним ентитетима, релацијама, хијерархијама, особинама и још много тога. Настао је из Dynamics 365 апликација и отворен је на GitHub-у са преко 260 стандардних ентитета. Велики систем унутрашњих и спољних партнера доприноси индустријским концептима платформи Common Data Model.
 
-Више система и платформи данас примењују Common Data Model, укључујући Power BI токове података и Azure Data Services. Већ је подржано у услугама Microsoft Dataverse, Dynamics 365, Power Apps, Power BI и предстојећим Azure услугама података, које директно приписују вредност према иницијативи [Open Data Initiative](https://www.microsoft.com/open-data-initiative).
+Више система и платформи данас примењују Common Data Model, укључујући Power BI токове података и Azure Data Services. Већ је подржано у услугама Microsoft Dataverse, Dynamics 365, Power Apps, Power BI и предстојећим Azure услугама података, које директно приписују вредност према иницијативи [Open Data Initiative](https://dynamics.microsoft.com/en-us/open-data-initiative/).
 
 ## <a name="customer-insights-entity-schemas"></a>Шеме Customer Insights ентитета
 

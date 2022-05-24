@@ -1,23 +1,22 @@
 ---
 title: Активирање правила сагласности за сегменте
 description: Следите ове кораке да бисте повезали податке о пристанку и активирали провере сагласности Dynamics 365 Customer Insights. Администратор такође може да онемогући провере пристанка.
-ms.date: 11/12/2021
-ms.subservice: audience-insights
+ms.date: 04/27/2022
 ms.topic: how-to
-author: smithy7
-ms.author: smithc
+author: anubhav-t
+ms.author: antando
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: bfa03f4b7b56b300a74ebd04721cd64b893879f1
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: f82e3a4031fee8bcaa88575cbd68b37385a7fffb
+ms.sourcegitcommit: 4ae316c856b8de0f08a4605f73e75a8c2cf51c4e
 ms.translationtype: MT
 ms.contentlocale: sr-Cyrl-RS
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8643120"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "8755188"
 ---
 # <a name="activate-consent-rules"></a>Активирање правила пристанка
 
-Центар [за сагласност (преглед) вам помаже](consent-management/overview.md) да ускладите податке о пристанку из различитих извора. Користите обједињени *ентитет* сагласности да бисте применили подразумеване провере сагласности. Након увоза података о сагласности у Центар за сагласност и конфигурисања правила за податке, *ентитет* сагласности се аутоматски синхронизује са програмом Dynamics 365 Customer Insights.
+Центар [за сагласност (преглед) вам помаже](consent-management/overview.md) да ускладите податке о пристанку из различитих извора. Користите обједињени *ентитет* сагласности да бисте применили подразумеване провере сагласности. Након увоза података о пристанку и конфигурисања правила мапе *, ентитет* сагласности се аутоматски синхронизује са програмом Dynamics 365 Customer Insights.
 
 ## <a name="enable-consent-checks"></a>Омогући провере сагласности
 

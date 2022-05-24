@@ -8,12 +8,12 @@ author: NimrodMagen
 ms.author: nimagen
 ms.reviewer: v-wendysmith
 manager: shellyha
-ms.openlocfilehash: 56f6a8ad20224922f9968f0ad3b6a0e0a400214b
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
-ms.translationtype: MT
+ms.openlocfilehash: d1e14d2d4e718d71ccbd2afd259a350ad5c9e69a
+ms.sourcegitcommit: 4ae316c856b8de0f08a4605f73e75a8c2cf51c4e
+ms.translationtype: HT
 ms.contentlocale: sr-Cyrl-RS
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8643050"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "8755704"
 ---
 # <a name="enrichment-for-data-sources-preview"></a>Обогаћивање извора података (преглед)
 
@@ -23,10 +23,10 @@ ms.locfileid: "8643050"
 
 Морате имати дозволе сарадник администратора за креирање или уређивање обогаћивања. Више информација потражите у [дозволама](permissions.md).  
 
-1. Идите на **датаУнифy** > **·**. Изаберите ентитет који желите да обогатите и изаберите један атрибут као примарни кључ за ентитет. Више информација потражите у чланку [Избор примарног кључа](map-entities.md#select-primary-key-and-semantic-type-for-attributes).
+1. Идите на" **Уједињење** > **података"**. Изаберите ентитет који желите да обогатите и изаберите један атрибут као примарни кључ за ентитет. Више информација потражите у чланку [Избор примарног кључа](map-entities.md#select-primary-key-and-semantic-type-for-attributes).
 
 1. Идите на **Подаци** > **Извори података**.
- 
+
 1. Изаберите вертикалну елипсу поред прозора извор података желите да обогатите и изаберите Опцију **Обогати**.
 
    :::image type="content" source="media/data_sources_enrich_discover.png" alt-text="Страница за обогаћивање извора података.":::

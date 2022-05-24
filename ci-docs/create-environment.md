@@ -12,12 +12,12 @@ ms.custom: intro-internal
 searchScope:
 - ci-home
 - customerInsights
-ms.openlocfilehash: 0efda9d2997bcfd069b6d2445b69d159d7d3e59b
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
-ms.translationtype: MT
+ms.openlocfilehash: c64ac94a7e0e743d3c13e32e394cc5d409420622
+ms.sourcegitcommit: c00441bc60b978e25f930b06c9d97b46fe462538
+ms.translationtype: HT
 ms.contentlocale: sr-Cyrl-RS
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8643102"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8712920"
 ---
 # <a name="create-an-environment-in-customer-insights"></a>Креирање окружења у увидима клијената
 
@@ -63,8 +63,7 @@ ms.locfileid: "8643102"
 Чувањем података у услузи Azure Data Lake Storage, слажете се да ће се подаци преносити и складиштити на одговарајућој географској локацији за тај Azure налог за складиштење. Ова локација се може разликовати од места на коме се чувају подаци из услуге Dynamics 365 Customer Insights. Сазнајте више у [Microsoft центру за поузданост](https://www.microsoft.com/trust-center).
 
 > [!NOTE]
-> Customer Insights тренутно подржава следеће:
-> - Унети ентитети из Power BI токова података који се чувају у Microsoft Dataverse управљаној услузи Data Lake.  
+> Customer Insights тренутно подржава следеће:  
 > - Azure Data Lake Storage налози из истог Azure региона који сте изабрали приликом креирања окружења.
 > - Azure Data Lake Storage налоге који су Gen2 и имају *хијерархијски простор за* име. Азуре Дата Лаке Gen1 налози за складиштење нису подржани.
 
@@ -80,7 +79,7 @@ ms.locfileid: "8643102"
 
 Обезбедите сопствено Microsoft Dataverse окружење за дељење података (профила и увида) са пословним апликацијама заснованим Dataverse на систему, као што је Дyнамицс 365 Маркетинг или апликације са моделима у програму Power Apps. Оставите ово поље празно ако немате своје окружење, а Dataverse ми ћемо вам га обезбедити.
 
-Повезивање са окружењем Dataverse вам такође омогућава да уносите [податке из локални података помоћу Power Platform прилива података и мрежних пролаза](data-sources.md#add-data-from-on-premises-data-sources). Моделе из кутије можете [да користите и предвиђање повезивањем](predictions-overview.md?tabs=b2c#out-of-box-models) са окружењем Dataverse.
+Повезивање са окружењем Dataverse вам такође омогућава да уносите [податке из локални података помоћу Power Platform прилива података и мрежних пролаза](data-sources.md#add-data-from-on-premises-data-sources).
 
 > [!IMPORTANT]
 > 1. Увиди клијената и Dataverse морају да буду у истом региону да би омогућили дељење података.
