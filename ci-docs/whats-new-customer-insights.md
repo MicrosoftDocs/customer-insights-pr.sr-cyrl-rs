@@ -8,12 +8,12 @@ author: m-hartmann
 ms.author: mhart
 ms.reviewer: skumm
 manager: shellyha
-ms.openlocfilehash: 386198c838929a20e136288fffb1015707654d8d
-ms.sourcegitcommit: 9f256af5c4f7e99305bf09087f7ec05eebeae6a0
-ms.translationtype: MT
+ms.openlocfilehash: af79c8369dd608e8ce1c14c50bb9aef3a79b9029
+ms.sourcegitcommit: f5af5613afd9c3f2f0695e2d62d225f0b504f033
+ms.translationtype: HT
 ms.contentlocale: sr-Cyrl-RS
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8700955"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "8833648"
 ---
 # <a name="whats-new-in-dynamics-365-customer-insights"></a>Шта је ново у систему Dynamics 365 Customer Insights
 
@@ -58,6 +58,7 @@ ms.locfileid: "8700955"
 Више информација потражите у чланку [Обогаћивање профила клијената подацима о идентитету из програма ЛивеРамп (Превиеw)](enrichment-liveramp.md).
 
 ### <a name="organize-segments-and-measures-with-tags-and-filters"></a>Организовање сегмената и мера помоћу ознака и филтера
+
 Ако ваша организација одржава много сегмената или мера, проналажење правог понекад може да се осети изазовним. Ова нова функција вам омогућава да организујете листе помоћу ознака и колона. Помаже у брзом и лаком проналажењу података и прилагођавању приказа.
 
 Више информација потражите у чланку [Рад са ознакама и колонама](work-with-tags-columns.md).
@@ -65,9 +66,9 @@ ms.locfileid: "8700955"
 ### <a name="enable-data-sharing-with-dataverse-when-using-your-own-storage-account"></a>Омогућавање дељења података приликом Dataverse коришћења сопственог налога за складиштење
 
 Ако ваше окружење користи за складиштење Azure Data Lake Storage података"Увид корисника", за дељење података потребна је Microsoft Dataverse додатна конфигурација.
-Раније сте могли да омогућите дељење података само када су Dataverse ваши подаци ускладиштени у нашем управљајућем језеру са подацима. 
+Раније сте могли да омогућите дељење података само када су Dataverse ваши подаци ускладиштени у нашем управљајућем језеру са подацима.
 
-Више информација потражите у чланку [Омогућавање дељења података Dataverse из сопственог Azure Data Lake Storage (Превиеw)](manage-environments.md#enable-data-sharing-with-dataverse-from-your-own-azure-data-lake-storage-preview).
+Више информација потражите у чланку [Омогућавање дељења података Dataverse из сопственог Azure Data Lake Storage (Превиеw)](customer-insights-dataverse.md#enable-data-sharing-with-dataverse-from-your-own-azure-data-lake-storage-preview).
 
 ### <a name="new-export-destinations-iterable-and-braze"></a>Нове извозне дестинације: Итерабле и Бразе
 
@@ -81,7 +82,6 @@ ms.locfileid: "8700955"
 
 - Гоогле Адс: Нова верзија Гоогле Адс еxпорт конектора поједностављује искуство потврде идентитета и сада вам омогућава да аутоматски креирате нову Гоогле Адс публику. 
 - Маркето : Нова верзија Маркето еxпорт конектора пружа подршку за Маркето ИД, омогућавајући вам да избегнете дуплирање података, ажурирате постојеће записе и креирате нове записе у маркету. 
-
 
 ## <a name="february-2022-updates"></a>Исправке за фебруар 2022.
 

@@ -1,19 +1,19 @@
 ---
 title: извор података обогаћивање
 description: Обогатите изворе података пре него што прођете кроз процес уједињења података.
-ms.date: 03/02/2022
+ms.date: 05/20/2022
 ms.subservice: audience-insights
 ms.topic: how-to
 author: NimrodMagen
 ms.author: nimagen
 ms.reviewer: v-wendysmith
 manager: shellyha
-ms.openlocfilehash: d1e14d2d4e718d71ccbd2afd259a350ad5c9e69a
-ms.sourcegitcommit: 4ae316c856b8de0f08a4605f73e75a8c2cf51c4e
-ms.translationtype: HT
+ms.openlocfilehash: 1225482c4bf432ed747537b2c9bec9ab0e692a51
+ms.sourcegitcommit: b515120bebd2638f2639004422cee3cff42fbdf7
+ms.translationtype: MT
 ms.contentlocale: sr-Cyrl-RS
-ms.lasthandoff: 05/13/2022
-ms.locfileid: "8755704"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "8800299"
 ---
 # <a name="enrichment-for-data-sources-preview"></a>Обогаћивање извора података (преглед)
 
@@ -27,7 +27,7 @@ ms.locfileid: "8755704"
 
 1. Идите на **Подаци** > **Извори података**.
 
-1. Изаберите вертикалну елипсу поред прозора извор података желите да обогатите и изаберите Опцију **Обогати**.
+1. Изаберите вертикалну елипсу () поред прозора извор података &vellip; желите да обогатите и изаберите опцију "Обогати **"**.
 
    :::image type="content" source="media/data_sources_enrich_discover.png" alt-text="Страница за обогаћивање извора података.":::
 
@@ -41,11 +41,12 @@ ms.locfileid: "8755704"
 
 - [Побољшане адресе](enrichment-enhanced-addresses.md)
 - [Побољшани подаци о предузећу](enrichment-enhanced-company-data.md)
+- [Подаци о идентитету из ливеРамп-а](enrichment-liveramp.md)
 
 ## <a name="manage-existing-data-source-enrichments"></a>Управљање постојећим извор података обогаћивањем
 
 Идите на картицу **Моја обогаћивања** да бисте видели сва конфигурисана обогаћивања.
 
-Изаберите обогаћивање да бисте видели доступне опције. Такође можете одабрати три тачке (...) на ставци листе да бисте видели опције. Ако сте конфигурисали неколико обогаћивања, можете их брзо пронаћи помоћу оквира за претрагу.
+Изаберите обогаћивање да бисте видели доступне опције. Такође можете да изаберете вертикалну елипсу (&vellip;) на ставци листе да бисте видели опције. Ако сте конфигурисали неколико обогаћивања, можете их брзо пронаћи помоћу оквира за претрагу.
 
 Можете да прикажете, уредите, покренете или избришете извор података богаћење. Више информација потражите у чланку Управљање [постојећим обогаћивањем](enrichment-hub.md).

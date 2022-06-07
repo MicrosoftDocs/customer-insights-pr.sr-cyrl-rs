@@ -11,12 +11,12 @@ manager: shellyha
 searchScope:
 - ci-connections
 - customerInsights
-ms.openlocfilehash: d85de28a12565e1a2e36278d0e8b74f6de286b20
-ms.sourcegitcommit: 4ae316c856b8de0f08a4605f73e75a8c2cf51c4e
+ms.openlocfilehash: 2a3175737ac95e10d75fad4a69db303b0564c6cc
+ms.sourcegitcommit: b515120bebd2638f2639004422cee3cff42fbdf7
 ms.translationtype: MT
 ms.contentlocale: sr-Cyrl-RS
-ms.lasthandoff: 05/13/2022
-ms.locfileid: "8755327"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "8800390"
 ---
 # <a name="connections-preview-overview"></a>Преглед веза (верзија за преглед)
 
@@ -69,7 +69,7 @@ ms.locfileid: "8755327"
 
 1. Идите на картицу **Везе**.
 
-1. Изаберите вертикалне три тачке за везу коју желите да уредите.
+1. Изаберите вертикалну елипсу () за &vellip; везу коју желите да уредите.
 
 1. Изаберите **Уреди**.
 
@@ -85,7 +85,7 @@ ms.locfileid: "8755327"
 
 1. Идите на картицу **Везе**.
 
-1. Изаберите вертикалне три тачке за везу коју желите да уклоните.
+1. Изаберите вертикалну елипсу (&vellip;) за везу коју желите да уклоните.
 
 1. Изаберите **Уклони** из падајућег менија. Приказује се дијалог за потврду.
 

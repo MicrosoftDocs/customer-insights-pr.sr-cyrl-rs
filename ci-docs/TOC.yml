@@ -6,7 +6,9 @@
   href: whats-new-customer-insights.md
 - name: Каталог за учење
   items:
-    - name: Започните
+    - name: Потврди као специјалиста за Мицрософт платформу за податке о клијентима
+      href: /learn/certifications/exams/mb-260?tab=tab-instructor-led
+    - name: Први кораци са услугом Customer Insights
       href: /learn/modules/get-started-customer-data-platform/
     - name: Унесите податке
       href: /learn/modules/ingest-data-customer-insights/
@@ -34,8 +36,6 @@
       href: get-started.md
     - name: Започните са лиценцом која се плаћа
       href: paid-license.md
-    - name: Креирајте ново окружење
-      href: create-environment.md
     - name: Истражите увиде клијената
       href: home.md
     - name: Рад са ознакама и колонама
@@ -198,6 +198,8 @@
           href: export-campaign-monitor.md
         - name: Constant Contact
           href: export-constant-contact.md
+        - name: Критео
+          href: export-criteo.md
         - name: DotDigital
           href: export-dotdigital.md
         - name: Dynamics 365 Marketing
@@ -254,12 +256,22 @@
       href: entities.md
     - name: Преглед шема ентитета на платформи Common Data Model
       href: entity-schemas.md
-    - name: Customer Insights подаци у платформи Dataverse
-      href: customer-insights-dataverse.md
     - name: Градња односа и повезаних ентитета
       href: relationships.md
     - name: Дефинисање семантичких мапирања
       href: semantic-mappings.md
+- name: Окружења
+  items:
+    - name: Креирајте ново окружење
+      href: create-environment.md
+    - name: Повезивање са системом Microsoft Dataverse
+      href: customer-insights-dataverse.md
+    - name: Користи своје Azure Data Lake Storage
+      href: own-data-lake-storage.md
+    - name: Управљање подешавањима окружења
+      href: manage-environments.md
+    - name: Повезивање са налогом за складиштење помоћу главне услуге
+      href: connect-service-principal.md
 - name: Администрација
   items:
     - name: Подешавање конфигурације система
@@ -268,20 +280,12 @@
       href: security-overview.md
     - name: Додела дозвола корисника
       href: permissions.md
-    - name: Преглед веза
-      href: connections.md
-    - name: Управљање са више окружења
-      href: manage-environments.md
     - name: Донесите сопствени Key Vault
       href: use-azure-key-vault.md
-    - name: Повезивање са налогом за складиштење помоћу главне услуге
-      href: connect-service-principal.md
     - name: Извоз дијагностичких евиденција
       href: diagnostics.md
-    - name: Ограничења услуге
-      href: service-limits.md
-    - name: DSR права и захтеви
-      href: dsr-rights-requests.md
+    - name: Преглед веза
+      href: connections.md
 - name: API-ји
   items:
     - name: Рад са API-јима
@@ -324,5 +328,9 @@
       items:
         - name: Креирање предвиђања са подацима о пристанку
           href: consent-management/predictions-consent-data.md
+- name: Ограничења услуге
+  href: service-limits.md
+- name: DSR права и захтеви
+  href: dsr-rights-requests.md
 - name: Добијте подршку
   href: /power-platform/admin/get-help-support

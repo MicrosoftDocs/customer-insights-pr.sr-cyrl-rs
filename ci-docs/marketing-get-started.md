@@ -6,12 +6,12 @@ ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: 45c59465771e4ad25ed36d5da1568e67b94cf994
-ms.sourcegitcommit: cf74b8c20d88eb96e1ac86e18cd44fe27aad5ab9
+ms.openlocfilehash: 4cc3cbde97d0f9da198652e86c0843476393b646
+ms.sourcegitcommit: f5af5613afd9c3f2f0695e2d62d225f0b504f033
 ms.translationtype: MT
 ms.contentlocale: sr-Cyrl-RS
-ms.lasthandoff: 04/28/2022
-ms.locfileid: "8653824"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "8833326"
 ---
 # <a name="work-with-unified-customer-profiles-in-dynamics-365-marketing"></a>Рад са обједињеним профилима клијената у Дyнамицс 365 маркетингу
 
@@ -23,7 +23,6 @@ ms.locfileid: "8653824"
 - Основни динамички садржај (као што су персонализовани токени) у е-порукама, СМС-у и гурање обавештења о мерама као што су статус лојалности, датум обнављања претплате, надређени налог или било која друга мера коју сте ухватили у профилу обједињених увида клијената.
 - Учитајте податке из маркетинга у увиде клијената и комбинујте их са подацима клијената из других извора.
 - Примените алатке за чишћење, обогаћивање и нејасно подударање података корисничког увида.
-
 
 ## <a name="use-rich-customer-profiles-in-real-time-marketing"></a>Коришћење богатих профила клијената у маркетингу у реалном времену
 
@@ -41,4 +40,4 @@ ms.locfileid: "8653824"
 
 Нисте ограничени на складиште у облаку ако желите да користите податке "Увиди клијената" са маркетингом. Ако већ имате сопствено подешавање Azure Data Lake Storage, можете да се повежете са програмом Цустомер Инсигхтс, а затим да делите податке са маркетиншком апликацијом као што бисте то урадили са подешавањем заснованим на облаку.
 
-Сазнајте више: [Омогућите дељење података Dataverse помоћу сопствених Azure Data Lake Storage](manage-environments.md#enable-data-sharing-with-dataverse-from-your-own-azure-data-lake-storage-preview)
+Сазнајте више: [Омогућите дељење података Dataverse помоћу сопствених Azure Data Lake Storage](customer-insights-dataverse.md#enable-data-sharing-with-dataverse-from-your-own-azure-data-lake-storage-preview)

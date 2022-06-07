@@ -1,19 +1,19 @@
 ---
 title: Примери ОДата за Dynamics 365 Customer Insights АПИ-је
 description: Често коришћени примери отвореног протокола података (ОДата) за упит АПИ-ја корисничких увида за редиговање података.
-ms.date: 05/10/2022
+ms.date: 05/25/2022
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 007278e1330e1a8e64d524ded8496acaf83b874c
-ms.sourcegitcommit: a50c5e70d2baf4db41a349162fd1b1f84c3e03b6
+ms.openlocfilehash: cdadd72bfe4272d8d83d923baaa6fd40d008473b
+ms.sourcegitcommit: bf65bc0a54cdab71680e658e1617bee7b2c2bb68
 ms.translationtype: MT
 ms.contentlocale: sr-Cyrl-RS
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "8740075"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "8808479"
 ---
 # <a name="odata-query-examples"></a>Примери упита ОДата
 
@@ -33,16 +33,15 @@ ms.locfileid: "8740075"
 
 Следећа табела садржи скуп пробних упита за ентитет *купца*.
 
-
 |Тип упита |Пример  | Белешка  |
 |---------|---------|---------|
 |ИД једног купца     | `{serviceRoot}/Customer?$filter=CustomerId eq '{CID}'`          |  |
-|Алтернативни кључ    | `{serviceRoot}/Customer?$filter={DSname_EntityName_PrimaryKeyColumnName} eq '{AlternateKey}' `         |  Алтернативни кључеви и даље постоје у обједињеном ентитету клијента       |
+|Алтернативни кључ    | `{serviceRoot}/Customer?$filter={DSname_EntityName_PrimaryKeyColumnName} eq '{AlternateKey}'`         |  Алтернативни кључеви и даље постоје у обједињеном ентитету клијента       |
 |Избор   | `{serviceRoot}/Customer?$select=CustomerId,FullName&$filter=customerid eq '1'`        |         |
 |За    | `{serviceRoot}/Customer?$filter=CustomerId in ('{CID1}',’{CID2}’)`        |         |
 |Алтернативни кључ + Ин   | `Customer?$filter={DSname_EntityName_PrimaryKeyColumnName} in ('{AlternateKey}','{AlternateKey}')`         |         |
 |Претражите  | `{serviceRoot}/Customer?$top=10&$skip=0&$search="string"`        |   Даје првих 10 резултата за ниску за тражење.      |
-|Чланство у сегментима  | `{serviceRoot}/Customer?select=*&$filter=IsMemberOfSegment('{SegmentName}')&$top=10  `     | Даје унапред одређени број редова из ентитета сегментације.      |
+|Чланство у сегментима  | `{serviceRoot}/Customer?select=*&$filter=IsMemberOfSegment('{SegmentName}')&$top=10`     | Даје унапред одређени број редова из ентитета сегментације.      |
 
 ## <a name="unified-activity"></a>Обједињена активност
 
@@ -53,7 +52,7 @@ ms.locfileid: "8740075"
 |Активност ЦИД-а     | `{serviceRoot}/UnifiedActivity?$filter=CustomerId eq '{CID}'`          | Наводи активности одређеног профила клијента |
 |Активност временски оквир    | `{serviceRoot}/UnifiedActivity?$filter=CustomerId eq '{CID}' and ActivityTime gt 2017-01-01T00:00:00.000Z and ActivityTime lt 2020-01-01T00:00:00.000Z`     |  Активности профила купца у временски оквир       |
 |Тип активности    |   `{serviceRoot}/UnifiedActivity?$filter=CustomerId eq '{CID}' and ActivityType eq '{ActivityName}'`        |         |
-|Активност по име за приказ     | `{serviceRoot}/UnifiedActivity$filter=CustomerId eq ‘{CID}’ and ActivityTypeDisplay eq ‘{ActivityDisplayName}’ `        | |
+|Активност по име за приказ     | `{serviceRoot}/UnifiedActivity$filter=CustomerId eq ‘{CID}’ and ActivityTypeDisplay eq ‘{ActivityDisplayName}’`        | |
 |Сортирање активности    | `{serviceRoot}/UnifiedActivity?$filter=CustomerId eq ‘{CID}’ & $orderby=ActivityTime asc`     |  Сортирање активности по растућем или опадајућем редоследу       |
 |Активност проширена из чланства у сегментима  |   `{serviceRoot}/Customer?$expand=UnifiedActivity,Customer_Measure&$filter=CustomerId eq '{CID}'`     |         |
 
@@ -67,3 +66,13 @@ ms.locfileid: "8740075"
 |Обогаћени брендови ЦИД-а    | `{serviceRoot}/BrandShareOfVoiceFromMicrosoft?$filter=CustomerId eq '{CID}'`  |       |
 |Обогаћена интересовања ЦИД-а    |   `{serviceRoot}/InterestShareOfVoiceFromMicrosoft?$filter=CustomerId eq '{CID}'`       |         |
 |Ин -Цлаусе + Еxпанд     | `{serviceRoot}/Customer?$expand=UnifiedActivity,Customer_Measure&$filter=CustomerId in ('{CID}', '{CID}')`         | |
+
+## <a name="not-supported-odata-queries"></a>Упити за ОДата нису подржани
+
+Кориснички увиди не подржавају следеће упите:
+
+- `$filter` на унетим изворним ентитетима. Упите за упите $ филтер можете да покренете само на системским ентитетима које креира"Увиди купаца".
+- `$expand``$search` из упита. Пример: `Customer?$expand=UnifiedActivity$top=10&$skip=0&$search="corey"`
+- `$expand` ако `$select` је изабран само подскуп атрибута. Пример: `Customer?$select=CustomerId,FullName&$expand=UnifiedActivity&$filter=CustomerId eq '{CID}'`
+- `$expand` обогаћеног бренда или афинитета интересовања за датог купца. Пример: `Customer?$expand=BrandShareOfVoiceFromMicrosoft&$filter=CustomerId eq '518291faaa12f6d853c417835d40eb10'`
+- Упит предвиђање излазне ентитете модела кроз Алтернативни кључ. Пример: `OOBModelOutputEntity?$filter=HotelCustomerID eq '{AK}'`

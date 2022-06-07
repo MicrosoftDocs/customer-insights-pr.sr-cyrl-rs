@@ -11,12 +11,12 @@ manager: shellyha
 searchScope:
 - ci-system-security
 - customerInsights
-ms.openlocfilehash: 9eb06a1190fe4e8012ecd3d6742b8b3f5f4d6349
-ms.sourcegitcommit: cf74b8c20d88eb96e1ac86e18cd44fe27aad5ab9
+ms.openlocfilehash: d4f2d5ebc828053c40e22065f4915c4d0f84153f
+ms.sourcegitcommit: 6ec4626a185892dfb781d3c7af4384f9c13f3723
 ms.translationtype: MT
 ms.contentlocale: sr-Cyrl-RS
-ms.lasthandoff: 04/28/2022
-ms.locfileid: "8653495"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "8763597"
 ---
 # <a name="bring-your-own-azure-key-vault-preview"></a>Донесите свој властити Azure Key Vault (верзија за преглед)
 
@@ -37,11 +37,11 @@ ms.locfileid: "8653495"
 
 - Безбедносно складиште мора имати **онемогућен** заштитни зид услуге Key Vault.
 
-- Кључни трезор је на истој Азуре [локацији као](https://azure.microsoft.com/global-infrastructure/geographies/#overview) и окружење "Увиди купаца". Регион окружења у увидима клијената наведен је под **админСyстемАбоутРегион** > **·** > **·** > **·**.
+- Кључни трезор је на истој Азуре [локацији као](https://azure.microsoft.com/global-infrastructure/geographies/#overview) и окружење "Увиди купаца". Регион окружења у увидима клијената наведен је у оквиру ставке **Админ** > **Сyстем** > **Абоут** > **Регион**.
 
 ### <a name="link-a-key-vault-to-the-environment"></a>Повезивање безбедносног складишта са окружењем
 
-1. Идите на **админСецуритy** > **, а** затим изаберите картицу **"Трезор кључа** ".
+1. Идите на **администраторско** > **обезбеђење**, а затим изаберите картицу **"Трезор кључа** ".
 1. На плочици **Безбедносно складиште**, изаберите **Подешавање**.
 1. Одаберите **претплату**.
 1. Одаберите безбедносно складиште са падајуће листе **Безбедносно складиште**. Ако се приказује превише безбедносних складишта, изаберите групу ресурса да бисте ограничили резултате претраге.
@@ -89,9 +89,9 @@ ms.locfileid: "8653495"
 
 | Тип        | Дозволе          |
 | ----------- | -------------------- |
-| Тастер         | [Прибавите кључеве](/rest/api/keyvault/get-keys), [Прибавите кључ](/rest/api/keyvault/get-key)                                 |
-| Тајни      | [Прибавите тајне](/rest/api/keyvault/get-secrets), [Прибавите тајну](/rest/api/keyvault/get-secret)                     |
-| Цертификат | [Прибавите цертификате](/rest/api/keyvault/get-certificates), [Прибавите цертификат](/rest/api/keyvault/get-certificate) |
+| Тастер         | [Прибавите кључеве](/rest/api/keyvault/keys/get-keys/get-keys), [Прибавите кључ](/rest/api/keyvault/keys/get-key/get-key)                                 |
+| Тајни      | [Прибавите тајне](/rest/api/keyvault/secrets/get-secrets/get-secrets), [Прибавите тајну](/rest/api/keyvault/secrets/get-secret/get-secret)                     |
+| Цертификат | [Прибавите цертификате](/rest/api/keyvault/certificates/get-certificates/get-certificates), [Прибавите цертификат](/rest/api/keyvault/certificates/get-certificate/get-certificate) |
 
 Претходне вредности су минимум за навођење и читање током извршавања.
 
