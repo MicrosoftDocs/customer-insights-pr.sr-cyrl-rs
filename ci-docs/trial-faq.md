@@ -8,12 +8,12 @@ ms.topic: get-started
 ms.custom: template-trial-faq
 ms.reviewer: jeffhar
 manager: shellyha
-ms.openlocfilehash: c0db75afdde91bbd60fbece77eb2660a38b84860
-ms.sourcegitcommit: f5af5613afd9c3f2f0695e2d62d225f0b504f033
+ms.openlocfilehash: 46a67e58f79029246029e2d06789525c2131f100
+ms.sourcegitcommit: 5e26cbb6d2258074471505af2da515818327cf2c
 ms.translationtype: MT
 ms.contentlocale: sr-Cyrl-RS
-ms.lasthandoff: 06/01/2022
-ms.locfileid: "8833786"
+ms.lasthandoff: 06/14/2022
+ms.locfileid: "9011905"
 ---
 # <a name="dynamics-365-customer-insights-trial-faq"></a>Најчешћа питања о пробној верзији услуге Dynamics 365 Customer Insights
 
@@ -68,7 +68,7 @@ ms.locfileid: "8833786"
 
 ### <a name="what-are-the-trial-limits-and-quotas"></a>Која су ограничења и квоте пробне верзије?
 
-- Не можете да користите сопствени Азуре Дата Лаке налог за складиштење излазних података током пробне верзије програма Цустомер Инсигхтс. Међутим, можете уносити податке из Data Lake Storage налога.
+- Не можете да користите сопствени налог за Azure Data Lake Storage складиштење излазних података током пробне верзије "Увида купаца". Међутим, можете да унесите податке са Дата Лаке Стораге налога.
 - Можете да ускладиштите податке до 3 GB у Dataverse окружење које се аутоматски обезбеђује када покренете пробну верзију решења Customer Insights.
 
 ## <a name="customer-insights-specific-questions"></a>Питања специфична за Customer Insights
@@ -83,7 +83,7 @@ ms.locfileid: "8833786"
 
 Следеће функције нису **доступне**:
 
-- Не можете да креирате нова окружења која користе сопствени Azure Data Lake Storage налог.
+- Не можете да креирате нова окружења која користе ваш налог Azure Data Lake Storage.
 - Пробно окружење не можете избрисати.
 
 ### <a name="how-long-does-the-trial-last"></a>Колико траје пробна верзија?

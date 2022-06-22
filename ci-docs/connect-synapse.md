@@ -1,7 +1,7 @@
 ---
 title: Ингест подаци из Azure Synapse Analytics
 description: Користите базу података Azure Synapse као извор података у програму Dynamics 365 Customer Insights.
-ms.date: 02/24/2022
+ms.date: 03/25/2022
 ms.reviewer: v-wendysmith
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,14 +9,14 @@ ms.topic: how-to
 author: mukeshpo
 ms.author: mukeshpo
 manager: shellyha
-ms.openlocfilehash: 7c758dccf7ea34dd7b8f80d05eff1ed12030526f
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: 6f94cdbcc203fc4518544f7a945bd80e871b36c1
+ms.sourcegitcommit: 5e26cbb6d2258074471505af2da515818327cf2c
 ms.translationtype: MT
 ms.contentlocale: sr-Cyrl-RS
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8643341"
+ms.lasthandoff: 06/14/2022
+ms.locfileid: "9011445"
 ---
-# <a name="connect-an-azure-synapse-data-source-preview"></a>Повезивање извор података Azure Synapse (преглед)
+# <a name="connect-an-azure-synapse-analytics-data-source-preview"></a>Повезивање извор података Azure Synapse Analytics (преглед)
 
 Azure Synapse Analytics је услуга аналитике предузећа која убрзава време на увиде у складиштима података и великим системима података. Azure Synapse Analytics окупља најбоље од СQЛ технологија које се користе у складишту података предузећа, Спарк технологије које се користе за велике податке, Дата Еxплорер за аналитику евиденције и временских серија, цевоводе за интеграцију података и ЕТЛ/ЕЛТ и дубоку интеграцију са другим Азуре услугама Power BI као што су, Cosmos DB и АзуреМЛ.
 
@@ -24,16 +24,14 @@ Azure Synapse Analytics је услуга аналитике предузећа 
 
 ## <a name="prerequisites"></a>Предуслови
 
-Да бисте конфигурисали везу од Dynamics 365 Customer Insights Azure Synapse.
-
 > [!IMPORTANT]
 > Обавезно подесите све **доделе улога** као што је описано.  
 
-## <a name="prerequisites-in-customer-insights"></a>Предуслови у услузи Customer Insights
+**У увидима купаца**:
 
 * Имате улогу администратора **у** "Увидима клијената". Сазнајте више о корисничким [дозволама у фасцикли "Увиди клијената"](permissions.md#assign-roles-and-permissions).
 
-У услузи Azure: 
+**У Азуре:**
 
 - Активна претплата на услугу Azure.
 
@@ -47,7 +45,7 @@ Azure Synapse Analytics је услуга аналитике предузећа 
 
 - На радном Azure Synapse простору, директору *услуге за увиде клијената* потребна **је додељена улога администратора** синапсе. За више информација, погледајте [Како се поставља контрола приступа за ваш Synapse радни простор](/azure/synapse-analytics/security/how-to-set-up-access-control).
 
-## <a name="connect-to-data-lake-databases-in-azure-synapse-analytics"></a>Повежи се са базама података језера у Azure Synapse Analytics
+## <a name="connect-to-the-data-lake-database-in-azure-synapse-analytics"></a>Повежи се са базом података језера у Azure Synapse Analytics
 
 1. Идите на **Подаци** > **Извори података**.
 
@@ -55,14 +53,16 @@ Azure Synapse Analytics је услуга аналитике предузећа 
 
 1. Одаберите **Azure Synapse Analytics метод (Преглед**).
 
-1. Наведите **Назив** за извор података, па изаберите **Следеће** како бисте креирали извор података. 
+   :::image type="content" source="media/data_sources_synapse.png" alt-text="Дијалог за повезивање са подацима синапсе Аналитика":::
+  
+1. Унесите **име** за извор података и опционални **опис**.
 
 1. Одаберите [доступну везу](connections.md) са Azure Synapse Analytics или креирајте нову.
 
-1. Одаберите базу **података језера** са радног простора повезаног у изабраној вези и Azure Synapse Analytics кликните на дугме" **Даље"**.
+1. Одаберите базу **података** са радног простора повезаног у изабраној вези и Azure Synapse Analytics кликните на дугме" **Даље"**.
 
-1. Изаберите ентитете које желите да унестите из повезане базе података. 
+1. Изаберите ентитете које желите да унестите из повезане базе података и кликните на дугме" **Даље"**.
 
-1. Опционално, одаберите ентитете података да бисте дозволили профилисање података. 
+1. Опционално, одаберите ентитете података да бисте дозволили профилисање података.
 
-1. Кликните **на** дугме "Сачувај" да бисте применили селекцију и започели уношење података из новокреираног извор података са табелама базе података језера у програму Azure Synapse Analytics.
+1. Кликните **на** дугме "Сачувај" да бисте применили селекцију и започели уношење података из новокреираног извор података са табелама базе података језера у програму Azure Synapse Analytics. Отвориће **се страница"Извори података" која приказује нову извор података статусу "Освежавање** **·** ".

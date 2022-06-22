@@ -12,12 +12,12 @@ ms.custom: intro-internal
 searchScope:
 - ci-home
 - customerInsights
-ms.openlocfilehash: 68c26eb0ad0da787a9f594b4aebe679588b0d6bf
-ms.sourcegitcommit: f5af5613afd9c3f2f0695e2d62d225f0b504f033
+ms.openlocfilehash: 1c925110f40319df77940d1c32f24a99504d6ec6
+ms.sourcegitcommit: 5e26cbb6d2258074471505af2da515818327cf2c
 ms.translationtype: MT
 ms.contentlocale: sr-Cyrl-RS
-ms.lasthandoff: 06/01/2022
-ms.locfileid: "8833593"
+ms.lasthandoff: 06/14/2022
+ms.locfileid: "9011997"
 ---
 # <a name="get-started-with-dynamics-365-customer-insights"></a>Први кораци у систему Dynamics 365 Customer Insights
 
@@ -39,7 +39,7 @@ ms.locfileid: "8833593"
 
 Обједињени профили су основа за добијање увида и предузимање радњи над подацима. Донесите податке из различитих извора и покрените процес обједињавања података да бисте комбиновали обједињене профиле. Наведите односи између унетих ентитета и користите функције обогаћивања да бисте додали информације профилима.
 
-1. Уносите податке креирањем извора података из више опција. Одаберите једну од линија [Power Query спајања, фасциклу](connect-power-query.md) "Уобичајени модел података [" или](connect-common-data-model.md) . [Microsoft Dataverse](connect-dataverse-managed-lake.md)
+1. Уносите податке креирањем извора података из више опција. Одаберите једну [Azure Data Lake Storage од њих, укључујући уобичајени модел](connect-common-data-model.md)[Azure Synapse Analytics](connect-synapse.md) података [Microsoft Dataverse](connect-dataverse-managed-lake.md) или линије [Power Query спајања](connect-power-query.md).
 
 1. Покрените [процес уједињења података](data-unification.md) тако што ћете идентификовати изворна [поља](map-entities.md), уклонити [дупликате](remove-duplicates.md), услове [подударања](match-entities.md) и [уједињати поља](merge-entities.md).
 

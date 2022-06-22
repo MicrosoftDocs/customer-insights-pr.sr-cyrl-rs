@@ -1,19 +1,19 @@
 ---
 title: Извоз Customer Insights података у Azure складиште блоб објекта
 description: Сазнајте како да конфигуришете везу и извезете садржај у складиште блоб објекта.
-ms.date: 10/06/2021
+ms.date: 06/09/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: how-to
-author: pkieffer
-ms.author: philk
+author: stefanie-msft
+ms.author: sthe
 manager: shellyha
-ms.openlocfilehash: 3d573a6c83b7f0b0c33e656eb383e20a96856b0b
-ms.sourcegitcommit: d45c00a5f6cb106714366af81e8070e7f53654b3
+ms.openlocfilehash: 623926bf520b19ee4156b7a05e953241cd819e9e
+ms.sourcegitcommit: 8e9f0a9693fd8d91ad0227735ff03688fef5406f
 ms.translationtype: MT
 ms.contentlocale: sr-Cyrl-RS
-ms.lasthandoff: 05/15/2022
-ms.locfileid: "8757404"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "8947156"
 ---
 # <a name="export-segment-list-and-other-data-to-azure-blob-storage-preview"></a>Извоз листе сегмената и других података у Azure складиште блоб објекта (преглед)
 
@@ -58,16 +58,19 @@ ms.locfileid: "8757404"
 
 Чување извоза не покреће извоз одмах.
 
-Извоз се покреће са сваким [заказаним освежавањем](system.md#schedule-tab).     
+Извоз се покреће са сваким [заказаним освежавањем](system.md#schedule-tab).
 
-Такође можете да [извезете податке на захтев](export-destinations.md#run-exports-on-demand). 
+Такође можете да [извезете податке на захтев](export-destinations.md#run-exports-on-demand).
 
 Извезени подаци се чувају у контејнеру складишта блоб објекта који сте конфигурисали. Следеће путање фасциклу се аутоматски креирају у вашем контејнеру:
 
 - За изворне ентитете и ентитете које генерише систем:   
   `%ContainerName%/CustomerInsights_%instanceID%/%ExportDestinationName%/%EntityName%/%Year%/%Month%/%Day%/%HHMM%/%EntityName%_%PartitionId%.csv`  
   - Пример: `Dynamics365CustomerInsights/CustomerInsights_abcd1234-4312-11f4-93dc-24f72f43e7d5/BlobExport/HighValueSegment/2020/08/24/1433/HighValueSegment_1.csv`
- 
+  
+  > [!TIP]
+  > Извоз ентитета који садрже велику количину података може довести до више ЦСВ датотека у истој фасцикли за сваки извоз. Дељење извоза се дешава из разлога перформанси да би се умањило време потребно за довршавање извоза.
+
 - Датотека model.json за извезене ентитете биће на нивоу %ExportDestinationName%.  
   - Пример: `Dynamics365CustomerInsights/CustomerInsights_abcd1234-4312-11f4-93dc-24f72f43e7d5/BlobExport/model.json`
 

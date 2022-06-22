@@ -1,19 +1,19 @@
 ---
 title: Извоз Customer Insights података у Snapchat
 description: Сазнајте како да конфигуришете везу и извезете у Snapchat.
-ms.date: 10/08/2021
+ms.date: 06/08/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 171b8bf0f4a034c78e872b671602ae7653271da7
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: d64b482c322af8632e29ec41d6e34c390c5e646c
+ms.sourcegitcommit: 8e9f0a9693fd8d91ad0227735ff03688fef5406f
 ms.translationtype: MT
 ms.contentlocale: sr-Cyrl-RS
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8643624"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "8947294"
 ---
 # <a name="export-segments-to-snapchat-preview"></a>Извоз сегмената у Snapchat (верзија за преглед)
 
@@ -21,7 +21,8 @@ ms.locfileid: "8643624"
 
 ## <a name="prerequisites-for-a-connection"></a>Предуслови за везу
 
--   Имате [Snapchat Business налог](https://business.snapchat.com/), [Snapchat Ads налог](https://ads.snapchat.com/) и одговарајуће акредитиве администратора.
+-   Имате [Snapchat Business налог](https://business.snapchat.com/), [Snapchat Ads налог](https://ads.snapchat.com/) и одговарајуће акредитиве администратора. YОу мора бити бар члан налога организације и менаџер података одређеног налога огласа. 
+-   Имате најмање један корисници Снапцхат корисници типа САМ (Снап корисници Матцх). 
 -   Конфигурисали [сте сегменте у програму](segments.md) "Увиди купаца".
 -   Обједињени кориснички профили у извезеним сегментима садрже поље које представља адресу е-поште.
 
@@ -60,7 +61,7 @@ ms.locfileid: "8643624"
 
 1. У пољу **Веза за извоз**, одаберите везу из одељка Snapchat. Ако не видите назив овог одељка, не постоје вам доступне везе овог типа.
 
-1. Унесите [**ID циљне групе за Snapchat**](https://businesshelp.snapchat.com/s/article/custom-audiences).
+1. Унесите [**Снапцхат сегмент/корисници ИД**](https://businesshelp.snapchat.com/s/article/custom-audiences). ИД датотеке се корисници у УРЛ адреси након што изаберете корисници у програму Снапцхат корисници Манагер. 
 
 1. У одељку **Подударање података**, у пољу **Е-пошта**, изаберите поље које представља е-адресу клијента. То је потребно да извезете сегменте у Snapchat.
 

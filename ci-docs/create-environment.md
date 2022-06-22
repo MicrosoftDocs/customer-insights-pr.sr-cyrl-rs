@@ -12,12 +12,12 @@ ms.custom: intro-internal
 searchScope:
 - ci-home
 - customerInsights
-ms.openlocfilehash: 795eaa3598257f5188070f6ea02d04e4423b66eb
-ms.sourcegitcommit: f5af5613afd9c3f2f0695e2d62d225f0b504f033
+ms.openlocfilehash: 6dfaa09cd80498e9a4e4dea6a07ce6e9d29105e2
+ms.sourcegitcommit: 5e26cbb6d2258074471505af2da515818327cf2c
 ms.translationtype: MT
 ms.contentlocale: sr-Cyrl-RS
-ms.lasthandoff: 06/01/2022
-ms.locfileid: "8833576"
+ms.lasthandoff: 06/14/2022
+ms.locfileid: "9011629"
 ---
 # <a name="how-to-create-a-new-environment"></a>Како да: Креирање нове средине
 
@@ -67,6 +67,7 @@ ms.locfileid: "8833576"
 ## <a name="step-3-connect-to-microsoft-dataverse"></a>3. корак: Повезивање са системом Microsoft Dataverse
 
 Корак **Microsoft Dataverse** вам омогућава да повежете Customer Insights са вашим Dataverse окружењем. Делите податке са Dataverse њима да бисте их користили са пословним апликацијама Dataverse заснованим на систему, као што је Дyнамицс 365 Маркетинг или апликације са моделима у програму Power Apps.
+
 
 Оставите ово поље празно ако немате своје окружење и Dataverse ми ћемо вам га креирати.
 

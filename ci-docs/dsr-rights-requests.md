@@ -1,19 +1,19 @@
 ---
 title: Захтеви на основу права субјекта података (DSR) у оквиру GDPR | Microsoft Docs
 description: Одговорите на захтеве субјекта података за Dynamics 365 Customer Insights.
-ms.date: 08/11/2021
+ms.date: 05/23/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: m-hartmann
 ms.author: wimohabb
 manager: shellyha
-ms.openlocfilehash: af2583295627f98e980adbca4f216b9c34c3cad8
-ms.sourcegitcommit: bf65bc0a54cdab71680e658e1617bee7b2c2bb68
+ms.openlocfilehash: c71305ab835b0f4f75adcce716e795959f898e47
+ms.sourcegitcommit: 8e9f0a9693fd8d91ad0227735ff03688fef5406f
 ms.translationtype: MT
 ms.contentlocale: sr-Cyrl-RS
-ms.lasthandoff: 05/27/2022
-ms.locfileid: "8808579"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "8947386"
 ---
 # <a name="data-subject-rights-dsr-requests-under-gdpr"></a>Захтеви на основу права субјекта података (DSR) у оквиру GDPR
 
@@ -77,11 +77,5 @@ ms.locfileid: "8808579"
 1. Пошаљите е-поруку на D365CI@microsoft.com наводећи адресу е-поште корисника у захтеву. Customer Insights тим ће послати е-поруку на регистровану адресу е-поште администратора регистрованог закупца, тражећи потврду за извоз података.
 2. Прихватите потврду за извоз података за траженог корисника.
 3. Примите извезене податке путем е-адресе администратора закупца.
-
-## <a name="consent-management-preview"></a>Управљање сагласностима (преглед)
-
-Могућност управљања пристанком не прикупља директно корисничке податке. Он увози и обрађује само податке о сагласности које корисници обезбеђују у другим апликацијама.
-
-Да бисте уклонили податке о пристанку о одређеним корисницима, уклоните их у изворима података који су унети у могућност управљања пристанком. Након освежавања извор података, уклоњени подаци ће такође бити избрисани у Центру за сагласност. Апликације које користе ентитет сагласности ће такође избрисати податке који су уклоњени на извору након [освежавања](system.md#refresh-processes). Препоручујемо брзо освежавање извора података након одговора на захтев субјекта података за уклањање података корисника из свих других процеса и апликација.
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

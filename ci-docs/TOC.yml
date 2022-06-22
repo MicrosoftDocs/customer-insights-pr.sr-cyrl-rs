@@ -48,14 +48,14 @@
   items:
     - name: Преглед извора података
       href: data-sources.md
+    - name: Повежите се са подацима у услузи Azure Data Lake Storage
+      href: connect-common-data-model.md
+    - name: Повезивање са услугом Azure Synapse Analytics
+      href: connect-synapse.md
+    - name: Повежите се са подацима у Microsoft Dataverse управљаном језеру података
+      href: connect-dataverse-managed-lake.md
     - name: Додавање извора података путем линија Power Query спајања
       href: connect-power-query.md
-    - name: Додајте Common Data Model фасциклу као извор података
-      href: connect-common-data-model.md
-    - name: Додавање Dataverse управљано језеро података
-      href: connect-dataverse-managed-lake.md
-    - name: Додавање услуге Azure Synapse Analytics
-      href: connect-synapse.md
     - name: Обогаћивање извора података
       href: data-sources-enrichment.md
     - name: Постепено освежавање за изворе података
@@ -82,27 +82,27 @@
   items:
     - name: Обогаћивање корисничких профила
       href: enrichment-hub.md
+    - name: Налози из података Office 365
+      href: enrichment-office.md
     - name: Брендови и интересовања
       href: enrichment-microsoft.md
+    - name: Подаци компаније из Дун &амп; Брадстреет
+      href: enrichment-dnb.md
+    - name: Подаци о предузећу уз услуге Leadspace
+      href: enrichment-leadspace.md
+    - name: Демографија са Experian
+      href: enrichment-experian.md
     - name: Побољшане адресе
       href: enrichment-enhanced-addresses.md
     - name: Побољшани подаци о предузећу
       href: enrichment-enhanced-company-data.md
-    - name: Обогаћивање са решењем Azure Maps
-      href: enrichment-azure-maps.md
-    - name: Обогатите са Дун &амп; Брадстреет
-      href: enrichment-dnb.md
-    - name: Обогатите уз HERE Technologies
-      href: enrichment-here.md
-    - name: Обогаћивање уз Leadspace
-      href: enrichment-leadspace.md
-    - name: Обогатите ЛивеРамп-ом
+    - name: Идентитет помоћу ливеРамп-а
       href: enrichment-liveramp.md
-    - name: Обогаћивање уз Experian
-      href: enrichment-experian.md
-    - name: Обогатите подацима Office 365
-      href: enrichment-office.md
-    - name: Обогаћивање уз SFTP прилагођени увоз
+    - name: Локација из Азуре мапе
+      href: enrichment-azure-maps.md
+    - name: Локација компаније HERE Technologies
+      href: enrichment-here.md
+    - name: СФТП прилагођени увоз
       href: enrichment-SFTP-custom-import.md
 - name: Обједињени профили
   items:
@@ -112,6 +112,8 @@
       href: search-filter-index.md
     - name: Дефинисање активности купаца
       href: activities.md
+    - name: Управљање сагласности за увиде клијената
+      href: consent-management.md
 - name: Сегменти
   items:
     - name: Преглед сегмената
@@ -294,40 +296,6 @@
       href: 'https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights'
     - name: Пробни упити ОДата
       href: odata-examples.md
-- name: Управљање сагласностима (преглед)
-  items:
-    - name: Чвориште помоћи
-      href: consent-management/index.yml
-    - name: Преглед могућности
-      href: consent-management/overview.md
-    - name: Започните
-      items:
-        - name: Започните
-          href: consent-management/get-started.md
-        - name: Појмови и терминологија
-          href: consent-management/glossary.md
-    - name: Увоз података о сагласности
-      items:
-        - name: Увоз података о сагласности
-          href: consent-management/import-consent-data.md
-        - name: Постављање података о пристанку и примена жељених опција сагласности
-          href: consent-management/set-consent-rules.md
-    - name: Управљање подацима о пристанку
-      items:
-        - name: Омогући правила пристанка у увидима клијената
-          href: activate-consent.md
-        - name: Управљање подразумеваним правилима пристанка у сегментима увида клијената
-          href: change-default-consent-rules.md
-    - name: Управљање поставкама и корисницима
-      items:
-        - name: Конфигурисање поставки система
-          href: consent-management/system-settings.md
-        - name: Управљање корисницима и дозволама
-          href: consent-management/manage-users.md
-    - name: Коришћење података о пристанку
-      items:
-        - name: Креирање предвиђања са подацима о пристанку
-          href: consent-management/predictions-consent-data.md
 - name: Ограничења услуге
   href: service-limits.md
 - name: DSR права и захтеви

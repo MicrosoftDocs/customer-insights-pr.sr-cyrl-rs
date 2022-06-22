@@ -8,12 +8,12 @@ ms.topic: how-to
 author: stefanie-msft
 ms.author: sthe
 manager: shellyha
-ms.openlocfilehash: 8b14992f8312d333d8a12501e8a28496c8434779
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: 22eee11666752459a1750d728c4e254ab0c59e58
+ms.sourcegitcommit: 8e9f0a9693fd8d91ad0227735ff03688fef5406f
 ms.translationtype: MT
 ms.contentlocale: sr-Cyrl-RS
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8643251"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "8947248"
 ---
 # <a name="export-segment-list-and-other-data-to-azure-data-lake-storage-gen2-preview"></a>Извоз листе сегмената и других података у Azure Data Lake Storage Gen2 (верзија за преглед)
 
@@ -21,11 +21,9 @@ ms.locfileid: "8643251"
 
 ## <a name="known-limitations"></a>Позната ограничења
 
-1. За Azure Data Lake Storage Gen2 можете бирати између [нивоа стандардних перформанси и премијум перформанси](/azure/storage/blobs/create-data-lake-storage-account) када креирате налог за складиштење за своје језеро података. Ако одаберете ниво премијум перформанси, изаберите премијум ове блоб објеката тип пословног контакта. 
+1. За Azure Data Lake Storage Gen2 можете бирати између [нивоа стандардних перформанси и премијум перформанси](/azure/storage/blobs/create-data-lake-storage-account) када креирате налог за складиштење за своје језеро података. Ако одаберете ниво премијум перформанси, изаберите премијум ове блоб објеката тип пословног контакта.
 
-
-## <a name="set-up-the-connection-to-azure-data-lake-storage-gen2"></a>Подешавање везе са Azure Data Lake Storage Gen2 
-
+## <a name="set-up-the-connection-to-azure-data-lake-storage-gen2"></a>Подешавање везе са Azure Data Lake Storage Gen2
 
 1. Идите на **Администратор** > **Везе**.
 
@@ -39,7 +37,7 @@ ms.locfileid: "8643251"
     - Да бисте сазнали како да направите налог за складиштење са којим ћете користити Azure Data Lake Storage Gen2, погледајте чланак [Креирање налога за складиштење](/azure/storage/blobs/create-data-lake-storage-account). 
     - Да бисте сазнали више о називу налога Azure Data Lake Gen2 складишта и кључу складишта, погледајте [Управљање подешавањима налога за складиштење на Azure порталу](/azure/storage/common/storage-account-manage).
 
-1. Изаберите **Сачувај** да бисте креирали везу. 
+1. Изаберите **Сачувај** да бисте креирали везу.
 
 ## <a name="configure-an-export"></a>Конфигурисање извоза
 
@@ -57,8 +55,12 @@ ms.locfileid: "8643251"
 
 Чување извоза не покреће извоз одмах.
 
-Извоз се покреће са сваким [заказаним освежавањем](system.md#schedule-tab). Такође можете да [извезете податке на захтев](export-destinations.md#run-exports-on-demand). 
+Извоз се покреће са сваким [заказаним освежавањем](system.md#schedule-tab).
+Такође можете да [извезете податке на захтев](export-destinations.md#run-exports-on-demand).
 
-Извезени подаци се чувају у Azure Data Lake Gen 2 контејнеру за складиштење који сте конфигурисали. 
+Извезени подаци се чувају у Azure Data Lake Gen 2 контејнеру за складиштење који сте конфигурисали.
+
+> [!TIP]
+> Извоз ентитета који садрже велику количину података може довести до више ЦСВ датотека у истој фасцикли за сваки извоз. Дељење извоза се дешава из разлога перформанси да би се умањило време потребно за довршавање извоза.
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]
