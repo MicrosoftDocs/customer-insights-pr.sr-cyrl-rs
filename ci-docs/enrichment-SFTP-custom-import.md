@@ -1,5 +1,5 @@
 ---
-title: Обогаћивање уз SFTP прилагођени увоз
+title: Обогатите профиле клијената СФТП прилагођеним увозом (преглед)
 description: Опште информације о обогаћивању SFTP прилагођеног увоза.
 ms.date: 06/10/2022
 ms.reviewer: mhart
@@ -8,14 +8,14 @@ ms.topic: how-to
 author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: 657afb6fcb68429680eb677734b4115e69769008
-ms.sourcegitcommit: 27c5473eecd851263e60b2b6c96f6c0a99d68acb
+ms.openlocfilehash: 88fc366ab9478c3b67034af794e237ff4573da7c
+ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
 ms.translationtype: MT
 ms.contentlocale: sr-Cyrl-RS
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "8953737"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9082331"
 ---
-# <a name="enrich-customer-profiles-with-custom-data-preview"></a>Обогатите профиле клијената уз прилагођене податке (верзија за преглед)
+# <a name="enrich-customer-profiles-with-sftp-custom-import-preview"></a>Обогатите профиле клијената СФТП прилагођеним увозом (преглед)
 
 Secure File Transfer Protocol (SFTP) прилагођени увоз вам омогућава да увезете податке који не морају да пролазе кроз процес обједињавања података. То је флексибилан, сигуран и лак начин уноса података. SFTP прилагођени увоз се може користити у комбинацији са [SFTP извозом](export-sftp.md) који вам омогућава извоз података о профилу клијената потребних за обогаћивање. Подаци се затим могу обрадити и обогатити, а СФТП прилагођени увоз може да се користи за повратак обогаћених података на Dynamics 365 Customer Insights.
 
@@ -120,7 +120,7 @@ Secure File Transfer Protocol (SFTP) прилагођени увоз вам ом
 
 1. Кликните **на дугме** "Покрени" да бисте започели процес обогаћивања или близу да бисте се вратили на страницу **"Обогаћивање** ".
 
-## <a name="enrichment-results"></a>Резултати обогаћивања
+## <a name="view-enrichment-results"></a>Прикажи резултате обогаћивања
 
 [!INCLUDE [enrichment-results](includes/enrichment-results.md)]
 

@@ -1,5 +1,5 @@
 ---
-title: Експерименти Azure машинског учења
+title: Користите моделе засноване на Azure машинском учењу
 description: Користите моделе засноване на Azure машинском учењу у услузи Dynamics 365 Customer Insights.
 ms.date: 12/02/2021
 ms.subservice: audience-insights
@@ -8,12 +8,12 @@ author: naravill
 ms.author: naravill
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: cefd037a021b669e827f0593d63b938d452963f7
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: a1efad2887a02a92ee2960b07b066edc331f3665
+ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
 ms.translationtype: MT
 ms.contentlocale: sr-Cyrl-RS
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8643264"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9082289"
 ---
 # <a name="use-azure-machine-learning-based-models"></a>Користите моделе засноване на Azure машинском учењу
 

@@ -1,5 +1,5 @@
 ---
-title: Извезите Customer Insights податке у Dynamics 365 Sales
+title: Извоз сегмената у Дyнамицс 365 продају (преглед)
 description: Сазнајте како да конфигуришете везу и извезете у Dynamics 365 Sales.
 ms.date: 03/03/2021
 ms.reviewer: mhart
@@ -11,16 +11,14 @@ manager: shellyha
 searchScope:
 - ci-export
 - customerInsights
-ms.openlocfilehash: 987690283090ec83ca75f50bf8f3cd8da9295887
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: b8e756313ca037dca41cb25587229808f0c584c9
+ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
 ms.translationtype: MT
 ms.contentlocale: sr-Cyrl-RS
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8643318"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9082394"
 ---
-# <a name="use-segments-in-dynamics-365-sales-preview"></a>Коришћење сегмената у услузи Dynamics 365 Sales (верзија за преглед)
-
-
+# <a name="export-segments-to-dynamics-365-sales-preview"></a>Извоз сегмената у Дyнамицс 365 продају (преглед)
 
 Користите податке о клијентима да бисте креирали маркетиншке спискове, пратили токове посла и слали промоције са услугом Dynamics 365 Sales.
 

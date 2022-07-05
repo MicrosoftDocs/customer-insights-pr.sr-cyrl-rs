@@ -1,5 +1,5 @@
 ---
-title: Извоз Customer Insights података у Adobe Experience Platform
+title: Извоз сегмената у Adobe Experience Platform (преглед)
 description: Сазнајте како да користите сегменте "Увид купца" у Adobe Experience Platform.
 ms.date: 03/29/2021
 ms.reviewer: mhart
@@ -8,14 +8,14 @@ ms.topic: conceptual
 author: stefanie-msft
 ms.author: antando
 manager: shellyha
-ms.openlocfilehash: 42a4e0c6bce67a63b449a541299620ef2f4a3259
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: c29b8264019669ffd954a298ce3a633c852477fa
+ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
 ms.translationtype: MT
 ms.contentlocale: sr-Cyrl-RS
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8643737"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9052529"
 ---
-# <a name="use-customer-insights-segments-in-adobe-experience-platform-preview"></a>Коришћење Customer Insights сегмената у услузи Adobe Experience Platform (верзија за преглед)
+# <a name="export-segments-to-adobe-experience-platform-preview"></a>Извоз сегмената у Adobe Experience Platform (преглед)
 
 Као корисник, можда Dynamics 365 Customer Insights сте креирали сегменте да бисте маркетиншке кампање били ефикаснији циљањем релевантних корисника локације. Да бисте користили сегмент из увида клијената у и Adobe Experience Platform апликације као што је Adobe Стандард кампање, потребно је да следите неколико корака наведених у овом чланку.
 

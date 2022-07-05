@@ -1,5 +1,5 @@
 ---
-title: Обогатите профиле клијената подацима о локацији из програма Azure Maps
+title: Обогатите профиле клијената подаци о локацији Азуре мапе (преглед)
 description: Опште информације о Azure Maps директном обогаћивању.
 ms.date: 06/10/2022
 ms.reviewer: mhart
@@ -8,14 +8,14 @@ ms.topic: how-to
 author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: a806b2d0c791972c967c90694527608b4def9f3f
-ms.sourcegitcommit: 27c5473eecd851263e60b2b6c96f6c0a99d68acb
+ms.openlocfilehash: dfadc08f67beac3fded1a97e557ee9e1880664e0
+ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
 ms.translationtype: MT
 ms.contentlocale: sr-Cyrl-RS
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "8953646"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9052625"
 ---
-# <a name="enrichment-of-customer-profiles-with-azure-maps-preview"></a>Обогаћивање профила клијената уз Azure Maps (верзија за преглед)
+# <a name="enrich-customer-profiles-with-location-data-from-azure-maps-preview"></a>Обогатите профиле клијената подаци о локацији Азуре мапе (преглед)
 
 Азуре мапе обезбеђују локацијско-центричне податке и услуге за пружање искустава на основу геоспатиалних података са уграђеном локацијском интелигенцијом. Услуге Azure Maps обогаћивања података побољшавају прецизност информација о локацији ваших клијената. Оне доносе могућности попут нормализације адреса и екстракције географске ширине и дужине у услугу Dynamics 365 Customer Insights.
 
@@ -82,7 +82,7 @@ Dynamics 365 Customer Insights администратор може у свако
 
 1. Кликните **на дугме** "Покрени" да бисте започели процес обогаћивања или близу да бисте се вратили на страницу **"Обогаћивање** ".
 
-## <a name="enrichment-results"></a>Резултати обогаћивања
+## <a name="view-enrichment-results"></a>Прикажи резултате обогаћивања
 
 [!INCLUDE [enrichment-results](includes/enrichment-results.md)]
 

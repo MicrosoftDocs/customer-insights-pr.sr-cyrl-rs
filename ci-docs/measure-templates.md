@@ -11,14 +11,14 @@ manager: shellyha
 searchScope:
 - ci-measure-template
 - customerInsights
-ms.openlocfilehash: eeabd889f7b694f8d809894169a3cdc068acc340
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: f6bcdfc45a49c36f22d6ebc6e919f43b27f899d8
+ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
 ms.translationtype: MT
 ms.contentlocale: sr-Cyrl-RS
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8643138"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9051702"
 ---
-# <a name="use-a-template-to-build-a-measure"></a>Коришћење предлошка за изградњу мере
+# <a name="create-measures-from-templates"></a>Креирање мера из предложака
 
 За њихову креирање можете да користите унапред дефинисане предлошке [уобичајених](measures.md) мера. Детаљни описи предложака и вођено искуство помажу вам у ефикасном креирању мера. Предлошци се надовезују на мапиране податке из ентитета *Обједињена активност*. Уверите се да сте конфигурисали [активности клијената](activities.md) пре него што креирате меру из предлошка.
 

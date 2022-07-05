@@ -1,5 +1,5 @@
 ---
-title: Обогаћивање путем независног обогаћивања HERE Technologies
+title: Обогатите профиле клијената помоћу ХЕРЕ технологија (преглед)
 description: Опште информације о HERE Technologies обогаћивању треће стране.
 ms.date: 06/10/2022
 ms.reviewer: mhart
@@ -8,14 +8,14 @@ ms.topic: how-to
 author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: 171ead92427924083a13e2a3d52e7a7da417c801
-ms.sourcegitcommit: 27c5473eecd851263e60b2b6c96f6c0a99d68acb
+ms.openlocfilehash: d88085b6be156dd1c895e9e5b38cc9d77acbdb95
+ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
 ms.translationtype: MT
 ms.contentlocale: sr-Cyrl-RS
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "8953691"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9052069"
 ---
-# <a name="enrichment-of-customer-profiles-with-here-technologies-preview"></a>Обогаћивање профила клијената уз HERE Technologies (верзија за преглед)
+# <a name="enrich-customer-profiles-with-here-technologies-preview"></a>Обогатите профиле клијената помоћу ХЕРЕ технологија (преглед)
 
 верзија за преглед је компанија за платформу локације која пружа податке и услуге усмерене на локацију. Услуге обогаћивања података ХЕРЕ технологије побољшавају прецизност информација о локацији ваших клијената. Он обезбеђује нормализацију адресе, географску ширину и извлачење дужине и још много тога.
 
@@ -72,7 +72,7 @@ ms.locfileid: "8953691"
 
 1. Кликните **на дугме** "Покрени" да бисте започели процес обогаћивања или близу да бисте се вратили на страницу **"Обогаћивање** ".
 
-## <a name="enrichment-results"></a>Резултати обогаћивања
+## <a name="view-enrichment-results"></a>Прикажи резултате обогаћивања
 
 [!INCLUDE [enrichment-results](includes/enrichment-results.md)]
 

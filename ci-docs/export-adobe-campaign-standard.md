@@ -1,5 +1,5 @@
 ---
-title: Извоз Customer Insights података у услугу Adobe Campaign Standard
+title: Извоз сегмената увида купаца у Adobe стандард кампање (преглед)
 description: Сазнајте како да користите сегменте "Увиди купаца" у стандардној Adobe кампањи.
 ms.date: 03/29/2021
 ms.reviewer: mhart
@@ -8,14 +8,14 @@ ms.topic: conceptual
 author: stefanie-msft
 ms.author: antando
 manager: shellyha
-ms.openlocfilehash: 2a62d2f889f199222eeb8cc969fce62fa89fa6f0
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: 9915591cd969bf825f5d1669de43ed4f9953f898
+ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
 ms.translationtype: MT
 ms.contentlocale: sr-Cyrl-RS
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8643449"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9082352"
 ---
-# <a name="use-customer-insights-segments-in-adobe-campaign-standard-preview"></a>Користите Customer Insights сегменте у услузи Adobe Campaign Standard (верзија за преглед)
+# <a name="export-customer-insights-segments-to-adobe-campaign-standard-preview"></a>Извоз сегмената увида купаца у Adobe стандард кампање (преглед)
 
 Као корисник, можда Dynamics 365 Customer Insights сте креирали сегменте да бисте маркетиншке кампање били ефикаснији циљањем релевантних корисника локације. Да бисте користили сегмент из увида клијената у и Adobe Experience Platform апликације као што је Adobe Стандард кампање, потребно је да следите неколико корака наведених у овом чланку.
 
@@ -23,9 +23,9 @@ ms.locfileid: "8643449"
 
 ## <a name="prerequisites"></a>Предуслови
 
--   Dynamics 365 Customer Insights лиценца
--   Лиценца за Adobe Campaign Standard
--   Налог Azure складишта блоб објекта
+- Dynamics 365 Customer Insights лиценца
+- Лиценца за Adobe Campaign Standard
+- Налог Azure складишта блоб објекта
 
 ## <a name="campaign-overview"></a>Преглед кампање
 
@@ -51,7 +51,7 @@ ms.locfileid: "8643449"
 
 Са идентификованим корисници циљним датотекама, можемо да конфигуришемо извоз на Азуре Блоб Стораге налог.
 
-1. У увидима клијената идите на **АдминЦоннецтионс** > **·**.
+1. У увидима клијената идите на **администраторски** > **конекцију**.
 
 1. Изаберите **Додај везу** и бирајте **Adobe кампања** да бисте конфигурисали везу или изаберите **Подешавање** на плочици **Adobe кампања**.
 

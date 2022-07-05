@@ -1,5 +1,5 @@
 ---
-title: Примери ОДата за Dynamics 365 Customer Insights АПИ-је
+title: Примери упита ОДата за АПИ-је корисничких увида
 description: Често коришћени примери отвореног протокола података (ОДата) за упит АПИ-ја корисничких увида за редиговање података.
 ms.date: 05/25/2022
 ms.subservice: audience-insights
@@ -8,14 +8,14 @@ author: m-hartmann
 ms.author: mhart
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: cdadd72bfe4272d8d83d923baaa6fd40d008473b
-ms.sourcegitcommit: bf65bc0a54cdab71680e658e1617bee7b2c2bb68
+ms.openlocfilehash: 54ba9f4e9baeb4b7021bb8c20a706bbb6eb1529f
+ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
 ms.translationtype: MT
 ms.contentlocale: sr-Cyrl-RS
-ms.lasthandoff: 05/27/2022
-ms.locfileid: "8808479"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9083171"
 ---
-# <a name="odata-query-examples"></a>Примери упита ОДата
+# <a name="odata-query-examples-for-customer-insights-apis"></a>Примери упита ОДата за АПИ-је корисничких увида
 
 Опен Дата Протоцол (ОДата) је протокол за приступ подацима изграђен на основним протоколима као што је ХТТП. Он користи уобичајено прихваћене методологије као што је РЕСТ за Веб. Постоје разне врсте библиотека и алатки које се могу користити за конзумирање ОДата услуга.
 

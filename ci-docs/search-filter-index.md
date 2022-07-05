@@ -1,5 +1,5 @@
 ---
-title: Претрага и филтрирање профила клијената
+title: 'Профили клијената: Индекс за претраживање и филтрирање'
 description: Брзо пронађите информације о обједињеним профилима клијената и филтрирајте према одређеним атрибутима.
 ms.date: 11/01/2021
 ms.reviewer: mhart
@@ -11,12 +11,12 @@ manager: shellyha
 searchScope:
 - ci-search-filter
 - customerInsights
-ms.openlocfilehash: 35bfd6530b9b80a4b0ec8ff992d9014534721907
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: fc076e341f744ac2922dcacdf5f20ae8ecbdbaa0
+ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
 ms.translationtype: MT
 ms.contentlocale: sr-Cyrl-RS
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8643564"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9050827"
 ---
 # <a name="customer-profiles-search--filter-index"></a>Профили клијената: Индекс за претраживање и филтрирање
 

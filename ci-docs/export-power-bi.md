@@ -1,5 +1,5 @@
 ---
-title: Power BI конектор
+title: Power BI конектор (преглед)
 description: Сазнајте како да користите Dynamics 365 Customer Insights конектор у услузи Power BI.
 ms.date: 07/23/2021
 ms.reviewer: mhart
@@ -8,16 +8,16 @@ ms.topic: how-to
 author: stefanie-msft
 ms.author: sthe
 manager: shellyha
-ms.openlocfilehash: e901114703a43b4b4e751e0a93eb4876d7636c00
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: 72daf6d4ef3b6afb8049c622b57e7ec44762fb21
+ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
 ms.translationtype: MT
 ms.contentlocale: sr-Cyrl-RS
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8643637"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9051287"
 ---
-# <a name="connector-for-power-bi-preview"></a>Конектор за Power BI (преглед)
+# <a name="power-bi-connector-preview"></a>Power BI конектор (преглед)
 
-Направите визуелизације за своје податке помоћу услуге Power BI Desktop. Генеришите додатне увиде и правите извештаје помоћу обједињених података о клијентима.
+Креирајте визуелизације за податке помоћу радне површине Microsoft Power BI. Генеришите додатне увиде и правите извештаје помоћу обједињених података о клијентима.
 
 ## <a name="prerequisites"></a>Предуслови
 

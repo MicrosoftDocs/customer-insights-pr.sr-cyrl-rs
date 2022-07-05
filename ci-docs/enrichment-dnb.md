@@ -1,5 +1,5 @@
 ---
-title: Енрицхмент оф цомпанy профиле wитх Дун &амп; Брадстреет
+title: Обогатите профиле компаније са Дун &амп; Брадстреет (преглед)
 description: Опште информације о обогаћивању треће стране Дун &амп; Брадстреет.
 ms.date: 06/10/2022
 ms.reviewer: mhart
@@ -9,14 +9,14 @@ ms.topic: how-to
 author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: b1038970b6aee3bbdd7f79cc457f79aaf1c38222
-ms.sourcegitcommit: 27c5473eecd851263e60b2b6c96f6c0a99d68acb
+ms.openlocfilehash: 51f2e4e46aa25d10502d0feb5ea42eb7d2d637b9
+ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
 ms.translationtype: MT
 ms.contentlocale: sr-Cyrl-RS
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "8953909"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9082562"
 ---
-# <a name="enrichment-of-company-profiles-with-dun--bradstreet-preview"></a>Енрицхмент оф цомпанy профиле wитх Дун &амп; Брадстреет (Превиеw)
+# <a name="enrich-company-profiles-with-dun--bradstreet-preview"></a>Обогатите профиле компаније са Дун &амп; Брадстреет (преглед)
 
 Дун &амп; Брадстреет пружа комерцијалне податке, аналитику и увиде за предузећа. Омогућује клијентима са обједињеним профилима клијената за компаније да обогаћују своје податке. Обогаћивање укључује атрибуте као што су ДУНС број, величина компаније, локација, индустрија и још много тога.
 
@@ -102,7 +102,7 @@ ms.locfileid: "8953909"
 
 1. Кликните **на дугме** "Покрени" да бисте започели процес обогаћивања или близу да бисте се вратили на страницу **"Обогаћивање** ".
 
-## <a name="enrichment-results"></a>Резултати обогаћивања
+## <a name="view-enrichment-results"></a>Прикажи резултате обогаћивања
 
 [!INCLUDE [enrichment-results](includes/enrichment-results.md)]
 

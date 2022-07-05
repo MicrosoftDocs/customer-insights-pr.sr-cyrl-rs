@@ -1,5 +1,5 @@
 ---
-title: Извезите Customer Insights податке у Autopilot
+title: Извоз сегмената у Autopilot (верзија за преглед)
 description: Сазнајте како да конфигуришете везу и извезете у Autopilot.
 ms.date: 10/08/2021
 ms.reviewer: mhart
@@ -8,12 +8,12 @@ ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 01fb04cd1f0acfee1fcc9243269f967942580891
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: e3af3d03e70c4ce9d229c84c582ec4f302be8c9f
+ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
 ms.translationtype: MT
 ms.contentlocale: sr-Cyrl-RS
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8643444"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9082541"
 ---
 # <a name="export-segments-to-autopilot-preview"></a>Извоз сегмената у Autopilot (верзија за преглед)
 

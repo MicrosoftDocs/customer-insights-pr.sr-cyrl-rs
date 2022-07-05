@@ -1,5 +1,5 @@
 ---
-title: Надгледање Dynamics 365 Customer Insights помоћу Азуре монитора
+title: Пријављивање помоћу Dynamics 365 Customer Insights Азуре монитора (преглед)
 description: Сазнајте како да пошаљете евиденције на монитор Microsoft Azure.
 ms.date: 12/14/2021
 ms.reviewer: mhart
@@ -11,16 +11,16 @@ manager: shellyha
 searchScope:
 - ci-system-diagnostic
 - customerInsights
-ms.openlocfilehash: 15ae772617efa4c64cf79d0bac10a0c3cb28ca30
-ms.sourcegitcommit: a92bf5985263240fd07bad98d8e119b88cf2c9d9
+ms.openlocfilehash: 8c72df7054a682244215bbee54968d6aef4bbf59
+ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
 ms.translationtype: MT
 ms.contentlocale: sr-Cyrl-RS
-ms.lasthandoff: 05/26/2022
-ms.locfileid: "8807599"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9052671"
 ---
 # <a name="log-forwarding-in-dynamics-365-customer-insights-with-azure-monitor-preview"></a>Пријављивање помоћу Dynamics 365 Customer Insights Азуре монитора (преглед)
 
-Dynamics 365 Customer Insights обезбеђује директну интеграцију са Азуре монитором. Евиденције ресурса Азуре монитора вам омогућава да надгледате и шаљете евиденције [у Азуре складиште](https://azure.microsoft.com/services/storage/), [аналитику евиденције Азуре](/azure/azure-monitor/logs/log-analytics-overview) или [да их стримујете у Азуре чворишта догађаја](https://azure.microsoft.com/services/event-hubs/).
+Dynamics 365 Customer Insights обезбеђује директну интеграцију са Азуре монитором. Евиденције ресурса Азуре монитора вам омогућава да надгледате и шаљете евиденције [у Азуре складиште](https://azure.microsoft.com/services/storage/), [Азуре аналитику евиденције](/azure/azure-monitor/logs/log-analytics-overview) или да их стримујете [у Азуре чворишта догађаја](https://azure.microsoft.com/services/event-hubs/).
 
 Увиди купаца шаљу следеће евиденције догађаја:
 
@@ -176,7 +176,7 @@ Dynamics 365 Customer Insights обезбеђује директну интег�
 | `properties.origin`          | УРИ који показује одакле долази допремање или `unknown`.                                                                  |
 | `properties.operationStatus` | `Success` за ХТТП статусни кôд &лт; 400 <br> `ClientError` за ХТТП статусни кôд &лт; 500 <br> `Error` за ХТТП Статус &гт;= 500 |
 | `properties.tenantId`        | ID организације                                                                                                        |
-| `properties.tenantName`      | Име организације.                                                                                              |
+| `properties.tenantName`      | Назив организације.                                                                                              |
 | `properties.callerObjectId`  | Azure Active Directory ИД објекта позиваоца.                                                                         |
 | `properties.instanceId`      | Увиди купаца`instanceId`                                                                                         |
 

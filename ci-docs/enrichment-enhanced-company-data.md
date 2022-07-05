@@ -1,5 +1,5 @@
 ---
-title: Побољшање података предузећа
+title: Обогаћивање профила предузећа побољшаним подацима компаније
 description: Обогатите и нормализујте податке компаније Мицрософт моделима.
 ms.date: 06/10/2022
 ms.reviewer: mhart
@@ -8,14 +8,14 @@ ms.topic: how-to
 author: kishorem-ms
 ms.author: kishorem
 manager: shellyha
-ms.openlocfilehash: 4247d59806468907d93fc7848231ec5a2985580e
-ms.sourcegitcommit: 27c5473eecd851263e60b2b6c96f6c0a99d68acb
+ms.openlocfilehash: 131ef3d1e123628779609ddec368cfef8f4d607e
+ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
 ms.translationtype: MT
 ms.contentlocale: sr-Cyrl-RS
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "8953967"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9054266"
 ---
-# <a name="enrichment-of-company-profiles-with-enhanced-company-data"></a>Обогаћивање профила предузећа побољшаним подацима компаније
+# <a name="enrich-company-profiles-with-enhanced-company-data"></a>Обогаћивање профила предузећа побољшаним подацима компаније
 
 Користите Мицрософтове моделе и преведене податке компаније да бисте исправили, допунили и стандардизовали профиле предузећа. Користићемо формат Цоммон [Дата Модел за](/common-data-model/schema/core/applicationcommon/account) бољу тачност и увиде.
 
@@ -84,7 +84,7 @@ Microsft
 
 1. Кликните **на дугме** "Покрени" да бисте започели процес обогаћивања или близу да бисте се вратили на страницу **"Обогаћивање** ".
 
-## <a name="enrichment-results"></a>Резултати обогаћивања
+## <a name="view-enrichment-results"></a>Прикажи резултате обогаћивања
 
 [!INCLUDE [enrichment-results](includes/enrichment-results.md)]
 

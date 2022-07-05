@@ -6,14 +6,14 @@ ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: 4cc3cbde97d0f9da198652e86c0843476393b646
-ms.sourcegitcommit: f5af5613afd9c3f2f0695e2d62d225f0b504f033
+ms.openlocfilehash: 99ec463299a24ea81cfe26bb785e36bdefdcd080
+ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
 ms.translationtype: MT
 ms.contentlocale: sr-Cyrl-RS
-ms.lasthandoff: 06/01/2022
-ms.locfileid: "8833326"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9054450"
 ---
-# <a name="work-with-unified-customer-profiles-in-dynamics-365-marketing"></a>Рад са обједињеним профилима клијената у Дyнамицс 365 маркетингу
+# <a name="use-unified-customer-profiles-in-dynamics-365-marketing"></a>Коришћење обједињених профила клијената у Дyнамицс 365 маркетингу
 
 [Дyнамицс 365 Маркетинг](/dynamics365/marketing/overview) уздиже корисничка искуства, омогућавајући вам да оркестрирате персонализована путовања преко свих додирних тачака како бисте ојачали односи и зарадили лојалност. Дyнамицс 365 маркетинг апликација неприметно функционише са Дyнамицс 365 Салес, Dynamics 365 Customer Insights, и Microsoft Teams другим производима и омогућава вам да доносите брже и боље одлуке користећи моћ података и АИ.
 

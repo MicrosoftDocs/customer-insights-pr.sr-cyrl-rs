@@ -1,5 +1,5 @@
 ---
-title: Извезите Customer Insights података у Salesforce Marketing Cloud
+title: Извоз података у Салесфорце Маркетинг Цлоуд (преглед)
 description: Сазнајте како да конфигуришете везу и извезете је у Salesforce Marketing Cloud.
 ms.date: 07/23/2021
 ms.reviewer: mhart
@@ -8,14 +8,14 @@ ms.topic: how-to
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: aaf5c2607099bbfccf7ed75330267da8c3c5fe1b
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: c3a6a40d9b9f08c8ebca8cb4a9196a1a79f03afa
+ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
 ms.translationtype: MT
 ms.contentlocale: sr-Cyrl-RS
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8643877"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9082625"
 ---
-# <a name="export-segments-and-other-data-to-salesforce-marketing-cloud-preview"></a>Извоз сегмената и других података у Salesforce Marketing Cloud (верзија за преглед)
+# <a name="export-data-to-salesforce-marketing-cloud-preview"></a>Извоз података у Салесфорце Маркетинг Цлоуд (преглед)
 
 Користите податке о клијентима у услузи Salesforce Marketing Cloud тако што ћете их извести путем локације протокола сигурног преноса датотека (SFTP).
 

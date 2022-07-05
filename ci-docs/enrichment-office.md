@@ -1,5 +1,5 @@
 ---
-title: Обогатите профиле клијената подацима из Microsoft Office 365
+title: Обогатите профиле клијената подацима из Microsoft Office 365 (превиеw)
 description: Користите власничке податке да бисте Microsoft Office обогатили профиле клијената подацима о ангажовању.
 ms.date: 06/10/2022
 ms.reviewer: mhart
@@ -8,14 +8,14 @@ ms.topic: how-to
 author: jodahl
 ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: 7192b7680e73a581dd603de174c57b20bec996dd
-ms.sourcegitcommit: 27c5473eecd851263e60b2b6c96f6c0a99d68acb
+ms.openlocfilehash: 75762afb70814c8a81c1574ee7ea1553a2048737
+ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
 ms.translationtype: MT
 ms.contentlocale: sr-Cyrl-RS
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "8954151"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9055692"
 ---
-# <a name="enrich-customer-profiles-with-engagement-data-preview"></a>Обогатите профиле клијената подацима о ангажовању (преглед)
+# <a name="enrich-customer-profiles-with-data-from-microsoft-office-365-preview"></a>Обогатите профиле клијената подацима из Microsoft Office 365 (превиеw)
 
 Користите податке Microsoft Office 365 из да бисте обогатили профиле корисничког налога увидом о ангажовању путем Office 365 апликација. Подаци о ангажовању се састоје од активности е-поште и састанка, која се прикупља на нивоу налога. На пример, број е-порука са пословног налога или број састанака са налогом. Подаци о појединачним корисницима нису доступни.
 
@@ -75,7 +75,7 @@ ms.locfileid: "8954151"
 
 [!INCLUDE [progress-details-pane](includes/progress-details-pane.md)]
 
-## <a name="enrichment-results"></a>Резултати обогаћивања
+## <a name="view-enrichment-results"></a>Прикажи резултате обогаћивања
 
 [!INCLUDE [enrichment-results](includes/enrichment-results.md)] Ово је *Оффице* ентитет. Овај *Office_UserEntity ИД-ове* активног директоријума за е-адресе које су одабране током конфигурације обогаћивања.
 

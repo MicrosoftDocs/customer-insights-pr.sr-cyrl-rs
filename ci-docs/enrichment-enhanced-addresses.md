@@ -1,5 +1,5 @@
 ---
-title: Обогаћивање побољшања адресе (садржи видео)
+title: Обогатите профиле клијената побољшаним адресама (садржи видео)
 description: Обогатите и нормализујте информације о адресама корисничких профила помоћу Microsoft модела.
 ms.date: 06/10/2022
 ms.reviewer: mhart
@@ -14,14 +14,14 @@ searchScope:
 - ci-enrichments
 - ci-enrichment-wizard
 - customerInsights
-ms.openlocfilehash: f6279b9bb721d99d66f73e8dc839a92f1ad90140
-ms.sourcegitcommit: 27c5473eecd851263e60b2b6c96f6c0a99d68acb
+ms.openlocfilehash: 01f1c917c75e932cc69f4c7251e57524fc859dce
+ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
 ms.translationtype: MT
 ms.contentlocale: sr-Cyrl-RS
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "8953829"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9082079"
 ---
-# <a name="enrichment-of-customer-profiles-with-enhanced-addresses"></a>Обогаћивање корисничких профила са побољшаним адресама
+# <a name="enrich-customer-profiles-with-enhanced-addresses"></a>Обогатите профиле клијената побољшаним адресама
 
 Адресе у вашим подацима могу бити неструктуриране, непотпуне или нетачне. Користите Microsoft моделе за нормализацију и обогаћивање адреса у [формату Common Data Model](/common-data-model/schema/core/applicationcommon/address) ради веће тачности и увида.
 
@@ -101,7 +101,7 @@ ms.locfileid: "8953829"
 
 1. Изаберите **Сачувај обогаћивање** након прегледа ваших избора.
 
-## <a name="enrichment-results"></a>Резултати обогаћивања
+## <a name="view-enrichment-results"></a>Прикажи резултате обогаћивања
 
 [!INCLUDE [enrichment-results](includes/enrichment-results.md)]
 
