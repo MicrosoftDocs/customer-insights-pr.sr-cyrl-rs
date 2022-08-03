@@ -1,19 +1,19 @@
 ---
 title: Power Apps конектор (преглед)
 description: Повежите се са услугама Power Apps и Power Automate.
-ms.date: 10/01/2021
+ms.date: 07/25/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: how-to
 author: Nils-2m
 ms.author: nikeller
 manager: shellyha
-ms.openlocfilehash: 0b71f723d1e491d422d24b1be6616d2f33c95d40
-ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
+ms.openlocfilehash: 8807e82e65ea20d1a7f7dc07552229f377927eed
+ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
 ms.translationtype: MT
 ms.contentlocale: sr-Cyrl-RS
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9055278"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "9196918"
 ---
 # <a name="power-apps-connector-preview"></a>Power Apps конектор (преглед)
 
@@ -27,7 +27,7 @@ Customer Insights је један од многих [доступних изво
 
 ## <a name="available-entities"></a>Доступни ентитети
 
-Када додате услугу Customer Insights као везу за пренос података, можете изабрати следеће ентитете у програму Power Apps:
+Након додавања увида клијената као података за повезивање, одаберите следеће ентитете у Power Apps:
 
 - **Клијент**: за коришћење података из [обједињеног профила клијента](customer-profiles.md).
 - **UnifiedActivity**: да бисте приказали [временску осу активности](activities.md) у апликацији.
@@ -37,41 +37,38 @@ Customer Insights је један од многих [доступних изво
 
 ### <a name="retrievable-entities"></a>Повратни ентитети
 
-Можете да преузмете само ентитете **Клијент**, **UnifiedActivity**, **Сегменти** и **ContactProfile** кроз Power Apps конектор. ЦонтацтПрофиле је доступан само у инстанци увида купаца за пословне налоге. Други ентитети се приказују јер их основни конектор подржава кроз окидаче у услузи Power Automate.
+Можете да преузмете само ентитете **Клијент**, **UnifiedActivity**, **Сегменти** и **ContactProfile** кроз Power Apps конектор. ЦонтацтПрофиле је доступан само у окружењима"Увиди купаца" за пословне налоге. Други ентитети се приказују јер их основни конектор подржава кроз окидаче у услузи Power Automate.
 
 Можете да урадите највише 100 позива на 60 секунди. АПИ можете да позовете крајња тачка више пута помоћу параметра $ скип уређаја. [Сазнајте више о $ скип параметру](/connectors/customerinsights/#get-items-from-an-entity).
 
 ### <a name="delegation"></a>Делегирање
 
-Делегирање ради за ентитет **Клијент** и ентитет **UnifiedActivity**. 
+Делегирање ради за ентитет **Клијент** и ентитет **UnifiedActivity**.
 
-- Делегирање за ентитет **Клијент**: Да бисте користили делегирање за овај ентитет, поља треба индексирати у одељку [Индекс претраге и филтрирања](search-filter-index.md).  
+- Делегација **за ентитет** купца: Да бисте користили делегирање за овај ентитет, поља треба индексирати у индексу [сеарцх &амп; филтер](search-filter-index.md).  
 - Делегирање за ентитет **Обједињена активност**: Делегирање за овај ентитет ради само за поља **ActivityId** и **CustomerId**.  
 - Делегирање за **ContactProfile**: делегирање за овај ентитет функционише само за поља **ContactId** и **CustomerId**. ЦонтацтПрофиле је доступан само у окружењима"Увиди купаца" за пословне налоге.
 
-За више информација о делегирању идите на [Power Apps преносиве функције и операције](/powerapps/maker/canvas-apps/delegation-overview). 
+За више информација о делегирању идите на [Power Apps преносиве функције и операције](/powerapps/maker/canvas-apps/delegation-overview).
 
 ## <a name="example-gallery-control"></a>Пример контроле галерије
 
-Можете додати профиле клијената у [контролу галерије](/powerapps/maker/canvas-apps/add-gallery).
+Опционално, додајте профиле клијената контроли [галерије](/powerapps/maker/canvas-apps/add-gallery).
 
 1. Додајте контролу **Галерија** у апликацију коју градите.
+  
+   :::image type="content" source="media/connector-powerapps9.png" alt-text="Додајте елемент галерије.":::
 
-    > [!div class="mx-imgBorder"]
-    > ![Додајте елемент галерије.](media/connector-powerapps9.png "Додајте елемент галерије.")
+1. Изаберите **Клијент** као извор података за ставке.
 
-2. Изаберите **Клијент** као извор података за ставке.
+   :::image type="content" source="media/choose-datasource-powerapps.png" alt-text="Изаберите извор података.":::
 
-    > [!div class="mx-imgBorder"]
-    > ![Изаберите извор података.](media/choose-datasource-powerapps.png "Изаберите извор података.")
+1. Промените таблу са подацима са десне стране да бисте изабрали поље које ће ентитет купца показати у галерији.
 
-3. Можете да промените таблу са подацима на десној страни да бисте изабрали поље које ће ентитет Клијент приказати у галерији.
-
-4. Ако желите да у галерији прикажете било које поље одабраног клијента, попуните својство **Текст** ознаке користећи **{Name_of_the_gallery}.Selected.{property_name}**  
+1. Ако желите да у галерији прикажете било које поље одабраног клијента, попуните својство **Текст** ознаке користећи **{Name_of_the_gallery}.Selected.{property_name}**  
     - На пример: _Gallery1.Selected.address1_city_
 
-5. Да бисте приказали обједињену временску осу за клијента, додајте елемент галерије, па додајте својство **Ставке** користећи **Filter('UnifiedActivity', CustomerId = {Customer_Id})**  
+1. Да бисте приказали обједињену временску осу за клијента, додајте елемент галерије, па додајте својство **Ставке** користећи **Filter('UnifiedActivity', CustomerId = {Customer_Id})**  
     - На пример: _Filter('UnifiedActivity', CustomerId = Gallery1.Selected.CustomerId)_
-
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

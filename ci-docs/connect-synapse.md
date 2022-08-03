@@ -1,7 +1,7 @@
 ---
 title: Повезивање извор података Azure Synapse (преглед)
 description: Користите базу података Azure Synapse као извор података у програму Dynamics 365 Customer Insights.
-ms.date: 03/25/2022
+ms.date: 07/26/2022
 ms.reviewer: v-wendysmith
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: how-to
 author: mukeshpo
 ms.author: mukeshpo
 manager: shellyha
-ms.openlocfilehash: c4ae65613a02df38a30f907dae72d413bf1a702f
-ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
+ms.openlocfilehash: 54247fbcdc27f6ed8314e0755164083eb461aa64
+ms.sourcegitcommit: 5807b7d8c822925b727b099713a74ce2cb7897ba
 ms.translationtype: MT
 ms.contentlocale: sr-Cyrl-RS
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9052717"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "9206925"
 ---
 # <a name="connect-an-azure-synapse-analytics-data-source-preview"></a>Повезивање извор података Azure Synapse Analytics (преглед)
 
@@ -66,3 +66,9 @@ Azure Synapse Analytics је услуга аналитике предузећа 
 1. Опционално, одаберите ентитете података да бисте дозволили профилисање података.
 
 1. Кликните **на** дугме "Сачувај" да бисте применили селекцију и започели уношење података из новокреираног извор података са табелама базе података језера у програму Azure Synapse Analytics. Отвориће **се страница"Извори података" која приказује нову извор података статусу "Освежавање** **·** ".
+
+   [!INCLUDE [progress-details-include](includes/progress-details-pane.md)]
+
+Учитавање података може потрајати. Након успешног освежавања, унети подаци се могу редиговање са странице [**"Ентитети**](entities.md) ".
+
+[!INCLUDE [footer-include](includes/footer-banner.md)]

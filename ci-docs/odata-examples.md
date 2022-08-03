@@ -8,12 +8,12 @@ author: m-hartmann
 ms.author: mhart
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 54ba9f4e9baeb4b7021bb8c20a706bbb6eb1529f
-ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
+ms.openlocfilehash: 8843fc04e4e6eaba0019d932c54f62561ffbdb92
+ms.sourcegitcommit: f3c12ad445d5f91a88f91a7bbc40790ebcfaa826
 ms.translationtype: MT
 ms.contentlocale: sr-Cyrl-RS
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9083171"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "9121580"
 ---
 # <a name="odata-query-examples-for-customer-insights-apis"></a>Примери упита ОДата за АПИ-је корисничких увида
 
@@ -23,7 +23,7 @@ ms.locfileid: "9083171"
 
 Морате да измените узорке упита да би они радили на циљним окружењима: 
 
-- {serviceRoot}: `https://api.ci.ai.dynamics.com/v1/instances/{instanceId}` где се {instanceId} налази ГУИД окружења"Увиди купаца" које желите да испитате. Операција [ЛистАллИнстанцес вам](https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights&operation=Get-all-instances) омогућава да пронађете приступ{InstanceId}.
+- {serviceRoot}: `https://api.ci.ai.dynamics.com/v1/instances/{instanceId}/data` где се {instanceId} налази ГУИД окружења"Увиди купаца" које желите да испитате. Операција [ЛистАллИнстанцес вам](https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights&operation=Get-all-instances) омогућава да пронађете приступ{InstanceId}.
 - {CID}: ГУИД обједињеног записа купца. Пример: `ce759201f786d590bf2134bff576c369`.
 - {AlternateKey}: Идентификатор примарног кључа записа купца у извор података. Пример: `CNTID_1002`
 - {DSname}: Ниска са именом ентитета извор података се уноси у увид купца. Пример: `Website_contacts`.
@@ -39,9 +39,10 @@ ms.locfileid: "9083171"
 |Алтернативни кључ    | `{serviceRoot}/Customer?$filter={DSname_EntityName_PrimaryKeyColumnName} eq '{AlternateKey}'`         |  Алтернативни кључеви и даље постоје у обједињеном ентитету клијента       |
 |Избор   | `{serviceRoot}/Customer?$select=CustomerId,FullName&$filter=customerid eq '1'`        |         |
 |За    | `{serviceRoot}/Customer?$filter=CustomerId in ('{CID1}',’{CID2}’)`        |         |
-|Алтернативни кључ + Ин   | `Customer?$filter={DSname_EntityName_PrimaryKeyColumnName} in ('{AlternateKey}','{AlternateKey}')`         |         |
+|Алтернативни кључ + Ин   | `{serviceRoot}/Customer?$filter={DSname_EntityName_PrimaryKeyColumnName} in ('{AlternateKey}','{AlternateKey}')`         |         |
 |Претражите  | `{serviceRoot}/Customer?$top=10&$skip=0&$search="string"`        |   Даје првих 10 резултата за ниску за тражење.      |
 |Чланство у сегментима  | `{serviceRoot}/Customer?select=*&$filter=IsMemberOfSegment('{SegmentName}')&$top=10`     | Даје унапред одређени број редова из ентитета сегментације.      |
+|Чланство у сегментима за купца | `{serviceRoot}/Customer?$filter=CustomerId eq '{CID}'&IsMemberOfSegment('{SegmentName}')`     | Даје профил купца ако је члан датог сегмента.     |
 
 ## <a name="unified-activity"></a>Обједињена активност
 

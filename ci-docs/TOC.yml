@@ -104,22 +104,26 @@
       href: enrichment-here.md
     - name: СФТП прилагођени увоз
       href: enrichment-SFTP-custom-import.md
-- name: Обједињени профили
+- name: Профили и активности клијената
   items:
-    - name: Преглед уједначених корисничких профила
+    - name: Приказ профила клијената
       href: customer-profiles.md
-    - name: Филтрирање уједначених корисничких профила
+    - name: Управљање индексом претраге &амп; филтера
       href: search-filter-index.md
     - name: Дефинисање активности купаца
       href: activities.md
     - name: Коришћење управљања пристанком
       href: consent-management.md
+    - name: Коришћење Веб података за персонализацију
+      href: unknown-to-known.md
 - name: Сегменти
   items:
     - name: Преглед сегмената
       href: segments.md
-    - name: Креирање сегмената
+    - name: Креирање помоћу израде сегмената
       href: segment-builder.md
+    - name: Креирање помоћу брзих сегмената
+      href: segment-quick.md
     - name: Предложени сегменти засновани на мерама
       href: suggested-segments.md
     - name: Предложени сегменти засновани на активности
@@ -132,9 +136,9 @@
   items:
     - name: Преглед мера
       href: measures.md
-    - name: Креирање нове мере
+    - name: Креирај помоћу израде мера
       href: measure-builder.md
-    - name: Коришћење предлошка мере
+    - name: Креирање помоћу предложака
       href: measure-templates.md
 - name: Предвиђања
   items:
@@ -180,6 +184,10 @@
           href: export-destinations.md
         - name: Активна кампања
           href: export-active-campaign.md
+        - name: Adobe Campaign Standard
+          href: export-adobe-campaign-standard.md
+        - name: Adobe Experience Platform
+          href: export-adobe-experience-platform.md
         - name: AdRoll
           href: export-adroll.md
         - name: Autopilot
@@ -190,10 +198,6 @@
           href: export-azure-data-lake-storage-gen2.md
         - name: Azure Synapse Analytics
           href: export-azure-synapse-analytics.md
-        - name: Adobe Campaign Standard
-          href: export-adobe-campaign-standard.md
-        - name: Adobe Experience Platform
-          href: export-adobe-experience-platform.md
         - name: Бразе
           href: export-braze.md
         - name: Campaign Monitor
@@ -228,6 +232,8 @@
           href: export-marketo.md
         - name: Microsoft Advertising
           href: export-microsoft-advertising.md
+        - name: МоЕнгаге
+          href: export-moengage.md
         - name: Omnisend
           href: export-omnisend.md
         - name: RollWorks

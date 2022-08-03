@@ -13,16 +13,14 @@ searchScope:
 - ci-merge
 - ci-relationships
 - customerInsights
-ms.openlocfilehash: 590a2996cf8b2b1c6def59b78583169ec1910b59
-ms.sourcegitcommit: 760fbac397c738407c7dea59297d54cae19b6f57
+ms.openlocfilehash: 1af7f018abd412c833ff22b3880f0e4508ff4953
+ms.sourcegitcommit: 3c5b0b40b2b45e420015bbdd228ce0e610245e6f
 ms.translationtype: MT
 ms.contentlocale: sr-Cyrl-RS
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8844058"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "9139629"
 ---
 # <a name="update-the-unification-settings"></a>Ажурирање поставки уједињења
-
-[!INCLUDE [m3-prod-trial-note](includes/m3-prod-trial-note.md)]
 
 Извршите следеће кораке да бисте прегледали или променили поставке уједињења када се креира обједињени профил.
 
@@ -136,7 +134,7 @@ ms.locfileid: "8844058"
 
 ## <a name="run-matching-conditions"></a>Покретање услова подударања
 
-Услови подударања покрећу дедуплицатион и подударају се само са правилима и *ажурирају Deduplication_* *и ЦонфлатионМатцхПаир* ентитете.
+Услови подударања покрећу дедуплицатион и подударају се само са правилима и *ажурирају Deduplication_* * *и ЦонфлатионМатцхПаир* ентитете.
 
 1. Са странице "Уједињење **података** > **" изаберите опцију Покрени** само услове подударања **.**
 

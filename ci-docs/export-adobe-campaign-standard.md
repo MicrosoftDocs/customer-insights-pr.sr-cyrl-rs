@@ -1,31 +1,31 @@
 ---
 title: Извоз сегмената увида купаца у Adobe стандард кампање (преглед)
 description: Сазнајте како да користите сегменте "Увиди купаца" у стандардној Adobe кампањи.
-ms.date: 03/29/2021
+ms.date: 07/25/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: stefanie-msft
 ms.author: antando
 manager: shellyha
-ms.openlocfilehash: 9915591cd969bf825f5d1669de43ed4f9953f898
-ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
+ms.openlocfilehash: 834880cac9c5023157983081ff2513d9b051491f
+ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
 ms.translationtype: MT
 ms.contentlocale: sr-Cyrl-RS
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9082352"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "9195538"
 ---
 # <a name="export-customer-insights-segments-to-adobe-campaign-standard-preview"></a>Извоз сегмената увида купаца у Adobe стандард кампање (преглед)
 
-Као корисник, можда Dynamics 365 Customer Insights сте креирали сегменте да бисте маркетиншке кампање били ефикаснији циљањем релевантних корисника локације. Да бисте користили сегмент из увида клијената у и Adobe Experience Platform апликације као што је Adobe Стандард кампање, потребно је да следите неколико корака наведених у овом чланку.
+Извезите сегменте који циљају релевантне групе корисника локације Adobe у стандард кампање.
 
 :::image type="content" source="media/ACS-flow.png" alt-text="Дијаграм процеса корака описаних у овом чланку.":::
 
 ## <a name="prerequisites"></a>Предуслови
 
-- Dynamics 365 Customer Insights лиценца
-- Лиценца за Adobe Campaign Standard
-- Налог Azure складишта блоб објекта
+- Лиценца Adobe за стандард кампање.
+- Име [Азуре Блоб Стораге налога](/azure/storage/blobs/create-data-lake-storage-account) и кључ налога. Да бисте пронашли име и кључ, погледајте чланак Управљање [поставкама налога за складиштење на Азуре порталу](/azure/storage/common/storage-account-manage).
+- Азуре [Блоб складишни контејнер](/azure/storage/blobs/storage-quickstart-blobs-portal#create-a-container).
 
 ## <a name="campaign-overview"></a>Преглед кампање
 
@@ -37,7 +37,7 @@ ms.locfileid: "9082352"
 
 ## <a name="identify-your-target-audience"></a>Идентификујте своју циљну групу
 
-У нашем сценарију, претпостављамо да су е-адресе клијената доступне и да су анализиране њихове промотивне преференције како би се идентификовали чланови сегмента.
+У нашем сценарију, претпостављамо да су е-адресе клијената доступне у увидима клијената и да су њихове промотивне преференције анализиране како би се идентификовали чланови сегмента.
 
 Сегмент [који сте дефинисали у "Увидима купаца"](segments.md) зове се **ЦхурнПронеЦустомерс и планирате** да овим корисницима пошаљете промоцију е-поште.
 
@@ -47,39 +47,37 @@ ms.locfileid: "9082352"
 
 ## <a name="export-your-target-audience"></a>Извезите своју циљну групу
 
-### <a name="configure-a-connection"></a>Конфигурисање везе
+### <a name="set-up-connection-to-adobe-campaign"></a>Подешавање везе са кампањом Adobe
 
-Са идентификованим корисници циљним датотекама, можемо да конфигуришемо извоз на Азуре Блоб Стораге налог.
+[!INCLUDE [export-connection-include](includes/export-connection-admn.md)]
 
-1. У увидима клијената идите на **администраторски** > **конекцију**.
+1. Идите на **Администратор** > **Везе**.
 
-1. Изаберите **Додај везу** и бирајте **Adobe кампања** да бисте конфигурисали везу или изаберите **Подешавање** на плочици **Adobe кампања**.
-
-   :::image type="content" source="media/adobe-campaign-standard-tile.png" alt-text="Плочица конфигурације за Adobe Campaign Standard.":::
+1. Изаберите **додај везу и** одаберите ставку **Adobe Кампања**.
 
 1. Дајте вези препознатљиво име у пољу **Име за приказ**. Име за приказ и врста везе описују ову везу. Препоручујемо да одаберете назив који објашњава сврху и циљ везе.
 
-1. Одаберите ко може да користи ову везу. Ако ништа не предузмете, подразумевани ће бити Администратори. За више информација погледајте [Дозволе потребне за конфигурисање извоза](export-destinations.md#set-up-a-new-export).
+1. Одаберите ко може да користи ову везу. Подразумевано су то само администратори. За више информација, погледајте [Дозволите сарадницима да користе везу за извоз](connections.md#allow-contributors-to-use-a-connection-for-exports).
 
-1. Унесите **Назив налога**, **Кључ налога** и **Контејнер** за ваш налог за Azure складиште блоб објекта у који желите да извезете сегмент.  
-      
-   :::image type="content" source="media/azure-blob-configuration.png" alt-text="Снимак екрана конфигурације налога складишта. "::: 
+1. Унесите **име налога**, **кључ налога** и контејнер **за** налог за складиштење блоба.  
 
-   - Да бисте сазнали више о проналажењу имена и кључа налога за Azure складиште блоб објекта, погледајте чланак [Управљање подешавањима налога за складиштење на Azure порталу](/azure/storage/common/storage-account-manage).
+   :::image type="content" source="media/azure-blob-configuration.png" alt-text="Снимак екрана конфигурације налога складишта. ":::
 
-   - Да бисте сазнали како да креирате контејнер, погледајте чланак [Креирање контејнера](/azure/storage/blobs/storage-quickstart-blobs-portal#create-a-container).
+1. Прегледајте приватност [и усаглашеност података и](connections.md#data-privacy-and-compliance) изаберите И **слажем се**.
 
 1. Изаберите **Сачувај** да бисте креирали везу.
 
 ### <a name="configure-an-export"></a>Конфигурисање извоза
 
-Овај извоз можете да конфигуришете ако имате приступ вези ове врсте. За више информација погледајте [Дозволе потребне за конфигурисање извоза](export-destinations.md#set-up-a-new-export).
+[!INCLUDE [export-permission-include](includes/export-permission.md)]
 
 1. Идите на **Подаци** > **Извози**.
 
-1. Да бисте креирали нови извоз, изаберите **Додај извоз**.
+1. Изаберите **Додај извоз**.
 
-1. У пољу **Веза за извоз**, одаберите везу из одељка Adobe Campaign. Ако не видите назив овог одељка, тада вам нису доступне везе овог типа.
+1. У пољу **Веза за извоз**, одаберите везу из одељка Adobe Campaign. Ако веза није доступна, обратите се администратору.
+
+1. Унесите име за извоз.
 
 1. Одаберите сегмент које желите да извезете. У овом примеру, то је **ChurnProneCustomers**.
 
@@ -87,7 +85,7 @@ ms.locfileid: "9082352"
 
 1. Изаберите **Следеће**.
 
-1. Сада мапирамо поља **Извор** из сегмента"Увиди купаца" у имена **поља** "Циљ" у шеми Adobe профила стандардне кампање.
+1. Мапирај **поља** Извор из сегмента"Увиди купаца" у **имена** поља "Циљ" у шеми Adobe профила стандардне кампање.
 
    :::image type="content" source="media/ACS-field-mapping.png" alt-text="Мапирање поља за Adobe Campaign Standard конектор.":::
 
@@ -98,34 +96,28 @@ ms.locfileid: "9082352"
 
 1. Изаберите **Сачувај**.
 
-Када сачувате одредиште за извоз, пронаћи ћете га у дијалогу **Подаци** > **Извози**.
-
-Сада можете да [извозите сегмент на захтев](export-destinations.md#run-exports-on-demand). Извоз ће се такође покренути са сваким [планираним освежавањем](system.md).
+[!INCLUDE [export-saving-include](includes/export-saving.md)]
 
 > [!NOTE]
 > Уверите се да је број записа у извезеном сегменту унутар дозвољеног ограничења ваше лиценце за услугу Adobe Campaign Standard.
 
-Извезени подаци се чувају у контејнеру Azure складишта блоб објекта који сте раније конфигурисали. Следећа путања до фасцикле се аутоматски креира у вашем контејнеру:
-
-*%ContainerName%/CustomerInsights_%instanceID%/% exportdestination-name%_%segmentname%_%timestamp%.csv*
+Извезени подаци се чувају у контејнеру Azure складишта блоб објекта који сте раније конфигурисали. У контејнеру се аутоматски креира следећа путања фасцикле: *%ContainerName% /CustomerInsights_ %instanceID% /% еxпортдестинатион-наме% _%segmentname%_%timestamp% .цсв*
 
 Пример: Dynamics365CustomerInsights/CustomerInsights_abcd1234-4312-11f4-93dc-24f72f43e7d5/ChurnSegmentDemo_ChurnProneCustomers_1613059542.csv
 
 ## <a name="configure-adobe-campaign-standard"></a>Конфигурисање услуге Adobe Campaign Standard
 
-Извезени сегменти садрже колоне које сте изабрали приликом дефинисања одредишта извоза у претходном кораку. Ови подаци се могу користити за [креирање профила у услузи Adobe Campaign Standard](https://experienceleague.adobe.com/docs/campaign-standard/using/profiles-and-audiences/managing-profiles/about-profiles.html#managing-profiles).
+Извезени сегменти садрже колоне које сте изабрали приликом конфигурисања извоза. Ови подаци се могу користити за [креирање профила у услузи Adobe Campaign Standard](https://experienceleague.adobe.com/docs/campaign-standard/using/profiles-and-audiences/managing-profiles/about-profiles.html#managing-profiles).
 
-Да бисмо користили сегмент у услузи Adobe Campaign Standard, морамо проширити шему профила у услузи Adobe Campaign Standard так ода укључује два додатна поља. Сазнајте како да [проширите ресурс профила](https://experienceleague.adobe.com/docs/campaign-standard/using/developing/use-cases--extending-resources/extending-the-profile-resource-with-a-new-field.html#developing) са новим пољима у услузи Adobe Campaign Standard.
+Да бисте користили сегмент у стандардној Adobe кампањи, проширите [шему профила у стандардној](https://experienceleague.adobe.com/docs/campaign-standard/using/developing/use-cases--extending-resources/extending-the-profile-resource-with-a-new-field.html#developing)Adobe кампањи да бисте укључили два додатна поља.
 
-У нашем примеру, ова поља су *Назив сегмента и Датум сегмента (опционално)*.
+У нашем примеру, ова поља су име сегмента и датум сегмента. Ова поља ћемо користити за идентификацију профила у услузи Adobe Campaign Standard који желимо да циљамо за ову кампању.
 
-Ова поља ћемо користити за идентификацију профила у услузи Adobe Campaign Standard који желимо да циљамо за ову кампању.
-
-Ако нема других записа у услузи Adobe Campaign Standard осим оног који ћете увести, можете прескочити овај корак.
+Ако у стандардној кампањи нема других Adobe записа, осим онога што ћете увести, прескочите овај корак.
 
 ## <a name="import-data-into-adobe-campaign-standard"></a>Увоз података у Adobe Campaign Standard
 
-Сада када је све на свом месту, потребно је да увеземо припремљене податке корисници "Увиди купаца" у Adobe стандард кампање да бисмо креирали профиле. Сазнајте [како да увезете профиле у Adobe Campaign Standard](https://experienceleague.adobe.com/docs/campaign-standard/using/profiles-and-audiences/managing-profiles/creating-profiles.html#profiles-and-audiences) користећи ток посла.
+Увезите припремљене корисници из увида клијената у Adobe стандард кампање да бисте креирали [профиле помоћу тока посла](https://experienceleague.adobe.com/docs/campaign-standard/using/profiles-and-audiences/managing-profiles/creating-profiles.html#profiles-and-audiences).
 
 Ток посла увоза на слици испод конфигурисан је тако да ради сваких осам сати и тражи извезене сегменте увида купаца (.цсв датотека у Азуре складишту блоба). Ток посла издваја садржај .csv датотеке у наведеном редоследу колона. Овај ток посла је направљен да изврши основно руковање грешкама и да обезбеди да сваки запис има адресу е-поште пре него што унесе податке у Adobe Campaign Standard. Ток посла такође издваја назив сегмента из назива датотеке пре додавања у податке о Adobe Campaign Standard профилу.
 
@@ -133,10 +125,12 @@ ms.locfileid: "9082352"
 
 ## <a name="retrieve-the-audience-in-adobe-campaign-standard"></a>Преузимање циљне групе у услузи Adobe Campaign Standard
 
-Када се подаци увезу у Adobe Campaign Standard, [можете креирати ток посла](https://experienceleague.adobe.com/docs/campaign-standard/using/managing-processes-and-data/workflow-general-operation/building-a-workflow.html#managing-processes-and-data) и [поставити упит](https://experienceleague.adobe.com/docs/campaign-standard/using/managing-processes-and-data/targeting-activities/query.html#managing-processes-and-data) клијентима на основу *назива сегмента* и *датума сегмента* да бисте изабрали профиле који су идентификовани за наш пример кампање.
+Када се подаци увезу у стандард кампање, креирајте Adobe [ток](https://experienceleague.adobe.com/docs/campaign-standard/using/managing-processes-and-data/workflow-general-operation/building-a-workflow.html#managing-processes-and-data) посла и [испитате купце](https://experienceleague.adobe.com/docs/campaign-standard/using/managing-processes-and-data/targeting-activities/query.html#managing-processes-and-data) на основу имена сегмента и датума сегмента да бисте изабрали профиле који су идентификовани за нашу пробну кампању.
 
 ## <a name="create-and-send-the-email-using-adobe-campaign-standard"></a>Креирање и слање е-поште у услузи Adobe Campaign Standard
 
 Креирајте садржај е-поруке, а затим [тестирајте и пошаљите](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/get-started-sending-messages.html#preparing-and-testing-messages) е-поруку.
 
 :::image type="content" source="media/contoso-sample-email.jpg" alt-text="Пример е-поруке са понудом за обнову из услуге Adobe Campaign Standard.":::
+
+[!INCLUDE [footer-include](includes/footer-banner.md)]
