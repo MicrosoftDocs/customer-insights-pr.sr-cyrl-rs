@@ -1,19 +1,19 @@
 ---
 title: Обогатите профиле клијената подаци о локацији Азуре мапе (преглед)
 description: Опште информације о Azure Maps директном обогаћивању.
-ms.date: 06/10/2022
+ms.date: 08/08/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: how-to
 author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: dfadc08f67beac3fded1a97e557ee9e1880664e0
-ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
+ms.openlocfilehash: f14b4fc20a9a1d8842f42f9e0e656b3d8dcddcf4
+ms.sourcegitcommit: b1d06fe26934f12f0c5ed13e8ef1d37e52e67cc7
 ms.translationtype: MT
 ms.contentlocale: sr-Cyrl-RS
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9052625"
+ms.lasthandoff: 08/08/2022
+ms.locfileid: "9238060"
 ---
 # <a name="enrich-customer-profiles-with-location-data-from-azure-maps-preview"></a>Обогатите профиле клијената подаци о локацији Азуре мапе (преглед)
 
@@ -35,14 +35,9 @@ ms.locfileid: "9052625"
 
 1. Унесите име за везу и важећи АПИ кључ Азуре мапе.
 
-1. Прегледајте и дајте сагласност за [Приватност података и усклађеност](#data-privacy-and-compliance) избором опције **Слажем се**.
+1. Прегледајте приватност [и усаглашеност података и](connections.md#data-privacy-and-compliance) изаберите И **слажем се**.
 
 1. Изаберите **опцију** Провери да бисте проверили ваљаност конфигурације, а затим кликните на дугме **Сачувај**.
-
-### <a name="data-privacy-and-compliance"></a>Приватност података и усаглашеност
-
-Када омогућите Dynamics 365 Customer Insights за пренос података у Azure Maps, дозвољавате пренос података изван границе усклађености за Dynamics 365 Customer Insights, укључујући потенцијално осетљиве податке као што су лични подаци. Мицрософт ће пренети такве податке на ваше упутство, али ви сте одговорни за то да обезбедите да Азуре мапе испуњавају све обавезе приватности или безбедности које можда имате. За још информација посетите чланак [Microsoft изјава о приватности](https://go.microsoft.com/fwlink/?linkid=396732).
-Dynamics 365 Customer Insights администратор може у сваком тренутку да уклони ово обогаћивање како бисте престали са коришћењем ове функционалности.
 
 ## <a name="configure-the-enrichment"></a>Конфигурисање обогаћивања
 

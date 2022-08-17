@@ -8,12 +8,12 @@ ms.topic: how-to
 author: stefanie-msft
 ms.author: sthe
 manager: shellyha
-ms.openlocfilehash: f9c9ee55f2874ae1dcaf82f2ff17ed0fbbb7804d
-ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
+ms.openlocfilehash: 0e953cfff12df433d033717d58b28c2834468916
+ms.sourcegitcommit: 086f75136132d561cd78a4c2cb1e1933e2301f32
 ms.translationtype: MT
 ms.contentlocale: sr-Cyrl-RS
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "9196412"
+ms.lasthandoff: 08/11/2022
+ms.locfileid: "9259862"
 ---
 # <a name="export-data-to-azure-synapse-analytics-preview"></a>Извоз података у Azure Synapse Analytics (преглед)
 
@@ -24,7 +24,7 @@ Azure Synapse је аналитичка услуга која убрзава в�
 > [!NOTE]
 > Обавезно подесите све **доделе улога** као што је описано.
 
-- У фасцикли "Увиди клијената", Azure Active Directory ваш (АД) кориснички налог мора да има улогу [администратора](permissions.md#assign-roles-and-permissions).
+- У фасцикли "Увиди клијената", Azure Active Directory ваш (АД) кориснички налог мора да има улогу [администратора](permissions.md#add-users).
 
 У услузи Azure:
 
@@ -39,6 +39,8 @@ Azure Synapse је аналитичка услуга која убрзава в�
 - Управљани *[Azure Synapse идентитет радног простора](/azure/synapse-analytics/security/synapse-workspace-managed-identity)* има **податке о складиштењу** сарадник за Azure Data Lake Storage информације на Gen2 налогу где се подаци налазе и који су повезани са радним Azure Synapse простором. Сазнајте више о [коришћењу Azure портала за додељивање Azure улоге за приступ блоб објекту и подацима у реду](/azure/storage/common/storage-auth-aad-rbac-portal) и [дозволама сарадника за податке складишта блоб објекта](/azure/role-based-access-control/built-in-roles#storage-blob-data-contributor).
 
 - На радном Azure Synapse простору, главнина *услуге за увиде клијената* **има додељену улогу администратора**[синапсе](/azure/synapse-analytics/security/how-to-set-up-access-control).
+
+- Ако ваше окружење"Увид у купце" складишти [податке у сопственом Azure Data Lake Storage](own-data-lake-storage.md), кориснику који подешавање Azure Synapse Analytics везе треба барем уграђену **читалац улогу** на Дата Лаке Стораге налогу. За више информација, погледајте [Додељивање Azure улога помоћу Azure портала](/azure/role-based-access-control/role-assignments-portal).
 
 ## <a name="set-up-connection-to-azure-synapse"></a>Подеси везу са Azure Synapse
 

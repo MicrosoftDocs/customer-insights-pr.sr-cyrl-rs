@@ -284,18 +284,20 @@
       href: connect-service-principal.md
 - name: Администрација
   items:
-    - name: Подешавање конфигурације система
-      href: system.md
-    - name: Конфигурисање безбедносних поставки
-      href: security-overview.md
     - name: Додела дозвола корисника
       href: permissions.md
     - name: Донесите сопствени Key Vault
       href: use-azure-key-vault.md
+    - name: Конфигурисање безбедносних поставки
+      href: security-overview.md
     - name: Извоз дијагностичких евиденција
       href: diagnostics.md
-    - name: Преглед веза
+    - name: Управљање везама
       href: connections.md
+    - name: Планирање освежавања система
+      href: schedule-refresh.md
+    - name: Прикажи конфигурацију система
+      href: system.md
 - name: API-ји
   items:
     - name: Рад са API-јима

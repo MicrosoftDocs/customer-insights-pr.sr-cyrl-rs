@@ -1,19 +1,19 @@
 ---
 title: Обогатите профиле клијената помоћу ХЕРЕ технологија (преглед)
 description: Опште информације о HERE Technologies обогаћивању треће стране.
-ms.date: 06/10/2022
+ms.date: 08/08/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: how-to
 author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: 26de9fce863c9832b70adf3ce39cb2ae0ce43d0e
-ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
+ms.openlocfilehash: 86a070342193dd7afda38823d90f4bd28c8b862e
+ms.sourcegitcommit: b1d06fe26934f12f0c5ed13e8ef1d37e52e67cc7
 ms.translationtype: MT
 ms.contentlocale: sr-Cyrl-RS
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "9196274"
+ms.lasthandoff: 08/08/2022
+ms.locfileid: "9237876"
 ---
 # <a name="enrich-customer-profiles-with-here-technologies-preview"></a>Обогатите профиле клијената помоћу ХЕРЕ технологија (преглед)
 
@@ -33,16 +33,11 @@ ms.locfileid: "9196274"
 
 1. Унесите име за везу и важећи АПИ кључ ХЕРЕ технологије.
 
-1. Прегледајте и дајте сагласност за [Приватност података и усклађеност](#data-privacy-and-compliance) избором опције **Слажем се**.
+1. Прегледајте приватност [и усаглашеност података и](connections.md#data-privacy-and-compliance) изаберите И **слажем се**.
 
 1. Изаберите **опцију** Провери да бисте проверили ваљаност конфигурације, а затим кликните на дугме **Сачувај**.
 
    :::image type="content" source="media/enrichment-HERE-connection.png" alt-text="Страница за конфигурацију везе за HERE Technologies.":::
-
-### <a name="data-privacy-and-compliance"></a>Приватност података и усаглашеност
-
-Када омогућите да Dynamics 365 Customer Insights преноси податке у HERE Technologies, дозвољавате пренос података изван границе усклађености за Dynamics 365 Customer Insights, укључујући потенцијално осетљиве податке као што су лични подаци. Microsoft ће преносити такве податке по вашем упутству, али ви сте одговорни за то да HERE Technologies испуњава све обавезе приватности или безбедности које имате. За више информација погледајте [Изјаву о приватности компаније Microsoft](https://go.microsoft.com/fwlink/?linkid=396732).
-Ваш Dynamics 365 Customer Insights администратор може у сваком тренутку да уклони ово обогаћивање како бисте престали са коришћењем ове функционалности.
 
 ## <a name="configure-the-enrichment"></a>Конфигурисање обогаћивања
 

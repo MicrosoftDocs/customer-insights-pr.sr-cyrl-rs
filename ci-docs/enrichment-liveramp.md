@@ -1,19 +1,19 @@
 ---
 title: Обогатите профиле клијената подацима о идентитету из програма ЛивеРамп (преглед)
 description: Обогатите профиле клијената ЛивеРамп подацима.
-ms.date: 06/10/2022
+ms.date: 08/08/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: how-to
 author: kishorem-ms
 ms.author: kishorem
 manager: shellyha
-ms.openlocfilehash: 49bf558209ca91ab9d8db945862a57adccee1f6b
-ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
+ms.openlocfilehash: 0aa6dc144602741b87843a5373779855ee3e334c
+ms.sourcegitcommit: b1d06fe26934f12f0c5ed13e8ef1d37e52e67cc7
 ms.translationtype: MT
 ms.contentlocale: sr-Cyrl-RS
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "9196366"
+ms.lasthandoff: 08/08/2022
+ms.locfileid: "9237831"
 ---
 # <a name="enrich-customer-profiles-with-identity-data-from-liveramp-preview"></a>Обогатите профиле клијената подацима о идентитету из програма ЛивеРамп (преглед)
 
@@ -41,13 +41,9 @@ ms.locfileid: "9196366"
 
 1. Унесите име за везу и важећи ИД ЛивеРамп клијента и тајну.
 
-1. Прегледајте и дајте сагласност за [Приватност података и усклађеност](#data-privacy-and-compliance) избором опције **Слажем се**.
+1. Прегледајте приватност [и усаглашеност података и](connections.md#data-privacy-and-compliance) изаберите И **слажем се**.
 
 1. Изаберите **опцију** Провери да бисте проверили ваљаност конфигурације, а затим кликните на дугме **Сачувај**.
-
-### <a name="data-privacy-and-compliance"></a>Приватност података и усаглашеност
-
-Када омогућите пренос Dynamics 365 Customer Insights података у ЛивеРамп, дозвољавате пренос података изван границе усаглашености за, укључујући Dynamics 365 Customer Insights потенцијално осетљиве податке као што су лични подаци. Мицрософт ће пренети такве податке на ваше упутство, али ви сте одговорни за то да обезбедите да ЛивеРамп испуњава све обавезе приватности или безбедности које можда имате. За више информација прегледајте Мицрософт изјаву [о приватности](https://go.microsoft.com/fwlink/?linkid=396732). Dynamics 365 Customer Insights администратор може у сваком тренутку да уклони ово обогаћивање како бисте престали са коришћењем ове функционалности.
 
 ## <a name="configure-the-enrichment"></a>Конфигурисање обогаћивања
 

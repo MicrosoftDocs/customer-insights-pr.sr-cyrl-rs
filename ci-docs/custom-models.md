@@ -11,12 +11,12 @@ manager: shellyha
 searchScope:
 - ci-custom-models
 - customerInsights
-ms.openlocfilehash: a44d1f2c00c90de3ed5a9425e3a197e109cb28e0
-ms.sourcegitcommit: b515120bebd2638f2639004422cee3cff42fbdf7
+ms.openlocfilehash: 3fad8a6cba71da80d4cc34be4084275e0d0a3622
+ms.sourcegitcommit: 49394c7216db1ec7b754db6014b651177e82ae5b
 ms.translationtype: MT
 ms.contentlocale: sr-Cyrl-RS
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "8800438"
+ms.lasthandoff: 08/10/2022
+ms.locfileid: "9245821"
 ---
 # <a name="custom-machine-learning-models"></a>Прилагођени модели машинског учења
 
@@ -112,7 +112,7 @@ ms.locfileid: "8800438"
 
 1. Изаберите **Покрени**.
 
-Ток посла се такође покреће аутоматски са сваким заказаним освежавањем. Сазнајте више о [постављању заказаних освежавања](system.md#schedule-tab).
+Ток посла се такође покреће аутоматски са сваким заказаним освежавањем. Сазнајте више о [постављању заказаних освежавања](schedule-refresh.md).
 
 ## <a name="delete-a-workflow"></a>Брисање тока посла
 

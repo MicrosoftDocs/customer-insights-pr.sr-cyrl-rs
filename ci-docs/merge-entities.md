@@ -14,12 +14,12 @@ searchScope:
 - ci-match
 - ci-relationships
 - customerInsights
-ms.openlocfilehash: 4a19b753e7a5979fe72d7e96bc4452d7795c2d48
-ms.sourcegitcommit: 3c5b0b40b2b45e420015bbdd228ce0e610245e6f
+ms.openlocfilehash: a6f29c4985ee274207d122fb1bd76d97b98613b6
+ms.sourcegitcommit: 10dcfc32eaf8ec0903be96136dca7bb4e250276a
 ms.translationtype: HT
 ms.contentlocale: sr-Cyrl-RS
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "9139675"
+ms.lasthandoff: 08/01/2022
+ms.locfileid: "9213600"
 ---
 # <a name="unify-customer-fields-for-data-unification"></a>Обједињавање поља клијената ради уједињења података
 
@@ -58,6 +58,9 @@ ms.locfileid: "9139675"
 
 1. Наведите како да комбинујете или спојите поља из једне од три опције:
     - **Значај**: идентификује победничку вредност на основу ранга важности наведеног за поља која учествују. То је подразумевана опција обједињавања. Изаберите **Помери нагоре/надоле** да бисте подесили ранг важности.
+
+      > [!NOTE]
+      > Увид купца користи прву вредност која није без вредности. На пример, ако су ентитети А, Б и Ц рангирани тим редоследом, ако су A.Name и B.Name без вредности, онда се користи вредност из C.Name Ц.
 
       :::image type="content" source="media/importance-merge-option.png" alt-text="Опција важности у дијалогу поља за спајање.":::
 
