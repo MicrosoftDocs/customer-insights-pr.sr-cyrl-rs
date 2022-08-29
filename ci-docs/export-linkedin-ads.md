@@ -1,19 +1,19 @@
 ---
 title: Извоз сегмената у LinkedIn Ads (верзија за преглед)
 description: Сазнајте како да конфигуришете везу и извозите у LinkedIn Ads.
-ms.date: 07/25/2022
+ms.date: 08/12/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: d1a9ae985043398f4bc38163be26ecf0c3c8e2ba
-ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
+ms.openlocfilehash: 4c3928e05db0ebda262b4ad3e928ce85f70035b9
+ms.sourcegitcommit: 267c317e10166146c9ac2c30560c479c9a005845
 ms.translationtype: MT
 ms.contentlocale: sr-Cyrl-RS
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "9196826"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "9304721"
 ---
 # <a name="export-segments-to-linkedin-ads-preview"></a>Извоз сегмената у LinkedIn Ads (верзија за преглед)
 
@@ -24,7 +24,7 @@ ms.locfileid: "9196826"
 - Налог [LinkedIn Campaign Manager и](https://business.linkedin.com/marketing-solutions/ads) одговарајуће акредитиве администратора.
 - ИД [LinkedIn Campaign Manager налога](https://www.linkedin.com/help/lms/answer/a424270).
 - [Конфигурисани сегменти у увидима](segments.md) купаца.
-- Обједињени кориснички профили у извезеним сегментима садрже поље које представља адресу е-поште.
+- Извезеним сегментима је потребно најмање једно одређено поље у зависности од тога да ли бирате [циљање контакта](https://business.linkedin.com/marketing-solutions/ad-targeting/contact-targeting) или [циљање предузећа на](https://business.linkedin.com/marketing-solutions/ad-targeting/account-targeting) ЛинкедИн. Могућа поља су наведена у кораку подударања **са** подацима [приликом конфигурисања извоза](#configure-an-export).
 
 ## <a name="known-limitations"></a>Позната ограничења
 

@@ -76,6 +76,8 @@
       href: merge-entities.md
     - name: Редиговање уједињења података
       href: review-unification.md
+    - name: Креирање обједињеног профила контаката
+      href: data-unification-contacts.md
     - name: Ажурирање поставки уједињења
       href: data-unification-update.md
 - name: Обогаћивање података

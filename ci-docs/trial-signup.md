@@ -8,12 +8,12 @@ ms.topic: get-started
 ms.custom: template-trial-setup
 ms.reviewer: jeffhar
 manager: shellyha
-ms.openlocfilehash: 73f12745f76ef65afcc565ffb972e755073a2834
-ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
+ms.openlocfilehash: fd32a3e37f4bbf57a5bd05f888fde39d32c02a82
+ms.sourcegitcommit: e5649ca0b3000cee0ca7c9eac7142cbd5f7dd2ac
 ms.translationtype: MT
 ms.contentlocale: sr-Cyrl-RS
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9082499"
+ms.lasthandoff: 08/17/2022
+ms.locfileid: "9305622"
 ---
 # <a name="sign-up-for-a-free-dynamics-365-customer-insights-trial"></a>Региструјте се за бесплатну пробну верзију услуге Dynamics 365 Customer Insights
 
@@ -40,6 +40,6 @@ Customer Insights нуди бесплатну 30-дневну пробну ве�
 
 ## <a name="additional-resources"></a>Додатни ресурси
 
-- [Истражите обуку на платформи Microsoft Learn](/learn/browse/?filter-products=dynamics-dynamics-cust-insights)
+- [Истражите путање учења и модуле за увиде клијената](/learn/browse/?products=dynamics-cust-insights)
 - [Честа питања о пробној верзији](trial-faq.md)
 - [Dynamics 365 Customer Insights детаљи о производу](https://dynamics.microsoft.com/ai/customer-insights/)
