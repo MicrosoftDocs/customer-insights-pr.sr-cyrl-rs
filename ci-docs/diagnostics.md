@@ -11,12 +11,12 @@ manager: shellyha
 searchScope:
 - ci-system-diagnostic
 - customerInsights
-ms.openlocfilehash: 60b039173fd938482c782c7394420d4951c222a7
-ms.sourcegitcommit: 49394c7216db1ec7b754db6014b651177e82ae5b
+ms.openlocfilehash: c573c46fda895d36d29712e75fe28b261c9b399a
+ms.sourcegitcommit: 0b5bfe0145dbd325fa518df4561d6a0a9a352264
 ms.translationtype: MT
 ms.contentlocale: sr-Cyrl-RS
-ms.lasthandoff: 08/10/2022
-ms.locfileid: "9245943"
+ms.lasthandoff: 08/25/2022
+ms.locfileid: "9352819"
 ---
 # <a name="export-diagnostic-logs-preview"></a>Извоз дијагностичких евиденција (преглед)
 
@@ -36,8 +36,8 @@ ms.locfileid: "9245943"
 
 - Активна [Азуре претплата](https://azure.microsoft.com/pricing/purchase-options/pay-as-you-go/).
 - [Администраторске](permissions.md#admin) дозволе у увидима клијената.
+- Важећи ресурс на Азуре који следи након одредишних [захтева](/azure/azure-monitor/platform/diagnostic-settings#destination-requirements) за Азуре складиште, Азуре чвориште догађаја или Аналитику евиденције Азуре.
 - [сарадник и администратор корисничког приступа на](/azure/role-based-access-control/role-assignments-portal) одредишном ресурсу на Азуре. Ресурс може бити налог Azure Data Lake Storage, чвориште Азуре догађаја или радни простор Азуре аналитике евиденције. Ова дозвола је неопходна током конфигурисања дијагностичких поставки у програму Цустомер Инсигхтс, али се може променити након успешног подешавања.
-- [Испуњени су](/azure/azure-monitor/platform/diagnostic-settings#destination-requirements) одредишни захтеви за Азуре складиште, Азуре чвориште догађаја или аналитику евиденције Азуре.
 - Барем улога читалац **групи** ресурса којој ресурс припада.
 
 ### <a name="set-up-diagnostics-with-azure-monitor"></a>Подешавање дијагностике помоћу Азуре монитора
@@ -78,16 +78,16 @@ ms.locfileid: "9245943"
 
 ### <a name="log-analytics"></a>Евидентирај аналитику
 
-Директор услуге "Увиди корисника" добија дозволу **за сарадник евиденције** о ресурсу. Евиденције су доступне у оквиру евиденције **Табела** > **за евиденцију** > **на** изабраном радном простору аналитике евиденције. Развијте решење **за управљање евиденцијом** и пронађите табеле `CIEventsAudit``CIEventsOperational` и табеле.
+Директор услуге "Увиди корисника" добија дозволу **за сарадник евиденције** о ресурсу. Евиденције су доступне у оквиру евиденције **Табела** > **за евиденцију** > **на** изабраном радном простору аналитике евиденције. Развијте решење **за управљање евиденцијом** и пронађите табеле `CIEventsAudit` `CIEventsOperational` и табеле.
 
 - `CIEventsAudit` који садрже догађаје **надгледања**
 - `CIEventsOperational` који садрже оперативне **догађаје**
 
-У прозору **Упити** проширите решење **надзора** и пронађите пример упита наведених претраживањем `CIEvents`.
+У прозору **Упити** проширите решење **надзора** и пронађите пример упита наведених претраживањем `CIEvents` .
 
 ## <a name="remove-a-diagnostics-destination"></a>Уклањање одредишта дијагностике
 
-1. Идите на **администраторски** > **систем и** изаберите картицу **Дијагностика**.
+1. Идите на **администраторски** > **систем и** изаберите картицу **Дијагностика** .
 
 1. Изаберите одредиште дијагностике са листе.
 
@@ -101,7 +101,7 @@ ms.locfileid: "9245943"
 ## <a name="log-categories-and-event-schemas"></a>Евидентирај категорије и шеме догађаја
 
 Тренутно су [подржани АПИ](apis.md) догађаји и догађаји тока посла и примењују се следеће категорије и шеме.
-Шема евиденције прати заједничку шему [Азуре монитора](/azure/azure-monitor/platform/resource-logs-schema#top-level-common-schema).
+Шема евиденције прати заједничку шему [Азуре монитора](/azure/azure-monitor/platform/resource-logs-schema#top-level-common-schema) .
 
 ### <a name="categories"></a>Категорије
 
@@ -112,7 +112,7 @@ ms.locfileid: "9245943"
 
 ## <a name="event-schemas"></a>Шеме догађаја
 
-АПИ догађаји и догађаји тока посла имају заједничку структуру, али уз неколико разлика. Више информација потражите у апИ [шеми догађаја или шеми](#api-event-schema) догађаја [тока посла](#workflow-event-schema).
+АПИ догађаји и догађаји тока посла имају заједничку структуру, али уз неколико разлика. Више информација потражите у апИ [шеми догађаја или шеми](#api-event-schema) догађаја [тока посла](#workflow-event-schema) .
 
 ### <a name="api-event-schema"></a>Шема АПИ догађаја
 
@@ -121,14 +121,14 @@ ms.locfileid: "9245943"
 | `time`            | Временска ознака | Потребно          | Тиместамп догађаја (УТЦ)       | `2020-09-08T09:48:14.8050869Z`         |
 | `resourceId`      | String    | Потребно          | ИД ресурса инстанце која је емигрирао догађај         | `/SUBSCRIPTIONS/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXX/RESOURCEGROUPS/<RESOURCEGROUPNAME>/`<br>`PROVIDERS/MICROSOFT.D365CUSTOMERINSIGHTS/`<br>`INSTANCES/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXX`  |
 | `operationName`   | String    | Потребно          | Име операције представљене овим догађајем.                                                                                                                | `Workflows.GetWorkFlowStatusAsync`                                                                                                                                       |
-| `category`        | String    | Потребно          | Евидентирај категорију догађаја. Или `Operational` или `Audit`. Алл ПОСТ/ПУТ/ПАТЦХ/ДЕЛЕТЕ ХТТП Реqуестс аре таггед wитх `Audit`, све остало са`Operational` | `2020-09-08T09:48:14.8050869Z`                                                                                                                                           |
+| `category`        | String    | Потребно          | Евидентирај категорију догађаја. Или `Operational` или `Audit` . Алл ПОСТ/ПУТ/ПАТЦХ/ДЕЛЕТЕ ХТТП Реqуестс аре таггед wитх `Audit` , све остало са `Operational` | `2020-09-08T09:48:14.8050869Z`                                                                                                                                           |
 | `resultType`      | String    | Потребно          | Статус догађаја. `Success`, `ClientError`, `Failure`                                                                                                        |                                                                                                                                                                          |
 | `resultSignature` | String    | Опционално          | Статус резултата догађаја. Ако операција одговара РЕСТ АПИ позиву, то је ХТТП статусни кôд.        | `200`             |
 | `durationMs`      | Дугачак      | Опционално          | Трајање операције у милисекундама.     | `133`     |
 | `callerIpAddress` | String    | Опционално          | ИП адреса позиваоца, ако операција одговара АПИ позиву који долази са јавно доступне ИП адресе.                                                 | `144.318.99.233`         |
-| `identity`        | String    | Опционално          | ЈСОН објекат који описује идентитет корисника или апликације која је урадила операцију.       | Погледајте [одељак](#identity-schema) Идентитет.     |  
-| `properties`      | String    | Опционално          | ЈСОН објекат са више својстава према одређеној категорији догађаја.      | Погледајте [одељак Својства](#api-properties-schema).    |
-| `level`           | String    | Потребно          | Ниво озбиљности догађаја.    | `Informational`, `Warning`,, `Error` или `Critical`.           |
+| `identity`        | String    | Опционално          | ЈСОН објекат који описује идентитет корисника или апликације која је урадила операцију.       | Погледајте [одељак](#identity-schema)  Идентитет.     |  
+| `properties`      | String    | Опционално          | ЈСОН објекат са више својстава према одређеној категорији догађаја.      | Погледајте [одељак Својства](#api-properties-schema) .    |
+| `level`           | String    | Потребно          | Ниво озбиљности догађаја.    | `Informational`, `Warning` , , `Error` или `Critical` .           |
 | `uri`             | String    | Опционално          | Апсолутни захтев УРИ.    |               |
 
 #### <a name="identity-schema"></a>Шема идентитета
@@ -153,7 +153,7 @@ ms.locfileid: "9245943"
 
 | Поље                         | Опис                                                                                                                          |
 | ----------------------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
-| `Authorization.UserRole`      | Додељена улога за корисника или апликацију. Више информација потражите у корисничким [дозволама](permissions.md).                                     |
+| `Authorization.UserRole`      | Додељена улога за корисника или апликацију. Више информација потражите у корисничким [дозволама](permissions.md) .                                     |
 | `Authorization.RequiredRoles` | Потребне улоге за операцију. `Admin` улога је дозвољена за све операције.                                                    |
 | `Claims`                      | Тврдње корисника или апликације ЈСОН Wеб токен (ЈWТ). Својства захтева се разликују по организацији и Azure Active Directory конфигурацији. |
 
@@ -163,20 +163,20 @@ ms.locfileid: "9245943"
 
 | Поље                        | Опис                                                                                                            |
 | ---------------------------- | ---------------------------------------------------------------------------------------------------------------------- |
-| `properties.eventType`       | `ApiEvent` Увек, означавање догађаја евиденције као АПИ догађаја.                                                                 |
-| `properties.userAgent`       | Агент прегледача шаље захтев или `unknown`.                                                                        |
-| `properties.method`          | ХТТП метод:`GET/POST/PUT/PATCH/HEAD`.                                                                                |
+| `properties.eventType`       | `ApiEvent` Увек , означавање догађаја евиденције као АПИ догађаја.                                                                 |
+| `properties.userAgent`       | Агент прегледача шаље захтев или `unknown` .                                                                        |
+| `properties.method`          | ХТТП метод: `GET/POST/PUT/PATCH/HEAD` .                                                                                |
 | `properties.path`            | Релативна путања захтева.                                                                                          |
-| `properties.origin`          | УРИ који показује одакле долази допремање или `unknown`.                                                                  |
-| `properties.operationStatus` | `Success` за ХТТП статусни кôд &лт; 400 <br> `ClientError` за ХТТП статусни кôд &лт; 500 <br> `Error` за ХТТП Статус &гт;= 500 |
+| `properties.origin`          | УРИ који показује одакле долази допремање или `unknown` .                                                                  |
+| `properties.operationStatus` | `Success` за ХТТП статусни кôд < 400 <br> `ClientError` за ХТТП статусни кôд < 500 <br> `Error` за ХТТП Статус >= 500 |
 | `properties.tenantId`        | ID организације                                                                                                        |
 | `properties.tenantName`      | Назив организације.                                                                                              |
 | `properties.callerObjectId`  | Azure Active Directory ИД објекта позиваоца.                                                                         |
-| `properties.instanceId`      | Увиди купаца`instanceId`                                                                                         |
+| `properties.instanceId`      | Увиди купаца `instanceId`                                                                                         |
 
 ### <a name="workflow-event-schema"></a>Шема догађаја тока посла
 
-Ток посла садржи више корака. [Унести извори података, уједините](data-sources.md), [обогатите](data-unification.md)[и](enrichment-hub.md) извезите [податке](export-destinations.md). Сви ти кораци могу да се покрећу појединачно или да се оркестрира са следећим процесима.
+Ток посла садржи више корака. [Унести извори података, уједините](data-sources.md) , [обогатите](data-unification.md) [и](enrichment-hub.md) извезите [податке](export-destinations.md) . Сви ти кораци могу да се покрећу појединачно или да се оркестрира са следећим процесима.
 
 #### <a name="operation-types"></a>Типови операција
 
@@ -221,24 +221,24 @@ ms.locfileid: "9245943"
 
 | Поље              | Workflow | Задатак | Опис            |
 | ------------------------------- | -------- | ---- | ----------- |
-| `properties.eventType`                       | Да      | Да  | Увек `WorkflowEvent`, означавање догађаја као догађаја тока посла.                                                                                                                                                                                                |
-| `properties.workflowJobId`                   | Да      | Да  | Идентификатор тока посла. Сви догађаји тока посла и задатака у оквиру извршавања тока посла имају исти `workflowJobId`.                                                                                                                                   |
-| `properties.operationType`                   | Да      | Да  | Идентификатор операције, погледајте типове [операција](#operation-types).                                                                                                                                                                               |
+| `properties.eventType`                       | Да      | Да  | Увек `WorkflowEvent` , означавање догађаја као догађаја тока посла.                                                                                                                                                                                                |
+| `properties.workflowJobId`                   | Да      | Да  | Идентификатор тока посла. Сви догађаји тока посла и задатака у оквиру извршавања тока посла имају исти `workflowJobId` .                                                                                                                                   |
+| `properties.operationType`                   | Да      | Да  | Идентификатор операције, погледајте типове [операција](#operation-types) .                                                                                                                                                                               |
 | `properties.tasksCount`                      | Да      | No   | Само ток посла. Број задатака које ток посла покреће.                                                                                                                                                                                                       |
-| `properties.submittedBy`                     | Да      | No   | Опционално. Само догађаји тока посла. ИД Azure Active Directory [објекта корисника који је активирао](/azure/marketplace/find-tenant-object-id#find-user-object-id) ток посла, погледајте такође `properties.workflowSubmissionKind`.                                   |
-| `properties.workflowType`                    | Да      | No   | `full` или освежити `incremental`.                                                                                                                                                                                                                            |
+| `properties.submittedBy`                     | Да      | No   | Опционално. Само догађаји тока посла. ИД Azure Active Directory [објекта корисника који је активирао](/azure/marketplace/find-tenant-object-id#find-user-object-id) ток посла, погледајте такође `properties.workflowSubmissionKind` .                                   |
+| `properties.workflowType`                    | Да      | No   | `full` или освежити `incremental` .                                                                                                                                                                                                                            |
 | `properties.workflowSubmissionKind`          | Да      | No   | `OnDemand` или `Scheduled`.                                                                                                                                                                                                                                  |
-| `properties.workflowStatus`                  | Да      | No   | `Running` или `Successful`.                                                                                                                                                                                                                                 |
-| `properties.startTimestamp`                  | Да      | Да  | УТЦ Тиместамп`yyyy-MM-ddThh:mm:ss.SSSSSZ`                                                                                                                                                                                                                  |
-| `properties.endTimestamp`                    | Да      | Да  | УТЦ Тиместамп`yyyy-MM-ddThh:mm:ss.SSSSSZ`                                                                                                                                                                                                                  |
-| `properties.submittedTimestamp`              | Да      | Да  | УТЦ Тиместамп`yyyy-MM-ddThh:mm:ss.SSSSSZ`                                                                                                                                                                                                                  |
-| `properties.instanceId`                      | Да      | Да  | Увиди купаца`instanceId`                                                                                                                                                                                                                              |  
-| `properties.identifier`                      | No       | Да  | - За ОператионТyпе = `Export`, идентификатор је гуид конфигурације извоза. <br> - За ОператионТyпе = `Enrichment`, то је гуид богаћења <br> - За ОператионТyпе `Measures``Segmentation` и, идентификатор је име ентитета. |
+| `properties.workflowStatus`                  | Да      | No   | `Running` или  `Successful` .                                                                                                                                                                                                                                 |
+| `properties.startTimestamp`                  | Да      | Да  | УТЦ Тиместамп `yyyy-MM-ddThh:mm:ss.SSSSSZ`                                                                                                                                                                                                                  |
+| `properties.endTimestamp`                    | Да      | Да  | УТЦ Тиместамп `yyyy-MM-ddThh:mm:ss.SSSSSZ`                                                                                                                                                                                                                  |
+| `properties.submittedTimestamp`              | Да      | Да  | УТЦ Тиместамп `yyyy-MM-ddThh:mm:ss.SSSSSZ`                                                                                                                                                                                                                  |
+| `properties.instanceId`                      | Да      | Да  | Увиди купаца `instanceId`                                                                                                                                                                                                                              |  
+| `properties.identifier`                      | No       | Да  | - За ОператионТyпе = `Export` , идентификатор је гуид конфигурације извоза. <br> - За ОператионТyпе = `Enrichment` , то је гуид богаћења <br> - За ОператионТyпе `Measures` `Segmentation` и , идентификатор је име ентитета. |
 | `properties.friendlyName`                    | No       | Да  | Кориснички прилагођено име извоза или ентитета који се обрађује.                                                                                                                                                                                           |
 | `properties.error`                           | No       | Да  | Опционално. Порука о грешци са више детаља.                                                                                                                                                                                                                  |
-| `properties.additionalInfo.Kind`             | No       | Да  | Опционално. Само за ОператионТyпе `Export`. Идентификује тип извоза. Више информација потражите у [прегледу извозних одредишта](export-destinations.md).                                                                                          |
-| `properties.additionalInfo.AffectedEntities` | No       | Да  | Опционално. Само за ОператионТyпе `Export`. Садржи листу конфигурисаних ентитета у извозу.                                                                                                                                                            |
-| `properties.additionalInfo.MessageCode`      | No       | Да  | Опционално. Само за ОператионТyпе `Export`. Детаљна порука за извоз.                                                                                                                                                                                 |
-| `properties.additionalInfo.entityCount`      | No       | Да  | Опционално. Само за ОператионТyпе `Segmentation`. Означава укупан број чланова које сегмент има.                                                                                                                                                    |
+| `properties.additionalInfo.Kind`             | No       | Да  | Опционално. Само за ОператионТyпе `Export` . Идентификује тип извоза. Више информација потражите у [прегледу извозних одредишта](export-destinations.md) .                                                                                          |
+| `properties.additionalInfo.AffectedEntities` | No       | Да  | Опционално. Само за ОператионТyпе `Export` . Садржи листу конфигурисаних ентитета у извозу.                                                                                                                                                            |
+| `properties.additionalInfo.MessageCode`      | No       | Да  | Опционално. Само за ОператионТyпе `Export` . Детаљна порука за извоз.                                                                                                                                                                                 |
+| `properties.additionalInfo.entityCount`      | No       | Да  | Опционално. Само за ОператионТyпе `Segmentation` . Означава укупан број чланова које сегмент има.                                                                                                                                                    |
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]
