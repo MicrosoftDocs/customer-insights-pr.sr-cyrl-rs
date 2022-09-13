@@ -8,12 +8,12 @@ author: JimsonChalissery
 ms.author: jimsonc
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 421e1aa41a54a4b8c34ac27fc7c02e510d2bb588
-ms.sourcegitcommit: 624b27bb65a0de1970dc1ac436643b493f0a31cf
-ms.translationtype: MT
+ms.openlocfilehash: 7f38b7d9985368fc38107f1f360f0603a7fcc8e6
+ms.sourcegitcommit: 3c7cdfc8bd83ca236e4777240e08a541dc955d34
+ms.translationtype: HT
 ms.contentlocale: sr-Cyrl-RS
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "9387174"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "9411758"
 ---
 # <a name="service-limits-in-customer-insights"></a>Ограничења услуге у увидима клијената
 
@@ -23,7 +23,7 @@ ms.locfileid: "9387174"
 
 | Обласни графикон  | Ограничења  | Белешке |
 |-------------|---------------------------------------------------------------------|---------------------------------------------------------------------|
-| Сегменти, мере и предвиђања | 300  | Укупан број [сегмената](segments.md), [мера и](measures.md) предвиђања [заједно](predictions.md) не може да премаши 300.  |
+| Сегменти, мере и предвиђања | 300  | Укупан број [сегмената](segments.md), [мера и](measures.md) предвиђања [заједно](predictions-overview.md) не може да премаши 300.  |
 | Релације | 20 нивоа дубине у односима у путањама ентитета. | Приликом креирања [сегмената](segments.md) или [мера](measures.md) користећи интерфејс за израду, путање ентитета могу имати до 20 корака односа између почетног ентитета и циљног ентитета.  |
 
 ## <a name="fair-scheduling-of-jobs"></a>Поштено заказивање послова

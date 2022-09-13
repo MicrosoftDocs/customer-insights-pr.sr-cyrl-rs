@@ -88,7 +88,7 @@
       href: enrichment-office.md
     - name: Брендови и интересовања
       href: enrichment-microsoft.md
-    - name: Подаци компаније из Дун &амп; Брадстреет
+    - name: Подаци компаније из Дун & Брадстреет
       href: enrichment-dnb.md
     - name: Подаци о предузећу уз услуге Leadspace
       href: enrichment-leadspace.md
@@ -110,7 +110,7 @@
   items:
     - name: Приказ профила клијената
       href: customer-profiles.md
-    - name: Управљање индексом претраге &амп; филтера
+    - name: Управљање индексом претраге & филтера
       href: search-filter-index.md
     - name: Дефинисање активности купаца
       href: activities.md
@@ -160,8 +160,6 @@
           href: sentiment-analysis.md
         - name: Коришћење прилагођених модела из Azure машинског учења
           href: custom-models.md
-        - name: Допуњавање делимично недостајућих података
-          href: predictions.md
     - name: Примери водича
       items:
         - name: Пример водича за превиђање трајне вредности клијента
