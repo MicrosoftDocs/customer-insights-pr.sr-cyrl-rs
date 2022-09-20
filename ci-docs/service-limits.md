@@ -8,12 +8,12 @@ author: JimsonChalissery
 ms.author: jimsonc
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 7f38b7d9985368fc38107f1f360f0603a7fcc8e6
-ms.sourcegitcommit: 3c7cdfc8bd83ca236e4777240e08a541dc955d34
-ms.translationtype: HT
+ms.openlocfilehash: c3863b1a72fd92ddc87755699feda11371ec9214
+ms.sourcegitcommit: dfba60e17ae6dc1e2e3830e6365e2c1f87230afd
+ms.translationtype: MT
 ms.contentlocale: sr-Cyrl-RS
-ms.lasthandoff: 09/07/2022
-ms.locfileid: "9411758"
+ms.lasthandoff: 09/09/2022
+ms.locfileid: "9463237"
 ---
 # <a name="service-limits-in-customer-insights"></a>Ограничења услуге у увидима клијената
 
@@ -25,6 +25,7 @@ ms.locfileid: "9411758"
 |-------------|---------------------------------------------------------------------|---------------------------------------------------------------------|
 | Сегменти, мере и предвиђања | 300  | Укупан број [сегмената](segments.md), [мера и](measures.md) предвиђања [заједно](predictions-overview.md) не може да премаши 300.  |
 | Релације | 20 нивоа дубине у односима у путањама ентитета. | Приликом креирања [сегмената](segments.md) или [мера](measures.md) користећи интерфејс за израду, путање ентитета могу имати до 20 корака односа између почетног ентитета и циљног ентитета.  |
+|Унос података| Упоредне процене за изворе Power Query података су ограничене. | Цустомер Инсигхтс има иста ограничења [за освежавање као Датафлоwс у PowerBI.com](/power-query/power-query-online-limits#refresh-limits). |
 
 ## <a name="fair-scheduling-of-jobs"></a>Поштено заказивање послова
 
