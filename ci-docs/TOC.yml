@@ -7,21 +7,21 @@
 - name: Каталог за учење
   items:
     - name: Потврди као специјалиста за Мицрософт платформу за податке о клијентима
-      href: /learn/certifications/exams/mb-260?tab=tab-instructor-led
+      href: /certifications/exams/mb-260?tab=tab-instructor-led
     - name: Први кораци са услугом Customer Insights
-      href: /learn/modules/get-started-customer-data-platform/
+      href: /training/modules/get-started-customer-data-platform/
     - name: Унесите податке
-      href: /learn/modules/ingest-data-customer-insights/
+      href: /training/modules/ingest-data-customer-insights/
     - name: Креирајте уједначени кориснички профил
-      href: /learn/modules/unified-customer-profile/
+      href: /training/modules/unified-customer-profile/
     - name: Рад са увидима клијената
-      href: /learn/modules/working-with-customer-insights/
+      href: /training/modules/working-with-customer-insights/
     - name: Обогатите податке и направите предвиђања
-      href: /learn/modules/enrich-data/
+      href: /training/modules/enrich-data/
     - name: Управљање спољним везама
-      href: /learn/modules/configure-third-party-connections/
+      href: /training/modules/configure-third-party-connections/
     - name: Администрирање услуге Customer Insights
-      href: /learn/modules/administer-customer-data-platform/
+      href: /training/modules/administer-customer-data-platform/
 - name: Бесплатна пробна верзија
   items:
     - name: Уписивање за бесплатну верзију
@@ -118,6 +118,8 @@
       href: consent-management.md
     - name: Коришћење Веб података за персонализацију
       href: unknown-to-known.md
+    - name: Управљање непознатим профилима клијената
+      href: manage-unknown-profiles.md
 - name: Сегменти
   items:
     - name: Преглед сегмената
