@@ -162,6 +162,8 @@
           href: sentiment-analysis.md
         - name: Коришћење прилагођених модела из Azure машинског учења
           href: custom-models.md
+        - name: Креирање сегмената заснованих на предвиђањима
+          href: prediction-based-segment.md
     - name: Примери водича
       items:
         - name: Пример водича за превиђање трајне вредности клијента
@@ -174,10 +176,6 @@
           href: sample-guide-predict-product-recommendation.md
         - name: Експерименти са Azure машинским учењем
           href: azure-machine-learning-experiments.md
-    - name: Управљање предвиђањима
-      href: manage-predictions.md
-    - name: Креирање сегмената заснованих на предвиђањима
-      href: prediction-based-segment.md
 - name: Опције извоза
   items:
     - name: Извоз

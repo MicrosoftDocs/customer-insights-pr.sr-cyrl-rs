@@ -8,12 +8,12 @@ author: m-hartmann
 ms.author: mhart
 ms.reviewer: skumm
 manager: shellyha
-ms.openlocfilehash: acba06cba5fb5cbf0bca5aeb30b603003555fc32
-ms.sourcegitcommit: 3ab8f1c0ba5874095a19f0b6367b9a4432f72ed1
-ms.translationtype: MT
+ms.openlocfilehash: 2a386d65a5e285d471e9cafc45f247e7b4ae23bb
+ms.sourcegitcommit: be341cb69329e507f527409ac4636c18742777d2
+ms.translationtype: HT
 ms.contentlocale: sr-Cyrl-RS
-ms.lasthandoff: 09/06/2022
-ms.locfileid: "9409375"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "9609610"
 ---
 # <a name="whats-new-in-dynamics-365-customer-insights"></a>Шта је ново у систему Dynamics 365 Customer Insights
 
@@ -228,9 +228,9 @@ Azure Synapse Analytics је услуга аналитике предузећа 
 
 ### <a name="data-preparation-process-lists-corruption-reason-for-corrupted-records"></a>Процес припреме података наводи разлог оштећења оштећених записа
 
-Припрема података сада показује разлог за оштећење свих поља са оштећеним подацима. Информације су обезбеђене на појединачном нивоу записа ради лаке идентификације. 
+Припрема података сада показује разлог за оштећење свих поља са оштећеним подацима. Информације су обезбеђене на појединачном нивоу записа ради лаке идентификације.
 
-Више информација потражите у чланку [Оштећени извори података](entities.md#corrupted-data-sources).
+Више информација потражите у чланку [Оштећење извора података](data-sources.md#corrupt-data-sources).
 
 ### <a name="end-of-preview-for-reporting-features-in-the-engagement-insights-capability"></a>Крај прегледа за функције извештавања у могућности увида у ангажовање
 

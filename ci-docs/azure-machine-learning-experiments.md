@@ -1,19 +1,19 @@
 ---
 title: Користите моделе засноване на Azure машинском учењу
 description: Користите моделе засноване на Azure машинском учењу у услузи Dynamics 365 Customer Insights.
-ms.date: 12/02/2021
+ms.date: 09/22/2022
 ms.subservice: audience-insights
 ms.topic: tutorial
 author: naravill
 ms.author: naravill
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: a1efad2887a02a92ee2960b07b066edc331f3665
-ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
+ms.openlocfilehash: 8d9c9324ea4840b585b9af1a58d505ccaea6f18e
+ms.sourcegitcommit: be341cb69329e507f527409ac4636c18742777d2
 ms.translationtype: MT
 ms.contentlocale: sr-Cyrl-RS
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9082289"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "9609843"
 ---
 # <a name="use-azure-machine-learning-based-models"></a>Користите моделе засноване на Azure машинском учењу
 
@@ -35,7 +35,7 @@ ms.locfileid: "9082289"
 ## <a name="work-with-azure-machine-learning-designer"></a>Радите са дизајнером за Azure машинско учење
 
 Азуре Машинско учење обезбеђује визуелну подлогу на којој можете да превлачите и отпустите групе података и модуле. Групни канал креиран из дизајнера може се интегрисати у Customer Insights ако су конфигурисани у складу с тим. 
-   
+
 ## <a name="working-with-azure-machine-learning-sdk"></a>Рад са SDK-ом за Azure машинско учење
 
 Научници за податке и AI програмери користе [SDK за Azure машинско учење](/python/api/overview/azure/ml/?preserve-view=true&view=azure-ml-py) за изградњу токова посла машинског учења. Тренутно модели обучени помоћу SDK-а не могу директно да се интегришу са услугом Customer Insights. Групни канал за закључивање који користи тај модел потребан је за интеграцију са услугом Customer Insights.
@@ -44,17 +44,16 @@ ms.locfileid: "9082289"
 
 ### <a name="dataset-configuration"></a>Конфигурација скупа података
 
-Морате да креирате скупове података да бисте користили податке ентитета од услуге Customer Insights до групног канала за закључивање. Ове скупове података треба регистровати у радном простору. Тренутно подржавамо само [табеларне скупове података](/azure/machine-learning/how-to-create-register-datasets#tabulardataset) у .csv формату. За скупове података који одговарају подацима ентитета морају се одредити параметри као параметар канала.
-   
-* Параметри скупа података у дизајнеру
-   
-     У дизајнеру отворите **Изаберите колоне у скупу података** и изаберите **Постави као параметар канала** где дајете име за параметар.
+Креирајте групе података да бисте користили податке ентитета из оквира"Увиди купаца" за цевовод за закључивач групних закључака. Региструјте ове групе података у радном простору. Тренутно подржавамо само [табеларне скупове података](/azure/machine-learning/how-to-create-register-datasets#tabulardataset) у .csv формату. Параметризујте групе података које одговарају ентитетским подацима као параметру цевовода.
 
-     > [!div class="mx-imgBorder"]
-     > ![Одређивање параметара скупа података у дизајнеру.](media/intelligence-designer-dataset-parameters.png "Одређивање параметара скупа података у дизајнеру")
-   
-* Параметар скупа података у SDK-у (Python)
-   
+- Параметри скупа података у дизајнеру
+
+  У дизајнеру отворите **Изаберите колоне у скупу података** и изаберите **Постави као параметар канала** где дајете име за параметар.
+
+  :::image type="content" source="media/intelligence-designer-dataset-parameters.png" alt-text="Одређивање параметара скупа података у дизајнеру.":::
+
+- Параметар скупа података у SDK-у (Python)
+
    ```python
    HotelStayActivity_dataset = Dataset.get_by_name(ws, name='Hotel Stay Activity Data')
    HotelStayActivity_pipeline_param = PipelineParameter(name="HotelStayActivity_pipeline_param", default_value=HotelStayActivity_dataset)
@@ -63,10 +62,10 @@ ms.locfileid: "9082289"
 
 ### <a name="batch-inference-pipeline"></a>Групни канал за закључивање
   
-* У дизајнеру се канал за обуку може користити за стварање или ажурирање канала за закључивање. Тренутно су подржани само групни канали за закључивање.
+- У дизајнеру користите цевовод за обуку да бисте креирали или ажурирали цевовод за закључивање. Тренутно су подржани само групни канали за закључивање.
 
-* Коришћењем SDK-а можете објавити канал на крајњој тачки. Тренутно се Customer Insights интегрише са подразумеваним каналом у крајњој тачки групног канала у радном простору за машинско учење.
-   
+- Користећи СДК, објавите гасовод на крајња тачка. Тренутно се Customer Insights интегрише са подразумеваним каналом у крајњој тачки групног канала у радном простору за машинско учење.
+
    ```python
    published_pipeline = pipeline.publish(name="ChurnInferencePipeline", description="Published Churn Inference pipeline")
    pipeline_endpoint = PipelineEndpoint.get(workspace=ws, name="ChurnPipelineEndpoint") 
@@ -75,11 +74,11 @@ ms.locfileid: "9082289"
 
 ### <a name="import-pipeline-data-into-customer-insights"></a>Увезите податке о каналу у Customer Insights
 
-* Дизајнер обезбеђује [модул за извоз података](/azure/machine-learning/algorithm-module-reference/export-data) који омогућава извоз излаза канала у Azure складиште. Тренутно модул мора да користи тип складишта података **Azure складиште блоб објеката** и да одреди параметре та **складиште података** и релативну **путању**. Customer Insights замењује оба ова параметра током извршавања канала помоћу складишта података и путање која је доступна производу.
-   > [!div class="mx-imgBorder"]
-   > ![Извоз конфигурације модула података.](media/intelligence-designer-importdata.png "Извоз конфигурације модула података")
-   
-* Када записујете излаз закључка помоћу кода, можете отпремити излаз на путању унутар *регистрованог складишта података* у радном простору. Ако су за путању и складиште података одређени параметри у каналу, Customer insights моћи ће да прочита и увезе излаз закључка. Тренутно је подржан један табеларни излаз у csv формату. Путања мора да садржи директоријум и име датотеке.
+- Дизајнер обезбеђује [модул за извоз података](/azure/machine-learning/algorithm-module-reference/export-data) који омогућава извоз излаза канала у Azure складиште. Тренутно модул мора да користи тип складишта података **Azure складиште блоб објеката** и да одреди параметре та **складиште података** и релативну **путању**. Customer Insights замењује оба ова параметра током извршавања канала помоћу складишта података и путање која је доступна производу.
+
+  :::image type="content" source="media/intelligence-designer-importdata.png" alt-text="Извоз конфигурације модула података.":::
+
+- Када уписујете излаз закључка користећи кôд, отпремите излаз на путању *унутар регистроване локације података* у радном простору. Ако су за путању и складиште података одређени параметри у каналу, Customer insights моћи ће да прочита и увезе излаз закључка. Тренутно је подржан један табеларни излаз у csv формату. Путања мора да садржи директоријум и име датотеке.
 
    ```python
    # In Pipeline setup script
