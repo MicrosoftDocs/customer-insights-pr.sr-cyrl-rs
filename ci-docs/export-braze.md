@@ -1,19 +1,19 @@
 ---
 title: Извоз сегмената у Бразе (преглед)
 description: Сазнајте како да конфигуришете везу и извезете у Бразе.
-ms.date: 07/25/2022
+ms.date: 10/06/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 84dc7f13f30e0334d431fe5b5866c7f87e82ab27
-ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
+ms.openlocfilehash: 2f52eb8196e057f934c8d2b5ac0518ce121606b6
+ms.sourcegitcommit: 003c1929f730d7d505c108aba84f6269f4c98978
 ms.translationtype: MT
 ms.contentlocale: sr-Cyrl-RS
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "9195125"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "9655305"
 ---
 # <a name="export-segments-to-braze-preview"></a>Извоз сегмената у Бразе (преглед)
 
@@ -23,6 +23,7 @@ ms.locfileid: "9195125"
 
 - Бразе [налог и](https://www.braze.com/) одговарајући администраторски акредитиви.
 - Бразе [АПИ кључ](https://www.braze.com/docs/api/basics/)
+- Ваш [Бразе РЕСТ крајња тачка](https://www.braze.com/docs/api/basics/#api-definitions) 
 - [Конфигурисани сегменти у увидима](segments.md) купаца.
 - Обједињени профили купаца у извезеним сегментима садрже поље које представља е-адресу и ИД купца Бразеа.
 
@@ -30,6 +31,7 @@ ms.locfileid: "9195125"
 
 - До Бразеа је потребно до милион профила клијената, што може да потраје и до 40 минута. Број профила купаца које можете да извезете у Бразе зависи од вашег уговора са Бразеом.
 - Само сегменти.
+- Азуре приватна веза није подржана за извоз Бразеа.
 
 ## <a name="set-up-connection-to-braze"></a>Успостави везу са Бразеом
 
@@ -62,6 +64,8 @@ ms.locfileid: "9195125"
 1. Изаберите **Додај извоз**.
 
 1. У пољу **Веза за извоз** одаберите везу из одељка Бразе. Ако веза није доступна, обратите се администратору.
+
+1. Унесите опцију РЕСТ крајња тачка поље **Хостнаме** у следећем формату:`rest.iad-03.braze.com`.
 
 1. Унесите име за извоз.
 
