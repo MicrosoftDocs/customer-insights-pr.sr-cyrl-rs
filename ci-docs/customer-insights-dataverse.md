@@ -11,12 +11,12 @@ manager: shellyha
 searchScope:
 - ci-system-diagnostic
 - customerInsights
-ms.openlocfilehash: dfa63110fc5291f2b63aebf588d6fdd20ed4ab67
-ms.sourcegitcommit: 134aac66e3e0b77b2e96a595d6acbb91bf9afda2
+ms.openlocfilehash: 9433c411a2c7eb0db137c6392578993d47be82a2
+ms.sourcegitcommit: 8559ca47a22d1d7cd9be13531c2eaf0c1083942b
 ms.translationtype: MT
 ms.contentlocale: sr-Cyrl-RS
-ms.lasthandoff: 09/07/2022
-ms.locfileid: "9424327"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "9671269"
 ---
 # <a name="work-with-customer-insights-data-in-microsoft-dataverse"></a>Рад са Customer Insights подацима у платформи Microsoft Dataverse
 
@@ -63,6 +63,9 @@ Customer Insights пружа могућност омогућавања дост�
 ## <a name="enable-data-sharing-with-dataverse-from-your-own-azure-data-lake-storage-preview"></a>Омогући дељење података Dataverse са сопственим Azure Data Lake Storage (преглед)
 
 На [свом налогу Azure Data Lake Storage](own-data-lake-storage.md) проверите да ли корисник који подешава окружење "Увиди купаца **" има најмање дозволе за складиштење блоб података читалац**`customerinsights` на контејнеру у налогу за складиштење.
+
+> [!NOTE]
+> Дељење података је применљиво само ако користите сопствени Azure Data Lake Storage налог. Ова поставка није доступна ако окружење "Увиди купаца" користи подразумевано Dataverse складиште.
 
 ### <a name="limitations"></a>Ограничења
 
