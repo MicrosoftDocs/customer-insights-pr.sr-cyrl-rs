@@ -8,12 +8,12 @@ ms.topic: how-to
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 01be1a075db0da05dc5536aea8a33093f9a2ea13
-ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
+ms.openlocfilehash: c7a4b1be1c959d70fad929b56452169b40e5b592
+ms.sourcegitcommit: c3ae7e7e0c9566f9479ba71a26afc5a17fb589c2
 ms.translationtype: MT
 ms.contentlocale: sr-Cyrl-RS
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "9195032"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "9724634"
 ---
 # <a name="export-segments-to-facebook-ads-manager-preview"></a>Извоз сегмената у Facebook Менаџер за огласе (преглед)
 
@@ -25,11 +25,13 @@ ms.locfileid: "9195032"
 
 - Налог [Facebook огласа](https://www.facebook.com/business/learn/lessons/step-by-step-ads-manager-account) који укључује пословни [Facebook налог](https://business.facebook.com/).
 - Администраторске привилегије на Налогу [Facebook огласа](https://www.facebook.com/business/learn/lessons/step-by-step-ads-manager-account).
+- Прилагођене корисници потребно је прихватити од стране корисника који подешава везу у "Увидима купаца".
 
 ## <a name="known-limitations"></a>Позната ограничења
 
 - До 10 милиона профила клијената по извозу у Facebook Адс Манагер, што може да потраје и до 90 минута.
 - Само сегменти.
+- Facebook Интеграција огласа не подржава кориснике са више од 25 огласних налога.
 - Facebook *тип листе купаца* само у [прилагођеним корисницима](https://www.facebook.com/business/help/744354708981227?id=2469097953376494) локације.
   > [!NOTE]
   > У неким случајевима можете видети прилагођене групе различитих типова на падајуће листе. Ако изаберете неки други тип осим листе *купаца*, извоз неће успети.

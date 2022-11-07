@@ -8,12 +8,12 @@ ms.topic: how-to
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: cabaea84e31f8fe97bc558a8dca8d93bc40f43b7
-ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
+ms.openlocfilehash: 8f3e3378dce9177c6645b91140884ae135540243
+ms.sourcegitcommit: c3ae7e7e0c9566f9479ba71a26afc5a17fb589c2
 ms.translationtype: MT
 ms.contentlocale: sr-Cyrl-RS
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "9196090"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "9725004"
 ---
 # <a name="export-segments-to-dotdigital-preview"></a>Извоз сегмената у DotDigital (верзија за преглед)
 
@@ -28,6 +28,7 @@ ms.locfileid: "9196090"
 
 ## <a name="known-limitations"></a>Позната ограничења
 
+- Приватна веза у комбинацији са "Донеси сопствено складиште" (БYОС) није подржана.
 - До милион профила клијената по извозу у ДотДигитал, што може да потраје и до три сата због ограничења на страни провајдера. Број профила клијената које можете да извезете у ДотДигитал зависи од вашег уговора са ДотДигитал.
 - Само сегменти.
 

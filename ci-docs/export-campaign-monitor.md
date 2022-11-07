@@ -8,12 +8,12 @@ ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 3c04fc26dc690cf32b45913257e82b9a0f617185
-ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
+ms.openlocfilehash: 82303c7bcb269ee68419c9639ee743e13451f273
+ms.sourcegitcommit: c3ae7e7e0c9566f9479ba71a26afc5a17fb589c2
 ms.translationtype: MT
 ms.contentlocale: sr-Cyrl-RS
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "9196320"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "9724702"
 ---
 # <a name="export-segments-to-campaign-monitor-preview"></a>Извоз сегмената у Campaign Monitor (верзија за преглед)
 
@@ -29,6 +29,7 @@ ms.locfileid: "9196320"
 
 ## <a name="known-limitations"></a>Позната ограничења
 
+- Приватна веза у комбинацији са "Донеси сопствено складиште" (БYОС) није подржана.
 - До милион профила клијената по извозу у надгледање кампање, што може да потраје и до 20 минута. Број профила клијената које можете да извезете у надгледање кампање зависи од уговора са надгледање кампање.
 - Само сегменти.
 

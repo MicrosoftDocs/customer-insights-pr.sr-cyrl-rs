@@ -8,12 +8,12 @@ ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: c23d6d3538c4df6006c14064f95379169af06622
-ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
+ms.openlocfilehash: fb57e2bd70592f4ce4e1a13e21901dc69734f6bf
+ms.sourcegitcommit: c3ae7e7e0c9566f9479ba71a26afc5a17fb589c2
 ms.translationtype: MT
 ms.contentlocale: sr-Cyrl-RS
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "9196182"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "9725188"
 ---
 # <a name="export-segments-to-omnisend-preview"></a>Извоз сегмената у Omnisend (верзија за преглед)
 
@@ -28,6 +28,7 @@ ms.locfileid: "9196182"
 
 ## <a name="known-limitations"></a>Позната ограничења
 
+- Приватна веза у комбинацији са "Донеси сопствено складиште" (БYОС) није подржана.
 - До милион профила купаца по извозу у Омнисенд, што може да потраје и до четири сата. Број профила клијената које можете извести у Omnisend зависи од вашег уговора са Omnisend-ом.
 - Само сегменти.
 

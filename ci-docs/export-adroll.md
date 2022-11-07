@@ -8,12 +8,12 @@ ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 8110eab199920ab8fc2ea15678139faf264a242a
-ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
+ms.openlocfilehash: 81adad4caf2d4c6f792bf920b29fc7c67eef42b0
+ms.sourcegitcommit: c3ae7e7e0c9566f9479ba71a26afc5a17fb589c2
 ms.translationtype: MT
 ms.contentlocale: sr-Cyrl-RS
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "9195768"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "9724730"
 ---
 # <a name="export-segments-to-adroll-preview"></a>Извоз сегмената у AdRoll (верзија за преглед)
 
@@ -28,6 +28,7 @@ ms.locfileid: "9195768"
 
 ## <a name="known-limitations"></a>Позната ограничења
 
+- Приватна веза у комбинацији са "Донеси сопствено складиште" (БYОС) није подржана.
 - До 250.000 профила купаца по извозу у АдРолл, што може да потраје и до 10 минута. Број профила клијената које можете да извезете у АдРолл зависи од уговора са АдРолл- ом.
 - Само сегменти. Сегмент мора да садржи најмање 100 профила купаца.
 

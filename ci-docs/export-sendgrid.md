@@ -8,12 +8,12 @@ ms.topic: how-to
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: f2990ad410dda0cbf952f82f3fc30b3a53a7bcd4
-ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
+ms.openlocfilehash: 855e77055eeb24a2c6cff0d45cd23edf93cc0581
+ms.sourcegitcommit: c3ae7e7e0c9566f9479ba71a26afc5a17fb589c2
 ms.translationtype: MT
 ms.contentlocale: sr-Cyrl-RS
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "9197010"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "9724866"
 ---
 # <a name="export-segments-to-sendgrid-preview"></a>Извоз сегмената у SendGrid (верзија за преглед)
 
@@ -29,6 +29,7 @@ ms.locfileid: "9197010"
 
 ## <a name="known-limitations"></a>Позната ограничења
 
+- Приватна веза у комбинацији са "Донеси сопствено складиште" (БYОС) није подржана.
 - Укупно до 100.000 профила купаца за СендГрид, што може да потраје и до неколико сати. Број профила купаца које можете да извезете у СендГрид зависи од уговора са услугом СендГрид.
 - Само сегменти.
 
